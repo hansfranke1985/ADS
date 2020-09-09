@@ -1,0 +1,10 @@
+CREATE TABLE public.game
+ (
+	id INT,
+	mdate date,
+	stadium text,
+	team1 text,
+	team2 text
+);
+	
+copy public.game from 'C:\Users\hansf\Documents\GitHub\ADS\datasets\game.csv' with csv header;

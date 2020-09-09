@@ -1,0 +1,9 @@
+CREATE TABLE public.nobel
+ (
+  	yr text,
+	subject text,
+	winner text
+
+);
+	
+copy public.nobel from 'C:\Users\hansf\Documents\GitHub\ADS\datasets\nobel.csv' with csv header;

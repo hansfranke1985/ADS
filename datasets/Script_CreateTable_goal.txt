@@ -1,0 +1,10 @@
+CREATE TABLE public.goal
+ (
+	matchid INT,
+	teamid text,
+	player text,
+	gtime int
+
+);
+	
+copy public.goal from 'C:\Users\hansf\Documents\GitHub\ADS\datasets\goal.csv' with csv header;

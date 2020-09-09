@@ -1,0 +1,10 @@
+CREATE TABLE public.BBC
+ (
+	
+	name text,
+	region text,
+	area double precision,
+	population double precision,
+	gdp double precison
+);
+	

@@ -1,0 +1,10 @@
+## SAVE THE .CSV as utf8 CSV encoding
+
+CREATE TABLE public.eteam
+ (
+	id INT,
+	teamname text,
+	coach text
+);
+	
+copy public.eteam from 'C:\Users\hansf\Documents\GitHub\ADS\datasets\eteam.csv' with csv header;

@@ -1,0 +1,13 @@
+CREATE TABLE public.world
+ (
+	name text,
+	continent text,
+	area float,
+	gdp float,
+	capital text,
+	tld text,
+	flag text
+
+);
+	
+copy public.world from 'C:\Users\hansf\Documents\GitHub\ADS\datasets\world.csv' with csv header;
