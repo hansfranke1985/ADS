@@ -1,9 +1,11 @@
-CREATE TABLE public.hans
+CREATE TABLE public.world
  (
 	name text,
 	continent text,
 	area float,
+	population float
 	gdp float,
+	
 	capital text,
 	tld text,
 	flag text

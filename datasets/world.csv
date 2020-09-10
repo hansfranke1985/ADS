@@ -37,8 +37,8 @@ Chile,South America,756102,17773000,2.68E+11,Santiago,.cl,//upload.wikimedia.org
 China,Asia,9596961,1365370000,8.36E+12,Beijing,.cn,//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg
 Colombia,South America,1141748,47662000,3.70E+11,Bogot�,.co,//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg
 Comoros,Africa,1862,743798,616000000,Moroni,.km,//upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg
-"Congo, Democratic Republic of",Africa,2345000,69360000,null,Kinshasa,.cd,//upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg
-"Congo, Republic of",Africa,342000,4559000,null,Brazzaville,.cg,//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg
+"Congo, Democratic Republic of",Africa,2345000,69360000,,Kinshasa,.cd,//upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg
+"Congo, Republic of",Africa,342000,4559000,,Brazzaville,.cg,//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg
 Costa Rica,North America,51100,4667096,45107000000,San Jos�,.cr,//upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg
 C�te d'Ivoire,Africa,322483,23919000,34506000000,Yamoussoukro,.ci,//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg
 Croatia,Europe,56594,4290612,56447000000,Zagreb,.hr,//upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
@@ -60,7 +60,7 @@ Fiji,Oceania,18272,858038,3999000000,Suva,.fj,//upload.wikimedia.org/wikipedia/c
 Finland,Europe,338424,5458038,2.47E+11,Helsinki,.fi,//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
 France,Europe,640679,65906000,2.61E+12,Paris,.fr,//upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
 Gabon,Africa,267668,1711000,24076000000,Libreville,.ga,//upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg
-Gambia,Africa,11295,1882450,null,Banjul,.gm,//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg
+Gambia,Africa,11295,1882450,,Banjul,.gm,//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg
 Georgia,Asia,69700,4490500,15830000000,Tbilisi,.ge,//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg
 Germany,Europe,357114,80716000,3.43E+12,Bonn,.de,//upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg
 Ghana,Africa,238533,27043093,40711000000,Accra,.gh,//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg
@@ -98,7 +98,7 @@ Libya,Africa,1759540,6253000,95802000000,Tripoli,.ly,//upload.wikimedia.org/wiki
 Liechtenstein,Europe,160,37132,5827000000,Vaduz,.li,//upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg
 Lithuania,Europe,65300,2939431,42339000000,Vilnius,.lt,//upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg
 Luxembourg,Europe,2586,549700,55143000000,Luxembourg,.lu,//upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg
-Macedonia,Europe,25713,2062294,null,Skopje,.mk,//upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Macedonia.svg
+Macedonia,Europe,25713,2062294,,Skopje,.mk,//upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Macedonia.svg
 Madagascar,Africa,587041,21263403,9968000000,Antananarivo,.mg,//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg
 Malawi,Africa,118484,16829000,5653000000,Lilongwe,.mw,//upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Malawi_%282010-2012%29.svg
 Malaysia,Asia,330803,30177000,3.05E+11,Kuala Lumpur,.my,//upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg
@@ -168,7 +168,7 @@ Swaziland,Africa,17364,1268000,3861000000,Lobamba,.sz,//upload.wikimedia.org/wik
 Sweden,Europe,450295,9675885,5.24E+11,Stockholm,.se,//upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg
 Switzerland,Europe,41284,8160900,6.31E+11,Bern,.ch,//upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg
 Syria,Asia,185180,21987000,46540000000,Damascus,.sy,//upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg
-Taiwan,Asia,36193,23386883,null,Taipei,.tw,//upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg
+Taiwan,Asia,36193,23386883,,Taipei,.tw,//upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg
 Tajikistan,Asia,143100,8160000,7633000000,Dushanbe,.tj,//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg
 Tanzania,Africa,945087,44928923,28249000000,Dodoma,.tz,//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg
 Thailand,Asia,513120,64456700,3.86E+11,Bangkok,.th,//upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg
@@ -188,7 +188,7 @@ United States,North America,9826675,318320000,1.62E+13,"Washington, D.C.",.us,//
 Uruguay,South America,181034,3286314,49919000000,Montevideo,.uy,//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg
 Uzbekistan,Asia,447400,30492800,51414000000,Tashkent,.uz,//upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg
 Vanuatu,Oceania,12189,264652,752000000,Port Vila,.vu,//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg
-Vatican City,Europe,0,839,null,null,.va,//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
+Vatican City,Europe,0,839,,,.va,//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
 Venezuela,South America,916445,28946101,3.82E+11,Caracas,.ve,//upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg
 Vietnam,Asia,331212,89708900,1.56E+11,Hanoi,.vn,//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg
 Yemen,Asia,527968,25235000,32831000000,Sana�a,.ye,//upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg
