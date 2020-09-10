@@ -1,4 +1,4 @@
-CREATE TABLE public.world
+CREATE TABLE public.hans
  (
 	name text,
 	continent text,
