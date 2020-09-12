@@ -1,0 +1,12 @@
+Class 1;
+
+part 3:
+Chapt 8, 9 , 10 and 11 
+
+Class 2:
+Further Reading Material
+• Section 4.4 of the Database System Concepts Book
+• Section 8.3 of the Database System Concepts Book
+• Bleifuß, Tobias, Sebastian Kruse, and Felix Naumann. Efficient Denial
+Constraint Discovery with Hydra. Proceedings of the VLDB
+Endowment (PVLDB). 11(3):311-323, 2017.
