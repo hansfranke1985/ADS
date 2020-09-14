@@ -1,0 +1,27 @@
+
+
+
+create table Students ( sid integer , name text, major text, top_credits integer, gpa real, primary key (sid)  )
+
+
+CREATE TYPE semester AS ENUM ('Q1', 'Q2', 'Q3', 'Q4');
+
+create table Enrolled
+( sid integer ,
+ semester semester,
+ cid integer, 
+ year integer check(year > 2000),
+ grade integer, 
+ primary key (cid, sid, semester, year), 
+ foreign key (sid) references Students )
+
+create table Course (cid integer, title text, dept_name text, credits integer, primary key (cid))
+
+insert into Students (
+	Values (1, 'Hans', 'ADS', 20, 4) )
+	
+insert into Enrolled (
+	Values (1, 'Q1', 1, 2001, 20) )
+	
+
+insert into Course values(1, 'ADS', 'Comp Science', 20)
