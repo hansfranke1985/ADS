@@ -1,7 +1,14 @@
 
 
 
-create table Students ( sid integer , name text, major text, top_credits integer, gpa real, primary key (sid)  )
+drop table Course Cascade;
+drop table Students Cascade;
+drop table Enrolled Cascade;
+
+drop type semester;
+
+create table Students ( sid integer , name text, major text, top_credits integer, gpa real,
+					   primary key (sid) );
 
 
 CREATE TYPE semester AS ENUM ('Q1', 'Q2', 'Q3', 'Q4');
@@ -12,16 +19,26 @@ create table Enrolled
  cid integer, 
  year integer check(year > 2000),
  grade integer, 
- primary key (cid, sid, semester, year), 
- foreign key (sid) references Students )
+ primary key (sid, cid, semester, year), 
+ );
 
-create table Course (cid integer, title text, dept_name text, credits integer, primary key (cid))
 
-insert into Students (
-	Values (1, 'Hans', 'ADS', 20, 4) )
-	
-insert into Enrolled (
-	Values (1, 'Q1', 1, 2001, 20) )
-	
+create table Course (cid integer, title text, dept_name text, credits integer, primary key (cid));
 
-insert into Course values(1, 'ADS', 'Comp Science', 20)
+
+alter table Enrolled CONSTRAINT fk_Students add foreign key (sid) references Students(sid);
+alter table Enrolled CONSTRAINT fk_Course add foreign key (cid) references Course(cid);
+
+insert into Students (sid, name, major, top_credits, gpa) 	Values (1, 'Hans', 'ADS', 20, 4);
+insert into Students (sid, name, major, top_credits, gpa) 	Values (2, 'Hakim', 'ADS', 20, 3);
+insert into Students (sid, name, major, top_credits, gpa)	Values (3, 'Melkow', 'ADS', 20, 1);
+insert into Students (sid, name, major, top_credits, gpa)	Values (4, 'Arno', 'ADS', 20, 4);
+
+insert into Course (cid, title, dept_name, credits) values(1, 'ADS', 'Comp Science', 20);
+insert into Course (cid, title, dept_name, credits) values(2, 'DataWrang', 'Comp Science', 30);
+insert into Course (cid, title, dept_name, credits) values(3, 'Coloquium', 'Comp Science', 10);
+insert into Course (cid, title, dept_name, credits) values(4, 'Tesis', 'Utrecht General', 10);
+
+insert into Enrolled ( sid, semester, cid, Enrolled.year, grade)
+	Values 1, 'Q2', 1, 2001, 20) , (2, 'Q1', 1, 2001, 20),
+			(1, 'Q2', 3, 2001, 20) , (1, 'Q2', 3, 2001, 20)
