@@ -1,4 +1,0 @@
-create table test (
-ddd
-
-)
