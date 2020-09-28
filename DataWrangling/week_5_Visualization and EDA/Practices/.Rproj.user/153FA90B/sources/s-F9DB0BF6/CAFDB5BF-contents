@@ -2,11 +2,13 @@
 title: "Assignment_1"
 author: "Hans Franke"
 date: "September 28, 2020"
-output: html_document
+output: rmarkdown::github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "README_figs/README-"
+)
 ```
 
 
