@@ -395,6 +395,3 @@ Create an interesting data visualisation based on the Carseats data from the ISL
 
 
 
-
-
-
