@@ -9,14 +9,14 @@ Importing libraries
 library(tidyverse)
 ```
 
-    ## -- Attaching packages ------------------------------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages ------------------------------------------------------------------------------------------- tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts ---------------------------------------------------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts ---------------------------------------------------------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -191,6 +191,8 @@ gg_students_plot_4
 
 ![](README_figs/README-unnamed-chunk-12-1.png)<!-- -->
 
+# Boxplot
+
 ## Question 10
 
 Create a boxplot of student grades per programme in the gg\_students
@@ -198,7 +200,65 @@ dataset you made earlier: map the programme variable to the x position
 and the grade to the y position. For extra visual aid, you can
 additionally map the programme variable to the fill aesthetic
 
+``` r
+students_box_plot <-
+  ggplot(gg_students, aes( x = programme, y = student_grade, fill = programme ))+
+  geom_boxplot()
+
+students_box_plot
+```
+
+![](README_figs/README-unnamed-chunk-13-1.png)<!-- -->
+
 ## Question 11
 
 What do each of the horizontal lines in the boxplot mean? What do the
 vertical lines (whiskers) mean?
+
+Answer: Summary statistics The lower and upper hinges correspond to the
+first and third quartiles (the 25th and 75th percentiles). This differs
+slightly from the method used by the boxplot() function, and may be
+apparent with small samples. See boxplot.stats() for for more
+information on how hinge positions are calculated for boxplot().
+
+The upper whisker extends from the hinge to the largest value no further
+than 1.5 \* IQR from the hinge (where IQR is the inter-quartile range,
+or distance between the first and third quartiles). The lower whisker
+extends from the hinge to the smallest value at most 1.5 \* IQR of the
+hinge. Data beyond the end of the whiskers are called “outlying” points
+and are plotted individually.
+
+In a notched box plot, the notches extend 1.58 \* IQR / sqrt(n). This
+gives a roughly 95% confidence interval for comparing medians. See
+McGill et al. (1978) for more details
+
+font:
+<https://ggplot2.tidyverse.org/reference/geom_boxplot.html?q=boxplot>
+
+# Two Densities
+
+## Question 12:
+
+Comparison of distributions across categories can also be done by adding
+a fill aesthetic to the density plot you made earlier. Try this out. To
+take care of the overlap, you might want to add some transparency in the
+geom\_density() function using the alpha argument.
+
+``` r
+gg_students_plot_4 <- 
+  ggplot(gg_students, aes(student_grade, colour = programme ))+
+ 
+  geom_density(fill = "light blue" , alpha = 0.1 ) 
+
+
+  
+gg_students_plot_4 
+```
+
+![](README_figs/README-unnamed-chunk-14-1.png)<!-- -->
+
+# BarPlots
+
+## Question 13:
+
+Create a bar plot of the variable Years from the Hitters dataset.

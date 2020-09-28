@@ -1,0 +1,5 @@
+"0","smart_line2 <- "
+"0","  ggplot(firsts200, aes(x = days, y = Volume)) + "
+"0","  geom_line(colour = ""blue"" ) +"
+"0","  geom_point(colour = ""blue"")"
+"0","smart_line2"

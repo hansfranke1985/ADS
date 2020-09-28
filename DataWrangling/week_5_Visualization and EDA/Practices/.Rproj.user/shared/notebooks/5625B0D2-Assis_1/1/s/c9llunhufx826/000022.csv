@@ -1,0 +1,5 @@
+"0","bar_plot <- "
+"0","  ggplot(Hitters, aes(Years, fill = League))+"
+"0","  stat_count()+"
+"0","  geom_bar()"
+"0","bar_plot"

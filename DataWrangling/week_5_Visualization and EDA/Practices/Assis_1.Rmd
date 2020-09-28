@@ -144,11 +144,118 @@ gg_students_plot_4 <-
 gg_students_plot_4
 ```
 
+# Boxplot
+
 ## Question 10
 Create a boxplot of student grades per programme in the gg_students dataset you made earlier: map the programme variable to the x position and the grade to the y position. For extra visual aid, you can additionally map the programme variable to the fill aesthetic
+
+```{r}
+students_box_plot <-
+  ggplot(gg_students, aes( x = programme, y = student_grade, fill = programme ))+
+  geom_boxplot()
+
+students_box_plot
+```
 
 
 
 ## Question 11
 What do each of the horizontal lines in the boxplot mean? What do the vertical lines (whiskers) mean?
+
+Answer:
+Summary statistics
+The lower and upper hinges correspond to the first and third quartiles (the 25th and 75th percentiles). This differs slightly from the method used by the boxplot() function, and may be apparent with small samples. See boxplot.stats() for for more information on how hinge positions are calculated for boxplot().
+
+The upper whisker extends from the hinge to the largest value no further than 1.5 * IQR from the hinge (where IQR is the inter-quartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5 * IQR of the hinge. Data beyond the end of the whiskers are called "outlying" points and are plotted individually.
+
+In a notched box plot, the notches extend 1.58 * IQR / sqrt(n). This gives a roughly 95% confidence interval for comparing medians. See McGill et al. (1978) for more details
+
+font: https://ggplot2.tidyverse.org/reference/geom_boxplot.html?q=boxplot
+
+
+# Two Densities
+
+## Question 12:
+Comparison of distributions across categories can also be done by adding a fill aesthetic to the density plot you made earlier. Try this out. To take care of the overlap, you might want to add some transparency in the geom_density() function using the alpha argument.
+
+```{r}
+gg_students_plot_4 <- 
+  ggplot(gg_students, aes(student_grade, colour = programme ))+
+ 
+  geom_density(fill = "light blue" , alpha = 0.1 ) 
+
+
+  
+gg_students_plot_4 
+```
+
+# BarPlots
+
+## Question 13: 
+
+Create a bar plot of the variable Years from the Hitters dataset.
+
+
+```{r}
+
+bar_plot <- 
+  ggplot(Hitters, aes(Years))+
+  stat_count()+
+  geom_bar()
+
+bar_plot
+```
+
+```{r}
+bar_plot <- 
+  ggplot(Hitters, aes(Years, fill = League))+
+  stat_count()+
+  geom_bar()
+
+bar_plot
+```
+
+# Line Plot
+
+## Question 14: 
+Use geom_line() to make a line plot out of the first 200 observations of the variable Volume (the number of trades made on each day) of the Smarket dataset. You will need to create a Day variable using mutate() to map to the x-position. This variable can simply be the integers from 1 to 200. Remember, you can select the first 200 rows using Smarket[1:200, ].
+
+```{r}
+
+head(Smarket)
+
+# Select only first 200 apperances:
+firsts200 <- select(Smarket[1:200,],
+                    Volume
+
+)
+firsts200
+
+#Creating the x-positions (Days)
+firsts200 <- mutate ( firsts200, days = 1:200 )
+
+firsts200
+```
+
+```{r}
+#Finally Plotting
+smart_line <- 
+  ggplot(firsts200, aes(x = days, y = Volume)) + 
+  geom_line()
+
+smart_line
+```
+
+## Question 15:
+Give the line a nice colour and increase its size. Also add points of the same colour on top.
+
+```{r}
+smart_line2 <- 
+  ggplot(firsts200, aes(x = days, y = Volume)) + 
+  geom_line(colour = "blue" ) +
+  geom_point(colour = "blue")
+
+
+smart_line2
+```
 

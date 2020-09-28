@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601301924095.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D6E502F1",
+    "lastKnownWriteTime" : 2380412628632,
+    "last_content_update" : 1601301924095,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "9424C06C",
+        "caption" : "Hitters",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=&cache_key=9424C06C",
+        "displayedObservations" : 322,
+        "environment" : "_rs_no_env",
+        "object" : "",
+        "preview" : 0,
+        "totalObservations" : 322,
+        "variables" : 20
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

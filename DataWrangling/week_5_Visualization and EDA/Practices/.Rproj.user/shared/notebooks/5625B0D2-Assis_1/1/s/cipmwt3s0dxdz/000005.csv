@@ -1,0 +1,4 @@
+"0","smart_line <- "
+"0","  ggplot(firsts200, aes(x = days, y = Volume)) + "
+"0","  geom_line()"
+"0","smart_line"
