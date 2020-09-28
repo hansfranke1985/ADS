@@ -18,20 +18,25 @@ library(ISLR)
 # General Graph Grammar
 
 
-ggplot(data = <DATA>) + 
-  <GEOM_FUNCTION>(
-     mapping = aes(<MAPPINGS>),
-     stat = <STAT>, 
-     position = <POSITION>
-  ) +
-  <COORDINATE_FUNCTION> +
-  <FACET_FUNCTION>
+ggplot(data = <DATA>) +   
+  <GEOM_FUNCTION>(  
+     mapping = aes( < MAPPINGS > ),  
+     stat = < STAT > ,   
+     position = < POSITION >  
+  ) +  
+  < COORDINATE_FUNCTION > +  
+  < FACET_FUNCTION >  
 
 # Question 1:
 ## Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems.
 
 ```{r}
 head(Hitters)
+```
+
+```{r, }
+# histogram of the distribution of salary
+hist(Hitters$Salary, xlab = "Salary in thousands of dollars")
 ```
 
 

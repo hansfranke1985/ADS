@@ -20,9 +20,14 @@ Hans Franke
 General Graph Grammar
 =====================
 
-ggplot(data = <DATA>) + <GEOM_FUNCTION>( mapping = aes(<MAPPINGS>), stat
-= <STAT>, position = <POSITION> ) + <COORDINATE_FUNCTION> +
-<FACET_FUNCTION>
+ggplot(data = <DATA>) +  
+<GEOM_FUNCTION>(  
+mapping = aes( &lt; MAPPINGS &gt; ),  
+stat = &lt; STAT &gt; ,  
+position = &lt; POSITION &gt;  
+) +  
+&lt; COORDINATE\_FUNCTION &gt; +  
+&lt; FACET\_FUNCTION &gt;
 
 Question 1:
 ===========
@@ -53,6 +58,11 @@ Name the aesthetics, geoms, scales, and facets of the above visualisation. Also 
     ## -Andre Dawson      500.0         N
     ## -Andres Galarraga   91.5         N
     ## -Alfredo Griffin   750.0         A
+
+    # histogram of the distribution of salary
+    hist(Hitters$Salary, xlab = "Salary in thousands of dollars")
+
+![](Exercises_1_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 1.  Aesthetic
 2.  Geoms
