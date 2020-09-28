@@ -16,7 +16,9 @@ Importing libraries
 
 ```{r }
 library(tidyverse)
+
 library(ISLR)
+
 ```
 
 
@@ -261,4 +263,68 @@ smart_line2
 
 ## Question 16:
 Use the function which.max() to find out which of the first 200 days has the highest trade volume and use the function max() to find out how large this volume was.
+
+Answer Togheter with question 17!
+
+## Question 17:
+Use geom_label(aes(x = your_x, y = your_y, label = "Peak volume")) to add a label to this day. You can use either the values or call the functions. Place the label near the peak!
+
+
+```{r}
+#define in which day
+whichday <- which.max(firsts200$Volume)
+
+#define which volume
+whichvol <- max(firsts200$Volume)
+
+g1 <- subset(firsts200, firsts200 == whichday) #creating a subset
+
+simple <-
+  ggplot(firsts200, aes(x = days, y = Volume))+
+  geom_point() +
+  geom_text(aes(x = whichday, y = whichvol , label = "Peak" ), colour = "blue" )   # this adds a point
+  #geom_label( aes(x = whichday, y = whichvol , label = "Peak Volume", size=1))
+ 
+  
+
+simple
+```
+
+
+# Faceting
+
+## Question 18:
+
+Create a data frame called baseball based on the Hitters dataset. In this data frame, create a factor variable which splits players’ salary range into 3 categories. Tip: use the filter() function to remove the missing values, and then use the cut() function and assign nice labels to the categories. In addition, create a variable which indicates the proportion of career hits that was a home run.
+```{r}
+
+```
+
+
+## Question 19:
+Create a scatter plot where you map CWalks to the x position and the proportion you calculated in the previous exercise to the y position. Fix the y axis limits to (0, 0.4) and the x axis to (0, 1600) using ylim() and xlim(). Add nice x and y axis titles using the labs() function. Save the plot as the variable baseball_plot.
+
+
+## Question 20:
+Split up this plot into three parts based on the salary range variable you calculated. Use the facet_wrap() function for this; look at the examples in the help file for tips.
+
+
+
+# Final Exercise
+
+Create an interesting data visualisation based on the Carseats data from the ISLR package.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
