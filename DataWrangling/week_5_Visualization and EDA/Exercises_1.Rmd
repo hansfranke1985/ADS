@@ -8,22 +8,37 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Loading libraries
+```{r, echo=TRUE}
 
-- library(ISLR)
-- library(tidyverse)
-```{r load, echo=FALSE}
-library(ISLR)
 library(tidyverse)
+library(ISLR)
 
 ```
 
+# General Graph Grammar
 
-## Question 1
 
-### Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems. 
+ggplot(data = <DATA>) + 
+  <GEOM_FUNCTION>(
+     mapping = aes(<MAPPINGS>),
+     stat = <STAT>, 
+     position = <POSITION>
+  ) +
+  <COORDINATE_FUNCTION> +
+  <FACET_FUNCTION>
 
-?
+# Question 1:
+## Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems.
+
+```{r}
+head(Hitters)
+```
+
+
+1. Aesthetic
+2. Geoms
+3. Scales
+4. Facets
 
 
 

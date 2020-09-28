@@ -2,13 +2,7 @@ Exercises\_1
 ================
 Hans Franke
 
-Loading libraries
------------------
-
--   library(ISLR)
--   library(tidyverse)
-
-<!-- -->
+    library(tidyverse)
 
     ## -- Attaching packages ------------------------------------------------------- tidyverse 1.3.0 --
 
@@ -21,9 +15,46 @@ Loading libraries
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
-Question 1
-----------
+    library(ISLR)
 
-### Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems.
+General Graph Grammar
+=====================
 
-?
+ggplot(data = <DATA>) + <GEOM_FUNCTION>( mapping = aes(<MAPPINGS>), stat
+= <STAT>, position = <POSITION> ) + <COORDINATE_FUNCTION> +
+<FACET_FUNCTION>
+
+Question 1:
+===========
+
+Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+    head(Hitters)
+
+    ##                   AtBat Hits HmRun Runs RBI Walks Years CAtBat CHits CHmRun
+    ## -Andy Allanson      293   66     1   30  29    14     1    293    66      1
+    ## -Alan Ashby         315   81     7   24  38    39    14   3449   835     69
+    ## -Alvin Davis        479  130    18   66  72    76     3   1624   457     63
+    ## -Andre Dawson       496  141    20   65  78    37    11   5628  1575    225
+    ## -Andres Galarraga   321   87    10   39  42    30     2    396   101     12
+    ## -Alfredo Griffin    594  169     4   74  51    35    11   4408  1133     19
+    ##                   CRuns CRBI CWalks League Division PutOuts Assists Errors
+    ## -Andy Allanson       30   29     14      A        E     446      33     20
+    ## -Alan Ashby         321  414    375      N        W     632      43     10
+    ## -Alvin Davis        224  266    263      A        W     880      82     14
+    ## -Andre Dawson       828  838    354      N        E     200      11      3
+    ## -Andres Galarraga    48   46     33      N        E     805      40      4
+    ## -Alfredo Griffin    501  336    194      A        W     282     421     25
+    ##                   Salary NewLeague
+    ## -Andy Allanson        NA         A
+    ## -Alan Ashby        475.0         N
+    ## -Alvin Davis       480.0         A
+    ## -Andre Dawson      500.0         N
+    ## -Andres Galarraga   91.5         N
+    ## -Alfredo Griffin   750.0         A
+
+1.  Aesthetic
+2.  Geoms
+3.  Scales
+4.  Facets
