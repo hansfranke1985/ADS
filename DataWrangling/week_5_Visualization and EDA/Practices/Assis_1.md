@@ -314,419 +314,11 @@ firsts200 <- select(Smarket[1:200,],
                     Volume
 
 )
-firsts200
-```
 
-    ##      Volume
-    ## 1   1.19130
-    ## 2   1.29650
-    ## 3   1.41120
-    ## 4   1.27600
-    ## 5   1.20570
-    ## 6   1.34910
-    ## 7   1.44500
-    ## 8   1.40780
-    ## 9   1.16400
-    ## 10  1.23260
-    ## 11  1.30900
-    ## 12  1.25800
-    ## 13  1.09800
-    ## 14  1.05310
-    ## 15  1.14980
-    ## 16  1.29530
-    ## 17  1.11880
-    ## 18  1.04840
-    ## 19  1.01300
-    ## 20  1.05960
-    ## 21  1.15830
-    ## 22  1.10720
-    ## 23  1.07550
-    ## 24  1.03910
-    ## 25  1.07520
-    ## 26  1.15030
-    ## 27  1.15370
-    ## 28  1.25720
-    ## 29  1.11220
-    ## 30  1.20850
-    ## 31  1.36590
-    ## 32  1.23130
-    ## 33  1.13080
-    ## 34  1.11410
-    ## 35  1.22530
-    ## 36  1.29490
-    ## 37  1.29400
-    ## 38  0.92920
-    ## 39  1.09180
-    ## 40  1.13220
-    ## 41  1.11410
-    ## 42  1.08590
-    ## 43  1.22900
-    ## 44  1.36090
-    ## 45  1.39740
-    ## 46  1.25950
-    ## 47  1.54356
-    ## 48  1.12620
-    ## 49  1.23590
-    ## 50  1.34630
-    ## 51  1.72395
-    ## 52  1.36490
-    ## 53  1.11400
-    ## 54  1.31420
-    ## 55  1.33340
-    ## 56  1.23450
-    ## 57  1.28080
-    ## 58  1.25490
-    ## 59  1.38610
-    ## 60  1.42559
-    ## 61  1.36800
-    ## 62  1.26680
-    ## 63  1.06280
-    ## 64  1.34960
-    ## 65  1.29030
-    ## 66  1.10200
-    ## 67  0.91390
-    ## 68  1.10960
-    ## 69  1.91890
-    ## 70  1.48680
-    ## 71  1.33870
-    ## 72  1.01260
-    ## 73  1.21650
-    ## 74  1.20360
-    ## 75  1.34520
-    ## 76  1.09130
-    ## 77  1.26680
-    ## 78  1.18130
-    ## 79  1.34220
-    ## 80  1.13790
-    ## 81  1.08210
-    ## 82  0.94900
-    ## 83  1.00630
-    ## 84  1.13240
-    ## 85  1.05670
-    ## 86  0.90620
-    ## 87  0.85820
-    ## 88  1.07180
-    ## 89  1.40530
-    ## 90  1.35560
-    ## 91  1.13080
-    ## 92  1.17490
-    ## 93  1.26040
-    ## 94  1.13480
-    ## 95  1.10070
-    ## 96  0.82810
-    ## 97  1.02600
-    ## 98  1.15860
-    ## 99  1.22660
-    ## 100 1.01500
-    ## 101 0.83650
-    ## 102 1.11680
-    ## 103 1.06190
-    ## 104 1.08960
-    ## 105 0.72620
-    ## 106 0.87010
-    ## 107 1.13650
-    ## 108 1.06360
-    ## 109 1.24290
-    ## 110 1.63555
-    ## 111 1.11160
-    ## 112 1.18490
-    ## 113 1.35010
-    ## 114 1.54682
-    ## 115 1.18920
-    ## 116 1.05010
-    ## 117 1.19890
-    ## 118 1.16210
-    ## 119 1.32730
-    ## 120 1.83236
-    ## 121 1.12830
-    ## 122 0.62211
-    ## 123 0.93490
-    ## 124 1.05670
-    ## 125 1.04570
-    ## 126 1.26380
-    ## 127 1.38410
-    ## 128 1.39400
-    ## 129 1.12170
-    ## 130 1.03980
-    ## 131 1.23810
-    ## 132 1.31630
-    ## 133 1.34350
-    ## 134 1.17090
-    ## 135 0.98690
-    ## 136 1.19870
-    ## 137 1.28070
-    ## 138 1.21390
-    ## 139 1.01530
-    ## 140 0.90910
-    ## 141 1.12920
-    ## 142 1.34030
-    ## 143 1.21830
-    ## 144 0.93990
-    ## 145 0.81170
-    ## 146 1.01200
-    ## 147 1.12460
-    ## 148 1.10420
-    ## 149 0.96090
-    ## 150 0.83760
-    ## 151 0.96460
-    ## 152 1.06560
-    ## 153 1.05540
-    ## 154 0.97430
-    ## 155 0.89710
-    ## 156 1.04160
-    ## 157 1.11080
-    ## 158 0.98620
-    ## 159 1.04360
-    ## 160 0.84260
-    ## 161 0.98710
-    ## 162 0.96370
-    ## 163 1.15700
-    ## 164 0.92010
-    ## 165 1.17830
-    ## 166 1.38450
-    ## 167 1.35970
-    ## 168 1.42430
-    ## 169 1.27660
-    ## 170 2.33083
-    ## 171 1.65041
-    ## 172 2.12055
-    ## 173 2.00480
-    ## 174 2.31730
-    ## 175 1.74660
-    ## 176 1.61380
-    ## 177 1.51910
-    ## 178 1.46700
-    ## 179 1.63150
-    ## 180 1.17560
-    ## 181 1.28980
-    ## 182 1.65060
-    ## 183 1.60910
-    ## 184 1.30170
-    ## 185 0.97900
-    ## 186 1.22780
-    ## 187 1.31240
-    ## 188 1.70458
-    ## 189 1.33140
-    ## 190 1.02470
-    ## 191 1.21050
-    ## 192 1.45220
-    ## 193 1.26290
-    ## 194 1.29490
-    ## 195 1.10570
-    ## 196 1.31730
-    ## 197 1.33620
-    ## 198 1.36440
-    ## 199 1.24450
-    ## 200 1.10610
 
-``` r
 #Creating the x-positions (Days)
 firsts200 <- mutate ( firsts200, days = 1:200 )
-
-firsts200
 ```
-
-    ##      Volume days
-    ## 1   1.19130    1
-    ## 2   1.29650    2
-    ## 3   1.41120    3
-    ## 4   1.27600    4
-    ## 5   1.20570    5
-    ## 6   1.34910    6
-    ## 7   1.44500    7
-    ## 8   1.40780    8
-    ## 9   1.16400    9
-    ## 10  1.23260   10
-    ## 11  1.30900   11
-    ## 12  1.25800   12
-    ## 13  1.09800   13
-    ## 14  1.05310   14
-    ## 15  1.14980   15
-    ## 16  1.29530   16
-    ## 17  1.11880   17
-    ## 18  1.04840   18
-    ## 19  1.01300   19
-    ## 20  1.05960   20
-    ## 21  1.15830   21
-    ## 22  1.10720   22
-    ## 23  1.07550   23
-    ## 24  1.03910   24
-    ## 25  1.07520   25
-    ## 26  1.15030   26
-    ## 27  1.15370   27
-    ## 28  1.25720   28
-    ## 29  1.11220   29
-    ## 30  1.20850   30
-    ## 31  1.36590   31
-    ## 32  1.23130   32
-    ## 33  1.13080   33
-    ## 34  1.11410   34
-    ## 35  1.22530   35
-    ## 36  1.29490   36
-    ## 37  1.29400   37
-    ## 38  0.92920   38
-    ## 39  1.09180   39
-    ## 40  1.13220   40
-    ## 41  1.11410   41
-    ## 42  1.08590   42
-    ## 43  1.22900   43
-    ## 44  1.36090   44
-    ## 45  1.39740   45
-    ## 46  1.25950   46
-    ## 47  1.54356   47
-    ## 48  1.12620   48
-    ## 49  1.23590   49
-    ## 50  1.34630   50
-    ## 51  1.72395   51
-    ## 52  1.36490   52
-    ## 53  1.11400   53
-    ## 54  1.31420   54
-    ## 55  1.33340   55
-    ## 56  1.23450   56
-    ## 57  1.28080   57
-    ## 58  1.25490   58
-    ## 59  1.38610   59
-    ## 60  1.42559   60
-    ## 61  1.36800   61
-    ## 62  1.26680   62
-    ## 63  1.06280   63
-    ## 64  1.34960   64
-    ## 65  1.29030   65
-    ## 66  1.10200   66
-    ## 67  0.91390   67
-    ## 68  1.10960   68
-    ## 69  1.91890   69
-    ## 70  1.48680   70
-    ## 71  1.33870   71
-    ## 72  1.01260   72
-    ## 73  1.21650   73
-    ## 74  1.20360   74
-    ## 75  1.34520   75
-    ## 76  1.09130   76
-    ## 77  1.26680   77
-    ## 78  1.18130   78
-    ## 79  1.34220   79
-    ## 80  1.13790   80
-    ## 81  1.08210   81
-    ## 82  0.94900   82
-    ## 83  1.00630   83
-    ## 84  1.13240   84
-    ## 85  1.05670   85
-    ## 86  0.90620   86
-    ## 87  0.85820   87
-    ## 88  1.07180   88
-    ## 89  1.40530   89
-    ## 90  1.35560   90
-    ## 91  1.13080   91
-    ## 92  1.17490   92
-    ## 93  1.26040   93
-    ## 94  1.13480   94
-    ## 95  1.10070   95
-    ## 96  0.82810   96
-    ## 97  1.02600   97
-    ## 98  1.15860   98
-    ## 99  1.22660   99
-    ## 100 1.01500  100
-    ## 101 0.83650  101
-    ## 102 1.11680  102
-    ## 103 1.06190  103
-    ## 104 1.08960  104
-    ## 105 0.72620  105
-    ## 106 0.87010  106
-    ## 107 1.13650  107
-    ## 108 1.06360  108
-    ## 109 1.24290  109
-    ## 110 1.63555  110
-    ## 111 1.11160  111
-    ## 112 1.18490  112
-    ## 113 1.35010  113
-    ## 114 1.54682  114
-    ## 115 1.18920  115
-    ## 116 1.05010  116
-    ## 117 1.19890  117
-    ## 118 1.16210  118
-    ## 119 1.32730  119
-    ## 120 1.83236  120
-    ## 121 1.12830  121
-    ## 122 0.62211  122
-    ## 123 0.93490  123
-    ## 124 1.05670  124
-    ## 125 1.04570  125
-    ## 126 1.26380  126
-    ## 127 1.38410  127
-    ## 128 1.39400  128
-    ## 129 1.12170  129
-    ## 130 1.03980  130
-    ## 131 1.23810  131
-    ## 132 1.31630  132
-    ## 133 1.34350  133
-    ## 134 1.17090  134
-    ## 135 0.98690  135
-    ## 136 1.19870  136
-    ## 137 1.28070  137
-    ## 138 1.21390  138
-    ## 139 1.01530  139
-    ## 140 0.90910  140
-    ## 141 1.12920  141
-    ## 142 1.34030  142
-    ## 143 1.21830  143
-    ## 144 0.93990  144
-    ## 145 0.81170  145
-    ## 146 1.01200  146
-    ## 147 1.12460  147
-    ## 148 1.10420  148
-    ## 149 0.96090  149
-    ## 150 0.83760  150
-    ## 151 0.96460  151
-    ## 152 1.06560  152
-    ## 153 1.05540  153
-    ## 154 0.97430  154
-    ## 155 0.89710  155
-    ## 156 1.04160  156
-    ## 157 1.11080  157
-    ## 158 0.98620  158
-    ## 159 1.04360  159
-    ## 160 0.84260  160
-    ## 161 0.98710  161
-    ## 162 0.96370  162
-    ## 163 1.15700  163
-    ## 164 0.92010  164
-    ## 165 1.17830  165
-    ## 166 1.38450  166
-    ## 167 1.35970  167
-    ## 168 1.42430  168
-    ## 169 1.27660  169
-    ## 170 2.33083  170
-    ## 171 1.65041  171
-    ## 172 2.12055  172
-    ## 173 2.00480  173
-    ## 174 2.31730  174
-    ## 175 1.74660  175
-    ## 176 1.61380  176
-    ## 177 1.51910  177
-    ## 178 1.46700  178
-    ## 179 1.63150  179
-    ## 180 1.17560  180
-    ## 181 1.28980  181
-    ## 182 1.65060  182
-    ## 183 1.60910  183
-    ## 184 1.30170  184
-    ## 185 0.97900  185
-    ## 186 1.22780  186
-    ## 187 1.31240  187
-    ## 188 1.70458  188
-    ## 189 1.33140  189
-    ## 190 1.02470  190
-    ## 191 1.21050  191
-    ## 192 1.45220  192
-    ## 193 1.26290  193
-    ## 194 1.29490  194
-    ## 195 1.10570  195
-    ## 196 1.31730  196
-    ## 197 1.33620  197
-    ## 198 1.36440  198
-    ## 199 1.24450  199
-    ## 200 1.10610  200
 
 ``` r
 #Finally Plotting
@@ -761,3 +353,156 @@ smart_line2
 Use the function which.max() to find out which of the first 200 days has
 the highest trade volume and use the function max() to find out how
 large this volume was.
+
+Answer Togheter with question 17\!
+
+## Question 17:
+
+Use geom\_label(aes(x = your\_x, y = your\_y, label = “Peak volume”)) to
+add a label to this day. You can use either the values or call the
+functions. Place the label near the peak\!
+
+``` r
+#define in which day
+whichday <- which.max(firsts200$Volume)
+
+#define which volume
+whichvol <- max(firsts200$Volume)
+
+g1 <- subset(firsts200, firsts200 == whichday) #creating a subset
+
+simple <-
+  ggplot(firsts200, aes(x = days, y = Volume))+
+  geom_point() +
+  geom_text(aes(x = whichday, y = whichvol , label = "Peak" ), colour = "blue" )   # this adds a point
+  #geom_label( aes(x = whichday, y = whichvol , label = "Peak Volume", size=1))
+ 
+  
+
+simple
+```
+
+![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->
+
+# Faceting
+
+## Question 18:
+
+Create a data frame called baseball based on the Hitters dataset. In
+this data frame, create a factor variable which splits players’ salary
+range into 3 categories. Tip: use the filter() function to remove the
+missing values, and then use the cut() function and assign nice labels
+to the categories. In addition, create a variable which indicates the
+proportion of career hits that was a home run.
+
+``` r
+  baseball <- Hitters 
+
+  baseball <- filter(baseball, !is.na(Salary)) #remove missing values
+  
+  baseball <- mutate(baseball, Salary_Range = cut(baseball$Salary, 3, labels = c("low","med","high"))) # Adding new Colum = "Salary_Range"
+  
+  baseball <-mutate(baseball, HmRun_Prop = HmRun / Hits) # Adding new Colum = HmRun_Prop = Home Runs / Total Hits
+  
+  baseballFilter <- select(baseball, Salary, Salary_Range, Hits, HmRun, HmRun_Prop)
+  
+  head(baseballFilter)
+```
+
+    ##   Salary Salary_Range Hits HmRun HmRun_Prop
+    ## 1  475.0          low   81     7 0.08641975
+    ## 2  480.0          low  130    18 0.13846154
+    ## 3  500.0          low  141    20 0.14184397
+    ## 4   91.5          low   87    10 0.11494253
+    ## 5  750.0          low  169     4 0.02366864
+    ## 6   70.0          low   37     1 0.02702703
+
+## Question 19:
+
+Create a scatter plot where you map CWalks to the x position and the
+proportion you calculated in the previous exercise to the y position.
+Fix the y axis limits to (0, 0.4) and the x axis to (0, 1600) using
+ylim() and xlim(). Add nice x and y axis titles using the labs()
+function. Save the plot as the variable baseball\_plot.
+
+``` r
+  baseball_plot <- 
+    ggplot(baseball, aes(x = CWalks, y = HmRun_Prop)) +
+    geom_point(color = "blue") +
+    xlim(0,1600) +
+    ylim(0,0.4)+
+    labs(y = "Home Run`s Proportion", title = "Home Run`s x CWalks")
+  
+
+  baseball_plot
+```
+
+![](README_figs/README-unnamed-chunk-22-1.png)<!-- -->
+
+## Question 20:
+
+Split up this plot into three parts based on the salary range variable
+you calculated. Use the facet\_wrap() function for this; look at the
+examples in the help file for tips.
+
+``` r
+  baseball_plot2 <- 
+    ggplot(baseball, aes(x = CWalks, y = HmRun_Prop)) +
+    geom_point(color = "blue") +
+    xlim(0,1600) +
+    ylim(0,0.4)+
+    labs(y = "Home Run`s Proportion", title = "Home Run`s x CWalks") + 
+    facet_wrap(vars(Salary_Range))
+
+  
+
+  baseball_plot2
+```
+
+![](README_figs/README-unnamed-chunk-23-1.png)<!-- -->
+
+# Final Exercise
+
+Create an interesting data visualisation based on the Carseats data from
+the ISLR package.
+
+``` r
+  #?Carseats
+  #head(Carseats)
+  
+  #Looking for correlation (Who impacts more the Sales?)
+  
+  Sales_Corr <-
+    ggplot(Carseats, aes(x = Population, y = Sales, color = Urban)) + 
+    geom_smooth(method = "lm") +
+    geom_point()  +
+    facet_grid( ~ Urban) + 
+    facet_grid(~ ShelveLoc) + 
+    labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
+    ggtitle('Impact on SALES by POPULATION, considering URBAN and SHELVES ')
+    
+  
+  Sales_Corr
+```
+
+    ## `geom_smooth()` using formula 'y ~ x'
+
+![](README_figs/README-unnamed-chunk-24-1.png)<!-- -->
+
+``` r
+  Sales_Corr <-
+    ggplot(Carseats, aes(x = Advertising, y = Sales, color = ShelveLoc)) + 
+    geom_smooth(method = "lm") +
+    geom_point()  +
+#    facet_grid( ~ Urban) + 
+    facet_grid(~ ShelveLoc) + 
+    labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
+    ggtitle('Impact on SALES by Advertising, considering SHELVEs')
+    
+  
+  Sales_Corr
+```
+
+    ## `geom_smooth()` using formula 'y ~ x'
+
+![](README_figs/README-unnamed-chunk-25-1.png)<!-- -->
