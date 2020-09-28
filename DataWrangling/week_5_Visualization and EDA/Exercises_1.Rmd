@@ -1,0 +1,29 @@
+---
+title: "Exercises_1"
+author: "Hans Franke"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading libraries
+
+- library(ISLR)
+- library(tidyverse)
+```{r load, echo=FALSE}
+library(ISLR)
+library(tidyverse)
+
+```
+
+
+## Question 1
+
+### Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems. 
+
+?
+
+
+
