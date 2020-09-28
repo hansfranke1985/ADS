@@ -10,3 +10,9 @@ library(tidyverse)
 #  ) +
 #  <COORDINATE_FUNCTION> +
 #  <FACET_FUNCTION>
+
+library(ISLR)
+
+head(Hitters)
+
+plot(Hitters$Years)

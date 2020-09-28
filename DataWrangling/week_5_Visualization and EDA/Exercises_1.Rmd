@@ -45,5 +45,31 @@ hist(Hitters$Salary, xlab = "Salary in thousands of dollars")
 3. Scales
 4. Facets
 
+```{r}
+# barplot of how many members in each league
+barplot(table(Hitters$League))
+```
+
+1. Aesthetic
+2. Geoms
+3. Scales
+4. Facets
+
+```{r}
+homeruns_plot <- 
+  ggplot(Hitters, aes(x = Hits, y = HmRun)) +
+  geom_point() +
+  labs(x = "Hits", y = "Home runs")
+
+homeruns_plot
+```
+
+
+```{r}
+homeruns_plot + 
+  geom_density_2d() +
+  labs(title = "Cool density and scatter plot of baseball data") +
+  theme_minimal()
+```
 
 

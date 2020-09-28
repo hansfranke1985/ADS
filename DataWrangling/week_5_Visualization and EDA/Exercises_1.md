@@ -68,3 +68,33 @@ Name the aesthetics, geoms, scales, and facets of the above visualisation. Also 
 2.  Geoms
 3.  Scales
 4.  Facets
+
+<!-- -->
+
+    # barplot of how many members in each league
+    barplot(table(Hitters$League))
+
+![](Exercises_1_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+1.  Aesthetic
+2.  Geoms
+3.  Scales
+4.  Facets
+
+<!-- -->
+
+    homeruns_plot <- 
+      ggplot(Hitters, aes(x = Hits, y = HmRun)) +
+      geom_point() +
+      labs(x = "Hits", y = "Home runs")
+
+    homeruns_plot
+
+![](Exercises_1_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+    homeruns_plot + 
+      geom_density_2d() +
+      labs(title = "Cool density and scatter plot of baseball data") +
+      theme_minimal()
+
+![](Exercises_1_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
