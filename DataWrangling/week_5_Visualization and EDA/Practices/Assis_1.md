@@ -28,7 +28,11 @@ library(ISLR)
 
 ## Question 2:
 
-### Run the code below to generate data. There will be three vectors in your environment. Put them in a data frame for entering it in a ggplot() call using either the data.frame() or the tibble() function. Give informative names and make sure the types are correct (use the as.<type>() functions). Name the result gg\_students
+Run the code below to generate data. There will be three vectors in your
+environment. Put them in a data frame for entering it in a ggplot() call
+using either the data.frame() or the tibble() function. Give informative
+names and make sure the types are correct (use the as.<type>()
+functions). Name the result gg\_students
 
 ``` r
 set.seed(1234)
@@ -65,7 +69,8 @@ head(gg_students)
 
 ## Question 2
 
-### Plot the first homeruns\_plot again, but map the Hits to the y-axis and the HmRun to the x-axis instead.
+Plot the first homeruns\_plot again, but map the Hits to the y-axis and
+the HmRun to the x-axis instead.
 
 ``` r
 homeruns_plot <- 
@@ -80,7 +85,8 @@ homeruns_plot
 
 ## Question 4:
 
-### Recreate the same plot once more, but now also map the variable League to the colour aesthetic and the variable Salary to the size aesthetic.
+Recreate the same plot once more, but now also map the variable League
+to the colour aesthetic and the variable Salary to the size aesthetic.
 
 ``` r
 homeruns_plot2 <- 
@@ -97,13 +103,14 @@ homeruns_plot2
 
 ## question 5:
 
-### Look at the many different geoms on the reference website.
-
+Look at the many different geoms on the reference website.
 <https://ggplot2.tidyverse.org/reference/#section-layer-geoms>
 
 ## Question 6:
 
-### Use geom\_histogram() to create a histogram of the grades of the students in the gg\_students dataset. Play around with the binwidth argument of the geom\_histogram() function.
+Use geom\_histogram() to create a histogram of the grades of the
+students in the gg\_students dataset. Play around with the binwidth
+argument of the geom\_histogram() function.
 
 ``` r
  gg_students_plot <- 
@@ -134,7 +141,9 @@ gg_students_plot
 
 ## Question 7
 
-### Use geom\_density() to create a density plot of the grades of the students in the gg\_students dataset. Add the argument fill = “light seagreen” to geom\_density()
+Use geom\_density() to create a density plot of the grades of the
+students in the gg\_students dataset. Add the argument fill = “light
+seagreen” to geom\_density()
 
 ``` r
 gg_students_plot_3 <- 
@@ -151,7 +160,9 @@ gg_students_plot_3
 
 ## Question 8:
 
-### Add rug marks to the density plot through geom\_rug(). You can edit the colour and size of the rug marks using those arguments within the geom\_rug() function.
+Add rug marks to the density plot through geom\_rug(). You can edit the
+colour and size of the rug marks using those arguments within the
+geom\_rug() function.
 
 ``` r
 gg_students_plot_3 <- 
@@ -479,7 +490,7 @@ the ISLR package.
     facet_grid( ~ Urban) + 
     facet_grid(~ ShelveLoc) + 
     labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
-    ggtitle('Impact on SALES by POPULATION, considering URBAN and SHELVES ')
+    ggtitle('Impact on SALES by POPULATION, considering URBAN and SHELVES location')
     
   
   Sales_Corr
@@ -497,7 +508,7 @@ the ISLR package.
 #    facet_grid( ~ Urban) + 
     facet_grid(~ ShelveLoc) + 
     labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
-    ggtitle('Impact on SALES by Advertising, considering SHELVEs')
+    ggtitle('Impact on SALES by ADVERTISING, considering SHELVES location')
     
   
   Sales_Corr
