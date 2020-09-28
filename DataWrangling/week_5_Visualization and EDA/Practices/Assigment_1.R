@@ -10,11 +10,9 @@ View(Hitters)
 homeruns_plot <- 
   ggplot(Hitters, aes(x = Hits, y = HmRun)) +
   geom_point() +
-  labs(x = "Hits", y = "Home runs", title = "Simple Example")
+  labs(x = "Hits", y = "Home runs")
 
-homeruns_plot
-
-homeruns_plot + 
+homeruns_plot <- homeruns_plot + 
   geom_density_2d() +
   labs(title = "Cool density and scatter plot of baseball data") +
   theme_minimal()

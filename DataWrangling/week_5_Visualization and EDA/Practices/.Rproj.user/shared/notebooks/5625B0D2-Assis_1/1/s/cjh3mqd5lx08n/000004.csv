@@ -1,0 +1,9 @@
+"0","gg_students <- tribble( 
+                        student_grade = student_grade, 
+                        student_number = student_number, 
+                        programme = programme
+                        )
+"
+"2","Error: Must specify at least one column using the `~name` syntax.
+[90mRun `rlang::last_error()` to see where the error occurred.[39m
+"

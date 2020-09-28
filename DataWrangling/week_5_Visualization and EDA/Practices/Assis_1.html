@@ -383,19 +383,52 @@ summary {
 </div>
 
 
-<p>Import libraries</p>
+<p>Importing libraries</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## -- Attaching packages ------------------------------------------------------------------------ tidyverse 1.3.0 --</code></pre>
 <pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
 ## v tibble  3.0.3     v dplyr   1.0.2
 ## v tidyr   1.1.2     v stringr 1.4.0
 ## v readr   1.3.1     v forcats 0.5.0</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------------------------------------------ tidyverse_conflicts() --
+<pre><code>## -- Conflicts --------------------------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(ISLR)</code></pre>
 <div id="question-1" class="section level2">
 <h2>Question 1</h2>
+</div>
+<div id="question-2" class="section level2">
+<h2>Question 2:</h2>
+<div id="run-the-code-below-to-generate-data.-there-will-be-three-vectors-in-your-environment.-put-them-in-a-data-frame-for-entering-it-in-a-ggplot-call-using-either-the-data.frame-or-the-tibble-function.-give-informative-names-and-make-sure-the-types-are-correct-use-the-as.-functions.-name-the-result-gg_students" class="section level3">
+<h3>Run the code below to generate data. There will be three vectors in your environment. Put them in a data frame for entering it in a ggplot() call using either the data.frame() or the tibble() function. Give informative names and make sure the types are correct (use the as.<type>() functions). Name the result gg_students</h3>
+<pre class="r"><code>set.seed(1234)
+student_grade  &lt;- rnorm(32, 7)
+student_number &lt;- round(runif(32) * 2e6 + 5e6)
+programme      &lt;- sample(c(&quot;Science&quot;, &quot;Social Science&quot;), 32, replace = TRUE)</code></pre>
+<p>Converting to DataFrame:</p>
+<pre class="r"><code>gg_students &lt;- tibble( 
+                        student_grade = student_grade, 
+                        student_number = student_number, 
+                        programme = programme
+                        )</code></pre>
+<p>Print Head of DF:</p>
+<pre class="r"><code>head(gg_students)</code></pre>
+<pre><code>## # A tibble: 6 x 3
+##   student_grade student_number programme     
+##           &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;         
+## 1          5.79        5478051 Social Science
+## 2          7.28        6412989 Science       
+## 3          8.08        5616190 Social Science
+## 4          4.65        6017095 Social Science
+## 5          7.43        5103293 Social Science
+## 6          7.51        6129140 Science</code></pre>
+</div>
+</div>
+<div id="question-2-1" class="section level2">
+<h2>Question 2</h2>
+<div id="plot-the-first-homeruns_plot-again-but-map-the-hits-to-the-y-axis-and-the-hmrun-to-the-x-axis-instead." class="section level3">
+<h3>Plot the first homeruns_plot again, but map the Hits to the y-axis and the HmRun to the x-axis instead.</h3>
+</div>
 </div>
 
 
