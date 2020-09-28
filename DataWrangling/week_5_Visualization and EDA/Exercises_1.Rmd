@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 library(ISLR)
+Hitters = Hitters
 
 ```
 
@@ -34,7 +35,7 @@ ggplot(data = <DATA>) +
 head(Hitters)
 ```
 
-```{r, }
+```{r }
 # histogram of the distribution of salary
 hist(Hitters$Salary, xlab = "Salary in thousands of dollars")
 ```
@@ -51,8 +52,13 @@ barplot(table(Hitters$League))
 ```
 
 1. Aesthetic
+X=variable Salary, Y=count
+
 2. Geoms
+Histogram = bar_plot
+
 3. Scales
+
 4. Facets
 
 ```{r}
@@ -72,4 +78,6 @@ homeruns_plot +
   theme_minimal()
 ```
 
+# Question 1:
+## Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems.
 

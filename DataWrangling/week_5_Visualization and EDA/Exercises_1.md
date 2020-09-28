@@ -16,6 +16,7 @@ Hans Franke
     ## x dplyr::lag()    masks stats::lag()
 
     library(ISLR)
+    Hitters = Hitters
 
 General Graph Grammar
 =====================
@@ -76,9 +77,12 @@ Name the aesthetics, geoms, scales, and facets of the above visualisation. Also 
 
 ![](Exercises_1_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-1.  Aesthetic
-2.  Geoms
+1.  Aesthetic X=variable Salary, Y=count
+
+2.  Geoms Histogram = bar\_plot
+
 3.  Scales
+
 4.  Facets
 
 <!-- -->
@@ -98,3 +102,9 @@ Name the aesthetics, geoms, scales, and facets of the above visualisation. Also 
       theme_minimal()
 
 ![](Exercises_1_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+Question 1:
+===========
+
+Name the aesthetics, geoms, scales, and facets of the above visualisation. Also name any statistical transformations or special coordinate systems.
+---------------------------------------------------------------------------------------------------------------------------------------------------
