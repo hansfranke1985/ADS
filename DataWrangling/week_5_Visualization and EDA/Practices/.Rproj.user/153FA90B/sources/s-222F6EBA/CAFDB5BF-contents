@@ -365,7 +365,7 @@ Create an interesting data visualisation based on the Carseats data from the ISL
     facet_grid( ~ Urban) + 
     facet_grid(~ ShelveLoc) + 
     labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
-    ggtitle('Impact on SALES by POPULATION, considering URBAN and SHELVES ')
+    ggtitle('Impact on SALES by POPULATION, considering URBAN and SHELVES location')
     
   
   Sales_Corr
@@ -381,7 +381,7 @@ Create an interesting data visualisation based on the Carseats data from the ISL
 #    facet_grid( ~ Urban) + 
     facet_grid(~ ShelveLoc) + 
     labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
-    ggtitle('Impact on SALES by Advertising, considering SHELVEs')
+    ggtitle('Impact on SALES by ADVERTISING, considering SHELVES location')
     
   
   Sales_Corr
