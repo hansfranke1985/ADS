@@ -296,17 +296,54 @@ simple
 ## Question 18:
 
 Create a data frame called baseball based on the Hitters dataset. In this data frame, create a factor variable which splits players’ salary range into 3 categories. Tip: use the filter() function to remove the missing values, and then use the cut() function and assign nice labels to the categories. In addition, create a variable which indicates the proportion of career hits that was a home run.
-```{r}
 
+```{r}
+  baseball <- Hitters 
+
+  baseball <- filter(baseball, !is.na(Salary)) #remove missing values
+  
+  baseball <- mutate(baseball, Salary_Range = cut(baseball$Salary, 3)) # Adding new Colum = "Salary_Range"
+  
+  baseball <-mutate(baseball, HmRun_Prop = HmRun / Hits) # Adding new Colum = HmRun_Prop = Home Runs / Total Hits
+  
+  baseballFilter <- select(baseball, Salary, Salary_Range, Hits, HmRun, HmRun_Prop)
+  
+  head(baseballFilter)
 ```
 
 
 ## Question 19:
 Create a scatter plot where you map CWalks to the x position and the proportion you calculated in the previous exercise to the y position. Fix the y axis limits to (0, 0.4) and the x axis to (0, 1600) using ylim() and xlim(). Add nice x and y axis titles using the labs() function. Save the plot as the variable baseball_plot.
 
+```{r}
+  baseball_plot <- 
+    ggplot(baseball, aes(x = CWalks, y = HmRun_Prop)) +
+    geom_point(color = "blue") +
+    xlim(0,1600) +
+    ylim(0,0.4)+
+    labs(y = "Home Run`s Proportion", title = "Home Run`s x CWalks")
+  
+
+  baseball_plot
+```
+
 
 ## Question 20:
 Split up this plot into three parts based on the salary range variable you calculated. Use the facet_wrap() function for this; look at the examples in the help file for tips.
+
+```{r}
+  baseball_plot2 <- 
+    ggplot(baseball, aes(x = CWalks, y = HmRun_Prop)) +
+    geom_point(color = "blue") +
+    xlim(0,1600) +
+    ylim(0,0.4)+
+    labs(y = "Home Run`s Proportion", title = "Home Run`s x CWalks") + 
+    facet_wrap(vars(Salary_Range))
+
+  
+
+  baseball_plot2
+```
 
 
 

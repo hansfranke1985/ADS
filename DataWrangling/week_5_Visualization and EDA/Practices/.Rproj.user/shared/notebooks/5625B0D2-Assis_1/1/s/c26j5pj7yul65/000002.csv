@@ -1,5 +1,4 @@
-"0","library(tidyverse)
-"
+"0","library(tidyverse)"
 "2","Registered S3 methods overwritten by 'dbplyr':
   method         from
   print.tbl_lazy     
@@ -16,3 +15,4 @@
 [31mx[37m [34mdplyr[37m::[32mfilter()[37m masks [34mstats[37m::filter()
 [31mx[37m [34mdplyr[37m::[32mlag()[37m    masks [34mstats[37m::lag()[39m
 "
+"0","library(ISLR)"
