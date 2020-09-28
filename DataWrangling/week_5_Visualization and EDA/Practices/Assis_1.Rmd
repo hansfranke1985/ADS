@@ -231,12 +231,12 @@ firsts200 <- select(Smarket[1:200,],
                     Volume
 
 )
-firsts200
+
 
 #Creating the x-positions (Days)
 firsts200 <- mutate ( firsts200, days = 1:200 )
 
-firsts200
+
 ```
 
 ```{r}
@@ -302,7 +302,7 @@ Create a data frame called baseball based on the Hitters dataset. In this data f
 
   baseball <- filter(baseball, !is.na(Salary)) #remove missing values
   
-  baseball <- mutate(baseball, Salary_Range = cut(baseball$Salary, 3)) # Adding new Colum = "Salary_Range"
+  baseball <- mutate(baseball, Salary_Range = cut(baseball$Salary, 3, labels = c("low","med","high"))) # Adding new Colum = "Salary_Range"
   
   baseball <-mutate(baseball, HmRun_Prop = HmRun / Hits) # Adding new Colum = HmRun_Prop = Home Runs / Total Hits
   
@@ -352,7 +352,40 @@ Split up this plot into three parts based on the salary range variable you calcu
 Create an interesting data visualisation based on the Carseats data from the ISLR package.
 
 
+```{r}
+  #?Carseats
+  #head(Carseats)
+  
+  #Looking for correlation (Who impacts more the Sales?)
+  
+  Sales_Corr <-
+    ggplot(Carseats, aes(x = Population, y = Sales, color = Urban)) + 
+    geom_smooth(method = "lm") +
+    geom_point()  +
+    facet_grid( ~ Urban) + 
+    facet_grid(~ ShelveLoc) + 
+    labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
+    ggtitle('Impact on SALES by POPULATION, considering URBAN and SHELVES ')
+    
+  
+  Sales_Corr
+```
 
+
+
+```{r}
+  Sales_Corr <-
+    ggplot(Carseats, aes(x = Advertising, y = Sales, color = ShelveLoc)) + 
+    geom_smooth(method = "lm") +
+    geom_point()  +
+#    facet_grid( ~ Urban) + 
+    facet_grid(~ ShelveLoc) + 
+    labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
+    ggtitle('Impact on SALES by Advertising, considering SHELVEs')
+    
+  
+  Sales_Corr
+```
 
 
 

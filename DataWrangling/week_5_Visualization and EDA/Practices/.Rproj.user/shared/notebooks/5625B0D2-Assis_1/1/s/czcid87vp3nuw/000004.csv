@@ -1,0 +1,6 @@
+"0","# Select only first 200 apperances:"
+"0","firsts200 <- select(Smarket[1:200,],"
+"0","                    Volume"
+"0",")"
+"0","#Creating the x-positions (Days)"
+"0","firsts200 <- mutate ( firsts200, days = 1:200 )"
