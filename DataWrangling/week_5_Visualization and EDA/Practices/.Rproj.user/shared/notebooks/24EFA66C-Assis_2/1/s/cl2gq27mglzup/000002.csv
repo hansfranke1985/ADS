@@ -1,0 +1,4 @@
+"0","    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+"
+"0","    geom_point(alpha = 0.3) + "
+"0","    geom_smooth() +"
+"0","    theme_minimal()"

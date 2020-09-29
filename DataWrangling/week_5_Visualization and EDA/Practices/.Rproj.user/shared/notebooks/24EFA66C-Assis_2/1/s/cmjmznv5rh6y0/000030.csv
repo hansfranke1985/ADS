@@ -1,0 +1,2 @@
+"0","    ggpairs(menu2[,c(1,3,4,5)], upper = list(continuous = ""cor""), lower = list(continuous = ""points"")) +"
+"0","    theme_minimal()"

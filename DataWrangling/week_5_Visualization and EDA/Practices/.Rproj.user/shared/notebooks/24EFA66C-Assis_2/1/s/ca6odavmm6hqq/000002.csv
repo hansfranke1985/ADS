@@ -1,0 +1,6 @@
+"0"," #install.packages(""WVPlots"")"
+"0"," library(WVPlots) "
+"0","  PairPlot(menu2, "
+"0","         colnames(menu2[, c(3,4,20)]), "
+"0","         ""Menu2"", "
+"0","         group_var = ""Category"") + theme_minimal()"

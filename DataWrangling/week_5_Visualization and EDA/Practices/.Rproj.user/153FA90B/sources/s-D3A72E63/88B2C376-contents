@@ -178,19 +178,66 @@ Now you know what causes the outlier, you can check whether there is an associat
 
 Create a scatter plot to visualise the association between serving size and calories. Are serving size and energetic value related to each other? Did you expect this outcome? Use the alpha argument in geom_point() to adjust the transparency.
 
+Answer: No correlation. I was expecting to see more calories as size grows, but in fact it dosen't
 ```{r}
 
+    ggplot(menu2, aes(Serving.Size, Calories))+
+    geom_point(alpha = 0.3) + 
+    theme_minimal()
 ```
 
 
 ## Question 8:
 Create a new scatter plot to visualise the association between serving size and calories, but now use the ‘colour’ argument to make a distinction between ‘Type’ (see ?aes for more info). Use ‘geom_smooth()’ to add a regression line to the plot. Does this alter your conclusion about the relationship between serving size and calories? What do you conclude now?
 
+Answer: in fact dosent change, only reinforces my previous statament. The only clearly exception is CHicken & Chips and beverages.
+
+```{r}
+
+    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
+    geom_point(alpha = 0.3) + 
+    geom_smooth() +
+    theme_minimal()
+```
+
+
 ## Question 9:
 Why do you think the relationship is so much affected by food type, is there a way to investigate this further using visualisations?
+
+Answer; probably because when you put some itens in categories they have some common properties, like Calories for example. We should compare Calories x Category, but appart from the same plot, this alows to see the patterns in each category, or in others words: the correlation between calories and serving.size.
+```{r}
+    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
+    geom_point(alpha = 0.3) + 
+    geom_smooth(color = "blue") +
+    facet_wrap(~Category, nrow=9, ncol = 3) +
+  
+    theme_minimal()
+```
 
 So far, you’ve only looked at the association between two variables at a time. However, when you are exploring associations, you may want to look at the association of many different variables at the same time (e.g. when you want to generate hypotheses). An easy way to do this, is to make use of the ‘ggpairs()’ function from the ‘GGally’ package.
 
 ## Question 10:
 Create a plot using ‘ggpairs()’ where the association between atleast 4 different variables is visualised. Are there differences in the associations between those variables based on item Type?
+
+```{r}
+    ggpairs(menu2[,c(1,3,4,5)], upper = list(continuous = "cor"), lower = list(continuous = "points")) +
+    theme_minimal()
+```
+```{r}
+  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +
+    theme_minimal()
+```
+```{r}
+ #install.packages("WVPlots")
+ library(WVPlots) 
+
+
+  PairPlot(menu2, 
+         colnames(menu2[, c(3,4,20)]), 
+         "Menu2", 
+         group_var = "Category") + theme_minimal()
+```
+```{r}
+ggcorr(menu2, method = c("everything", "pearson")) 
+```
 

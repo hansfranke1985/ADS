@@ -1,0 +1,6 @@
+"0","    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+"
+"0","    geom_point(alpha = 0.3) + "
+"0","    geom_smooth(color = ""blue"") +"
+"0","    facet_wrap(~Category, nrow=9, ncol = 3) +"
+"0","  "
+"0","    theme_minimal()"
