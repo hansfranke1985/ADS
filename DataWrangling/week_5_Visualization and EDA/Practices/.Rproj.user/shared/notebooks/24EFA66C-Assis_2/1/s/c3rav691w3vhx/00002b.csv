@@ -1,0 +1,5 @@
+"0","  menu_graph <-"
+"0","    ggplot(menu2, aes(Category)) +"
+"0","    geom_bar() +"
+"0","    coord_flip() "
+"0","  menu_graph"

@@ -1,0 +1,9 @@
+"0","    menu2 %>%"
+"0","          filter(Category == ""Chicken & Fish"") %>%"
+"0","            ggplot(aes(x = Item, y = Calories))+"
+"0","              geom_bar()+"
+"0","              coord_flip() + "
+"0","              theme_minimal()"
+"2","Error: stat_count() can only have an x or y aesthetic.
+[90mRun `rlang::last_error()` to see where the error occurred.[39m
+"

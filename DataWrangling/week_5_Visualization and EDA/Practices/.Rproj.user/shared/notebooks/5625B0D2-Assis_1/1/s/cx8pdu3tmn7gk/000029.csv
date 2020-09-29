@@ -1,0 +1,6 @@
+"0"," #install.packages(""WVPlots"")"
+"0"," library(WVPlots) "
+"0","  PairPlot(Carseats, "
+"0","         colnames(Carseats)[1:5], "
+"0","         ""Carseats Comparison"", "
+"0","         group_var = NULL) + theme_minimal()"

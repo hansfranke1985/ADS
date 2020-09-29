@@ -1,0 +1,801 @@
+clinic,client,type,gen_age,breed,food_quality,area,value2017,value2018
+1,1,weight,F_15,Persian,II,suburban,7.8,8
+1,1,BMI,F_15,Persian,II,suburban,26,22
+1,2,weight,M_10,Persian,II,suburban,13.7,14.6
+1,2,BMI,M_10,Persian,II,suburban,35,30
+1,3,weight,F_14,Burmese,II,suburban,6.3,6.6
+1,3,BMI,F_14,Burmese,II,suburban,24,20
+1,4,weight,F_7,British Shorthair,I,suburban,11,11.3
+1,4,BMI,F_7,British Shorthair,I,suburban,26,23
+1,5,weight,M_6,British Shorthair,II,urban,9.6,9.8
+1,5,BMI,M_6,British Shorthair,II,urban,18,21
+1,6,weight,M_5,Siamese,I,urban,12.6,12.6
+1,6,BMI,M_5,Siamese,I,urban,21,25
+1,7,weight,M_13,American Shorthair,III,suburban,11,11
+1,7,BMI,M_13,American Shorthair,III,suburban,19,23
+1,8,weight,M_11,Burmese,III,urban,8.9,9.3
+1,8,BMI,M_11,Burmese,III,urban,25,23
+1,9,weight,F_9,British Shorthair,III,suburban,12.6,13.2
+1,9,BMI,F_9,British Shorthair,III,suburban,29,24
+1,10,weight,F_9,American Shorthair,II,suburban,7.6,8
+1,10,BMI,F_9,American Shorthair,II,suburban,21,17
+1,11,weight,M_13,British Shorthair,IV,suburban,10.4,11
+1,11,BMI,M_13,British Shorthair,IV,suburban,19,22
+1,12,weight,F_9,Burmese,I,urban,13.8,13.8
+1,12,BMI,F_9,Burmese,I,urban,40,30
+1,13,weight,F_7,Persian,II,rural,6.7,7.2
+1,13,BMI,F_7,Persian,II,rural,23,20
+1,14,weight,M_6,Maincoon,III,urban,14.2,14.6
+1,14,BMI,M_6,Maincoon,III,urban,29,28
+1,15,weight,M_7,Maincoon,I,suburban,8.4,8.5
+1,15,BMI,M_7,Maincoon,I,suburban,20,20
+1,16,weight,F_1,Maincoon,II,rural,13.4,13.8
+1,16,BMI,F_1,Maincoon,II,rural,28,27
+1,17,weight,M_16,Burmese,II,suburban,9.5,9.9
+1,17,BMI,M_16,Burmese,II,suburban,27,25
+1,18,weight,F_4,Siamese,I,suburban,12.5,12.8
+1,18,BMI,F_4,Siamese,I,suburban,25,26
+1,19,weight,F_7,American Shorthair,II,urban,11.1,11.9
+1,19,BMI,F_7,American Shorthair,II,urban,29,24
+1,20,weight,M_5,Maincoon,I,suburban,13.4,14.4
+1,20,BMI,M_5,Maincoon,I,suburban,28,26
+2,1,weight,F_13,Burmese,III,rural,13.5,13.8
+2,1,BMI,F_13,Burmese,III,rural,40,28
+2,2,weight,M_11,Persian,II,rural,7.6,7.9
+2,2,BMI,M_11,Persian,II,rural,21,20
+2,3,weight,M_12,Burmese,I,suburban,7.7,8
+2,3,BMI,M_12,Burmese,I,suburban,22,21
+2,4,weight,F_14,Burmese,II,suburban,10.7,10.9
+2,4,BMI,F_14,Burmese,II,suburban,37,25
+2,5,weight,M_6,Persian,II,rural,8.1,8.6
+2,5,BMI,M_6,Persian,II,rural,22,22
+2,6,weight,F_10,Maincoon,II,suburban,15.6,15.9
+2,6,BMI,F_10,Maincoon,II,suburban,31,30
+2,7,weight,M_8,Maincoon,II,urban,11.9,12.2
+2,7,BMI,M_8,Maincoon,II,urban,25,24
+2,8,weight,F_5,Maincoon,II,urban,12.2,13.4
+2,8,BMI,F_5,Maincoon,II,urban,25,24
+2,9,weight,M_9,Burmese,III,urban,5.9,6.5
+2,9,BMI,M_9,Burmese,III,urban,18,17
+2,10,weight,M_7,Burmese,III,rural,13,14
+2,10,BMI,M_7,Burmese,III,rural,35,28
+2,11,weight,M_17,Burmese,II,urban,12,12.6
+2,11,BMI,M_17,Burmese,II,urban,33,28
+2,12,weight,M_19,Siamese,II,urban,6.3,6.3
+2,12,BMI,M_19,Siamese,II,urban,11,16
+2,13,weight,M_20,Maincoon,III,urban,16.6,16.6
+2,13,BMI,M_20,Maincoon,III,urban,33,31
+2,14,weight,F_14,Siamese,II,rural,9.6,9.6
+2,14,BMI,F_14,Siamese,II,rural,19,21
+2,15,weight,F_6,Persian,I,urban,6.7,6.7
+2,15,BMI,F_6,Persian,I,urban,23,20
+2,16,weight,F_13,Burmese,II,suburban,6.6,6.6
+2,16,BMI,F_13,Burmese,II,suburban,25,18
+2,17,weight,M_13,American Shorthair,IV,urban,7.3,7.6
+2,17,BMI,M_13,American Shorthair,IV,urban,13,20
+2,18,weight,M_15,British Shorthair,III,suburban,13.4,14
+2,18,BMI,M_15,British Shorthair,III,suburban,24,27
+2,19,weight,M_14,American Shorthair,I,suburban,7.2,7.9
+2,19,BMI,M_14,American Shorthair,I,suburban,13,18
+2,20,weight,M_10,Maincoon,I,urban,8.3,8.8
+2,20,BMI,M_10,Maincoon,I,urban,20,21
+3,1,weight,F_5,British Shorthair,II,urban,8.1,8.3
+3,1,BMI,F_5,British Shorthair,II,urban,19,18
+3,2,weight,M_15,American Shorthair,I,urban,12.7,12.8
+3,2,BMI,M_15,American Shorthair,I,urban,22,25
+3,3,weight,M_14,Persian,IV,suburban,7.6,8
+3,3,BMI,M_14,Persian,IV,suburban,21,20
+3,4,weight,F_5,Persian,III,urban,9.1,9.5
+3,4,BMI,F_5,Persian,III,urban,29,23
+3,5,weight,M_14,British Shorthair,II,rural,9.1,9.2
+3,5,BMI,M_14,British Shorthair,II,rural,17,20
+3,6,weight,M_6,Burmese,II,urban,9.9,10.2
+3,6,BMI,M_6,Burmese,II,urban,28,24
+3,7,weight,M_7,Burmese,III,suburban,7.3,7.6
+3,7,BMI,M_7,Burmese,III,suburban,22,20
+3,8,weight,F_8,Maincoon,II,rural,16,16.1
+3,8,BMI,F_8,Maincoon,II,rural,31,31
+3,9,weight,M_18,Burmese,IV,urban,8.8,8.9
+3,9,BMI,M_18,Burmese,IV,urban,25,22
+3,10,weight,F_9,Siamese,I,suburban,9.7,9.9
+3,10,BMI,F_9,Siamese,I,suburban,20,22
+3,11,weight,F_9,Burmese,III,urban,12.9,13.3
+3,11,BMI,F_9,Burmese,III,urban,40,29
+3,12,weight,M_12,Maincoon,II,suburban,11.2,11.8
+3,12,BMI,M_12,Maincoon,II,suburban,24,24
+3,13,weight,M_3,Maincoon,IV,suburban,8.4,8.7
+3,13,BMI,M_3,Maincoon,IV,suburban,22,20
+3,14,weight,M_3,Siamese,II,rural,8.3,8.4
+3,14,BMI,M_3,Siamese,II,rural,15,19
+3,15,weight,M_1,Siamese,II,urban,12.4,13.2
+3,15,BMI,M_1,Siamese,II,urban,21,26
+3,16,weight,F_11,Persian,II,urban,5.5,5.5
+3,16,BMI,F_11,Persian,II,urban,20,18
+3,17,weight,F_13,Siamese,II,rural,15.5,16
+3,17,BMI,F_13,Siamese,II,rural,31,31
+3,18,weight,M_10,Burmese,IV,urban,6.2,6.3
+3,18,BMI,M_10,Burmese,IV,urban,19,18
+3,19,weight,M_13,Persian,III,urban,4.8,4.8
+3,19,BMI,M_13,Persian,III,urban,15,16
+3,20,weight,M_12,American Shorthair,II,suburban,6.5,6.7
+3,20,BMI,M_12,American Shorthair,II,suburban,12,17
+4,1,weight,M_11,American Shorthair,I,urban,8.3,8.7
+4,1,BMI,M_11,American Shorthair,I,urban,15,19
+4,2,weight,F_16,Burmese,IV,urban,10.4,10.6
+4,2,BMI,F_16,Burmese,IV,urban,36,25
+4,3,weight,F_11,British Shorthair,II,suburban,5.5,6.2
+4,3,BMI,F_11,British Shorthair,II,suburban,13,15
+4,4,weight,M_10,Persian,III,suburban,7.7,7.9
+4,4,BMI,M_10,Persian,III,suburban,21,20
+4,5,weight,F_9,Siamese,II,suburban,10.9,11.3
+4,5,BMI,F_9,Siamese,II,suburban,22,23
+4,6,weight,F_5,Persian,II,rural,4.8,5.3
+4,6,BMI,F_5,Persian,II,rural,19,16
+4,7,weight,F_7,American Shorthair,I,urban,11.8,12.3
+4,7,BMI,F_7,American Shorthair,I,urban,31,25
+4,8,weight,M_2,Maincoon,I,suburban,3.9,4.3
+4,8,BMI,M_2,Maincoon,I,suburban,14,12
+4,9,weight,F_8,Siamese,II,urban,6.4,7.2
+4,9,BMI,F_8,Siamese,II,urban,13,18
+4,10,weight,M_12,British Shorthair,I,urban,15.4,16
+4,10,BMI,M_12,British Shorthair,I,urban,27,30
+4,11,weight,F_5,Burmese,II,suburban,13.5,14.3
+4,11,BMI,F_5,Burmese,II,suburban,40,31
+4,12,weight,M_8,Persian,II,urban,11.7,12.1
+4,12,BMI,M_8,Persian,II,urban,30,28
+4,13,weight,F_10,Maincoon,III,urban,18.7,19
+4,13,BMI,F_10,Maincoon,III,urban,38,36
+4,14,weight,M_1,British Shorthair,III,suburban,9.6,9.9
+4,14,BMI,M_1,British Shorthair,III,suburban,18,22
+4,15,weight,F_7,Maincoon,I,suburban,16.4,16.7
+4,15,BMI,F_7,Maincoon,I,suburban,34,30
+4,16,weight,M_8,British Shorthair,II,urban,7.6,8.1
+4,16,BMI,M_8,British Shorthair,II,urban,15,18
+4,17,weight,F_15,Persian,III,rural,11.7,11.8
+4,17,BMI,F_15,Persian,III,rural,36,28
+4,18,weight,M_17,American Shorthair,II,urban,6.2,6.4
+4,18,BMI,M_17,American Shorthair,II,urban,11,17
+4,19,weight,F_12,American Shorthair,I,rural,12.8,13.6
+4,19,BMI,F_12,American Shorthair,I,rural,33,27
+4,20,weight,M_5,Burmese,II,suburban,2.6,2.6
+4,20,BMI,M_5,Burmese,II,suburban,11,13
+5,1,weight,F_13,American Shorthair,III,suburban,6.7,6.7
+5,1,BMI,F_13,American Shorthair,III,suburban,18,16
+5,2,weight,F_8,Maincoon,IV,suburban,8,8.6
+5,2,BMI,F_8,Maincoon,IV,suburban,20,21
+5,3,weight,F_13,Persian,IV,rural,6.9,6.9
+5,3,BMI,F_13,Persian,IV,rural,24,21
+5,4,weight,F_3,Burmese,I,rural,9.5,10.2
+5,4,BMI,F_3,Burmese,I,rural,34,24
+5,5,weight,M_17,Burmese,II,urban,8.1,8.2
+5,5,BMI,M_17,Burmese,II,urban,24,21
+5,6,weight,M_10,Persian,II,urban,12.5,12.8
+5,6,BMI,M_10,Persian,II,urban,32,28
+5,7,weight,F_11,Maincoon,III,urban,15.7,16
+5,7,BMI,F_11,Maincoon,III,urban,30,31
+5,8,weight,M_22,Persian,I,urban,11.4,11.4
+5,8,BMI,M_22,Persian,I,urban,30,27
+5,9,weight,M_18,American Shorthair,II,suburban,9.8,10.2
+5,9,BMI,M_18,American Shorthair,II,suburban,17,21
+5,10,weight,F_18,Persian,III,urban,9.2,9.3
+5,10,BMI,F_18,Persian,III,urban,29,23
+5,11,weight,F_5,American Shorthair,IV,urban,10.7,10.8
+5,11,BMI,F_5,American Shorthair,IV,urban,28,25
+5,12,weight,M_14,Maincoon,IV,urban,14.1,15
+5,12,BMI,M_14,Maincoon,IV,urban,27,28
+5,13,weight,M_20,American Shorthair,II,urban,10.7,10.9
+5,13,BMI,M_20,American Shorthair,II,urban,19,20
+5,14,weight,M_12,American Shorthair,II,suburban,8.8,10
+5,14,BMI,M_12,American Shorthair,II,suburban,16,20
+5,15,weight,M_7,Burmese,II,urban,10.2,10.6
+5,15,BMI,M_7,Burmese,II,urban,28,26
+5,16,weight,F_13,Burmese,IV,urban,2.7,4.1
+5,16,BMI,F_13,Burmese,IV,urban,14,14
+5,17,weight,F_15,Burmese,I,rural,9.2,10.1
+5,17,BMI,F_15,Burmese,I,rural,33,23
+5,18,weight,F_6,American Shorthair,II,urban,9.1,9.4
+5,18,BMI,F_6,American Shorthair,II,urban,24,20
+5,19,weight,F_13,Persian,IV,urban,8,8.4
+5,19,BMI,F_13,Persian,IV,urban,26,23
+5,20,weight,M_6,Maincoon,II,rural,12.8,14.1
+5,20,BMI,M_6,Maincoon,II,rural,27,27
+6,1,weight,M_16,Siamese,I,rural,11.9,12.6
+6,1,BMI,M_16,Siamese,I,rural,20,24
+6,2,weight,F_12,American Shorthair,II,suburban,12.8,13
+6,2,BMI,F_12,American Shorthair,II,suburban,34,27
+6,3,weight,M_12,British Shorthair,III,suburban,11.2,12.1
+6,3,BMI,M_12,British Shorthair,III,suburban,21,23
+6,4,weight,M_11,Burmese,I,suburban,6.5,6.9
+6,4,BMI,M_11,Burmese,I,suburban,20,18
+6,5,weight,M_2,Maincoon,II,urban,8.3,8.5
+6,5,BMI,M_2,Maincoon,II,urban,20,20
+6,6,weight,F_14,Burmese,II,suburban,8.6,8.7
+6,6,BMI,F_14,Burmese,II,suburban,31,23
+6,7,weight,F_18,British Shorthair,I,suburban,16.9,17.6
+6,7,BMI,F_18,British Shorthair,I,suburban,39,32
+6,8,weight,F_8,American Shorthair,IV,suburban,6.3,6.6
+6,8,BMI,F_8,American Shorthair,IV,suburban,17,19
+6,9,weight,F_10,American Shorthair,III,suburban,11.8,11.9
+6,9,BMI,F_10,American Shorthair,III,suburban,31,24
+6,10,weight,F_9,Persian,I,suburban,7.6,8
+6,10,BMI,F_9,Persian,I,suburban,25,21
+6,11,weight,F_8,Maincoon,II,suburban,9.2,9.3
+6,11,BMI,F_8,Maincoon,II,suburban,22,22
+6,12,weight,F_6,Persian,I,suburban,10.6,10.8
+6,12,BMI,F_6,Persian,I,suburban,33,27
+6,13,weight,M_16,Siamese,II,rural,10.4,10.4
+6,13,BMI,M_16,Siamese,II,rural,18,20
+6,14,weight,F_12,American Shorthair,I,rural,15.1,15.3
+6,14,BMI,F_12,American Shorthair,I,rural,39,29
+6,15,weight,F_12,American Shorthair,II,rural,8.8,9.5
+6,15,BMI,F_12,American Shorthair,II,rural,24,20
+6,16,weight,M_13,British Shorthair,I,suburban,6.1,6.2
+6,16,BMI,M_13,British Shorthair,I,suburban,13,17
+6,17,weight,F_8,Maincoon,II,urban,7.8,8.6
+6,17,BMI,F_8,Maincoon,II,urban,19,19
+6,18,weight,M_2,Siamese,III,urban,7.9,8.3
+6,18,BMI,M_2,Siamese,III,urban,14,18
+6,19,weight,F_18,British Shorthair,IV,rural,13.1,13.2
+6,19,BMI,F_18,British Shorthair,IV,rural,30,26
+6,20,weight,F_5,Burmese,I,urban,9.3,10
+6,20,BMI,F_5,Burmese,I,urban,33,23
+7,1,weight,F_10,British Shorthair,I,suburban,12.9,13
+7,1,BMI,F_10,British Shorthair,I,suburban,30,25
+7,2,weight,F_16,Persian,III,rural,9.9,9.9
+7,2,BMI,F_16,Persian,III,rural,31,24
+7,3,weight,M_8,Persian,IV,suburban,11.5,12.2
+7,3,BMI,M_8,Persian,IV,suburban,30,25
+7,4,weight,F_19,Persian,III,rural,12.5,12.5
+7,4,BMI,F_19,Persian,III,rural,38,30
+7,5,weight,F_9,Siamese,III,rural,14.1,14.2
+7,5,BMI,F_9,Siamese,III,rural,28,27
+7,6,weight,F_15,Maincoon,I,rural,10.2,10.7
+7,6,BMI,F_15,Maincoon,I,rural,22,21
+7,7,weight,F_12,American Shorthair,III,urban,8.9,8.9
+7,7,BMI,F_12,American Shorthair,III,urban,24,21
+7,8,weight,F_10,Burmese,I,urban,10.5,10.7
+7,8,BMI,F_10,Burmese,I,urban,36,26
+7,9,weight,M_14,Persian,II,suburban,11.4,11.6
+7,9,BMI,M_14,Persian,II,suburban,30,27
+7,10,weight,M_12,American Shorthair,II,rural,8.2,8.5
+7,10,BMI,M_12,American Shorthair,II,rural,15,19
+7,11,weight,M_10,Siamese,II,suburban,13.4,13.6
+7,11,BMI,M_10,Siamese,II,suburban,22,28
+7,12,weight,F_14,Siamese,I,suburban,9.4,9.7
+7,12,BMI,F_14,Siamese,I,suburban,19,21
+7,13,weight,M_12,Siamese,II,suburban,10.3,10.5
+7,13,BMI,M_12,Siamese,II,suburban,17,23
+7,14,weight,F_9,British Shorthair,II,rural,9.5,9.9
+7,14,BMI,F_9,British Shorthair,II,rural,22,21
+7,15,weight,M_11,Siamese,III,urban,10.2,10.8
+7,15,BMI,M_11,Siamese,III,urban,17,24
+7,16,weight,F_8,Burmese,II,urban,1.2,1.5
+7,16,BMI,F_8,Burmese,II,urban,10,12
+7,17,weight,F_11,British Shorthair,I,rural,11.9,12
+7,17,BMI,F_11,British Shorthair,I,rural,28,24
+7,18,weight,M_8,Maincoon,II,urban,8.5,8.5
+7,18,BMI,M_8,Maincoon,II,urban,20,20
+7,19,weight,F_17,American Shorthair,I,urban,9.5,10.5
+7,19,BMI,F_17,American Shorthair,I,urban,25,21
+7,20,weight,M_4,Persian,I,suburban,5.8,5.8
+7,20,BMI,M_4,Persian,I,suburban,17,18
+8,1,weight,F_6,Persian,II,urban,8.5,9
+8,1,BMI,F_6,Persian,II,urban,28,22
+8,2,weight,F_19,Maincoon,I,urban,10.6,10.9
+8,2,BMI,F_19,Maincoon,I,urban,24,23
+8,3,weight,M_2,American Shorthair,I,urban,13.8,13.8
+8,3,BMI,M_2,American Shorthair,I,urban,24,26
+8,4,weight,F_4,Burmese,I,rural,10.9,11
+8,4,BMI,F_4,Burmese,I,rural,38,26
+8,5,weight,F_15,American Shorthair,II,urban,12.5,13.3
+8,5,BMI,F_15,American Shorthair,II,urban,33,25
+8,6,weight,M_9,American Shorthair,I,urban,5.3,5.4
+8,6,BMI,M_9,American Shorthair,I,urban,10,15
+8,7,weight,M_3,Siamese,II,urban,11.9,12.1
+8,7,BMI,M_3,Siamese,II,urban,20,24
+8,8,weight,F_15,Persian,IV,urban,4.1,4
+8,8,BMI,F_15,Persian,IV,urban,15,16
+8,9,weight,F_9,Persian,III,urban,15.2,15
+8,9,BMI,F_9,Persian,III,urban,40,33
+8,10,weight,F_5,Maincoon,III,suburban,11.8,12.1
+8,10,BMI,F_5,Maincoon,III,suburban,25,25
+8,11,weight,M_11,Siamese,I,urban,7.8,8.2
+8,11,BMI,M_11,Siamese,I,urban,14,19
+8,12,weight,M_5,Burmese,III,urban,8.9,9.1
+8,12,BMI,M_5,Burmese,III,urban,25,24
+8,13,weight,F_5,Siamese,III,suburban,12,12.3
+8,13,BMI,F_5,Siamese,III,suburban,24,25
+8,14,weight,F_11,Burmese,I,urban,11.9,12.6
+8,14,BMI,F_11,Burmese,I,urban,40,29
+8,15,weight,F_11,Siamese,I,urban,14.6,15
+8,15,BMI,F_11,Siamese,I,urban,29,29
+8,16,weight,F_10,American Shorthair,IV,suburban,4,4.3
+8,16,BMI,F_10,American Shorthair,IV,suburban,10,10
+8,17,weight,F_10,Maincoon,III,suburban,14.3,14.3
+8,17,BMI,F_10,Maincoon,III,suburban,30,30
+8,18,weight,F_7,American Shorthair,III,rural,6,6.9
+8,18,BMI,F_7,American Shorthair,III,rural,17,16
+8,19,weight,F_16,American Shorthair,II,suburban,13,13.2
+8,19,BMI,F_16,American Shorthair,II,suburban,34,27
+8,20,weight,F_9,Persian,III,suburban,4.8,5.3
+8,20,BMI,F_9,Persian,III,suburban,18,16
+9,1,weight,M_11,Siamese,I,rural,10.6,11.6
+9,1,BMI,M_11,Siamese,I,rural,18,23
+9,2,weight,M_8,Maincoon,III,urban,12,12.2
+9,2,BMI,M_8,Maincoon,III,urban,26,23
+9,3,weight,M_11,Persian,I,urban,15.2,15
+9,3,BMI,M_11,Persian,I,urban,38,31
+9,4,weight,F_10,Persian,II,rural,7.1,7.9
+9,4,BMI,F_10,Persian,II,rural,24,20
+9,5,weight,M_4,Persian,I,suburban,15.2,15
+9,5,BMI,M_4,Persian,I,suburban,39,33
+9,6,weight,M_4,Siamese,II,urban,7,7.9
+9,6,BMI,M_4,Siamese,II,urban,13,17
+9,7,weight,M_5,Persian,III,rural,7.9,8.2
+9,7,BMI,M_5,Persian,III,rural,22,20
+9,8,weight,M_15,Siamese,I,suburban,9.3,9.5
+9,8,BMI,M_15,Siamese,I,suburban,16,22
+9,9,weight,F_12,Persian,I,urban,6.4,7
+9,9,BMI,F_12,Persian,I,urban,23,19
+9,10,weight,F_18,Burmese,I,suburban,10.4,11.4
+9,10,BMI,F_18,Burmese,I,suburban,36,26
+9,11,weight,M_8,Persian,II,suburban,10.1,10.5
+9,11,BMI,M_8,Persian,II,suburban,27,25
+9,12,weight,M_11,Burmese,I,suburban,2.4,2.6
+9,12,BMI,M_11,Burmese,I,suburban,10,12
+9,13,weight,F_15,American Shorthair,IV,rural,8.4,8.9
+9,13,BMI,F_15,American Shorthair,IV,rural,23,18
+9,14,weight,M_16,Burmese,III,suburban,4.2,4.3
+9,14,BMI,M_16,Burmese,III,suburban,14,16
+9,15,weight,F_10,Maincoon,II,rural,14.7,14.8
+9,15,BMI,F_10,Maincoon,II,rural,30,30
+9,16,weight,M_14,British Shorthair,I,rural,13.5,13.7
+9,16,BMI,M_14,British Shorthair,I,rural,24,27
+9,17,weight,M_10,Burmese,III,urban,10.3,10.9
+9,17,BMI,M_10,Burmese,III,urban,29,27
+9,18,weight,F_12,Siamese,IV,rural,16.6,16.6
+9,18,BMI,F_12,Siamese,IV,rural,33,34
+9,19,weight,M_5,Persian,I,suburban,9.1,10.5
+9,19,BMI,M_5,Persian,I,suburban,25,24
+9,20,weight,F_9,Persian,II,urban,9.8,10.4
+9,20,BMI,F_9,Persian,II,urban,31,24
+10,1,weight,F_11,British Shorthair,III,suburban,8.1,8.3
+10,1,BMI,F_11,British Shorthair,III,suburban,19,19
+10,2,weight,F_11,American Shorthair,I,urban,17.2,17.2
+10,2,BMI,F_11,American Shorthair,I,urban,40,32
+10,3,weight,M_4,Persian,III,urban,8.5,8.9
+10,3,BMI,M_4,Persian,III,urban,23,22
+10,4,weight,M_13,Burmese,II,urban,7,7.4
+10,4,BMI,M_13,Burmese,II,urban,21,22
+10,5,weight,F_11,Burmese,II,suburban,7.4,7.6
+10,5,BMI,F_11,Burmese,II,suburban,27,20
+10,6,weight,M_11,Persian,II,suburban,15.2,15
+10,6,BMI,M_11,Persian,II,suburban,38,32
+10,7,weight,F_5,American Shorthair,II,urban,8.1,8.7
+10,7,BMI,F_5,American Shorthair,II,urban,22,19
+10,8,weight,M_13,American Shorthair,I,rural,12.5,13
+10,8,BMI,M_13,American Shorthair,I,rural,22,25
+10,9,weight,M_8,British Shorthair,II,suburban,10.3,10.4
+10,9,BMI,M_8,British Shorthair,II,suburban,19,22
+10,10,weight,F_9,British Shorthair,II,rural,13.7,14
+10,10,BMI,F_9,British Shorthair,II,rural,32,26
+10,11,weight,F_6,Maincoon,II,urban,13.7,14
+10,11,BMI,F_6,Maincoon,II,urban,27,26
+10,12,weight,M_13,Persian,II,rural,5.7,6.1
+10,12,BMI,M_13,Persian,II,rural,17,19
+10,13,weight,M_5,Persian,I,suburban,4.1,4
+10,13,BMI,M_5,Persian,I,suburban,10,14
+10,14,weight,M_9,Maincoon,III,suburban,16.7,17
+10,14,BMI,M_9,Maincoon,III,suburban,33,32
+10,15,weight,M_6,Burmese,IV,urban,14.8,14.8
+10,15,BMI,M_6,Burmese,IV,urban,39,32
+10,16,weight,F_3,Persian,III,suburban,7.3,7.7
+10,16,BMI,F_3,Persian,III,suburban,25,19
+10,17,weight,M_8,Burmese,II,urban,13.2,13.6
+10,17,BMI,M_8,Burmese,II,urban,35,30
+10,18,weight,F_6,Burmese,II,suburban,10.5,11.1
+10,18,BMI,F_6,Burmese,II,suburban,37,26
+10,19,weight,F_9,Burmese,IV,urban,8.2,8.3
+10,19,BMI,F_9,Burmese,IV,urban,30,23
+10,20,weight,M_8,Persian,II,rural,10.8,11.1
+10,20,BMI,M_8,Persian,II,rural,28,25
+11,1,weight,M_10,Burmese,II,suburban,8.6,9.3
+11,1,BMI,M_10,Burmese,II,suburban,25,21
+11,2,weight,F_5,Burmese,I,urban,10.9,11.9
+11,2,BMI,F_5,Burmese,I,urban,38,27
+11,3,weight,F_8,Siamese,III,urban,12.2,13
+11,3,BMI,F_8,Siamese,III,urban,25,24
+11,4,weight,M_13,American Shorthair,IV,suburban,12.3,12.6
+11,4,BMI,M_13,American Shorthair,IV,suburban,22,25
+11,5,weight,F_16,Siamese,II,suburban,10.7,10.9
+11,5,BMI,F_16,Siamese,II,suburban,22,24
+11,6,weight,M_8,Burmese,III,urban,9.8,10.3
+11,6,BMI,M_8,Burmese,III,urban,27,24
+11,7,weight,M_13,Burmese,III,urban,13,13.4
+11,7,BMI,M_13,Burmese,III,urban,35,28
+11,8,weight,M_10,American Shorthair,III,urban,13.4,13.6
+11,8,BMI,M_10,American Shorthair,III,urban,23,28
+11,9,weight,F_5,American Shorthair,II,suburban,12.3,13.1
+11,9,BMI,F_5,American Shorthair,II,suburban,32,24
+11,10,weight,M_9,American Shorthair,III,urban,11.9,12.2
+11,10,BMI,M_9,American Shorthair,III,urban,21,24
+11,11,weight,M_7,Burmese,IV,suburban,8.7,8.9
+11,11,BMI,M_7,Burmese,IV,suburban,25,23
+11,12,weight,F_10,American Shorthair,II,suburban,6.9,7.4
+11,12,BMI,F_10,American Shorthair,II,suburban,19,17
+11,13,weight,M_12,Burmese,I,rural,6.4,6.9
+11,13,BMI,M_12,Burmese,I,rural,19,19
+11,14,weight,M_5,American Shorthair,I,urban,14,14.2
+11,14,BMI,M_5,American Shorthair,I,urban,24,25
+11,15,weight,F_7,Burmese,II,rural,9.3,9.6
+11,15,BMI,F_7,Burmese,II,rural,33,24
+11,16,weight,M_4,Siamese,II,urban,9.6,10.8
+11,16,BMI,M_4,Siamese,II,urban,16,22
+11,17,weight,M_3,Siamese,I,suburban,13.1,13.2
+11,17,BMI,M_3,Siamese,I,suburban,22,25
+11,18,weight,M_4,American Shorthair,II,suburban,8.1,9.2
+11,18,BMI,M_4,American Shorthair,II,suburban,14,19
+11,19,weight,F_9,Burmese,III,urban,9.6,9.6
+11,19,BMI,F_9,Burmese,III,urban,34,24
+11,20,weight,F_9,American Shorthair,II,urban,8.7,8.8
+11,20,BMI,F_9,American Shorthair,II,urban,23,18
+12,1,weight,M_6,Persian,II,suburban,7,7.7
+12,1,BMI,M_6,Persian,II,suburban,20,19
+12,2,weight,M_7,Burmese,III,urban,10.4,10.9
+12,2,BMI,M_7,Burmese,III,urban,29,25
+12,3,weight,F_9,Burmese,II,rural,7,7.2
+12,3,BMI,F_9,Burmese,II,rural,26,19
+12,4,weight,F_12,Maincoon,II,suburban,11,11.7
+12,4,BMI,F_12,Maincoon,II,suburban,24,24
+12,5,weight,F_8,Maincoon,I,suburban,12.3,13.2
+12,5,BMI,F_8,Maincoon,I,suburban,27,24
+12,6,weight,M_7,Maincoon,III,suburban,8.3,8.5
+12,6,BMI,M_7,Maincoon,III,suburban,18,18
+12,7,weight,F_5,Burmese,III,urban,15,15.2
+12,7,BMI,F_5,Burmese,III,urban,40,35
+12,8,weight,M_12,British Shorthair,II,suburban,13.8,14.2
+12,8,BMI,M_12,British Shorthair,II,suburban,25,28
+12,9,weight,F_6,Maincoon,II,suburban,12.1,12.4
+12,9,BMI,F_6,Maincoon,II,suburban,26,24
+12,10,weight,F_3,American Shorthair,III,suburban,6.3,6.7
+12,10,BMI,F_3,American Shorthair,III,suburban,17,15
+12,11,weight,M_17,Maincoon,IV,suburban,14.1,14.9
+12,11,BMI,M_17,Maincoon,IV,suburban,29,28
+12,12,weight,F_5,Burmese,III,suburban,12.6,13.5
+12,12,BMI,F_5,Burmese,III,suburban,40,28
+12,13,weight,M_10,American Shorthair,I,urban,12.6,12.9
+12,13,BMI,M_10,American Shorthair,I,urban,22,24
+12,14,weight,M_14,Burmese,I,suburban,10.2,11.3
+12,14,BMI,M_14,Burmese,I,suburban,28,26
+12,15,weight,M_12,Persian,III,suburban,7.6,7.8
+12,15,BMI,M_12,Persian,III,suburban,21,21
+12,16,weight,M_7,Burmese,I,suburban,4.1,4.2
+12,16,BMI,M_7,Burmese,I,suburban,14,16
+12,17,weight,F_17,Persian,I,rural,9.7,9.9
+12,17,BMI,F_17,Persian,I,rural,31,23
+12,18,weight,M_6,British Shorthair,I,suburban,16.2,16.2
+12,18,BMI,M_6,British Shorthair,I,suburban,29,31
+12,19,weight,M_2,Persian,II,urban,9.3,10.3
+12,19,BMI,M_2,Persian,II,urban,25,22
+12,20,weight,M_13,American Shorthair,II,urban,7.7,8.2
+12,20,BMI,M_13,American Shorthair,II,urban,14,18
+13,1,weight,F_13,British Shorthair,IV,urban,19.6,19.9
+13,1,BMI,F_13,British Shorthair,IV,urban,40,37
+13,2,weight,M_14,Siamese,II,urban,9.9,10
+13,2,BMI,M_14,Siamese,II,urban,17,23
+13,3,weight,F_5,Burmese,I,suburban,10.5,10.7
+13,3,BMI,F_5,Burmese,I,suburban,37,25
+13,4,weight,M_7,British Shorthair,I,suburban,13.5,13.6
+13,4,BMI,M_7,British Shorthair,I,suburban,24,26
+13,5,weight,M_22,Siamese,IV,urban,10.1,10.4
+13,5,BMI,M_22,Siamese,IV,urban,17,22
+13,6,weight,F_8,British Shorthair,III,suburban,11.9,12.1
+13,6,BMI,F_8,British Shorthair,III,suburban,28,26
+13,7,weight,F_14,Siamese,IV,suburban,10.2,11.2
+13,7,BMI,F_14,Siamese,IV,suburban,21,22
+13,8,weight,M_9,Maincoon,IV,urban,11.4,11.6
+13,8,BMI,M_9,Maincoon,IV,urban,25,24
+13,9,weight,M_7,British Shorthair,II,suburban,14.3,14.7
+13,9,BMI,M_7,British Shorthair,II,suburban,26,28
+13,10,weight,F_4,Burmese,I,rural,11.7,11.9
+13,10,BMI,F_4,Burmese,I,rural,40,27
+13,11,weight,M_1,Persian,III,urban,7.8,7.9
+13,11,BMI,M_1,Persian,III,urban,22,21
+13,12,weight,M_4,Siamese,III,rural,15.4,15.5
+13,12,BMI,M_4,Siamese,III,rural,25,30
+13,13,weight,F_12,Burmese,III,suburban,11.4,11.9
+13,13,BMI,F_12,Burmese,III,suburban,39,25
+13,14,weight,M_13,Persian,II,urban,4.1,4
+13,14,BMI,M_13,Persian,II,urban,13,16
+13,15,weight,F_9,Maincoon,III,rural,11.4,11.5
+13,15,BMI,F_9,Maincoon,III,rural,25,24
+13,16,weight,M_6,British Shorthair,IV,suburban,15.2,15.3
+13,16,BMI,M_6,British Shorthair,IV,suburban,27,30
+13,17,weight,M_12,Burmese,II,suburban,2,2
+13,17,BMI,M_12,Burmese,II,suburban,10,11
+13,18,weight,F_4,American Shorthair,III,suburban,9.8,10.3
+13,18,BMI,F_4,American Shorthair,III,suburban,26,22
+13,19,weight,F_9,Maincoon,III,urban,14.2,15
+13,19,BMI,F_9,Maincoon,III,urban,29,28
+13,20,weight,M_9,Maincoon,II,suburban,12.5,13
+13,20,BMI,M_9,Maincoon,II,suburban,24,25
+14,1,weight,M_18,Burmese,II,urban,6.1,6.7
+14,1,BMI,M_18,Burmese,II,urban,19,18
+14,2,weight,M_14,American Shorthair,II,suburban,12.5,12.6
+14,2,BMI,M_14,American Shorthair,II,suburban,22,24
+14,3,weight,F_5,American Shorthair,I,suburban,9.1,9.1
+14,3,BMI,F_5,American Shorthair,I,suburban,24,20
+14,4,weight,F_13,Burmese,II,suburban,5.8,6.2
+14,4,BMI,F_13,Burmese,II,suburban,23,16
+14,5,weight,M_6,American Shorthair,II,suburban,4.7,5
+14,5,BMI,M_6,American Shorthair,II,suburban,10,15
+14,6,weight,F_8,American Shorthair,II,urban,13.4,14
+14,6,BMI,F_8,American Shorthair,II,urban,35,25
+14,7,weight,M_13,Burmese,I,urban,9.5,9.6
+14,7,BMI,M_13,Burmese,I,urban,27,24
+14,8,weight,M_11,Maincoon,I,rural,12.1,12.7
+14,8,BMI,M_11,Maincoon,I,rural,25,25
+14,9,weight,F_7,Siamese,III,rural,16,16.5
+14,9,BMI,F_7,Siamese,III,rural,32,31
+14,10,weight,F_6,American Shorthair,I,urban,7.9,8.2
+14,10,BMI,F_6,American Shorthair,I,urban,21,20
+14,11,weight,F_10,British Shorthair,III,suburban,9.7,10.5
+14,11,BMI,F_10,British Shorthair,III,suburban,23,23
+14,12,weight,F_5,Maincoon,I,suburban,9.2,9.6
+14,12,BMI,F_5,Maincoon,I,suburban,22,21
+14,13,weight,F_18,Burmese,II,suburban,8.4,8.5
+14,13,BMI,F_18,Burmese,II,suburban,30,22
+14,14,weight,F_11,Siamese,II,suburban,17.5,17.8
+14,14,BMI,F_11,Siamese,II,suburban,35,34
+14,15,weight,F_5,Burmese,IV,urban,12,12.2
+14,15,BMI,F_5,Burmese,IV,urban,40,28
+14,16,weight,M_12,American Shorthair,I,urban,8.6,9.2
+14,16,BMI,M_12,American Shorthair,I,urban,15,20
+14,17,weight,F_10,British Shorthair,II,rural,12.7,13
+14,17,BMI,F_10,British Shorthair,II,rural,29,27
+14,18,weight,M_15,Siamese,III,suburban,8.3,8.5
+14,18,BMI,M_15,Siamese,III,suburban,14,21
+14,19,weight,F_16,Siamese,I,suburban,8.6,8.9
+14,19,BMI,F_16,Siamese,I,suburban,17,20
+14,20,weight,M_4,Siamese,IV,urban,13,14
+14,20,BMI,M_4,Siamese,IV,urban,21,25
+15,1,weight,F_11,American Shorthair,III,rural,14.3,14.6
+15,1,BMI,F_11,American Shorthair,III,rural,37,30
+15,2,weight,F_5,British Shorthair,I,rural,10.3,10.5
+15,2,BMI,F_5,British Shorthair,I,rural,24,23
+15,3,weight,F_10,American Shorthair,II,rural,5.7,5.7
+15,3,BMI,F_10,American Shorthair,II,rural,16,15
+15,4,weight,M_15,Siamese,II,suburban,12.6,12.8
+15,4,BMI,M_15,Siamese,II,suburban,21,24
+15,5,weight,F_16,Burmese,II,urban,9.8,9.9
+15,5,BMI,F_16,Burmese,II,urban,35,25
+15,6,weight,M_4,American Shorthair,I,suburban,13.3,13.3
+15,6,BMI,M_4,American Shorthair,I,suburban,23,26
+15,7,weight,M_7,American Shorthair,IV,suburban,6.7,6.8
+15,7,BMI,M_7,American Shorthair,IV,suburban,12,16
+15,8,weight,M_13,Burmese,II,urban,11.9,12.4
+15,8,BMI,M_13,Burmese,II,urban,32,26
+15,9,weight,F_13,Persian,I,urban,9.8,10.1
+15,9,BMI,F_13,Persian,I,urban,31,25
+15,10,weight,F_13,American Shorthair,I,suburban,6.5,6.9
+15,10,BMI,F_13,American Shorthair,I,suburban,18,19
+15,11,weight,F_11,Burmese,IV,rural,8.9,8.9
+15,11,BMI,F_11,Burmese,IV,rural,32,23
+15,12,weight,F_11,Burmese,II,rural,9.1,10
+15,12,BMI,F_11,Burmese,II,rural,32,23
+15,13,weight,F_7,American Shorthair,II,rural,13.8,14.4
+15,13,BMI,F_7,American Shorthair,II,rural,36,28
+15,14,weight,M_6,British Shorthair,III,suburban,6.5,6.8
+15,14,BMI,M_6,British Shorthair,III,suburban,13,18
+15,15,weight,F_8,Siamese,III,urban,14.1,14.4
+15,15,BMI,F_8,Siamese,III,urban,28,28
+15,16,weight,F_21,British Shorthair,I,urban,11.2,11.3
+15,16,BMI,F_21,British Shorthair,I,urban,26,22
+15,17,weight,M_11,Maincoon,I,urban,12.2,12.4
+15,17,BMI,M_11,Maincoon,I,urban,28,25
+15,18,weight,F_8,Burmese,II,urban,6.6,7.3
+15,18,BMI,F_8,Burmese,II,urban,25,18
+15,19,weight,M_11,Burmese,II,suburban,7.6,8.8
+15,19,BMI,M_11,Burmese,II,suburban,22,20
+15,20,weight,M_7,Persian,II,urban,8,8.6
+15,20,BMI,M_7,Persian,II,urban,22,21
+16,1,weight,F_16,Persian,I,urban,7.1,7.9
+16,1,BMI,F_16,Persian,I,urban,24,22
+16,2,weight,F_14,British Shorthair,IV,suburban,10.6,10.6
+16,2,BMI,F_14,British Shorthair,IV,suburban,25,23
+16,3,weight,F_7,Burmese,I,suburban,8.3,8.7
+16,3,BMI,F_7,Burmese,I,suburban,30,21
+16,4,weight,M_2,Persian,I,suburban,7.3,7.4
+16,4,BMI,M_2,Persian,I,suburban,21,20
+16,5,weight,M_10,Maincoon,II,urban,11.5,11.5
+16,5,BMI,M_10,Maincoon,II,urban,25,24
+16,6,weight,M_9,Siamese,III,rural,15.7,15.7
+16,6,BMI,M_9,Siamese,III,rural,26,30
+16,7,weight,F_14,Persian,III,urban,8.7,9.3
+16,7,BMI,F_14,Persian,III,urban,28,22
+16,8,weight,F_4,British Shorthair,III,rural,6.2,6.9
+16,8,BMI,F_4,British Shorthair,III,rural,14,15
+16,9,weight,F_3,Maincoon,II,suburban,9.9,10.1
+16,9,BMI,F_3,Maincoon,II,suburban,24,22
+16,10,weight,F_8,American Shorthair,II,suburban,13.5,13.9
+16,10,BMI,F_8,American Shorthair,II,suburban,35,28
+16,11,weight,F_1,American Shorthair,IV,rural,7.3,7.7
+16,11,BMI,F_1,American Shorthair,IV,rural,20,18
+16,12,weight,M_14,Persian,III,suburban,6.4,6.5
+16,12,BMI,M_14,Persian,III,suburban,19,19
+16,13,weight,F_7,Persian,III,urban,4.1,4.5
+16,13,BMI,F_7,Persian,III,urban,17,17
+16,14,weight,F_3,American Shorthair,II,urban,13.6,14.7
+16,14,BMI,F_3,American Shorthair,II,urban,36,29
+16,15,weight,M_8,Siamese,I,rural,10.3,10.8
+16,15,BMI,M_8,Siamese,I,rural,17,19
+16,16,weight,M_13,Burmese,III,urban,12.9,13
+16,16,BMI,M_13,Burmese,III,urban,35,29
+16,17,weight,F_16,Persian,II,rural,12.9,13.3
+16,17,BMI,F_16,Persian,II,rural,39,29
+16,18,weight,M_16,Burmese,I,rural,9.4,10
+16,18,BMI,M_16,Burmese,I,rural,27,22
+16,19,weight,F_11,Maincoon,I,urban,10.7,11.2
+16,19,BMI,F_11,Maincoon,I,urban,24,26
+16,20,weight,M_12,American Shorthair,I,suburban,10.7,10.8
+16,20,BMI,M_12,American Shorthair,I,suburban,19,23
+17,1,weight,F_12,Burmese,I,suburban,10.4,10.5
+17,1,BMI,F_12,Burmese,I,suburban,36,25
+17,2,weight,F_20,Maincoon,I,suburban,14.4,15.2
+17,2,BMI,F_20,Maincoon,I,suburban,30,29
+17,3,weight,M_4,British Shorthair,III,rural,10.9,11.3
+17,3,BMI,M_4,British Shorthair,III,rural,20,24
+17,4,weight,F_12,Burmese,II,suburban,13.2,13.8
+17,4,BMI,F_12,Burmese,II,suburban,40,29
+17,5,weight,M_8,Persian,III,urban,11.8,11.8
+17,5,BMI,M_8,Persian,III,urban,30,27
+17,6,weight,F_16,Maincoon,II,suburban,11.1,11.3
+17,6,BMI,F_16,Maincoon,II,suburban,25,25
+17,7,weight,F_18,American Shorthair,II,suburban,6.6,6.9
+17,7,BMI,F_18,American Shorthair,II,suburban,18,17
+17,8,weight,M_1,Maincoon,II,suburban,10.2,10.6
+17,8,BMI,M_1,Maincoon,II,suburban,24,23
+17,9,weight,F_7,Burmese,IV,urban,4.8,5.2
+17,9,BMI,F_7,Burmese,IV,urban,20,17
+17,10,weight,F_9,Siamese,II,suburban,12.9,13.2
+17,10,BMI,F_9,Siamese,II,suburban,26,26
+17,11,weight,M_6,Siamese,I,urban,12.9,13
+17,11,BMI,M_6,Siamese,I,urban,21,25
+17,12,weight,F_8,Maincoon,I,urban,12.2,12.3
+17,12,BMI,F_8,Maincoon,I,urban,26,27
+17,13,weight,F_6,American Shorthair,II,urban,11.9,12.1
+17,13,BMI,F_6,American Shorthair,II,urban,31,25
+17,14,weight,F_20,Maincoon,II,rural,11.3,11.9
+17,14,BMI,F_20,Maincoon,II,rural,25,26
+17,15,weight,F_5,British Shorthair,I,suburban,10.1,10.5
+17,15,BMI,F_5,British Shorthair,I,suburban,24,24
+17,16,weight,M_8,Burmese,I,suburban,6.4,6.6
+17,16,BMI,M_8,Burmese,I,suburban,20,18
+17,17,weight,F_9,Persian,I,rural,4.1,4
+17,17,BMI,F_9,Persian,I,rural,13,13
+17,18,weight,F_16,Burmese,II,suburban,8.8,8.9
+17,18,BMI,F_16,Burmese,II,suburban,32,24
+17,19,weight,F_7,American Shorthair,IV,urban,11.3,12
+17,19,BMI,F_7,American Shorthair,IV,urban,30,24
+17,20,weight,M_3,American Shorthair,I,suburban,22,22.9
+17,20,BMI,M_3,American Shorthair,I,suburban,38,40
+18,1,weight,M_15,Siamese,II,urban,15.8,16.1
+18,1,BMI,M_15,Siamese,II,urban,26,30
+18,2,weight,M_16,British Shorthair,II,rural,12.6,13.1
+18,2,BMI,M_16,British Shorthair,II,rural,23,27
+18,3,weight,F_8,Persian,IV,suburban,6.6,7.1
+18,3,BMI,F_8,Persian,IV,suburban,23,20
+18,4,weight,F_9,Burmese,I,suburban,5.3,5.3
+18,4,BMI,F_9,Burmese,I,suburban,21,17
+18,5,weight,F_9,Burmese,III,urban,11,11.1
+18,5,BMI,F_9,Burmese,III,urban,38,26
+18,6,weight,M_7,Burmese,III,rural,6.1,7
+18,6,BMI,M_7,Burmese,III,rural,19,18
+18,7,weight,M_5,Maincoon,III,rural,13.9,14.3
+18,7,BMI,M_5,Maincoon,III,rural,28,28
+18,8,weight,M_15,Maincoon,IV,suburban,12.2,12.2
+18,8,BMI,M_15,Maincoon,IV,suburban,27,23
+18,9,weight,M_8,Burmese,III,urban,7,7.3
+18,9,BMI,M_8,Burmese,III,urban,21,19
+18,10,weight,F_9,American Shorthair,I,suburban,10.1,10.2
+18,10,BMI,F_9,American Shorthair,I,suburban,27,22
+18,11,weight,F_6,Persian,I,suburban,9.6,10
+18,11,BMI,F_6,Persian,I,suburban,30,24
+18,12,weight,M_14,American Shorthair,II,rural,9.4,9.8
+18,12,BMI,M_14,American Shorthair,II,rural,17,21
+18,13,weight,F_7,Burmese,II,suburban,8.9,10.3
+18,13,BMI,F_7,Burmese,II,suburban,32,24
+18,14,weight,M_11,Burmese,III,urban,7.5,7.7
+18,14,BMI,M_11,Burmese,III,urban,22,21
+18,15,weight,F_15,American Shorthair,II,suburban,15.2,15.4
+18,15,BMI,F_15,American Shorthair,II,suburban,40,29
+18,16,weight,M_7,American Shorthair,II,suburban,11.6,12.5
+18,16,BMI,M_7,American Shorthair,II,suburban,20,23
+18,17,weight,F_10,British Shorthair,II,urban,10.1,10.7
+18,17,BMI,F_10,British Shorthair,II,urban,24,24
+18,18,weight,F_3,Burmese,IV,urban,7.9,7.9
+18,18,BMI,F_3,Burmese,IV,urban,29,21
+18,19,weight,M_18,British Shorthair,II,urban,8.2,8.8
+18,19,BMI,M_18,British Shorthair,II,urban,16,19
+18,20,weight,M_13,Maincoon,III,rural,15.6,16.1
+18,20,BMI,M_13,Maincoon,III,rural,31,31
+19,1,weight,F_9,Burmese,II,suburban,7.9,7.9
+19,1,BMI,F_9,Burmese,II,suburban,29,21
+19,2,weight,M_9,Siamese,IV,suburban,11.7,11.9
+19,2,BMI,M_9,Siamese,IV,suburban,20,25
+19,3,weight,F_13,American Shorthair,II,urban,12.1,12.5
+19,3,BMI,F_13,American Shorthair,II,urban,32,23
+19,4,weight,M_16,Siamese,III,urban,9.8,10.5
+19,4,BMI,M_16,Siamese,III,urban,17,22
+19,5,weight,F_10,American Shorthair,I,urban,10.8,11.2
+19,5,BMI,F_10,American Shorthair,I,urban,29,22
+19,6,weight,M_13,Siamese,II,suburban,17.9,17.9
+19,6,BMI,M_13,Siamese,II,suburban,29,33
+19,7,weight,M_10,British Shorthair,III,urban,9.8,10.3
+19,7,BMI,M_10,British Shorthair,III,urban,18,22
+19,8,weight,F_16,American Shorthair,III,rural,10.2,10.6
+19,8,BMI,F_16,American Shorthair,III,rural,27,23
+19,9,weight,M_21,British Shorthair,III,urban,14.8,15.4
+19,9,BMI,M_21,British Shorthair,III,urban,26,28
+19,10,weight,M_4,Persian,III,suburban,5.2,5.9
+19,10,BMI,M_4,Persian,III,suburban,16,17
+19,11,weight,F_3,Burmese,III,urban,9.3,9.7
+19,11,BMI,F_3,Burmese,III,urban,33,23
+19,12,weight,M_11,American Shorthair,I,suburban,14,14.2
+19,12,BMI,M_11,American Shorthair,I,suburban,24,28
+19,13,weight,F_6,Maincoon,II,urban,12.6,12.6
+19,13,BMI,F_6,Maincoon,II,urban,27,27
+19,14,weight,F_15,American Shorthair,III,rural,13.7,14
+19,14,BMI,F_15,American Shorthair,III,rural,36,28
+19,15,weight,F_10,British Shorthair,I,urban,9.3,9.9
+19,15,BMI,F_10,British Shorthair,I,urban,22,22
+19,16,weight,F_12,American Shorthair,IV,rural,13.7,14
+19,16,BMI,F_12,American Shorthair,IV,rural,36,26
+19,17,weight,F_2,Maincoon,I,suburban,14.2,14.4
+19,17,BMI,F_2,Maincoon,I,suburban,29,27
+19,18,weight,F_11,American Shorthair,I,rural,5.4,5.6
+19,18,BMI,F_11,American Shorthair,I,rural,15,15
+19,19,weight,M_2,Burmese,III,suburban,10.8,11.4
+19,19,BMI,M_2,Burmese,III,suburban,30,26
+19,20,weight,F_4,Burmese,II,urban,7.8,8.3
+19,20,BMI,F_4,Burmese,II,urban,29,20
+20,1,weight,M_7,American Shorthair,II,suburban,9.9,10.4
+20,1,BMI,M_7,American Shorthair,II,suburban,17,21
+20,2,weight,M_13,Siamese,I,urban,11.5,11.9
+20,2,BMI,M_13,Siamese,I,urban,19,25
+20,3,weight,F_2,British Shorthair,III,suburban,10.5,10.6
+20,3,BMI,F_2,British Shorthair,III,suburban,25,21
+20,4,weight,M_5,Persian,I,suburban,10.4,10.7
+20,4,BMI,M_5,Persian,I,suburban,27,24
+20,5,weight,M_2,Persian,I,suburban,13.5,14.3
+20,5,BMI,M_2,Persian,I,suburban,34,28
+20,6,weight,M_8,Burmese,I,rural,9.8,10
+20,6,BMI,M_8,Burmese,I,rural,27,24
+20,7,weight,M_5,American Shorthair,I,urban,7.2,7.3
+20,7,BMI,M_5,American Shorthair,I,urban,13,19
+20,8,weight,F_17,Maincoon,I,suburban,14,14.7
+20,8,BMI,F_17,Maincoon,I,suburban,30,29
+20,9,weight,M_10,Burmese,II,urban,9.2,10
+20,9,BMI,M_10,Burmese,II,urban,26,24
+20,10,weight,M_19,American Shorthair,I,suburban,18.5,19
+20,10,BMI,M_19,American Shorthair,I,suburban,32,34
+20,11,weight,M_8,Persian,II,urban,6.1,6.6
+20,11,BMI,M_8,Persian,II,urban,18,19
+20,12,weight,F_13,Persian,IV,urban,9.2,9.5
+20,12,BMI,F_13,Persian,IV,urban,30,24
+20,13,weight,F_9,American Shorthair,III,urban,12.8,13.3
+20,13,BMI,F_9,American Shorthair,III,urban,34,27
+20,14,weight,F_7,Burmese,III,urban,10.7,11.2
+20,14,BMI,F_7,Burmese,III,urban,37,24
+20,15,weight,M_17,American Shorthair,III,suburban,9.8,9.9
+20,15,BMI,M_17,American Shorthair,III,suburban,17,22
+20,16,weight,F_16,Siamese,II,suburban,8.8,9.5
+20,16,BMI,F_16,Siamese,II,suburban,18,21
+20,17,weight,M_7,American Shorthair,II,suburban,14.5,14.9
+20,17,BMI,M_7,American Shorthair,II,suburban,25,30
+20,18,weight,M_3,Burmese,II,suburban,5.6,5.7
+20,18,BMI,M_3,Burmese,II,suburban,18,17
+20,19,weight,M_10,American Shorthair,I,suburban,11.4,11.7
+20,19,BMI,M_10,American Shorthair,I,suburban,20,26
+20,20,weight,F_18,Persian,II,suburban,10.3,10.7
+20,20,BMI,F_18,Persian,II,suburban,32,24

@@ -1,0 +1,4 @@
+"0","calor_hist <- "
+"0","  ggplot(menu2, aes(Calories))+"
+"0","  geom_histogram()"
+"0","calor_hist"

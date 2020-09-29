@@ -45,7 +45,7 @@ Converting to DataFrame:
 
 ``` r
 gg_students <- tibble( 
-                        student_grade = student_grade, 
+                        student_grade = round(student_grade, 2),
                         student_number = student_number, 
                         programme = programme
                         )
@@ -350,8 +350,8 @@ the same colour on top.
 ``` r
 smart_line2 <- 
   ggplot(firsts200, aes(x = days, y = Volume)) + 
-  geom_line(colour = "blue" ) +
-  geom_point(colour = "blue")
+  geom_line(colour = "blue", size=2 ) +
+  geom_point(colour = "red")
 
 
 smart_line2
@@ -508,7 +508,8 @@ the ISLR package.
 #    facet_grid( ~ Urban) + 
     facet_grid(~ ShelveLoc) + 
     labs(subtitle = "Shelves Location Quality" , caption = "Model = Linear regression" ) + 
-    ggtitle('Impact on SALES by ADVERTISING, considering SHELVES location')
+    ggtitle('Impact on SALES by ADVERTISING, considering SHELVES location') +
+    theme_minimal()
     
   
   Sales_Corr
@@ -517,3 +518,5 @@ the ISLR package.
     ## `geom_smooth()` using formula 'y ~ x'
 
 ![](README_figs/README-unnamed-chunk-25-1.png)<!-- -->
+
+\`\`\`

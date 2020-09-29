@@ -1,0 +1,7 @@
+"0","  calories_boxplot <-"
+"0","    ggplot(menu2, aes(Category, Calories))+"
+"0","    geom_boxplot()+"
+"0","    coord_flip() +"
+"0","    theme_minimal()"
+"0","  "
+"0","  calories_boxplot"

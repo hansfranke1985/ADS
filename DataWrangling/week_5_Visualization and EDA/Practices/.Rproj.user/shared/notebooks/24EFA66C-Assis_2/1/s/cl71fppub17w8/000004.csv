@@ -1,0 +1,2 @@
+"0","menu <- read.csv('menu.csv')"
+"0","head(menu)"

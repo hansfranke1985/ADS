@@ -1,0 +1,6 @@
+"0","gg_students_plot <- "
+"0","  ggplot(gg_students, aes(x = student_grade))+"
+"0","  geom_histogram() +"
+"0","  stat_bin(binwidth = 1)"
+"0","  "
+"0","gg_students_plot "

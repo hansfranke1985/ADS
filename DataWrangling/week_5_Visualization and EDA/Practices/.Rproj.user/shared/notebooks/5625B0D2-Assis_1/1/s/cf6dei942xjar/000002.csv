@@ -1,0 +1,4 @@
+"0","set.seed(1234)"
+"0","student_grade  <- rnorm(32, 7)"
+"0","student_number <- round(runif(32) * 2e6 + 5e6)"
+"0","programme      <- sample(c(""Science"", ""Social Science""), 32, replace = TRUE)"
