@@ -395,6 +395,17 @@ and calories. Are serving size and energetic value related to each
 other? Did you expect this outcome? Use the alpha argument in
 geom\_point() to adjust the transparency.
 
+Answer: No correlation. I was expecting to see more calories as size
+grows, but in fact it dosen’t
+
+``` r
+    ggplot(menu2, aes(Serving.Size, Calories))+
+    geom_point(alpha = 0.3) + 
+    theme_minimal()
+```
+
+![](README_figs/README-unnamed-chunk-14-1.png)<!-- -->
+
 ## Question 8:
 
 Create a new scatter plot to visualise the association between serving
@@ -404,10 +415,107 @@ distinction between ‘Type’ (see ?aes for more info). Use
 alter your conclusion about the relationship between serving size and
 calories? What do you conclude now?
 
+Answer: in fact dosent change, only reinforces my previous statament.
+The only clearly exception is CHicken & Chips and beverages.
+
+``` r
+    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
+    geom_point(alpha = 0.3) + 
+    geom_smooth() +
+    theme_minimal()
+```
+
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : pseudoinverse used at 351.92
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : neighborhood radius 239.55
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : reciprocal condition number 2.7601e-016
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : There are other near singularities as well. 13993
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at
+    ## 351.92
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : neighborhood radius
+    ## 239.55
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : reciprocal condition
+    ## number 2.7601e-016
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : There are other near
+    ## singularities as well. 13993
+
+![](README_figs/README-unnamed-chunk-15-1.png)<!-- -->
+
 ## Question 9:
 
 Why do you think the relationship is so much affected by food type, is
 there a way to investigate this further using visualisations?
+
+Answer; probably because when you put some itens in categories they have
+some common properties, like Calories for example. We should compare
+Calories x Category, but appart from the same plot, this alows to see
+the patterns in each category, or in others words: the correlation
+between calories and serving.size.
+
+``` r
+    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
+    geom_point(alpha = 0.3) + 
+    geom_smooth(color = "blue") +
+    facet_wrap(~Category, nrow=9, ncol = 3) +
+  
+    theme_minimal()
+```
+
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : pseudoinverse used at 351.92
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : neighborhood radius 239.55
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : reciprocal condition number 2.7601e-016
+
+    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
+    ## parametric, : There are other near singularities as well. 13993
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at
+    ## 351.92
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : neighborhood radius
+    ## 239.55
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : reciprocal condition
+    ## number 2.7601e-016
+
+    ## Warning in predLoess(object$y, object$x, newx = if
+    ## (is.null(newdata)) object$x else if (is.data.frame(newdata))
+    ## as.matrix(model.frame(delete.response(terms(object)), : There are other near
+    ## singularities as well. 13993
+
+![](README_figs/README-unnamed-chunk-16-1.png)<!-- -->
 
 So far, you’ve only looked at the association between two variables at a
 time. However, when you are exploring associations, you may want to look
@@ -420,3 +528,66 @@ to make use of the ‘ggpairs()’ function from the ‘GGally’ package.
 Create a plot using ‘ggpairs()’ where the association between atleast 4
 different variables is visualised. Are there differences in the
 associations between those variables based on item Type?
+
+``` r
+    ggpairs(menu2[,c(1,3,4,5)], upper = list(continuous = "cor"), lower = list(continuous = "points")) +
+    theme_minimal()
+```
+
+    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+
+![](README_figs/README-unnamed-chunk-17-1.png)<!-- -->
+
+``` r
+  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +
+    theme_minimal()
+```
+
+![](README_figs/README-unnamed-chunk-18-1.png)<!-- -->
+
+``` r
+ #install.packages("WVPlots")
+ library(WVPlots) 
+```
+
+    ## Loading required package: wrapr
+
+    ## 
+    ## Attaching package: 'wrapr'
+
+    ## The following object is masked from 'package:dplyr':
+    ## 
+    ##     coalesce
+
+    ## The following object is masked from 'package:tidyr':
+    ## 
+    ##     unpack
+
+    ## The following object is masked from 'package:tibble':
+    ## 
+    ##     view
+
+``` r
+  PairPlot(menu2, 
+         colnames(menu2[, c(3,4,20)]), 
+         "Menu2", 
+         group_var = "Category") + theme_minimal()
+```
+
+    ## Warning in RColorBrewer::brewer.pal(n, pal): n too large, allowed maximum for palette Dark2 is 8
+    ## Returning the palette you asked for with that many colors
+
+    ## Warning: Removed 117 rows containing missing values (geom_point).
+
+![](README_figs/README-unnamed-chunk-19-1.png)<!-- -->
+
+``` r
+ggcorr(menu2, method = c("everything", "pearson")) 
+```
+
+    ## Warning in ggcorr(menu2, method = c("everything", "pearson")): data in column(s)
+    ## 'Category', 'Item', 'Type' are not numeric and were ignored
+
+![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->
