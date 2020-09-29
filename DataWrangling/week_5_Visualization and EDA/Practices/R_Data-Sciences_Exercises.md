@@ -7,14 +7,14 @@ September 29, 2020
 library(tidyverse)
 ```
 
-    ## -- Attaching packages -------------------------------------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages -------------------------------------------------------------------------------- tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts ----------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts ----------------------------------------------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -95,7 +95,7 @@ not useful?
 
 ![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-## 3.3.1 Exercises
+\#\# 3.3.1 Exercises
 
 What’s gone wrong with this code? Why are the points not blue?
 
@@ -195,29 +195,109 @@ and y.
 
 What happens if you facet on a continuous variable?
 
+``` r
+  #Lot of messy visual... each region of facet is probably one observation
+  ggplot(data = mpg) + 
+    geom_point(mapping = aes(x = displ, y = hwy, shape = class))+
+    facet_wrap(~displ)
+```
+
+    ## Warning: The shape palette can deal with a maximum of 6 discrete values because
+    ## more than 6 becomes difficult to discriminate; you have 7. Consider
+    ## specifying shapes manually if you must have them.
+
+    ## Warning: Removed 62 rows containing missing values (geom_point).
+
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+
 What do the empty cells in plot with facet\_grid(drv \~ cyl) mean? How
 do they relate to this plot?
 
-ggplot(data = mpg) + geom\_point(mapping = aes(x = drv, y = cyl)) What
-plots does the following code make? What does . do?
+``` r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = drv, y = cyl))
+```
 
-ggplot(data = mpg) + geom\_point(mapping = aes(x = displ, y = hwy)) +
-facet\_grid(drv \~ .)
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
-ggplot(data = mpg) + geom\_point(mapping = aes(x = displ, y = hwy)) +
-facet\_grid(. \~ cyl) Take the first faceted plot in this section:
+``` r
+ #there is no match value with DRV and CYL with this values
+ ggplot(data = mpg) + 
+    geom_point(mapping = aes(x = drv, y = cyl))+
+    facet_grid(drv ~ cyl)
+```
 
-ggplot(data = mpg) + geom\_point(mapping = aes(x = displ, y = hwy)) +
-facet\_wrap(\~ class, nrow = 2) What are the advantages to using
-faceting instead of the colour aesthetic? What are the disadvantages?
-How might the balance change if you had a larger dataset?
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+
+``` r
+  #check if values exists => in fact there is no obervation
+  filter(mpg, drv == 5 & cyl == 4)
+```
+
+    ## # A tibble: 0 x 11
+    ## # ... with 11 variables: manufacturer <chr>, model <chr>, displ <dbl>,
+    ## #   year <int>, cyl <int>, trans <chr>, drv <chr>, cty <int>, hwy <int>,
+    ## #   fl <chr>, class <chr>
+
+What plots does the following code make? What does . do?
+
+``` r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(drv ~ .)
+```
+
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+
+``` r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(. ~ cyl)
+```
+
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+
+Take the first faceted plot in this section:
+
+``` r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) + 
+  facet_wrap(~ class, nrow = 2)
+```
+
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+
+``` r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class)) 
+```
+
+![](R_Data-Sciences_Exercises_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+
+What are the advantages to using faceting instead of the colour
+aesthetic? What are the disadvantages? How might the balance change if
+you had a larger dataset?
+
+*Answer: Faceting shows a more visual graph, where u can see the details
+of each point inside the “class”. With color u compare the position
+between the “classes”. If u have a larger dataset with a lot of points
+and few classes, faceting is better because u can\`t see the diferences
+in the same plot.*
 
 Read ?facet\_wrap. What does nrow do? What does ncol do? What other
 options control the layout of the individual panels? Why doesn’t
 facet\_grid() have nrow and ncol arguments?
 
+*Answer: nrow and ncol define how to display the plots. Face grid dosent
+have because they ajust only by variables numbers, for example a
+variable with 4 variables will have 4 columns/rows.*
+
 When using facet\_grid() you should usually put the variable with more
 unique levels in the columns. Why?
+
+*Answer: When putting the more levels on the row axis, then the y-axis
+would shrink so that it is harder to see which actual values are at the
+points as shown in the plot *
 
 ## 3.6.1 Exercises
 

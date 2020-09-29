@@ -61,7 +61,7 @@ What happens if you make a scatterplot of class vs drv? Why is the plot not usef
 ```
 
 
-## 3.3.1 Exercises
+  ## 3.3.1 Exercises
 
 What’s gone wrong with this code? Why are the points not blue?
 
@@ -121,33 +121,76 @@ What happens if you map an aesthetic to something other than a variable name, li
 ```
 
 
-
 ## 3.5.1 Exercises
 What happens if you facet on a continuous variable?
+```{r}
+  #Lot of messy visual... each region of facet is probably one observation
+  ggplot(data = mpg) + 
+    geom_point(mapping = aes(x = displ, y = hwy, shape = class))+
+    facet_wrap(~displ)
+```
+
 
 What do the empty cells in plot with facet_grid(drv ~ cyl) mean? How do they relate to this plot?
-
+```{r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = drv, y = cyl))
+```
+
+```{r}
+ #there is no match value with DRV and CYL with this values
+ ggplot(data = mpg) + 
+    geom_point(mapping = aes(x = drv, y = cyl))+
+    facet_grid(drv ~ cyl)
+
+  #check if values exists => in fact there is no obervation
+  filter(mpg, drv == 5 & cyl == 4)
+```
+
+```{r}
+
+```
+
 What plots does the following code make? What does . do?
 
+```{r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy)) +
   facet_grid(drv ~ .)
+```
 
+```{r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy)) +
   facet_grid(. ~ cyl)
+```
+
+
 Take the first faceted plot in this section:
+```{r}
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy)) + 
   facet_wrap(~ class, nrow = 2)
+```
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class)) 
+```
+
+
 What are the advantages to using faceting instead of the colour aesthetic? What are the disadvantages? How might the balance change if you had a larger dataset?
+
+*Answer: Faceting shows a more visual graph, where u can see the details of each point inside the "class". With color u compare the position between the "classes". If u have a larger dataset with a lot of points and few classes, faceting is better because u can`t see the diferences in the same plot.*
+
 
 Read ?facet_wrap. What does nrow do? What does ncol do? What other options control the layout of the individual panels? Why doesn’t facet_grid() have nrow and ncol arguments?
 
+*Answer: nrow and ncol define how to display the plots. Face grid dosent have because they ajust only by variables numbers, for example a variable with 4 variables will have 4 columns/rows.*
+
 When using facet_grid() you should usually put the variable with more unique levels in the columns. Why?
+
+*Answer: When putting the more levels on the row axis, then the y-axis would shrink so that it is harder to see which actual values are at the points as shown in the plot *
 
 ## 3.6.1 Exercises
 What geom would you use to draw a line chart? A boxplot? A histogram? An area chart?
