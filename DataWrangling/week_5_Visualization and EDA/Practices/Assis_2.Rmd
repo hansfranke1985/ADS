@@ -238,6 +238,6 @@ Create a plot using ‘ggpairs()’ where the association between atleast 4 diff
          group_var = "Category") + theme_minimal()
 ```
 ```{r}
-ggcorr(menu2, method = c("everything", "pearson")) 
+ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
 ```
 

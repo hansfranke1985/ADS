@@ -1,0 +1,4 @@
+"0","ggcorr(menu2, method = c(""everything"", ""pearson""))+coord_flip()"
+"2","data in column(s) 'Category', 'Item', 'Type' are not numeric and were ignored"
+"2","Coordinate system already present. Adding new coordinate system, which will replace the existing one.
+"
