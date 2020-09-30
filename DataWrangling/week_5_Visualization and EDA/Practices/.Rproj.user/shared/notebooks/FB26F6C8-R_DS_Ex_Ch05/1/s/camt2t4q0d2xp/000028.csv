@@ -1,0 +1,8 @@
+"0","#total delay time by dest"
+"0","flights %>%"
+"0","  filter(arr_delay > 0) %>%"
+"0","    group_by(dest) %>%"
+"0","    mutate( delays = sum(arr_delay) ) %>%"
+"0","  summarise(sum(delays) )"
+"2","`summarise()` ungrouping output (override with `.groups` argument)
+"

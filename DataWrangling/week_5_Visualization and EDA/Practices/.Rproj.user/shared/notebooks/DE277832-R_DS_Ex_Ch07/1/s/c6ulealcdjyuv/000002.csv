@@ -1,0 +1,4 @@
+"0","ggplot(diamonds) +"
+"0","  geom_histogram(mapping = aes(x = price)) +"
+"0","  xlim(100, 5000) +"
+"0","  ylim(0, 3000)"

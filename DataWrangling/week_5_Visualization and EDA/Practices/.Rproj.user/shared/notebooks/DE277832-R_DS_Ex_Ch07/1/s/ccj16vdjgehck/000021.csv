@@ -1,0 +1,3 @@
+"0","#Carat vs Price but with boxplot (One continuos cutted with bins)"
+"0","ggplot(diamonds, aes(x=carat, y = price))+"
+"0","  geom_boxplot(aes(group=cut_width(carat,0.2)))"

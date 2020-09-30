@@ -1,0 +1,3 @@
+"0","#Cut vs Price, negative correlation (1 continuos x 1 categorical)"
+"0","ggplot(diamonds, aes(x=cut, y=price))+"
+"0","  geom_boxplot()"

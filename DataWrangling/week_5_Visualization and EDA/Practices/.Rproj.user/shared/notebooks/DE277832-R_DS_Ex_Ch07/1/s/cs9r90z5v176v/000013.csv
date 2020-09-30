@@ -1,0 +1,4 @@
+"0","  "
+"0","  ggplot(diamonds, aes(x))+"
+"0","  geom_histogram(fill = ""dark blue"") +"
+"0","  theme_minimal()"

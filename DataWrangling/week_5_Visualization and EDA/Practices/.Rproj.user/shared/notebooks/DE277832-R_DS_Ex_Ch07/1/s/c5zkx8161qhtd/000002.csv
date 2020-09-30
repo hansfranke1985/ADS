@@ -1,0 +1,3 @@
+"0","ggplot(diamonds, aes(x = carat, y = price)) +"
+"0","  geom_hex() +"
+"0","  facet_wrap(~cut, ncol = 1)"

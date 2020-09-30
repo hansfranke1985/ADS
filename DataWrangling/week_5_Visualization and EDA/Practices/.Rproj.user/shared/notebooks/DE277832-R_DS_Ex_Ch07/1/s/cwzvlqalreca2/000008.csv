@@ -1,0 +1,4 @@
+"0","#Color vs Price, negative correlation (1 continuos x 1 categorical)"
+"0","ggplot(diamonds, aes(x=color, y=price))+"
+"0","  geom_boxplot()+"
+"0","  theme_minimal()"

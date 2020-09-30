@@ -1,0 +1,7 @@
+"0","  flights %>%"
+"0","    group_by(hour) %>%"
+"0","      summarise("
+"0","        delay = mean(arr_delay, na.rm = TRUE)) %>%"
+"0","          arrange(delay)"
+"2","`summarise()` ungrouping output (override with `.groups` argument)
+"

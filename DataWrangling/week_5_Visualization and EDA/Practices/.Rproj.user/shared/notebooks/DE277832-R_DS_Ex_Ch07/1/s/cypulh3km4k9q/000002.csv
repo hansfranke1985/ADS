@@ -1,0 +1,4 @@
+"0","#Color vs Price, negative correlation (1 continuos x 1 categorical) => this is dificult to visualise but there is a very light negative correlation (color J is the worst)"
+"0","ggplot(diamonds, aes(x=clarity, y=price))+"
+"0","  geom_boxplot()+"
+"0","  theme_minimal()"

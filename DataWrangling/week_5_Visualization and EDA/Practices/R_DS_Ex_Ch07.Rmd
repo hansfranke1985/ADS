@@ -1,0 +1,192 @@
+---
+title: "R For Data Sciences - Exercises"
+subtitle: "Chapter 7 - EDA"
+author: "Hans Franke"
+date: "September 30, 2020"
+output: rmarkdown::github_document
+---
+
+
+```{r}
+library("nycflights13")
+library("tidyverse")
+```
+
+
+# 7.3 Variation
+
+## 7.3.4 Exercises
+- Explore the distribution of each of the x, y, and z variables in diamonds. What do you learn? Think about a diamond and how you might decide which dimension is the length, width, and depth.
+```{r}
+# x, y and Z are continuos, so we should use a histogram!
+ str(diamonds)
+```
+```{r}
+#Some summary statistics
+
+#1) how u can have some diamonds with 0 on their dimensions?
+#2) probably the max values from y and z are wront too, they are so high compare with mean/median
+#3) Looking at plots (see below) we notice there are some outliers, looking for the space in the x-axis
+#4) looking for help ?diamonds, we notice that x = lenght, y = width and z = deph. 
+summary(select(diamonds, x, y, z))
+
+```
+
+```{r}
+  
+  ggplot(diamonds, aes(x))+
+  geom_histogram(fill = "dark blue") +
+  theme_minimal()
+```
+```{r}
+  
+  ggplot(diamonds, aes(y))+
+  geom_histogram(fill = "dark green") +
+  theme_minimal()
+```
+
+```{r}
+  
+  ggplot(diamonds, aes(z))+
+  geom_histogram(fill = "dark red") +
+  theme_minimal()
+```
+
+
+- Explore the distribution of price. Do you discover anything unusual or surprising? (Hint: Carefully think about the binwidth and make sure you try a wide range of values.)
+
+```{r}
+#there is no diamong with price in that "hole"
+ggplot(diamonds, aes(price))+
+  geom_histogram(binwidth = 10, center = 0)+
+  coord_cartesian(ylim= c(0,1000), xlim=c(0,2000))
+```
+
+
+- How many diamonds are 0.99 carat? How many are 1 carat? What do you think is the cause of the difference?
+
+```{r}
+#there is much more diamonds with carat =1
+diamonds %>%
+  filter(carat>0.98 & carat <1.01) %>%
+ggplot(aes(carat))+
+  geom_histogram()
+```
+```{r}
+#showing the values
+diamonds %>%
+  filter(carat >= 0.99, carat <= 1) %>%
+  count(carat)
+```
+
+
+
+- Compare and contrast coord_cartesian() vs xlim() or ylim() when zooming in on a histogram. What happens if you leave binwidth unset? What happens if you try and zoom so only half a bar shows?
+
+```{r}
+#the coord_cartesian works after the bins were evaluated
+ggplot(diamonds) +
+  geom_histogram(mapping = aes(x = price)) +
+  coord_cartesian(xlim = c(100, 5000), ylim = c(0, 3000))
+
+```
+
+
+```{r}
+#x_lim and y+lim cuts from the plot values outside the range values! So the plot can be different
+ggplot(diamonds) +
+  geom_histogram(mapping = aes(x = price)) +
+  xlim(100, 5000) +
+  ylim(0, 3000)
+```
+
+# 7.4: Missing Values
+
+## Question: 7.4.1
+
+What happens to missing values in a histogram? What happens to missing values in a bar chart? Why is there a difference?
+
+
+*Answer:* 
+- Histogram => missing values are when the number of observations in each bin are calculated.
+- Bar_chart => n/a values are a another category
+
+What does na.rm = TRUE do in mean() and sum()?
+
+*Answer: This option removes NA values from the vector prior to calculating the mean and sum*
+
+# 7.5: Covariation
+
+## 7.5.1.1 Exercises
+Use what you’ve learned to improve the visualisation of the departure times of cancelled vs. non-cancelled flights.
+
+```{r}
+flights %>% 
+  mutate(
+    cancelled = is.na(dep_time),
+    sch_dep = sched_dep_time %/% 100,
+    sch_dep_min = sched_dep_time %% 100,
+    sche = sch_dep + sch_dep_min / 60
+    
+  ) %>%
+  ggplot(aes(x = sche, y = cancelled)) + 
+  geom_boxplot()
+```
+
+
+What variable in the diamonds dataset is most important for predicting the price of a diamond? How is that variable correlated with cut? Why does the combination of those two relationships lead to lower quality diamonds being more expensive?
+
+```{r}
+# Variables: carat, cut, color, cut
+head(diamonds)
+```
+```{r}
+#Carat vs Price -> 2 continuos so we should use scatterplot
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point()
+```
+```{r}
+#Carat vs Price but with boxplot (One continuos cutted with bins) => Positive correlation, as increase in carat increase the price
+ggplot(diamonds, aes(x=carat, y = price))+
+  geom_boxplot(aes(group=cut_width(carat,0.2)))
+
+```
+```{r}
+#Cut vs Price, negative correlation (1 continuos x 1 categorical)
+ggplot(diamonds, aes(x=cut, y=price))+
+  geom_boxplot()
+```
+
+```{r}
+#Color vs Price, negative correlation (1 continuos x 1 categorical) => this is dificult to visualise but there is a very light negative correlation (color J is the worst)
+ggplot(diamonds, aes(x=color, y=price))+
+  geom_boxplot()+
+  theme_minimal()
+```
+```{r}
+#Clairty vs Price, negative correlation (1 continuos x 1 categorical) => this is dificult to visualise but there is a very light negative correlation (color IF is the worst)
+ggplot(diamonds, aes(x=clarity, y=price))+
+  geom_boxplot()+
+  theme_minimal()
+```
+
+## 7.5.2 Two Categorical Variables
+
+```{r}
+diamonds %>%
+  count(color, cut) %>%
+  group_by(color) %>%
+  mutate(prop = n / sum(n)) %>%
+  ggplot(mapping = aes(x = color, y = cut)) +
+  geom_tile(mapping = aes(fill = prop))
+```
+
+
+## 7.5.3 Two continuous variables
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_hex() +
+  facet_wrap(~cut, ncol = 1)
+```
+

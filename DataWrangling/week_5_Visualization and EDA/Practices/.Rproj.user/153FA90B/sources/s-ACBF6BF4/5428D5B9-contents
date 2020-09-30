@@ -173,9 +173,7 @@ What trigonometric functions does R provide?
 
 *R provides functions for the three primary trigonometric functions: sine (sin()), cosine (cos()), and tangent (tan()). The input angles to all these functions are in radians.*
 
-5.6: grouped summaries
 
-5.7: Grouped mutated (and filters)
 
 ```{r}
 flights %>% 
@@ -187,6 +185,10 @@ flights %>%
   ) %>% 
   filter(count > 20, dest == "HNL")
 ```
+
+5.6: grouped summaries
+
+
 
 Brainstorm at least 5 different ways to assess the typical delay characteristics of a group of flights. Consider the following scenarios:
 
@@ -243,6 +245,8 @@ filter(flights, !is.na(dep_delay), is.na(arr_delay)) %>%
 
 Look at the number of cancelled flights per day. Is there a pattern? Is the proportion of cancelled flights related to the average delay?
 
+
+
 ```{r}
 # Determine the total cancelled flights by day
 cancelled_per_day <- 
@@ -280,15 +284,82 @@ ggplot(cancelled_and_delays) +
   geom_point(aes(x = avg_dep_delay, y = cancelled_prop))
 ```
 
+
+
 Which carrier has the worst delays? Challenge: can you disentangle the effects of bad airports vs. bad carriers? Why/why not? (Hint: think about flights %>% group_by(carrier, dest) %>% summarise(n()))
 
+*Answer: we can compare avg delay of a specific carrier with avg delay of that route!*
+
 ```{r}
+flights %>%
+  filter(!is.na(arr_delay)) %>%
+  # Total delay by carrier within each origin, dest
+  group_by(origin, dest, carrier) %>%
+  summarise(
+    arr_delay = sum(arr_delay),
+    flights = n()
+  ) %>%
+  # Total delay within each origin dest
+  group_by(origin, dest) %>%
+  mutate(
+    arr_delay_total = sum(arr_delay),
+    flights_total = sum(flights)
+  ) %>%
+  # average delay of each carrier - average delay of other carriers
+  ungroup() %>%
+  mutate(
+    arr_delay_others = (arr_delay_total - arr_delay) /
+      (flights_total - flights),
+    arr_delay_mean = arr_delay / flights,
+    arr_delay_diff = arr_delay_mean - arr_delay_others
+  ) %>%
+  # remove NaN values (when there is only one carrier)
+  filter(is.finite(arr_delay_diff)) %>%
+  # average over all airports it flies to
+  group_by(carrier) %>%
+  summarise(arr_delay_diff = mean(arr_delay_diff)) %>%
+  arrange(desc(arr_delay_diff))
 
 ```
+
+```{r}
+#plot Carries
+
+ggplot(delays_carr_dest, aes(carrier, avg_delay)) +
+  geom_boxplot()
+```
+
+
 
 What does the sort argument to count() do. When might you use it?
 
 *Answer: The sort argument to count() sorts the results in order of n. You could use this anytime you would run count() followed by arrange().For example, the following expression counts the number of flights to a destination and sorts the returned data from highest to lowest.* 
+
+5.7: Grouped mutated (and filters)
+
+What time of day should you fly if you want to avoid delays as much as possible?
+
+```{r}
+  flights %>%
+    group_by(hour) %>%
+      summarise(
+        delay = mean(arr_delay, na.rm = TRUE)) %>%
+          arrange(delay)
+      
+```
+
+For each destination, compute the total minutes of delay. For each flight, compute the proportion of the total delay for its destination.
+
+```{r}
+#total delay time by dest
+flights %>%
+  filter(arr_delay > 0) %>%
+    group_by(dest) %>%
+    mutate( delays = sum(arr_delay) ) %>%
+
+  summarise(sum(delays) )
+  
+```
 
 
 

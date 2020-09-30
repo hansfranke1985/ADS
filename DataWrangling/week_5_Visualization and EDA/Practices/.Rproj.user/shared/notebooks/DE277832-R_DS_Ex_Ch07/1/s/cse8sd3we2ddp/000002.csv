@@ -1,0 +1,6 @@
+"0","diamonds %>%"
+"0","  count(color, cut) %>%"
+"0","  group_by(color) %>%"
+"0","  mutate(prop = n / sum(n)) %>%"
+"0","  ggplot(mapping = aes(x = color, y = cut)) +"
+"0","  geom_tile(mapping = aes(fill = prop))"

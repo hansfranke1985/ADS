@@ -1,0 +1,3 @@
+"0","ggplot(diamonds) +"
+"0","  geom_histogram(mapping = aes(x = price)) +"
+"0","  coord_cartesian(xlim = c(100, 5000), ylim = c(0, 3000))"

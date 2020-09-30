@@ -1,0 +1,4 @@
+"0","#showing the values"
+"0","diamonds %>%"
+"0","  filter(carat >= 0.99, carat <= 1) %>%"
+"0","  count(carat)"
