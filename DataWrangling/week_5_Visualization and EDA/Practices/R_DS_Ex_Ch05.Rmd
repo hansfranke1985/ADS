@@ -1,0 +1,12 @@
+---
+title: "R For Data Sciences - Exercises"
+subtitle: "Chapter 5 - Data Transformation"
+author: "Hans Franke"
+date: "September 30, 2020"
+output: rmarkdown::github_document
+---
+
+```{r}
+library(tidyverse)
+library(ISLR)
+```

@@ -1,5 +1,6 @@
 ---
 title: "R For Data Sciences - Exercises"
+subtitle: "Chapter 3 - Visualisation"
 author: "Hans Franke"
 date: "September 29, 2020"
 output: rmarkdown::github_document
