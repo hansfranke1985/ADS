@@ -1,0 +1,2 @@
+"0","flight_mod2 <- mutate(flights, air_time, air_time_new = arr_time - dep_time )"
+"0","select(flight_mod2, air_time, arr_time, dep_time, air_time_new)"

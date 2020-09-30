@@ -1,0 +1,13 @@
+"0","# Determine the total cancelled flights by day"
+"0","cancelled_per_day <- "
+"0","  flights %>%"
+"0","  mutate(cancelled = (is.na(arr_delay) | is.na(dep_delay))) %>% #create cancelled flights"
+"0","  group_by(year, month, day) %>%"
+"0","  summarise("
+"0","    cancelled_num = sum(cancelled),"
+"0","    flights_num = n(),"
+"0","  )"
+"2","`summarise()` regrouping output by 'year', 'month' (override with `.groups` argument)
+"
+"0","ggplot(cancelled_per_day, aes(flights_num, cancelled_num)) + "
+"0","  geom_point()"

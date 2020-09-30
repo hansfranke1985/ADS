@@ -1,0 +1,4 @@
+"0","#We need to use group_by + tally()"
+"0","not_cancelled %>%"
+"0","  group_by(tailnum) %>%"
+"0","  tally(distance)"

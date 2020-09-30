@@ -1,0 +1,2 @@
+"0","filter(flights, !is.na(dep_delay), is.na(arr_delay)) %>%"
+"0","  select(dep_time, arr_time, sched_arr_time, dep_delay, arr_delay)"

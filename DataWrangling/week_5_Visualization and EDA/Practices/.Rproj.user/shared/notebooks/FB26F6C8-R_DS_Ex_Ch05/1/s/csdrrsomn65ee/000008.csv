@@ -1,0 +1,2 @@
+"0","#nothing happens, select ignores the duplicates values"
+"0","head(select(flights, month, month))"

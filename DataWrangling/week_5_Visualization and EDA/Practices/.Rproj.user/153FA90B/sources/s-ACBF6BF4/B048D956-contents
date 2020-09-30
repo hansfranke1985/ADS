@@ -7,14 +7,57 @@ output: html_notebook
   -1
   -2
   
-- Book: https://r4ds.had.co.nz/
+# Book: https://r4ds.had.co.nz/
 
-- chapter 3: visualisation 
+# chapter 3: visualisation 
 
-- chapter 5: data transformation
+# chapter 5: data transformation
 
-- chapter 7: EDA
+- Pick observations by their values (filter()).
+```{r}
+filter(flights, month == 1, day == 1)
+```
 
+
+- Reorder the rows (arrange()).
+```{r}
+arrange(flights, year, month, day)
+```
+
+
+- Pick variables by their names (select()).
+```{r}
+# Select columns by name
+select(flights, year, month, day)
+```
+
+
+- Create new variables with functions of existing variables (mutate()).
+```{r}
+flights_sml <- select(flights, 
+  year:day, 
+  ends_with("delay"), 
+  distance, 
+  air_time
+)
+
+mutate(flights_sml,
+  gain = dep_delay - arr_delay,
+  speed = distance / air_time * 60 )
+```
+
+- Collapse many values down to a single summary (summarise()).
+
+```{r}
+by_day <- group_by(flights, year, month, day)
+summarise(by_day, delay = mean(dep_delay, na.rm = TRUE))
+```
+
+
+#chapter 7: EDA
+
+
+# Furthur Reading;
 - Read Again:
 - Chapter 3.7 Statistical Transformation
 - Chapter 3.8 - Position Adjustent

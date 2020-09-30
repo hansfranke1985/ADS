@@ -1,0 +1,13 @@
+"0","# Look for AVG delay in each day"
+"0","cancelled_and_delays <- "
+"0","  flights %>%"
+"0","  mutate(cancelled = (is.na(arr_delay) | is.na(dep_delay))) %>%"
+"0","  group_by(year, month, day) %>%"
+"0","  summarise("
+"0","    cancelled_prop = mean(cancelled),"
+"0","    avg_dep_delay = mean(dep_delay, na.rm = TRUE),"
+"0","    avg_arr_delay = mean(arr_delay, na.rm = TRUE)"
+"0","  )"
+"2","`summarise()` regrouping output by 'year', 'month' (override with `.groups` argument)
+"
+"0","cancelled_and_delays"

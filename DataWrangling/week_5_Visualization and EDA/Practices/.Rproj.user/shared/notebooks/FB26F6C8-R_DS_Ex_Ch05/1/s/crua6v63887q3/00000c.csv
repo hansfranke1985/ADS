@@ -1,0 +1,2 @@
+"0","ggplot(cancelled_and_delays) +"
+"0","  geom_point(aes(x = avg_dep_delay, y = cancelled_prop))"

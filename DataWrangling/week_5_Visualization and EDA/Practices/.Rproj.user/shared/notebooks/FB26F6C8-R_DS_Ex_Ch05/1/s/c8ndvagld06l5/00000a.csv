@@ -1,0 +1,3 @@
+"0"," flights_mod <- mutate(flights, dep_time_mins = (dep_time %/% 100 * 60) + (dep_time %% 100))"
+"0"," #select only this table"
+"0"," head(select(flights_mod, dep_time, dep_time_mins))"

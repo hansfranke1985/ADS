@@ -1,0 +1,10 @@
+"0","flights %>% "
+"0","  group_by(dest) %>% "
+"0","  summarise("
+"0","    count = n(),"
+"0","    dist = mean(distance, na.rm = TRUE),"
+"0","    delay = mean(arr_delay, na.rm = TRUE)"
+"0","  ) %>% "
+"0","  filter(count > 20, dest == ""HNL"")"
+"2","`summarise()` ungrouping output (override with `.groups` argument)
+"

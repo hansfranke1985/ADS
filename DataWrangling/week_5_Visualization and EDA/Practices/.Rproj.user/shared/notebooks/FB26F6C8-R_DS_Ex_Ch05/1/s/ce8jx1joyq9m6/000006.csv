@@ -1,0 +1,2 @@
+"0","#default = IGNORE case, if u want to exact match use argument (ignore.case = FALSE)"
+"0","head(select(flights, contains(""TIME"")))"

@@ -1,0 +1,2 @@
+"0","not_cancelled <- flights %>%"
+"0","  filter(!is.na(dep_delay), !is.na(arr_delay))"
