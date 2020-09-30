@@ -1,0 +1,26 @@
+---
+title: "Guide to Visualisation and EDA"
+author: "Hans Franke"
+output: html_notebook
+---
+- Assigments:
+  -1
+  -2
+  
+- Book: https://r4ds.had.co.nz/
+
+- chapter 3: visualisation 
+
+- chapter 5: data transformation
+
+- chapter 7: EDA
+
+- Read Again:
+- Chapter 3.7 Statistical Transformation
+- Chapter 3.8 - Position Adjustent
+
+- Exploratory Data Analysis;
+Read chapter from the suggested book about the TOdo:
+https://bookdown.org/rdpeng/exdata/exploratory-data-analysis-checklist.html
+
+

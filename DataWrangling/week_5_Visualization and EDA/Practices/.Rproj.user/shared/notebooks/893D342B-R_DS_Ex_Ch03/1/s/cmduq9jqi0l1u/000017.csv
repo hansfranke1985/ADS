@@ -1,0 +1,4 @@
+"0","  # corrected code"
+"0","  #View(mpg)"
+"0","  ggplot(data = mpg, aes(x = manufacturer, y = hwy))+"
+"0","  geom_point()"

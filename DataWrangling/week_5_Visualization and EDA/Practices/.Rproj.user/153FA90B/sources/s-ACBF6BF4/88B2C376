@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601362235567.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "88B2C376",
+    "lastKnownWriteTime" : 1601387524,
+    "last_content_update" : 1601387524087,
+    "path" : "~/GitHub/ADS/DataWrangling/week_5_Visualization and EDA/Practices/Assis_2.Rmd",
+    "project_path" : "Assis_2.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "164,29",
+        "scrollLine" : "158",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

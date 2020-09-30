@@ -1,0 +1,4 @@
+"0","#Both categorical variables, scatterplot usually shows some relations between variables, but to get better results with one continuos."
+"0","  ggplot(mpg, aes(class,drv))+"
+"0","  geom_point()+"
+"0","  theme_minimal()"
