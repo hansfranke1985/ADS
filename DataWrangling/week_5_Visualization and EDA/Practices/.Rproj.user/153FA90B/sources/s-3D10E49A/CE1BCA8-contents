@@ -17,7 +17,7 @@ library(ISLR)
 
 Run ggplot(data = mpg). What do you see?  
 
-*Answer:* Nothing, because there is no axis, on aes1 aditional must define GEOm to show proper graph.
+*Answer:* Nothing, because there is no GEOM + AES loaded.
 
 ```{r}
   # corrected code
