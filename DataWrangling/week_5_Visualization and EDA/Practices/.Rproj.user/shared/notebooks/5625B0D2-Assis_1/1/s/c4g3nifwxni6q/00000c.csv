@@ -1,0 +1,5 @@
+"0","bar_plot <- "
+"0","  ggplot(Hitters, aes(Years), )+"
+"0","  geom_bar(fill = 'light blue') + "
+"0","  theme_minimal()"
+"0","bar_plot"
