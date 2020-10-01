@@ -1,0 +1,120 @@
+---
+title: "Quick Summary: Visualisation, Transformation and EDA"
+author: "Hans Franke"
+output: rmarkdown::github_document
+---
+
+```{r}
+library(tidyverse)
+library(ISLR)
+library(nycflights13)
+```
+
+- Assigments:
+1. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_1.md
+  
+2. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_2.md
+  
+# Book: https://r4ds.had.co.nz/
+
+# chapter 3: visualisation 
+
+## Exercises:
+https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch03.md
+
+# chapter 5: data transformation
+
+## Exercises
+https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch05.md
+
+### Quick Guide to Transformation Functions:
+
+- Pick observations by their values (filter()).
+```{r}
+  filter(mtcars, mpg > 20)
+```
+
+
+- Reorder the rows (arrange()).
+```{r}
+head(arrange(mtcars, cyl))
+```
+
+
+
+- Pick variables by their names (select()).
+```{r}
+# Select columns by name
+head(select(mtcars, mpg, cyl, hp))
+```
+
+
+- Create new variables with functions of existing variables (mutate()).
+```{r}
+flights_sml <- select(flights, 
+  year:day, 
+  ends_with("delay"), 
+  distance, 
+  air_time
+)
+
+mutate(flights_sml,
+  gain = dep_delay - arr_delay,
+  speed = distance / air_time * 60 )
+```
+
+- Collapse many values down to a single summary (summarise()).
+
+```{r}
+by_day <- group_by(flights, year, month, day)
+summarise(by_day, delay = mean(dep_delay, na.rm = TRUE))
+```
+
+
+# chapter 7: EDA
+
+## Exercises:
+https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch07.md
+
+# Further Reading;
+
+# Exploratory Data Analysis;
+Read chapter from the suggested book about the checklist:
+https://bookdown.org/rdpeng/exdata/exploratory-data-analysis-checklist.html
+
+
+## Peng Check-List
+1. Formulate your question
+
+2. Read in your data
+
+3. Check the packaging
+
+4. Run str()
+
+5. Look at the top and the bottom of your data
+
+6. Check your “n”s
+
+7. Validate with at least one external data source
+
+8. Try the easy solution first
+
+9. Challenge your solution
+
+10. Follow up
+
+## Tuckey Principles
+
+1. Show comparisons
+
+2. Show Causality
+
+3. Show Multivariate Data
+
+4. Integrate Evidence
+
+5. Describe and Document the evidence
+
+6. Content, content, content
+

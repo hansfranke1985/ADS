@@ -1,2 +1,0 @@
-"0","  #check if values exists => in fact there is no obervation"
-"0","  filter(mpg, drv == 5 & cyl == 4)"

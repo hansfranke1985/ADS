@@ -1,3 +1,0 @@
-"0","#Color inside the AES, determine CLASS of points, usually is used by other variable to describe or add informations"
-"0","ggplot(data = mpg) + "
-"0","  geom_point(mapping = aes(x = displ, y = hwy, color = ""blue""))"

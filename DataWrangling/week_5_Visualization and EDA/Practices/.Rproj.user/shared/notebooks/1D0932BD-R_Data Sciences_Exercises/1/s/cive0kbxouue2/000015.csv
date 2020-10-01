@@ -1,4 +1,0 @@
-"0"," #there is no match value with DRV and CYL with this values"
-"0"," ggplot(data = mpg) + "
-"0","    geom_point(mapping = aes(x = drv, y = cyl))+"
-"0","    facet_grid(drv ~ cyl)"

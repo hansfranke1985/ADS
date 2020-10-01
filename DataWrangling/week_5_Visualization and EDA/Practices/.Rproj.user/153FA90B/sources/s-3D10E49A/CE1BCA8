@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601401845478.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CE1BCA8",
+    "lastKnownWriteTime" : 1601453609,
+    "last_content_update" : 1601453609308,
+    "path" : "~/GitHub/ADS/DataWrangling/week_5_Visualization and EDA/Practices/R_DS_Ex_Ch03.Rmd",
+    "project_path" : "R_DS_Ex_Ch03.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "5,8",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

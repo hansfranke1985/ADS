@@ -1,2 +1,0 @@
-"0","ggplot(data = mpg) + "
-"0","  geom_point(mapping = aes(x = drv, y = cyl))"

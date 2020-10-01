@@ -1,0 +1,243 @@
+---
+title: "Assignment_2"
+author: "Hans Franke"
+date: "September 29, 2020"
+output: rmarkdown::github_document
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "README_figs/README-"
+)
+```
+
+Importing Libraries
+
+```{r}
+library(tidyverse)
+library(ISLR)
+library(GGally)
+```
+
+Loading dataset:
+```{r}
+menu <- read.csv('menu.csv')
+head(menu)
+```
+
+Checking the structure of dataset:
+```{r}
+str(menu)
+```
+
+
+Doing some transformation:
+```{r}
+# Transformation drinks
+drink.fl <- menu %>% 
+  filter(str_detect(Serving.Size, " fl oz.*")) %>% 
+  mutate(Serving.Size = str_remove(Serving.Size, " fl oz.*")) %>% 
+  mutate(Serving.Size = as.numeric(Serving.Size) * 29.5735)
+
+drink.carton <- menu %>% 
+  filter(str_detect(Serving.Size, "carton")) %>% 
+  mutate(Serving.Size = str_extract(Serving.Size, "[0-9]{2,3}")) %>% 
+  mutate(Serving.Size = as.numeric(Serving.Size))
+
+# Transformation food
+food <-  menu %>% 
+  filter(str_detect(Serving.Size, "g")) %>% 
+  mutate(Serving.Size = (str_extract(Serving.Size, "(?<=\\()[0-9]{2,4}"))) %>% 
+  mutate(Serving.Size = as.numeric(Serving.Size))
+
+# Add Type variable indicating whether an item is food or a drink 
+menu2 <-  bind_rows(drink.fl, drink.carton, food) %>% 
+  mutate(
+   Type = case_when(
+     as.character(Category) == 'Beverages' ~ 'Drinks',
+     as.character(Category) == 'Coffee & Tea' ~ 'Drinks',
+     as.character(Category) == 'Smoothies & Shakes' ~ 'Drinks',
+     TRUE ~ 'Food'
+   )
+  )
+```
+
+
+```{r}
+str(menu2)
+```
+```{r}
+head(menu2)
+```
+
+## Question 1:
+After you ran the code, check the structure of the data once again, what type of variable is ‘Serving.Size’ now, and what was it before you ran the code?
+
+Answer: Serving.Size is now numeric, before was char. 
+
+
+#Variation
+
+## Question 2
+
+Create a graph that gives insight in the number of items in each ‘Category’, use ‘geom_bar()’ to make the graph. You can use ‘coord_flip()’ to put the categories on the y-axis and the counts on the x-axis. Use the ‘menu2’ dataframe to do this.
+
+```{r}
+  menu_graph <-
+    ggplot(menu2, aes(Category)) +
+    geom_bar() +
+    coord_flip() 
+
+  menu_graph
+```
+
+
+## Question 3
+Plot the distribution of ‘Calories’ using ‘geom_histogram’. Describe the distribution, do you see anything notable?
+
+Answer: there is some outliers with almost 2000 calories.
+
+```{r}
+
+calor_hist <- 
+  ggplot(menu2, aes(Calories))+
+  geom_histogram()
+
+calor_hist
+```
+
+# Association
+
+
+The second type of questions in visual EDA concern the association between different variables. The histogram you created in the previous question give insight in how the ‘Calories’ are distributed on the level of the whole menu. However, it may be interesting how ‘Calories’ are distributed on ‘Category’ level.
+
+## Question 4
+
+Plot the distribution of ‘Calories’ for each ‘Category’ using ‘geom_density()’ in combination with ‘facet_wrap()’, can you see in which ‘Category’ the outlier that can be seen in the histogram falls?
+
+Answer: Chicken and Fish
+
+```{r}
+  calories_comp <-
+    ggplot(menu2, aes(Calories))+
+    geom_density(fill="light blue")+
+    facet_wrap(~Category) +
+    theme_minimal()
+
+  calories_comp
+```
+
+
+An easier way to spot outliers, is by creating a boxplot, because the geom is structured in a way that it emphasizes the outliers.
+
+## Question 5:
+
+Create a boxplot of the ‘Calories’ for each ‘Category. Is the outlier in the same ’Category’ as you thought it was in based on the previous question?‘. Again you can use ’coord_flip()’ to swich the axes of the plot.
+Now you know in which category the outlier falls, you can check which item it is that has such a high energetic value.
+
+```{r}
+  calories_boxplot <-
+    ggplot(menu2, aes(Category, Calories))+
+    geom_boxplot()+
+    coord_flip() +
+    theme_minimal()
+  
+  calories_boxplot
+```
+
+Looking for which item:
+```{r}
+      filter(menu2, Calories >= 1500) 
+```
+
+
+For the next plot, you need to pipe the data using ‘%>%’ from the ‘magrittr’ package. More information on piping can be found here.
+
+## Question 6:
+
+Create a plot using ‘geom_col()’ to visualise the number of ‘Calories’ each item in the Chicken & Fish category. Use ‘filter()’ in combination with a pipe to select the information that you need for this plot. What is the item that contains so many calories? Why do you need to use ‘geom_col()’ here instead of ‘geom_bar()’?
+
+```{r}
+    menu2 %>%
+          filter(Category == "Chicken & Fish") %>%
+            ggplot(aes(x = Item, y = Calories))+
+              geom_col()+
+              coord_flip() + 
+              theme_minimal()
+
+   
+```
+
+
+- Answer
+There are two types of bar charts: geom_bar() and geom_col(). geom_bar() makes the height of the bar proportional to the number of cases in each group (or if the weight aesthetic is supplied, the sum of the weights). If you want the heights of the bars to represent values in the data, use geom_col() instead. geom_bar() uses stat_count() by default: it counts the number of cases at each x position. geom_col() uses stat_identity(): it leaves the data as is.
+
+Now you know what causes the outlier, you can check whether there is an association between the serving size and the number of calories.
+
+## Question 7:
+
+Create a scatter plot to visualise the association between serving size and calories. Are serving size and energetic value related to each other? Did you expect this outcome? Use the alpha argument in geom_point() to adjust the transparency.
+
+Answer: No correlation. I was expecting to see more calories as size grows, but in fact it dosen't
+```{r}
+
+    ggplot(menu2, aes(Serving.Size, Calories))+
+    geom_point(alpha = 0.3) + 
+    theme_minimal()
+```
+
+
+## Question 8:
+Create a new scatter plot to visualise the association between serving size and calories, but now use the ‘colour’ argument to make a distinction between ‘Type’ (see ?aes for more info). Use ‘geom_smooth()’ to add a regression line to the plot. Does this alter your conclusion about the relationship between serving size and calories? What do you conclude now?
+
+Answer: in fact dosent change, only reinforces my previous statament. The only clearly exception is CHicken & Chips and beverages.
+
+```{r}
+
+    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
+    geom_point(alpha = 0.3) + 
+    geom_smooth() +
+    theme_minimal()
+```
+
+
+## Question 9:
+Why do you think the relationship is so much affected by food type, is there a way to investigate this further using visualisations?
+
+Answer; probably because when you put some itens in categories they have some common properties, like Calories for example. We should compare Calories x Category, but appart from the same plot, this alows to see the patterns in each category, or in others words: the correlation between calories and serving.size.
+```{r}
+    ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
+    geom_point(alpha = 0.3) + 
+    geom_smooth(color = "blue") +
+    facet_wrap(~Category, nrow=9, ncol = 3) +
+  
+    theme_minimal()
+```
+
+So far, you’ve only looked at the association between two variables at a time. However, when you are exploring associations, you may want to look at the association of many different variables at the same time (e.g. when you want to generate hypotheses). An easy way to do this, is to make use of the ‘ggpairs()’ function from the ‘GGally’ package.
+
+## Question 10:
+Create a plot using ‘ggpairs()’ where the association between atleast 4 different variables is visualised. Are there differences in the associations between those variables based on item Type?
+
+```{r}
+    ggpairs(menu2[,c(1,3,4,5)], upper = list(continuous = "cor"), lower = list(continuous = "points")) +
+    theme_minimal()
+```
+```{r}
+  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +
+    theme_minimal()
+```
+```{r}
+ #install.packages("WVPlots")
+ library(WVPlots) 
+
+
+  PairPlot(menu2, 
+         colnames(menu2[, c(3,4,20)]), 
+         "Menu2", 
+         group_var = "Category") + theme_minimal()
+```
+```{r}
+ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
+```
+
