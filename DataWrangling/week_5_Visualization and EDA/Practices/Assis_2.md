@@ -543,22 +543,11 @@ different variables is visualised. Are there differences in the
 associations between those variables based on item Type?
 
 ``` r
-    ggpairs(menu2[,c(1,3,4,5)], upper = list(continuous = "cor"), lower = list(continuous = "points")) +
+  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Type)) +
     theme_minimal()
 ```
-
-    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
 ![](README_figs/README-unnamed-chunk-18-1.png)<!-- -->
-
-``` r
-  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +
-    theme_minimal()
-```
-
-![](README_figs/README-unnamed-chunk-19-1.png)<!-- -->
 
 ``` r
  #install.packages("WVPlots")
@@ -586,15 +575,10 @@ associations between those variables based on item Type?
   PairPlot(menu2, 
          colnames(menu2[, c(3,4,20)]), 
          "Menu2", 
-         group_var = "Category") + theme_minimal()
+         group_var = "Type") + theme_minimal()
 ```
 
-    ## Warning in RColorBrewer::brewer.pal(n, pal): n too large, allowed maximum for palette Dark2 is 8
-    ## Returning the palette you asked for with that many colors
-
-    ## Warning: Removed 117 rows containing missing values (geom_point).
-
-![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-19-1.png)<!-- -->
 
 ``` r
 ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
@@ -605,4 +589,4 @@ ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
 
     ## Coordinate system already present. Adding new coordinate system, which will replace the existing one.
 
-![](README_figs/README-unnamed-chunk-21-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->

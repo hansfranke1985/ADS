@@ -229,12 +229,11 @@ So far, you’ve only looked at the association between two variables at a time.
 ## Question 10:
 Create a plot using ‘ggpairs()’ where the association between atleast 4 different variables is visualised. Are there differences in the associations between those variables based on item Type?
 
+
+
+
 ```{r}
-    ggpairs(menu2[,c(1,3,4,5)], upper = list(continuous = "cor"), lower = list(continuous = "points")) +
-    theme_minimal()
-```
-```{r}
-  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +
+  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Type)) +
     theme_minimal()
 ```
 ```{r}
@@ -245,7 +244,7 @@ Create a plot using ‘ggpairs()’ where the association between atleast 4 diff
   PairPlot(menu2, 
          colnames(menu2[, c(3,4,20)]), 
          "Menu2", 
-         group_var = "Category") + theme_minimal()
+         group_var = "Type") + theme_minimal()
 ```
 ```{r}
 ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()

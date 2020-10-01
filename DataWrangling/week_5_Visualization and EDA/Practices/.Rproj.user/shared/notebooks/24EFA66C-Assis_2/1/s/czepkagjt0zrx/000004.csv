@@ -1,2 +1,0 @@
-"0","  ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +"
-"0","    theme_minimal()"
