@@ -22,9 +22,12 @@ library(ISLR)
 library(nycflights13)
 ```
 
-  - Assigments:
+# Slides
 
-<!-- end list -->
+1.  <https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/visualization_lecture_2.pdf>
+2.  <https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/visualization_lecture_1.pdf>
+
+# Assigments:
 
 1.  <https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_1.md>
 
