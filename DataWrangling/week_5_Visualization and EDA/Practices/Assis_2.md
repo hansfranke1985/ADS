@@ -368,6 +368,7 @@ is the item that contains so many calories? Why do you need to use
 ``` r
     menu2 %>%
           filter(Category == "Chicken & Fish") %>%
+          
             ggplot(aes(x = Item, y = Calories))+
               geom_col()+
               coord_flip() + 
@@ -375,6 +376,18 @@ is the item that contains so many calories? Why do you need to use
 ```
 
 ![](README_figs/README-unnamed-chunk-13-1.png)<!-- -->
+
+``` r
+    menu2 %>%
+          filter(Category == "Chicken & Fish") %>%
+          
+            ggplot(aes(x = Item))+
+              geom_bar()+
+              coord_flip() + 
+              theme_minimal()
+```
+
+![](README_figs/README-unnamed-chunk-14-1.png)<!-- -->
 
   - Answer There are two types of bar charts: geom\_bar() and
     geom\_col(). geom\_bar() makes the height of the bar proportional to
@@ -404,7 +417,7 @@ grows, but in fact it dosen’t
     theme_minimal()
 ```
 
-![](README_figs/README-unnamed-chunk-14-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-15-1.png)<!-- -->
 
 ## Question 8:
 
@@ -416,7 +429,7 @@ alter your conclusion about the relationship between serving size and
 calories? What do you conclude now?
 
 Answer: in fact dosent change, only reinforces my previous statament.
-The only clearly exception is CHicken & Chips and beverages.
+The only clearly exception is CHicken & Chips and Breakfast
 
 ``` r
     ggplot(menu2, aes(Serving.Size, Calories, color = Category))+
@@ -459,7 +472,7 @@ The only clearly exception is CHicken & Chips and beverages.
     ## as.matrix(model.frame(delete.response(terms(object)), : There are other near
     ## singularities as well. 13993
 
-![](README_figs/README-unnamed-chunk-15-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-16-1.png)<!-- -->
 
 ## Question 9:
 
@@ -515,7 +528,7 @@ between calories and serving.size.
     ## as.matrix(model.frame(delete.response(terms(object)), : There are other near
     ## singularities as well. 13993
 
-![](README_figs/README-unnamed-chunk-16-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-17-1.png)<!-- -->
 
 So far, you’ve only looked at the association between two variables at a
 time. However, when you are exploring associations, you may want to look
@@ -538,14 +551,14 @@ associations between those variables based on item Type?
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](README_figs/README-unnamed-chunk-17-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-18-1.png)<!-- -->
 
 ``` r
   ggpairs(menu2, columns=c(3,4,20), ggplot2::aes(colour= Category)) +
     theme_minimal()
 ```
 
-![](README_figs/README-unnamed-chunk-18-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-19-1.png)<!-- -->
 
 ``` r
  #install.packages("WVPlots")
@@ -581,7 +594,7 @@ associations between those variables based on item Type?
 
     ## Warning: Removed 117 rows containing missing values (geom_point).
 
-![](README_figs/README-unnamed-chunk-19-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->
 
 ``` r
 ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
@@ -592,4 +605,4 @@ ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
 
     ## Coordinate system already present. Adding new coordinate system, which will replace the existing one.
 
-![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->
+![](README_figs/README-unnamed-chunk-21-1.png)<!-- -->

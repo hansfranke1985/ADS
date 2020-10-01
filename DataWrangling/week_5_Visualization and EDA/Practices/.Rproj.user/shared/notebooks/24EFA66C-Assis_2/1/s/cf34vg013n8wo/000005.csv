@@ -1,0 +1,7 @@
+"0","    menu2 %>%"
+"0","          filter(Category == ""Chicken & Fish"") %>%"
+"0","          "
+"0","            ggplot(aes(x = Item))+"
+"0","              geom_bar()+"
+"0","              coord_flip() + "
+"0","              theme_minimal()"

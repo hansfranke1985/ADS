@@ -160,12 +160,22 @@ Create a plot using ‘geom_col()’ to visualise the number of ‘Calories’ e
 ```{r}
     menu2 %>%
           filter(Category == "Chicken & Fish") %>%
+          
             ggplot(aes(x = Item, y = Calories))+
               geom_col()+
               coord_flip() + 
               theme_minimal()
 
    
+```
+```{r}
+    menu2 %>%
+          filter(Category == "Chicken & Fish") %>%
+          
+            ggplot(aes(x = Item))+
+              geom_bar()+
+              coord_flip() + 
+              theme_minimal()
 ```
 
 
@@ -190,7 +200,7 @@ Answer: No correlation. I was expecting to see more calories as size grows, but 
 ## Question 8:
 Create a new scatter plot to visualise the association between serving size and calories, but now use the ‘colour’ argument to make a distinction between ‘Type’ (see ?aes for more info). Use ‘geom_smooth()’ to add a regression line to the plot. Does this alter your conclusion about the relationship between serving size and calories? What do you conclude now?
 
-Answer: in fact dosent change, only reinforces my previous statament. The only clearly exception is CHicken & Chips and beverages.
+Answer: in fact dosent change, only reinforces my previous statament. The only clearly exception is CHicken & Chips and Breakfast
 
 ```{r}
 

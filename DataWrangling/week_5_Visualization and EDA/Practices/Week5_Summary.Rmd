@@ -85,7 +85,7 @@ https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualiza
 
 - Reorder the rows (arrange()).
 ```{r}
-head(arrange(mtcars, cyl))
+head(arrange(mtcars, desc(cyl)))
 ```
 
 

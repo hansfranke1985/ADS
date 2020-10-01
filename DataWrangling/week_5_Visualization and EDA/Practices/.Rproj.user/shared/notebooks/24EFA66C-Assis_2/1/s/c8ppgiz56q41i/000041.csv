@@ -1,8 +1,7 @@
 "0","    menu2 %>%"
 "0","          filter(Category == ""Chicken & Fish"") %>%"
+"0","          "
 "0","            ggplot(aes(x = Item, y = Calories))+"
 "0","              geom_col()+"
 "0","              coord_flip() + "
 "0","              theme_minimal()"
-"2","Error in eval(lhs, parent, parent) : object 'menu2' not found
-"

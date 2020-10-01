@@ -1,0 +1,31 @@
+"0"," #install.packages(""WVPlots"")"
+"0"," library(WVPlots) "
+"2","Loading required package: wrapr
+"
+"2","
+Attaching package: ‘wrapr’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    coalesce
+
+"
+"2","The following object is masked from ‘package:tidyr’:
+
+    unpack
+
+"
+"2","The following object is masked from ‘package:tibble’:
+
+    view
+
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"0","  PairPlot(menu2, "
+"0","         colnames(menu2[, c(3,4,20)]), "
+"0","         ""Menu2"", "
+"0","         group_var = ""Category"") + theme_minimal()"
