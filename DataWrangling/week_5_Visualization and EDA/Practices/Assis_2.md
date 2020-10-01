@@ -9,14 +9,14 @@ Importing Libraries
 library(tidyverse)
 ```
 
-    ## -- Attaching packages ----------------------------------------------------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages ----------------------------------------------------------------------------- tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts -------------------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts -------------------------------------------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -243,7 +243,7 @@ the code?
 
 Answer: Serving.Size is now numeric, before was char.
 
-\#Variation
+# Variation
 
 ## Question 2
 
@@ -584,10 +584,12 @@ associations between those variables based on item Type?
 ![](README_figs/README-unnamed-chunk-19-1.png)<!-- -->
 
 ``` r
-ggcorr(menu2, method = c("everything", "pearson")) 
+ggcorr(menu2, method = c("everything", "pearson"))+coord_flip()
 ```
 
     ## Warning in ggcorr(menu2, method = c("everything", "pearson")): data in column(s)
     ## 'Category', 'Item', 'Type' are not numeric and were ignored
+
+    ## Coordinate system already present. Adding new coordinate system, which will replace the existing one.
 
 ![](README_figs/README-unnamed-chunk-20-1.png)<!-- -->

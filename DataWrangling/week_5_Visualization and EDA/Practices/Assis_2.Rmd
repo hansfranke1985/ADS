@@ -76,7 +76,7 @@ After you ran the code, check the structure of the data once again, what type of
 Answer: Serving.Size is now numeric, before was char. 
 
 
-#Variation
+# Variation
 
 ## Question 2
 
