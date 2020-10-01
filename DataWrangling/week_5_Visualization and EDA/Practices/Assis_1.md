@@ -9,14 +9,14 @@ Importing libraries
 library(tidyverse)
 ```
 
-    ## -- Attaching packages ------------------------------------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages ----------------------------------------------------------------------------- tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts ---------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts -------------------------------------------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -67,7 +67,7 @@ head(gg_students)
     ## 5          7.43        5103293 Social Science
     ## 6          7.51        6129140 Science
 
-## Question 2
+## Question 3
 
 Plot the first homeruns\_plot again, but map the Hits to the y-axis and
 the HmRun to the x-axis instead.
@@ -518,5 +518,36 @@ the ISLR package.
     ## `geom_smooth()` using formula 'y ~ x'
 
 ![](README_figs/README-unnamed-chunk-25-1.png)<!-- -->
+
+``` r
+ #install.packages("WVPlots")
+ library(WVPlots) 
+```
+
+    ## Loading required package: wrapr
+
+    ## 
+    ## Attaching package: 'wrapr'
+
+    ## The following object is masked from 'package:dplyr':
+    ## 
+    ##     coalesce
+
+    ## The following object is masked from 'package:tidyr':
+    ## 
+    ##     unpack
+
+    ## The following object is masked from 'package:tibble':
+    ## 
+    ##     view
+
+``` r
+  PairPlot(Carseats, 
+         colnames(Carseats)[1:5], 
+         "Carseats Comparison", 
+         group_var = NULL) + theme_minimal()
+```
+
+![](README_figs/README-unnamed-chunk-26-1.png)<!-- -->
 
 \`\`\`
