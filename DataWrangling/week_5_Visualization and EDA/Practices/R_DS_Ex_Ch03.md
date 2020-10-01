@@ -7,14 +7,14 @@ September 29, 2020
 library(tidyverse)
 ```
 
-    ## -- Attaching packages -------------------------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages ----------------------------------------------------------------------------- tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts ----------------------------------------------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts -------------------------------------------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -28,8 +28,7 @@ library(ISLR)
 
 Run ggplot(data = mpg). What do you see?
 
-*Answer:* Nothing, because there is no axis, on aes1 aditional must
-define GEOm to show proper graph.
+*Answer:* Nothing, because there is no GEOM + AES loaded.
 
 ``` r
   # corrected code
@@ -508,22 +507,86 @@ Answer: The function stat\_smooth() calculates the following variables:
 In our proportion bar chart, we need to set group = 1. Why? In other
 words what is the problem with these two graphs?
 
-ggplot(data = diamonds) + geom\_bar(mapping = aes(x = cut, y =
-..prop..)) ggplot(data = diamonds) + geom\_bar(mapping = aes(x = cut,
-fill = color, y = ..prop..))
+*Answer: we need to put group = 1 or y=..group.. to avoid proportion
+inside the group. For example, in FAIR how is the proportion of FAIR? It
+dosent make sense, using group = 1 u pick proportion of samples inside
+the variable, for example FAIR in CUT*
+
+``` r
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x = cut, y = ..prop..))
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
+
+``` r
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x = cut, fill = color, y = ..prop..))
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-34-1.png)<!-- -->
+
+``` r
+#correct example
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x = cut, y = ..group.., fill = cut))
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
+
+``` r
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x = cut, y = ..prop.., group = 1))
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-36-1.png)<!-- -->
 
 ## 3.8.1 Exercises
 
 What is the problem with this plot? How could you improve it?
 
-ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) + geom\_point()
+``` r
+ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) + 
+  geom_point()
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
+
+``` r
+#using geom_jitter you put random variation to the location, and show much more clearly avoiding overplotting
+ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) + 
+  geom_point() + 
+  geom_jitter()
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
 
 What parameters to geom\_jitter() control the amount of jittering?
 
+*ANSWER: From the geom\_jitter() documentation, there are two arguments
+to jitter:*
+
+  - width controls the amount of horizontal displacement, and
+  - height controls the amount of vertical displacement.
+  - The defaults values of width and height will introduce noise in both
+    directions. Here is what the plot looks like with the default values
+    of height and width.
+
 Compare and contrast geom\_jitter() with geom\_count().
 
-What’s the default position adjustment for geom\_boxplot()? Create a
-visualisation of the mpg dataset that demonstrates it.
+``` r
+ggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) +
+  geom_jitter()
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->
+
+``` r
+ggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) +
+  geom_count()
+```
+
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-40-1.png)<!-- -->
 
 ## 3.9.1 Exercises
 
@@ -536,7 +599,7 @@ ggplot(mpg, aes(x = factor(1), fill = drv)) +
   geom_bar()
 ```
 
-![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-41-1.png)<!-- -->
 
 ``` r
 ggplot(mpg, aes(x = factor(1), fill = drv)) +
@@ -544,7 +607,7 @@ ggplot(mpg, aes(x = factor(1), fill = drv)) +
   coord_polar(theta = "y")
 ```
 
-![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-34-1.png)<!-- -->
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-42-1.png)<!-- -->
 
 What does labs() do? Read the documentation.
 
@@ -581,7 +644,7 @@ ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
   coord_fixed()
 ```
 
-![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-43-1.png)<!-- -->
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
@@ -589,4 +652,4 @@ ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
   geom_abline() 
 ```
 
-![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-36-1.png)<!-- -->
+![](R_DS_Ex_Ch03_files/figure-gfm/unnamed-chunk-44-1.png)<!-- -->
