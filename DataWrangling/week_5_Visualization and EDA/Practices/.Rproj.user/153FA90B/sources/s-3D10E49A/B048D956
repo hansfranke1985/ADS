@@ -5,7 +5,7 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "722885424",
+    "hash" : "0",
     "id" : "B048D956",
     "lastKnownWriteTime" : 1601539597,
     "last_content_update" : 1601539597022,
@@ -13,8 +13,8 @@
     "project_path" : "Week5_Summary.Rmd",
     "properties" : {
         "chunk_output_type" : "inline",
-        "cursorPosition" : "87,32",
-        "scrollLine" : "83",
+        "cursorPosition" : "19,120",
+        "scrollLine" : "4",
         "tempName" : "Untitled1"
     },
     "relative_order" : 6,
