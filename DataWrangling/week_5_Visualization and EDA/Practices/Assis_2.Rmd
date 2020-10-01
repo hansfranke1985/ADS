@@ -122,7 +122,7 @@ Answer: Chicken and Fish
     ggplot(menu2, aes(Calories))+
     geom_density(fill="light blue")+
     facet_wrap(~Category) +
-    theme_minimal()
+    theme_minimal() + scale_y_log()
 
   calories_comp
 ```

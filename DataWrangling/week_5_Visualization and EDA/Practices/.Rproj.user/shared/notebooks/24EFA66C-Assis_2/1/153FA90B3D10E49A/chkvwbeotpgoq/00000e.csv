@@ -2,5 +2,5 @@
 "0","    ggplot(menu2, aes(Calories))+"
 "0","    geom_density(fill=""light blue"")+"
 "0","    facet_wrap(~Category) +"
-"0","    theme_minimal()"
+"0","    theme_minimal() "
 "0","  calories_comp"

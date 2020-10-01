@@ -23,6 +23,50 @@ library(nycflights13)
 
 # chapter 3: visualisation 
 
+## Grammar of grapichs:
+
+Goal is to specify how data map to picture, so the correct type and largest amount possible is transferred
+
+1. Map raw data to following elements:
+- Aesthetics (position, shape, color, ...)
+- Geometric objects (points, lines, bars, ...)
+- Scales (continuous, discrete, ...)
+- Facets (small multiples)
+2. Additionally, can apply:
+- Statistical transformation (identity, binning, median, ...)
+- Coordinate system (Cartesian, polar, parallel, ...
+
+```{r}
+# Common guideline to build plots with ggplot
+
+#ggplot(data = <DATA>) + 
+#  <GEOM_FUNCTION>(
+#     mapping = aes(<MAPPINGS>),
+#     stat = <STAT>, 
+#     position = <POSITION>
+#  ) +
+#  <COORDINATE_FUNCTION> +
+#  <FACET_FUNCTION>
+```
+
+# Gestalt principles of relatedness
+- Proximity: Things that are spatially near to one another seem to be related.
+- Similarity: Things that look alike seem to be related.
+- Connection: Things that are visually tied to one another seem to be related.
+- Continuity: Partially hidden objects are completed into familiar shapes.
+- Closure: Incomplete shapes are perceived as complete.
+- Figure and ground: Visual elements are taken to be either in the foreground or in the background.
+- Common fate: Elements sharing a direction of movement are perceived as a unit.
+
+# Tufte principles:
+
+- Ask how data maps to perception
+- Ask which comparisons you want, guide eye to those
+- Maximize data-to-ink ratio
+- Present more data (without losing interpretability)
+- Use levels of detail
+- (Remember narrative)
+
 ## Exercises:
 https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch03.md
 
