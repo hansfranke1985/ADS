@@ -1,5 +1,0 @@
-"0","#Creating sample df"
-"0","mortality <- c(0.55, 0.35, 0.5, 0.3)"
-"0","transmission <- c(1.2,0.5,2.5,5)"
-"0","diseases <- c(""bird flu"", ""MERS"", ""EBOLA"", ""smallplox"")"
-"0","disease <- tibble( mortalityrate = mortality, transmissionrate = transmission, diseasesnames = diseases)"
