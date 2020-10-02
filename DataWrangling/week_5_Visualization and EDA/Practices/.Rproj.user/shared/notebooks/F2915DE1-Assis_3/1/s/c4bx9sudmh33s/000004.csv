@@ -1,0 +1,4 @@
+"0","# need to select in which ID`s"
+"0","dat %>%"
+"0","  filter(weight <3 | weight >20) %>%"
+"0","  select(ID)"

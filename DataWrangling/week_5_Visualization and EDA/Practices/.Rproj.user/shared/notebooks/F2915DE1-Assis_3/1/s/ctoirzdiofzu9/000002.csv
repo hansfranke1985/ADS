@@ -1,0 +1,2 @@
+"0","ggplot(dat, aes(area)) + "
+"0","  geom_bar() + theme_minimal()"

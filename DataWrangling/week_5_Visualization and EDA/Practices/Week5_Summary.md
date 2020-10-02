@@ -6,14 +6,14 @@ Hans Franke
 library(tidyverse)
 ```
 
-    ## -- Attaching packages ----------------------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts -------------------------------------------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -32,6 +32,8 @@ library(nycflights13)
 1.  <https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_1.md>
 
 2.  <https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_2.md>
+
+3.  <https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_3.md>
 
 # Book: <https://r4ds.had.co.nz/>
 
@@ -140,16 +142,16 @@ largest amount possible is transferred
 <!-- end list -->
 
 ``` r
-head(arrange(mtcars, cyl))
+head(arrange(mtcars, desc(cyl)))
 ```
 
-    ##                 mpg cyl  disp hp drat    wt  qsec vs am gear carb
-    ## Datsun 710     22.8   4 108.0 93 3.85 2.320 18.61  1  1    4    1
-    ## Merc 240D      24.4   4 146.7 62 3.69 3.190 20.00  1  0    4    2
-    ## Merc 230       22.8   4 140.8 95 3.92 3.150 22.90  1  0    4    2
-    ## Fiat 128       32.4   4  78.7 66 4.08 2.200 19.47  1  1    4    1
-    ## Honda Civic    30.4   4  75.7 52 4.93 1.615 18.52  1  1    4    2
-    ## Toyota Corolla 33.9   4  71.1 65 4.22 1.835 19.90  1  1    4    1
+    ##                     mpg cyl  disp  hp drat   wt  qsec vs am gear carb
+    ## Hornet Sportabout  18.7   8 360.0 175 3.15 3.44 17.02  0  0    3    2
+    ## Duster 360         14.3   8 360.0 245 3.21 3.57 15.84  0  0    3    4
+    ## Merc 450SE         16.4   8 275.8 180 3.07 4.07 17.40  0  0    3    3
+    ## Merc 450SL         17.3   8 275.8 180 3.07 3.73 17.60  0  0    3    3
+    ## Merc 450SLC        15.2   8 275.8 180 3.07 3.78 18.00  0  0    3    3
+    ## Cadillac Fleetwood 10.4   8 472.0 205 2.93 5.25 17.98  0  0    3    4
 
   - Pick variables by their names (select()).
 

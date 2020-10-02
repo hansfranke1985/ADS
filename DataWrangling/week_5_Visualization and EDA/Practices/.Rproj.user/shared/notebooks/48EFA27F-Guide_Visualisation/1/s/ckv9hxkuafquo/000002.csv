@@ -1,9 +1,0 @@
-"0","flights_sml <- select(flights, "
-"0","  year:day, "
-"0","  ends_with(""delay""), "
-"0","  distance, "
-"0","  air_time"
-"0",")"
-"2","Error in select(flights, year:day, ends_with(""delay""), distance, air_time) : 
-  object 'flights' not found
-"

@@ -1,0 +1,10 @@
+"0","w_2017 <- dat %>% "
+"0","  filter(year == 2017) %>% "
+"0","  select(weight, year) "
+"0","w_2018 <- dat %>% "
+"0","  filter(year == 2018) %>% "
+"0","  select(weight, year) "
+"0","ggplot(data = w_2017, aes(year, weight)) + geom_point() + geom_point(w_2018, aes(year, weight))"
+"2","Error: `mapping` must be created by `aes()`
+[90mRun `rlang::last_error()` to see where the error occurred.[39m
+"

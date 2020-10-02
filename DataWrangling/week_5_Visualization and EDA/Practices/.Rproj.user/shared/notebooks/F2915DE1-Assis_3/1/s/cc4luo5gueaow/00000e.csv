@@ -1,0 +1,5 @@
+"0","dat %>%"
+"0","  group_by(breed) %>%"
+"0","  summarise( mean = mean(weight, na.rm = TRUE))"
+"2","`summarise()` ungrouping output (override with `.groups` argument)
+"

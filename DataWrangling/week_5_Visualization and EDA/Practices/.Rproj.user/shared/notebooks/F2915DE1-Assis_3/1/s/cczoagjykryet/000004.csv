@@ -1,0 +1,5 @@
+"0","ggplot(dat, aes(age, weight)) +"
+"0","  geom_point() +"
+"0","  geom_smooth()+"
+"0","  theme_minimal()+"
+"0","  facet_grid(breed ~ area)"

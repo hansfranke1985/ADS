@@ -1,0 +1,3 @@
+"0","ggplot(flights, aes(hour,carrier)) + "
+"0","  geom_point(color = ""red"") +"
+"0","  geom_text(aes(label = dest),color = ""red"")"

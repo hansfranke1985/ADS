@@ -1,2 +1,0 @@
-"0","# Select columns by name"
-"0","head(select(mtcars, mpg, cyl, hp))"

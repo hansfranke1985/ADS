@@ -1,0 +1,5 @@
+"0","#plot Carries"
+"0","ggplot(flights, aes(carrier, avg_delay)) +"
+"0","  geom_point()"
+"2","Error in FUN(X[[i]], ...) : object 'avg_delay' not found
+"

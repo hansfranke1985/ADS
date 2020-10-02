@@ -1,0 +1,3 @@
+"0","dat <- dat %>% "
+"0","  separate(col = gen_age, into = c('gender', 'age'))"
+"0","head(dat)"

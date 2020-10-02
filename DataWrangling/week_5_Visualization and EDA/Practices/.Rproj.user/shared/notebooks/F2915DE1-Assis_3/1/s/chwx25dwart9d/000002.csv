@@ -1,0 +1,8 @@
+"0","dat <- read.csv('vet.data.csv')"
+"0","dat <- dat %>% "
+"0","  pivot_longer(cols = c(value2017, value2018), names_to = 'year', values_to = 'count') %>% "
+"0","  mutate(year = str_remove(year, ""value"")) %>% "
+"0","  pivot_wider(names_from = type, values_from = count) %>% "
+"0","  separate(col = gen_age, into = c('gender', 'age')) %>% "
+"0","  unite(col = ID, clinic, client, remove = FALSE) %>% "
+"0","  mutate(age = as.numeric(age))"

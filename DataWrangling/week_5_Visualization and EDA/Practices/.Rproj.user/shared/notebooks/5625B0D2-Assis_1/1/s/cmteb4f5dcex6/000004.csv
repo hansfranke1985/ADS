@@ -1,5 +1,0 @@
-"0","homeruns_plot <- "
-"0","  ggplot(Hitters, aes(x = HmRun, y = Hits)) +"
-"0","  geom_point() +"
-"0","  labs(x = ""HmRun"", y = ""Hits"")"
-"0","homeruns_plot"

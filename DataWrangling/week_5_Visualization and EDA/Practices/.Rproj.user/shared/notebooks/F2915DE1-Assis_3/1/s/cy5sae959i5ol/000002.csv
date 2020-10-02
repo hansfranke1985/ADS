@@ -1,0 +1,4 @@
+"0","# Filtering all cases with a weight between 3 and 20 lbs."
+"0","dat <- dat %>% "
+"0","  mutate(weight = replace(weight, weight < 3, NA)) %>% "
+"0","  mutate(weight = replace(weight, weight > 20, NA))"

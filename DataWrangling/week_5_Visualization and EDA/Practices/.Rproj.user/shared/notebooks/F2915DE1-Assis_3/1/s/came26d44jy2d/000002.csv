@@ -1,0 +1,3 @@
+"0","#loading dataset + analysing the file"
+"0","dat <- read.csv('vet.data.csv')"
+"0","head(dat)"

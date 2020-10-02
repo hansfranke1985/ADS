@@ -1,6 +1,0 @@
-"0","# First need to convert undestand (number 1504 is 15:04pm, so in other words we want to pick this value from 0)"
-"0","1504 %/% 100 * 60 + 1504 %% 100 "
-"1","[1]"
-"1"," 904"
-"1","
-"

@@ -1,4 +1,4 @@
-"0","#look for midnight;"
+"0","#look for midnight = 2400"
 "0","summary(flights$dep_time)"
 "1","   Min. "
 "1","1st Qu. "
