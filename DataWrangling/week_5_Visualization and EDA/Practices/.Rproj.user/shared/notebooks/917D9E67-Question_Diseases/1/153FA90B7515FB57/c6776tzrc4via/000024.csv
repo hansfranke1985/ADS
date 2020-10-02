@@ -1,0 +1,4 @@
+"0","#Plot same as exam: Using COLOR and TEXT"
+"0","ggplot(disease, aes(x=transmissionrate, y = mortalityrate, color= diseases == ""EBOLA""))+ "
+"0","  geom_point()+"
+"0","  geom_text(aes(label= diseases))"

@@ -1,3 +1,0 @@
-"0","ggplot(dat, aes(weight)) + "
-"0","  geom_histogram() +"
-"0","  facet_wrap(~breed)"

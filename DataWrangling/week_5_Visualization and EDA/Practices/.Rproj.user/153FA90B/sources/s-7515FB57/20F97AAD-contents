@@ -101,7 +101,7 @@ ggplot(dat, aes(area)) +
 ggplot(dat, aes(weight)) + 
   geom_histogram() +
   facet_wrap(~breed)
-  theme_minimal()
+
 ```
 
 

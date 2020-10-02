@@ -1,0 +1,7 @@
+"0","```r
+#Plot same as exam: Using COLOR and TEXT
+ggplot(disease, aes(x=transmissionrate, y = mortalityrate, color= diseasesnames))+ 
+  geom_point(color = \"gray\")+
+  geom_text(aes(label=diseasesnames), color=\"gray\") +
+  theme_bw()
+```"
