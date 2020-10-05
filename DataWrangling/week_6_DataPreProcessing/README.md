@@ -4,7 +4,7 @@
 1. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_6_DataPreProcessing/Slides/DataPreparationPartA.pdf
 2. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_6_DataPreProcessing/Slides/DataPreparationPartB.pdf
 
-# Assigments:
+# Assignments:
 1. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_6_DataPreProcessing/Assignment/Week6_Assignments.ipynb
 2. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_6_DataPreProcessing/Assignment/Week6%20Data%20Preparation.ipynb 
 
@@ -16,23 +16,21 @@
 - Completeness => all relevant data was recorded
 - Uniqueness => Entities are recorded once
 - Timeliness => the data is keep up to date
-- Consistency => the data agress with itself
+- Consistency => the data agrees with itself
 
-
-
-# Outlier Detection
+# Outliers Detection
 
 1. GLobal
 2. Local
 
 ## Statistical Approaches
 
-1. Parametrics:
+1. Parametric:
 
 - Minimal likelihood Formula (X - mean ) / std ==> if the value is 3x more than std, there is an outlier
 
 
-2. Non-Parametrics:
+2. Non-Parametric:
 
 - Histogram 
 - Density 
@@ -55,7 +53,7 @@ Basic Assumption:
 - The density around a normal data object is similar to the density around its neighbors
 - The density around an outlier is considerably different to the density around its neighbors 
 
-## Model base approches
+## Model base approaches
 
 - Data points that do not conform to the fitting model are potential
 outliers
@@ -108,3 +106,4 @@ xviii Contents
 12.8.1 Extending Conventional Outlier Detection 577
 12.8.2 Finding Outliers in Subspaces 578
 12.8.3 Modeling High-Dimensional Outliers 579
+
