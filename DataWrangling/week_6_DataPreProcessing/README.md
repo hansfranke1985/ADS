@@ -164,15 +164,20 @@ Contextual attributes can include spatial attributes, time, network locations, a
 the object, and are used to evaluate whether the object is an outlier in the context to
 which it belongs.
 
-12.7.1 Transforming Contextual Outlier Detection to Conventional
-Outlier Detection 
-12.7.2 Modeling Normal Behavior with Respect to Contexts 
-12.7.3 Mining Collective Outliers 
+- 12.7.1 Transforming Contextual Outlier Detection to Conventional Outlier Detection 
+
+- 12.7.2 Modeling Normal Behavior with Respect to Contexts 
+
+- 12.7.3 Mining Collective Outliers 
 
 ## 12.8 Outlier Detection in High-Dimensional Data 
-12.8.1 Extending Conventional Outlier Detection 
-12.8.2 Finding Outliers in Subspaces 
-12.8.3 Modeling High-Dimensional Outliers 
+
+- 12.8.1 Extending Conventional Outlier Detection 
+
+- 12.8.2 Finding Outliers in Subspaces 
+
+- 12.8.3 Modeling High-Dimensional Outliers 
+
 
 # Review
 - Data quality: accuracy, completeness, consistency, timeliness,believability, interpretability
