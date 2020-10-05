@@ -1,5 +1,4 @@
-# ADS
-Week 6: Data PREprocessing
+# Week 6: Data PREprocessing
 
 # Slides
 1. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_6_DataPreProcessing/Slides/DataPreparationPartA.pdf
