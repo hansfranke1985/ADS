@@ -1,0 +1,170 @@
+---
+title: "Quick Summary: Visualisation, Transformation and EDA"
+author: "Hans Franke"
+output: rmarkdown::github_document
+---
+
+```{r}
+library(tidyverse)
+library(ISLR)
+library(nycflights13)
+```
+
+# Slides
+1. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/visualization_lecture_2.pdf
+2. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/visualization_lecture_1.pdf
+
+# Assigments:
+1. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_1.md
+  
+2. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_2.md
+
+3. https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/Assis_3.md
+
+# Book: https://r4ds.had.co.nz/
+
+# chapter 3: visualisation 
+
+## Grammar of grapichs:
+
+Goal is to specify how data map to picture, so the correct type and largest amount possible is transferred
+
+1. Map raw data to following elements:
+- Aesthetics (position, shape, color, ...)
+- Geometric objects (points, lines, bars, ...)
+- Scales (continuous, discrete, ...)
+- Facets (small multiples)
+2. Additionally, can apply:
+- Statistical transformation (identity, binning, median, ...)
+- Coordinate system (Cartesian, polar, parallel, ...
+
+```{r}
+# Common guideline to build plots with ggplot
+
+#ggplot(data = <DATA>) + 
+#  <GEOM_FUNCTION>(
+#     mapping = aes(<MAPPINGS>),
+#     stat = <STAT>, 
+#     position = <POSITION>
+#  ) +
+#  <COORDINATE_FUNCTION> +
+#  <FACET_FUNCTION>
+```
+
+# Gestalt principles of relatedness
+- Proximity: Things that are spatially near to one another seem to be related.
+- Similarity: Things that look alike seem to be related.
+- Connection: Things that are visually tied to one another seem to be related.
+- Continuity: Partially hidden objects are completed into familiar shapes.
+- Closure: Incomplete shapes are perceived as complete.
+- Figure and ground: Visual elements are taken to be either in the foreground or in the background.
+- Common fate: Elements sharing a direction of movement are perceived as a unit.
+
+# Tufte principles:
+
+- Ask how data maps to perception
+- Ask which comparisons you want, guide eye to those
+- Maximize data-to-ink ratio
+- Present more data (without losing interpretability)
+- Use levels of detail
+- (Remember narrative)
+
+## Exercises:
+https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch03.md
+
+# chapter 5: data transformation
+
+## Exercises
+https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch05.md
+
+### Quick Guide to Transformation Functions:
+
+- Pick observations by their values (filter()).
+```{r}
+  filter(mtcars, mpg > 20)
+```
+
+
+- Reorder the rows (arrange()).
+```{r}
+head(arrange(mtcars, desc(cyl)))
+```
+
+
+
+- Pick variables by their names (select()).
+```{r}
+# Select columns by name
+head(select(mtcars, mpg, cyl, hp))
+```
+
+
+- Create new variables with functions of existing variables (mutate()).
+```{r}
+flights_sml <- select(flights, 
+  year:day, 
+  ends_with("delay"), 
+  distance, 
+  air_time
+)
+
+mutate(flights_sml,
+  gain = dep_delay - arr_delay,
+  speed = distance / air_time * 60 )
+```
+
+- Collapse many values down to a single summary (summarise()).
+
+```{r}
+by_day <- group_by(flights, year, month, day)
+summarise(by_day, delay = mean(dep_delay, na.rm = TRUE))
+```
+
+
+# chapter 7: EDA
+
+## Exercises:
+https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_5_Visualization%20and%20EDA/Practices/R_DS_Ex_Ch07.md
+
+# Further Reading;
+
+# Exploratory Data Analysis;
+Read chapter from the suggested book about the checklist:
+https://bookdown.org/rdpeng/exdata/exploratory-data-analysis-checklist.html
+
+
+## Peng Check-List
+1. Formulate your question
+
+2. Read in your data
+
+3. Check the packaging
+
+4. Run str()
+
+5. Look at the top and the bottom of your data
+
+6. Check your “n”s
+
+7. Validate with at least one external data source
+
+8. Try the easy solution first
+
+9. Challenge your solution
+
+10. Follow up
+
+## Tuckey Principles
+
+1. Show comparisons
+
+2. Show Causality
+
+3. Show Multivariate Data
+
+4. Integrate Evidence
+
+5. Describe and Document the evidence
+
+6. Content, content, content
+

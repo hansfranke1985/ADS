@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601632312088.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2351884772",
+    "id" : "5EC3ED15",
+    "lastKnownWriteTime" : 1601645345,
+    "last_content_update" : 1601645345100,
+    "path" : "C:/Users/hansf/Desktop/Question_Diseases.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "24,21",
+        "scrollLine" : "17"
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
