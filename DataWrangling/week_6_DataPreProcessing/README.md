@@ -31,25 +31,51 @@
 
 - Minimal likelihood Formula (X - mean ) / std ==> if the value is 3x more than std, there is an outlier
 
-## Distance Based Approaches
 
 2. Non-Parametrics:
 
-- Histogram
+- Histogram 
 - Density 
 
+## Distance Based Approaches
+
+General Idea
+- Judge a point based on the distance(s) to its neighbors
+-  Several variants proposed
+Basic Assumption
+- Normal data objects have a dense neighborhood
+- Outliers are far apart from their neighbors, i.e., have a less dense neighborhood
+
+## Density based approaches
+- General Idea
+Compare the density around a point with the density around its local neighbors
+The relative density of a point compared to its neighbors is computed as an
+outlier score
+Approaches essentially differ in how to estimate density
+- Basic Assumption
+The density around a normal data object is similar to the density around its
+neighbors
+The density around an outlier is considerably different to the density around its
+neighbors 
+
+## Model base approches
+
+- Data points that do not conform to the fitting model are potential
+outliers
+
+- linear reg / logistic reg / ...
 
 
-#Review
+# Review
 - Data quality: accuracy, completeness, consistency, timeliness,believability, interpretability
-• Data cleaning: e.g. missing/noisy values, outliers
-• Data integration from multiple sources:
-• Entity identification problem
-• Remove redundancies
-• Detect inconsistencies
-• Data reduction
-• Dimensionality reduction
-• Numerosity reduction
-• Data compression
-• Data transformation and data discretization
-• Normalization
+- Data cleaning: e.g. missing/noisy values, outliers
+- Data integration from multiple sources:
+- Entity identification problem
+- Remove redundancies
+- Detect inconsistencies
+- Data reduction
+- Dimensionality reduction
+- Numerosity reduction
+- Data compression
+- Data transformation and data discretization
+- Normalization
