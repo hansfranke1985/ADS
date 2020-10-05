@@ -19,58 +19,6 @@
 - Consistency => the data agrees with itself
 
 
-## Statistical Approaches
-
-1. Parametric:
-
-
-
-
-2. Non-Parametric:
-
-- Histogram 
-- Density 
-
-## Distance Based Approaches
-
-General Idea:  
-- Judge a point based on the distance(s) to its neighbors
-- Several variants proposed
-Basic Assumption:  
-- Normal data objects have a dense neighborhood
-- Outliers are far apart from their neighbors, i.e., have a less dense neighborhood
-
-## Density based approaches
-General Idea:  
-- Compare the density around a point with the density around its local neighbors
-- The relative density of a point compared to its neighbors is computed as an outlier score
-- Approaches essentially differ in how to estimate density
-Basic Assumption:  
-- The density around a normal data object is similar to the density around its neighbors
-- The density around an outlier is considerably different to the density around its neighbors 
-
-## Model base approaches
-
-- Data points that do not conform to the fitting model are potential
-outliers
-
-- linear reg / logistic reg / ...
-
-
-# Review
-- Data quality: accuracy, completeness, consistency, timeliness,believability, interpretability
-- Data cleaning: e.g. missing/noisy values, outliers
-- Data integration from multiple sources:
-- Entity identification problem
-- Remove redundancies
-- Detect inconsistencies
-- Data reduction
-- Dimensionality reduction
-- Numerosity reduction
-- Data compression
-- Data transformation and data discretization
-- Normalization
-
 
 # Outliers
 
@@ -191,15 +139,31 @@ form a cluster. The approaches discussed so far may be deceived by such outliers
 
 - Detecting outliers in small clusters
 
-_STRENGS_ Clustering-based outlier detection methods have the following advantages. First, they can detect outliers without requiring any labeled data, that is, in an unsupervised ay. They work for many data types. Clusters can be regarded as summaries of the data. Once the clusters are obtained, clustering-based methods need only compare any object against the clusters to determine whether the object is an outlier. This process is typically fast because the number of clusters is usually small compared to the total number of
+__STRENGS__ Clustering-based outlier detection methods have the following advantages. First, they can detect outliers without requiring any labeled data, that is, in an unsupervised ay. They work for many data types. Clusters can be regarded as summaries of the data. Once the clusters are obtained, clustering-based methods need only compare any object against the clusters to determine whether the object is an outlier. This process is typically fast because the number of clusters is usually small compared to the total number of
 objects.
 
-A _weakness_ of clustering-based outlier detection is its effectiveness, which depends highly on the clustering method used. Such methods may not be optimized for outlier
+A __WEAKNESS__ of clustering-based outlier detection is its effectiveness, which depends highly on the clustering method used. Such methods may not be optimized for outlier
 detection. Clustering methods are often costly for large data sets, which can serve as a bottleneck.
 
 ## 12.6 Classification-Based Approaches 
 
+Outlier detection can be treated as a classification problem if a training data set with class labels is available. The general idea of classification-based outlier detection methods is to train a classification model that can distinguish normal data from outliers.
+
+**drawback** the number of normal samples likely far exceeds the number of outlier samples. This imbalance, where the number of outlier samples may be insufficient, can prevent us from building an accurate classifier.
+
+To **overcome** this challenge, classification-based outlier detection methods often use a one-class model. That is, a classifier is built to describe only the normal class. Any samples that do not belong to the normal class are regarded as outliers.
+
+Classification-based methods can incorporate human domain knowledge into the detection process by learning from the labeled samples. Once the classification model is constructed, the outlier detection process is fast. It only needs to compare the objects to be examined against the model learned from the training data. The quality of classification-based methods heavily depends on the availability and quality of the training set. In many applications, it is difficult to obtain representative and high-quality training data, which limits the applicability of classification-based methods.
+
+
 ## 12.7 Mining Contextual and Collective Outliers 
+
+An object in a given data set is a contextual outlier (or conditional outlier) if it deviates significantly with respect to a specific context of the object (Section 12.1). The
+context is defined using contextual attributes. These depend heavily on the application, and are often provided by users as part of the contextual outlier detection task.
+Contextual attributes can include spatial attributes, time, network locations, and sophisticated structured attributes. In addition, behavioral attributes define characteristics of
+the object, and are used to evaluate whether the object is an outlier in the context to
+which it belongs.
+
 12.7.1 Transforming Contextual Outlier Detection to Conventional
 Outlier Detection 
 12.7.2 Modeling Normal Behavior with Respect to Contexts 
@@ -210,3 +174,16 @@ Outlier Detection
 12.8.2 Finding Outliers in Subspaces 
 12.8.3 Modeling High-Dimensional Outliers 
 
+# Review
+- Data quality: accuracy, completeness, consistency, timeliness,believability, interpretability
+- Data cleaning: e.g. missing/noisy values, outliers
+- Data integration from multiple sources:
+- Entity identification problem
+- Remove redundancies
+- Detect inconsistencies
+- Data reduction
+- Dimensionality reduction
+- Numerosity reduction
+- Data compression
+- Data transformation and data discretization
+- Normalization
