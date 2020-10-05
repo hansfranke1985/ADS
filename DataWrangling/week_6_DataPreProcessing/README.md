@@ -76,3 +76,35 @@ outliers
 - Data compression
 - Data transformation and data discretization
 - Normalization
+
+
+Chapter 12 Outlier Detection 543
+12.1 Outliers and Outlier Analysis 544
+12.1.1 What Are Outliers? 544
+12.1.2 Types of Outliers 545
+12.1.3 Challenges of Outlier Detection 548
+12.2 Outlier Detection Methods 549
+12.2.1 Supervised, Semi-Supervised, and Unsupervised Methods 549
+12.2.2 Statistical Methods, Proximity-Based Methods, and
+Clustering-Based Methods 551
+12.3 Statistical Approaches 553
+12.3.1 Parametric Methods 553
+12.3.2 Nonparametric Methods 558
+12.4 Proximity-Based Approaches 560
+12.4.1 Distance-Based Outlier Detection and a Nested Loop
+Method 561
+12.4.2 A Grid-Based Method 562
+12.4.3 Density-Based Outlier Detection 564
+12.5 Clustering-Based Approaches 567
+12.6 Classification-Based Approaches 571
+12.7 Mining Contextual and Collective Outliers 573
+12.7.1 Transforming Contextual Outlier Detection to Conventional
+Outlier Detection 573
+HAN 03-toc-ix-xviii-9780123814791 2011/6/1 3:32 Page xviii #10
+xviii Contents
+12.7.2 Modeling Normal Behavior with Respect to Contexts 574
+12.7.3 Mining Collective Outliers 575
+12.8 Outlier Detection in High-Dimensional Data 576
+12.8.1 Extending Conventional Outlier Detection 577
+12.8.2 Finding Outliers in Subspaces 578
+12.8.3 Modeling High-Dimensional Outliers 579
