@@ -20,3 +20,36 @@
 
 
 
+# Outlier Detection
+
+1. GLobal
+2. Local
+
+## Statistical Approaches
+
+1. Parametrics:
+
+- Minimal likelihood Formula (X - mean ) / std ==> if the value is 3x more than std, there is an outlier
+
+## Distance Based Approaches
+
+2. Non-Parametrics:
+
+- Histogram
+- Density 
+
+
+
+#Review
+- Data quality: accuracy, completeness, consistency, timeliness,believability, interpretability
+• Data cleaning: e.g. missing/noisy values, outliers
+• Data integration from multiple sources:
+• Entity identification problem
+• Remove redundancies
+• Detect inconsistencies
+• Data reduction
+• Dimensionality reduction
+• Numerosity reduction
+• Data compression
+• Data transformation and data discretization
+• Normalization
