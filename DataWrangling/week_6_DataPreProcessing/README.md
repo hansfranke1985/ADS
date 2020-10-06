@@ -193,17 +193,14 @@ which it belongs.
 - Data transformation and data discretization
 - Normalization
 
-# Data Transformation
 
-## min-max
-
-## z-score = 
 
 
 # 3. Data Preprocessing 
 
-##3.1 Data Preprocessing: An Overview 84
-3.1.1 Data Quality: Why Preprocess the Data? 
+## 3.1 Data Preprocessing: An Overview 84
+
+### 3.1.1 Data Quality: Why Preprocess the Data? 
 
 Data quality: checking the data from multiple perspectives
 - Accuracy: The data was recorded correctly.
@@ -212,7 +209,7 @@ Data quality: checking the data from multiple perspectives
 - Timeliness: The data is kept up to date. Special problems in federated data: time consistency.
 - Consistency: The data agrees with itself.
 
-3.1.2 Major Tasks in Data Preprocessing 85
+### 3.1.2 Major Tasks in Data Preprocessing 85
 
 - **Data cleaning** routines work to “clean” the data by filling in missing values, smoothing noisy data, identifying or removing outliers, and resolving inconsistencies. 
 - ...This would involve integrating multiple databases, data cubes, or files (i.e., **data integration**). Yet some attributes representing a given concept may have different names in different databases, causing inconsistencies and redundancies.
@@ -226,16 +223,16 @@ models (e.g., *histograms, clusters, sampling, or data aggregation*).
 
 -  Normalization, data discretization, and concept hierarchy generation are forms of **data transformation**.
 
-##3.2 Data Cleaning 88
+## 3.2 Data Cleaning 88
 
-3.2.1 Missing Values 88
+### 3.2.1 Missing Values 88
 
 - Ignore the tuple
 - Use a global constant
 - Use a measure of central tendency (e.g. mean or median) by each tuple or by class (e.g mean of females / male ages)
 - Use the most probable value ( e.g with regression, decision trees)
 
-3.2.2 Noisy Data 89
+### 3.2.2 Noisy Data 89
 
 “What is noise?” Noise is a random error or variance in a measured variable
 
@@ -246,24 +243,24 @@ models (e.g., *histograms, clusters, sampling, or data aggregation*).
 3. Outliers Analysis
 4. Clustering
 
-3.2.3 Data Cleaning as a Process 91
+### 3.2.3 Data Cleaning as a Process 91
 
 “So, how can we proceed with discrepancy detection?” As a starting point, use any knowledge you may already have regarding properties of the data. Such knowledge or “data about data” is referred to as metadata.  
 
 
 ## 3.3 Data Integration 93
 
-3.3.1 Entity Identification Problem 94
+### 3.3.1 Entity Identification Problem 94
 
-3.3.2 Redundancy and Correlation Analysis 94
+### 3.3.2 Redundancy and Correlation Analysis 94
 
 1. X2 for nominal data 
 2. Correlation for numeric data
 3. Covariance for numeric data 
 
-3.3.3 Tuple Duplication 98
+### 3.3.3 Tuple Duplication 98
 
-3.3.4 Data Value Conflict Detection and Resolution 99
+### 3.3.4 Data Value Conflict Detection and Resolution 99
 
 ## 3.4 Data Reduction 99
 
@@ -352,7 +349,13 @@ vi, of A is normalized to vi' by computing
 Normalization by **decimal scaling** normalizes by moving the decimal point of values of attribute A. The number of decimal points moved depends on the maximum absolute value of A.
 
 
-3.5.3 Discretization by Binning 115
-3.5.4 Discretization by Histogram Analysis 115
-3.5.5 Discretization by Cluster, Decision Tree, and Correlation Analyses 116
-3.5.6 Concept Hierarchy Generation for Nominal Data 117
+### 3.5.3 Discretization by Binning 115
+
+Binning does not use class information and is therefore an unsupervised discretization technique. It is sensitive to the user-specified number of bins, as well as the presence
+of outliers.
+
+### 3.5.4 Discretization by Histogram Analysis 115
+
+### 3.5.5 Discretization by Cluster, Decision Tree, and Correlation Analyses 116
+
+### 3.5.6 Concept Hierarchy Generation for Nominal Data 117
