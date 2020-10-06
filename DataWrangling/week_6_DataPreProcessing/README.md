@@ -192,3 +192,167 @@ which it belongs.
 - Data compression
 - Data transformation and data discretization
 - Normalization
+
+# Data Transformation
+
+## min-max
+
+## z-score = 
+
+
+# 3. Data Preprocessing 
+
+##3.1 Data Preprocessing: An Overview 84
+3.1.1 Data Quality: Why Preprocess the Data? 
+
+Data quality: checking the data from multiple perspectives
+- Accuracy: The data was recorded correctly.
+- Completeness: All relevant data was recorded.
+- Uniqueness: Entities are recorded once.
+- Timeliness: The data is kept up to date. Special problems in federated data: time consistency.
+- Consistency: The data agrees with itself.
+
+3.1.2 Major Tasks in Data Preprocessing 85
+
+- **Data cleaning** routines work to “clean” the data by filling in missing values, smoothing noisy data, identifying or removing outliers, and resolving inconsistencies. 
+- ...This would involve integrating multiple databases, data cubes, or files (i.e., **data integration**). Yet some attributes representing a given concept may have different names in different databases, causing inconsistencies and redundancies.
+- **Data reduction** obtains a reduced representation of the data set that is much smaller in volume, yet produces the same (or almost the same) analytical results. Data reduction
+strategies include **dimensionality reduction** and **numerosity reduction**
+1. **In dimensionality reduction**, data encoding schemes are applied so as to obtain a reduced or “compressed” representation of the original data. Examples include data
+compression techniques (e.g., *wavelet transforms and principal components analysis*), attribute subset selection (e.g., removing irrelevant attributes), and attribute construction
+(e.g., where a small set of more useful attributes is derived from the original set).
+2. **In numerosity reduction**, the data are replaced by alternative, smaller representations using parametric models (e.g., *regression or log-linear models*) or nonparametric
+models (e.g., *histograms, clusters, sampling, or data aggregation*). 
+
+-  Normalization, data discretization, and concept hierarchy generation are forms of **data transformation**.
+
+##3.2 Data Cleaning 88
+
+3.2.1 Missing Values 88
+
+- Ignore the tuple
+- Use a global constant
+- Use a measure of central tendency (e.g. mean or median) by each tuple or by class (e.g mean of females / male ages)
+- Use the most probable value ( e.g with regression, decision trees)
+
+3.2.2 Noisy Data 89
+
+“What is noise?” Noise is a random error or variance in a measured variable
+
+**Remove Noise**
+
+1. Binning 
+2. Regression
+3. Outliers Analysis
+4. Clustering
+
+3.2.3 Data Cleaning as a Process 91
+
+“So, how can we proceed with discrepancy detection?” As a starting point, use any knowledge you may already have regarding properties of the data. Such knowledge or “data about data” is referred to as metadata.  
+
+
+## 3.3 Data Integration 93
+
+3.3.1 Entity Identification Problem 94
+
+3.3.2 Redundancy and Correlation Analysis 94
+
+1. X2 for nominal data 
+2. Correlation for numeric data
+3. Covariance for numeric data 
+
+3.3.3 Tuple Duplication 98
+
+3.3.4 Data Value Conflict Detection and Resolution 99
+
+## 3.4 Data Reduction 99
+
+### 3.4.1 Overview of Data Reduction Strategies 99
+
+### 3.4.2 Wavelet Transforms 100
+
+The **discrete wavelet transform (DWT)** is a linear signal processing technique that, when applied to a data vector X, transforms it to a numerically different vector, X', of wavelet coefficients. The two vectors are of the same length.
+*“How can this technique be useful for data reduction if the wavelet transformed data are of the same length as the original data?”* The usefulness lies in the fact that the wavelet
+transformed data can be truncated. A compressed approximation of the data can be retained by storing only a small fraction of the strongest of the wavelet coefficients.
+
+### 3.4.3 Principal Components Analysis 102
+
+Suppose that the data to be reduced consist of tuples or data vectors described by n attributes or dimensions. **Principal components analysis (PCA)**; also called the Karhunen-Loeve, or K-L, method) searches for k n-dimensional orthogonal vectors that can best be used to represent the data, where k ≤ n. The original data are thus projected onto a much smaller space, resulting in dimensionality reduction. Unlike attribute subset selection (Section 3.4.4), which reduces the attribute set size by retaining a subset of the initial set of attributes, PCA “combines” the essence of attributes by creating an alternative, smaller set of variables. 
+
+- Steps:
+1. Normalize the data
+2. PCA computes k orthonormal vectors
+3. principal components are sorted in order of decreasing "significance"
+4. Eliminate the least significance => decrease size / number of components 
+
+### 3.4.4 Attribute Subset Selection 103
+
+** Attribute subset selection** reduces the data set size by removing irrelevant or redundant attributes (or dimensions). The goal of attribute subset selection is to find a minimum set of attributes such that the resulting probability distribution of the data classes is as close as possible to the original distribution obtained using all attributes. Mining on a reduced set of attributes has an additional benefit: It reduces the number of attributes appearing in the discovered patterns, helping to make the patterns easier to understand.
+
+1. Stepwise forward selection
+2. Setpwise backward elimination 
+3. Combination of both
+4. Decision Tree induction
+
+### 3.4.5 Regression and Log-Linear Models: Parametric Data Reduction 105
+
+Regression and log-linear models can both be used on sparse data, although their application may be limited. While both methods can handle skewed data, regression does exceptionally well. Regression can be computationally intensive when applied to high-dimensional data, whereas log-linear models show good scalability for up to 10 or so dimensions.
+
+
+### 3.4.6 Histograms 106
+
+Histograms are highly effective at approximating both sparse and dense data, as well as highly skewed and uniform data.
+
+### 3.4.7 Clustering 108
+
+In data reduction, the cluster representations of the data are used to replace the actual data. The effectiveness of this technique depends on the data’s nature. It is much more
+effective for data that can be organized into distinct clusters than for smeared data.
+
+### 3.4.8 Sampling 108
+
+Sampling can be used as a data reduction technique because it allows a large data set to be represented by a much smaller random data sample (or subset).
+
+1. Simple random sample without replacement
+2. Simple random sample with replacement
+3. Cluster Sample
+
+When applied to data reduction, sampling is most commonly used to estimate the answer to an aggregate query. It is possible (using the central limit theorem) to determine a sufficient sample size for estimating a given function within a specified degree of error. This sample size, s, may be extremely small in comparison to N. Sampling is
+a natural choice for the progressive refinement of a reduced data set. Such a set can be further refined by simply increasing the sample size.
+
+
+### 3.4.9 Data Cube Aggregation 110
+
+Aggregates values. E.g => 12 months to a year data!
+
+## 3.5 Data Transformation and Data Discretization 111
+
+### 3.5.1 Data Transformation Strategies Overview 112
+
+1. Smoothing, which works to remove noise from the data. Techniques include binning, regression, and clustering.
+2. Attribute construction (or feature construction), where new attributes are constructed and added from the given set of attributes to help the mining process.
+3. Aggregation, where summary or aggregation operations are applied to the data. For example, the daily sales data may be aggregated so as to compute monthly and annual
+total amounts. This step is typically used in constructing a data cube for data analysis at multiple abstraction levels.
+4. Normalization, where the attribute data are scaled so as to fall within a smaller range, such as −1.0 to 1.0, or 0.0 to 1.0.
+5. Discretization, where the raw values of a numeric attribute (e.g., age) are replaced by interval labels (e.g., 0–10, 11–20, etc.) or conceptual labels (e.g., youth, adult, senior). The labels, in turn, can be recursively organized into higher-level concepts, resulting in a concept hierarchy for the numeric attribute. Figure 3.12 shows a concept hierarchy for the attribute price. More than one concept hierarchy can be defined for the same attribute to accommodate the needs of various users.
+6. Concept hierarchy generation for nominal data, where attributes such as street can be generalized to higher-level concepts, like city or country. Many hierarchies for
+nominal attributes are implicit within the database schema and can be automatically
+defined at the schema definition level.
+
+### 3.5.2 Data Transformation by Normalization 113
+
+**Min-max normalization** performs a linear transformation on the original data. Suppose that minA and maxA are the minimum and maximum values of an attribute, A. Min-max normalization maps a value, vi, of A to v0i in the range [new minA,new maxA] by computing
+
+- vi" = vi - minA / (maxA - minA) * (nex_maxA - new_minA) + new_minA
+
+In **z-score normalization** (or zero-mean normalization), the values for an attribute, A, are normalized based on the mean (i.e., average) and standard deviation of A. A value,
+vi, of A is normalized to vi' by computing
+
+- vi'= vi - mean(A) / std(A) 
+
+Normalization by **decimal scaling** normalizes by moving the decimal point of values of attribute A. The number of decimal points moved depends on the maximum absolute value of A.
+
+
+3.5.3 Discretization by Binning 115
+3.5.4 Discretization by Histogram Analysis 115
+3.5.5 Discretization by Cluster, Decision Tree, and Correlation Analyses 116
+3.5.6 Concept Hierarchy Generation for Nominal Data 117
