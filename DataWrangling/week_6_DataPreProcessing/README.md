@@ -30,19 +30,17 @@ data analysis, including outlier detection.
 
 ### 12.1.2 Types of Outliers 
 
-- Global:
+- Global:  
 In a given data set, a data object is a global outlierif it deviates significantly from the rest of the data set. Global outliers are sometimes called point anomalies, and are the simplest type of outliers. Most outlier detection methods are aimed at finding global outliers.  
 
-- Context
+- Context  
 In a given data set, a data object is a contextual outlier if it deviates significantly with respect to a specific context of the object. Contextual outliers are also known as
 conditional outliers because they are conditional on the selected context 
 
-- Collective
+- Collective  
 Given a data set, a subset of data objects forms a collective outlier if the objects as a whole deviate significantly from the entire data set. Importantly, the individual data
 objects may not be outliers.
 
-
-- Local
 
 ### 12.1.3 Challenges of Outlier Detection 
 
