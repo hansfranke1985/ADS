@@ -33,11 +33,11 @@ data analysis, including outlier detection.
 - Global:  
 In a given data set, a data object is a global outlierif it deviates significantly from the rest of the data set. Global outliers are sometimes called point anomalies, and are the simplest type of outliers. Most outlier detection methods are aimed at finding global outliers.  
 
-- Context  
+- Context:  
 In a given data set, a data object is a contextual outlier if it deviates significantly with respect to a specific context of the object. Contextual outliers are also known as
 conditional outliers because they are conditional on the selected context 
 
-- Collective  
+- Collective:  
 Given a data set, a subset of data objects forms a collective outlier if the objects as a whole deviate significantly from the entire data set. Importantly, the individual data
 objects may not be outliers.
 
@@ -282,7 +282,7 @@ Suppose that the data to be reduced consist of tuples or data vectors described 
 
 ### 3.4.4 Attribute Subset Selection 103
 
-** Attribute subset selection** reduces the data set size by removing irrelevant or redundant attributes (or dimensions). The goal of attribute subset selection is to find a minimum set of attributes such that the resulting probability distribution of the data classes is as close as possible to the original distribution obtained using all attributes. Mining on a reduced set of attributes has an additional benefit: It reduces the number of attributes appearing in the discovered patterns, helping to make the patterns easier to understand.
+**Attribute subset selection** reduces the data set size by removing irrelevant or redundant attributes (or dimensions). The goal of attribute subset selection is to find a minimum set of attributes such that the resulting probability distribution of the data classes is as close as possible to the original distribution obtained using all attributes. Mining on a reduced set of attributes has an additional benefit: It reduces the number of attributes appearing in the discovered patterns, helping to make the patterns easier to understand.
 
 1. Stepwise forward selection
 2. Setpwise backward elimination 
