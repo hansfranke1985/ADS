@@ -42,8 +42,6 @@ Given a data set, a subset of data objects forms a collective outlier if the obj
 objects may not be outliers.
 
 
-- Local
-
 ### 12.1.3 Challenges of Outlier Detection 
 
 - Modeling normal objects and outliers effectively
