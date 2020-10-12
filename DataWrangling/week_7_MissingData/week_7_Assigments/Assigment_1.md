@@ -218,32 +218,34 @@ each variable, for example:
     # mean( df$wgt) and mean(df$hgt).
 
     #Assign the fgds to a another df (dosent lose information later)
-    fdgs_nomiss <- fdgs
 
-    fdgs_nomiss <- within(data = fdgs_nomiss,
-           expr =
-             {
-               wgt <- replace(x = wgt,
-                               list = is.na(x = wgt),
-                               values = mean(x = wgt, na.rm = TRUE) ) 
-             }
-           )
-      
+    imp_mean <- mice(fdgs, method = "mean", m = 1, maxit = 1)
+
+    ## 
+    ##  iter imp variable
+    ##   1   1  hgt  wgt  hgt.z  wgt.z
+
+    fdgs_nomiss <- complete(imp_mean)
     #CHECK FINAL RESULT
     colSums(is.na(fdgs_nomiss))
 
     ##    id   reg   age   sex   hgt   wgt hgt.z wgt.z 
-    ##     0     0     0     0    23     0    23    20
+    ##     0     0     0     0     0     0     0     0
 
     md.pattern(fdgs_nomiss)
 
+    ##  /\     /\
+    ## {  `---'  }
+    ## {  O   O  }
+    ## ==>  V <==  No need for mice. This data set is completely observed.
+    ##  \  \|/  /
+    ##   `-----'
+
 ![](Assigment_1_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
-    ##      id reg age sex wgt wgt.z hgt hgt.z   
-    ## 9987  1   1   1   1   1     1   1     1  0
-    ## 23    1   1   1   1   1     1   0     0  2
-    ## 20    1   1   1   1   1     0   1     1  1
-    ##       0   0   0   0   0    20  23    23 66
+    ##       id reg age sex hgt wgt hgt.z wgt.z  
+    ## 10030  1   1   1   1   1   1     1     1 0
+    ##        0   0   0   0   0   0     0     0 0
 
 But this is not the best solution because replace by the means, ads a
 lot of variance in the samples. The best solution should be use a
@@ -286,20 +288,18 @@ For example, use Age and Sex to predict the weight.
 
     ##        id            reg            age              sex            hgt       
     ##  Min.   :100001   North: 732   Min.   : 0.008214   boy :4829   Min.   : 46.0  
-    ##  1st Qu.:106353   East :2528   1st Qu.: 1.618754   girl:5201   1st Qu.: 83.8  
-    ##  Median :203855   South:2931   Median : 8.084873               Median :131.5  
+    ##  1st Qu.:106353   East :2528   1st Qu.: 1.618754   girl:5201   1st Qu.: 83.9  
+    ##  Median :203855   South:2931   Median : 8.084873               Median :131.2  
     ##  Mean   :180091   West :2578   Mean   : 8.157936               Mean   :123.9  
-    ##  3rd Qu.:210591   City :1261   3rd Qu.:13.547570               3rd Qu.:162.3  
+    ##  3rd Qu.:210591   City :1261   3rd Qu.:13.547570               3rd Qu.:162.2  
     ##  Max.   :401955                Max.   :21.993155               Max.   :208.0  
-    ##                                                                NA's   :23     
     ##       wgt              hgt.z               wgt.z         
     ##  Min.   :  2.585   Min.   :-4.470000   Min.   :-5.04000  
-    ##  1st Qu.: 11.600   1st Qu.:-0.678000   1st Qu.:-0.62475  
-    ##  Median : 27.500   Median :-0.019000   Median : 0.02600  
+    ##  1st Qu.: 11.600   1st Qu.:-0.676000   1st Qu.:-0.62400  
+    ##  Median : 27.500   Median :-0.015000   Median : 0.02800  
     ##  Mean   : 32.385   Mean   :-0.006054   Mean   : 0.04573  
-    ##  3rd Qu.: 51.000   3rd Qu.: 0.677000   3rd Qu.: 0.70700  
-    ##  Max.   :135.300   Max.   : 3.900000   Max.   : 4.74100  
-    ##                    NA's   :23          NA's   :20
+    ##  3rd Qu.: 51.000   3rd Qu.: 0.674750   3rd Qu.: 0.70675  
+    ##  Max.   :135.300   Max.   : 3.900000   Max.   : 4.74100
 
     summary(data_imp)
 

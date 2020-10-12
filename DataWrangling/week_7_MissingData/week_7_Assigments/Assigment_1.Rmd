@@ -111,17 +111,10 @@ As we can see in the plot above, the total number of missing rows are extreme lo
 # mean( df$wgt) and mean(df$hgt).
 
 #Assign the fgds to a another df (dosent lose information later)
-fdgs_nomiss <- fdgs
 
-fdgs_nomiss <- within(data = fdgs_nomiss,
-       expr =
-         {
-           wgt <- replace(x = wgt,
-                           list = is.na(x = wgt),
-                           values = mean(x = wgt, na.rm = TRUE) ) 
-         }
-       )
-  
+imp_mean <- mice(fdgs, method = "mean", m = 1, maxit = 1)
+
+fdgs_nomiss <- complete(imp_mean)
 #CHECK FINAL RESULT
 colSums(is.na(fdgs_nomiss))
 ```
