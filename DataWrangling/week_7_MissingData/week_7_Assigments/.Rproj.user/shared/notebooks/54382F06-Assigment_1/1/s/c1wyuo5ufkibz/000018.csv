@@ -1,0 +1,6 @@
+"0","#data <- fdgs[, c(""age"", ""sex"", ""wgt"")]"
+"0","imp <- mice(fdgs, method = ""norm.predict"", seed = 1,"
+"0","           m = 1, print = FALSE)"
+"0","#xyplot(imp, wgt ~ age)"
+"0","ggplot(fdgs, aes(x=age, y=wgt, color=sex)) +"
+"0","  geom_point()"

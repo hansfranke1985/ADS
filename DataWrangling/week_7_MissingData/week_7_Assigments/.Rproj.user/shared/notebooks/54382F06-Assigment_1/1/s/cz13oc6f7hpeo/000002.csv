@@ -1,0 +1,4 @@
+"0","#In fact it makes, so lets run a regression"
+"0","imp <- mice(fdgs, method = ""norm.predict"", seed = 1,"
+"0","           m = 1, print = FALSE)"
+"0","xyplot(imp, wgt ~ age)"

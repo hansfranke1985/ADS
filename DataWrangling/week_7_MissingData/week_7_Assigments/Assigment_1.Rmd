@@ -99,5 +99,82 @@ visdat::vis_dat(df)
 
 ## Analyze the patterns of missing data for the fdgs dataset, and write a small paragraph on how you are going to solve the missingness in this data for an analyst who wants to compute the average weight of the population under study, assuming MAR.
 
+```{r}
+#Lookinf for patterns of missing data
+md.pattern(fdgs)
+```
 
+### Answer:
+
+As we can see in the plot above, the total number of missing rows are extreme low (23 + 20 / 10030 => 0.42% ), and mainly focused on 2 variables (the others _z are only the z-score of that variable). So to consider a MAR, we should replace the values by the mean clustered by each variable, for example:
+```{r}
+# mean( df$wgt) and mean(df$hgt).
+
+#Assign the fgds to a another df (dosent lose information later)
+fdgs_nomiss <- fdgs
+
+fdgs_nomiss <- within(data = fdgs_nomiss,
+       expr =
+         {
+           wgt <- replace(x = wgt,
+                           list = is.na(x = wgt),
+                           values = mean(x = wgt, na.rm = TRUE) ) 
+         }
+       )
+  
+#CHECK FINAL RESULT
+colSums(is.na(fdgs_nomiss))
+```
+
+```{r}
+md.pattern(fdgs_nomiss)
+```
+
+But this is not the best solution because replace by the means, ads a lot of variance in the samples. The best solution should be use a regression technique to predict the value considering other variables. For example, use Age and Sex to predict the weight.
+
+```{r}
+# Lookinf visual if makes sense this correlation:
+
+ggplot(fdgs, aes(x=age, y=wgt, color=sex)) +
+  geom_point()
+```
+```{r}
+#In fact it makes, so lets run a regression
+imp <- mice(fdgs, method = "norm.predict", seed = 1,
+           m = 1, print = FALSE)
+xyplot(imp, wgt ~ age)
+```
+```{r}
+#building new df
+
+#Assign the fgds to a another df (dosent lose information later)
+data_imp <- complete(imp)
+mean(data_imp$wgt)
+  
+#CHECK FINAL RESULT
+colSums(is.na(data_imp))
+```
+
+```{r}
+#Comparison between methods (only on weight) => Try to see the diference in the mean( 0.380 vs 0.385)
+summary(fdgs_nomiss)
+```
+
+```{r}
+summary(data_imp)
+```
+
+```{r}
+#Look in Standard deviation
+
+print(sd(fdgs$wgt, na.rm = TRUE)) #original df
+print(sd(fdgs_nomiss$wgt)) #using mean
+print(sd(data_imp$wgt)) #using regression
+```
+
+```{r}
+print(var(fdgs$wgt, na.rm = TRUE)) #original df
+print(var(fdgs_nomiss$wgt)) #using mean
+print(var(data_imp$wgt)) #using regression
+```
 

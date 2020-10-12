@@ -195,3 +195,150 @@ Assigment
 
 Analyze the patterns of missing data for the fdgs dataset, and write a small paragraph on how you are going to solve the missingness in this data for an analyst who wants to compute the average weight of the population under study, assuming MAR.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    #Lookinf for patterns of missing data
+    md.pattern(fdgs)
+
+![](Assigment_1_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
+    ##      id reg age sex wgt wgt.z hgt hgt.z   
+    ## 9987  1   1   1   1   1     1   1     1  0
+    ## 23    1   1   1   1   1     1   0     0  2
+    ## 20    1   1   1   1   0     0   1     1  2
+    ##       0   0   0   0  20    20  23    23 86
+
+### Answer:
+
+As we can see in the plot above, the total number of missing rows are
+extreme low (23 + 20 / 10030 =&gt; 0.42% ), and mainly focused on 2
+variables (the others \_z are only the z-score of that variable). So to
+consider a MAR, we should replace the values by the mean clustered by
+each variable, for example:
+
+    # mean( df$wgt) and mean(df$hgt).
+
+    #Assign the fgds to a another df (dosent lose information later)
+    fdgs_nomiss <- fdgs
+
+    fdgs_nomiss <- within(data = fdgs_nomiss,
+           expr =
+             {
+               wgt <- replace(x = wgt,
+                               list = is.na(x = wgt),
+                               values = mean(x = wgt, na.rm = TRUE) ) 
+             }
+           )
+      
+    #CHECK FINAL RESULT
+    colSums(is.na(fdgs_nomiss))
+
+    ##    id   reg   age   sex   hgt   wgt hgt.z wgt.z 
+    ##     0     0     0     0    23     0    23    20
+
+    md.pattern(fdgs_nomiss)
+
+![](Assigment_1_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+
+    ##      id reg age sex wgt wgt.z hgt hgt.z   
+    ## 9987  1   1   1   1   1     1   1     1  0
+    ## 23    1   1   1   1   1     1   0     0  2
+    ## 20    1   1   1   1   1     0   1     1  1
+    ##       0   0   0   0   0    20  23    23 66
+
+But this is not the best solution because replace by the means, ads a
+lot of variance in the samples. The best solution should be use a
+regression technique to predict the value considering other variables.
+For example, use Age and Sex to predict the weight.
+
+    # Lookinf visual if makes sense this correlation:
+
+    ggplot(fdgs, aes(x=age, y=wgt, color=sex)) +
+      geom_point()
+
+    ## Warning: Removed 20 rows containing missing values (geom_point).
+
+![](Assigment_1_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+
+    #In fact it makes, so lets run a regression
+    imp <- mice(fdgs, method = "norm.predict", seed = 1,
+               m = 1, print = FALSE)
+    xyplot(imp, wgt ~ age)
+
+![](Assigment_1_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+
+    #building new df
+
+    #Assign the fgds to a another df (dosent lose information later)
+    data_imp <- complete(imp)
+    mean(data_imp$wgt)
+
+    ## [1] 32.3799
+
+    #CHECK FINAL RESULT
+    colSums(is.na(data_imp))
+
+    ##    id   reg   age   sex   hgt   wgt hgt.z wgt.z 
+    ##     0     0     0     0     0     0     0     0
+
+    #Comparison between methods (only on weight) => Try to see the diference in the mean( 0.380 vs 0.385)
+    summary(fdgs_nomiss)
+
+    ##        id            reg            age              sex            hgt       
+    ##  Min.   :100001   North: 732   Min.   : 0.008214   boy :4829   Min.   : 46.0  
+    ##  1st Qu.:106353   East :2528   1st Qu.: 1.618754   girl:5201   1st Qu.: 83.8  
+    ##  Median :203855   South:2931   Median : 8.084873               Median :131.5  
+    ##  Mean   :180091   West :2578   Mean   : 8.157936               Mean   :123.9  
+    ##  3rd Qu.:210591   City :1261   3rd Qu.:13.547570               3rd Qu.:162.3  
+    ##  Max.   :401955                Max.   :21.993155               Max.   :208.0  
+    ##                                                                NA's   :23     
+    ##       wgt              hgt.z               wgt.z         
+    ##  Min.   :  2.585   Min.   :-4.470000   Min.   :-5.04000  
+    ##  1st Qu.: 11.600   1st Qu.:-0.678000   1st Qu.:-0.62475  
+    ##  Median : 27.500   Median :-0.019000   Median : 0.02600  
+    ##  Mean   : 32.385   Mean   :-0.006054   Mean   : 0.04573  
+    ##  3rd Qu.: 51.000   3rd Qu.: 0.677000   3rd Qu.: 0.70700  
+    ##  Max.   :135.300   Max.   : 3.900000   Max.   : 4.74100  
+    ##                    NA's   :23          NA's   :20
+
+    summary(data_imp)
+
+    ##        id            reg            age              sex            hgt        
+    ##  Min.   :100001   North: 732   Min.   : 0.008214   boy :4829   Min.   : 46.00  
+    ##  1st Qu.:106353   East :2528   1st Qu.: 1.618754   girl:5201   1st Qu.: 83.53  
+    ##  Median :203855   South:2931   Median : 8.084873               Median :131.30  
+    ##  Mean   :180091   West :2578   Mean   : 8.157936               Mean   :123.83  
+    ##  3rd Qu.:210591   City :1261   3rd Qu.:13.547570               3rd Qu.:162.20  
+    ##  Max.   :401955                Max.   :21.993155               Max.   :208.00  
+    ##       wgt              hgt.z               wgt.z        
+    ##  Min.   :  2.585   Min.   :-4.470000   Min.   :-5.0400  
+    ##  1st Qu.: 11.600   1st Qu.:-0.677000   1st Qu.:-0.6240  
+    ##  Median : 27.500   Median :-0.019500   Median : 0.0260  
+    ##  Mean   : 32.380   Mean   :-0.006671   Mean   : 0.0459  
+    ##  3rd Qu.: 51.100   3rd Qu.: 0.675750   3rd Qu.: 0.7070  
+    ##  Max.   :135.300   Max.   : 3.900000   Max.   : 4.7410
+
+    #Look in Standard deviation
+
+    print(sd(fdgs$wgt, na.rm = TRUE)) #original df
+
+    ## [1] 23.14654
+
+    print(sd(fdgs_nomiss$wgt)) #using mean
+
+    ## [1] 23.12345
+
+    print(sd(data_imp$wgt)) #using regression
+
+    ## [1] 23.13642
+
+    print(var(fdgs$wgt, na.rm = TRUE)) #original df
+
+    ## [1] 535.7624
+
+    print(var(fdgs_nomiss$wgt)) #using mean
+
+    ## [1] 534.694
+
+    print(var(data_imp$wgt)) #using regression
+
+    ## [1] 535.294
