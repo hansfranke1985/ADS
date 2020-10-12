@@ -181,15 +181,15 @@ which it belongs.
 - Data quality: accuracy, completeness, consistency, timeliness,believability, interpretability
 - Data cleaning: e.g. missing/noisy values, outliers
 - Data integration from multiple sources:
-- Entity identification problem
-- Remove redundancies
-- Detect inconsistencies
+	- Entity identification problem
+	- Remove redundancies
+	- Detect inconsistencies
 - Data reduction
-- Dimensionality reduction
-- Numerosity reduction
+	- Dimensionality reduction
+	- Numerosity reduction
 - Data compression
 - Data transformation and data discretization
-- Normalization
+	- Normalization
 
 
 

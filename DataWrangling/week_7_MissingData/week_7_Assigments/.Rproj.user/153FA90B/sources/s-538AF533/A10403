@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1602500450829.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "302119993",
+    "id" : "A10403",
+    "lastKnownWriteTime" : 1602504836,
+    "last_content_update" : 1602504836420,
+    "path" : "~/GitHub/ADS/DataWrangling/week_7_MissingData/week_7_Assigments/Assigment_1.Rmd",
+    "project_path" : "Assigment_1.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "100,0",
+        "scrollLine" : "92",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

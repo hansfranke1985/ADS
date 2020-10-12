@@ -1,0 +1,103 @@
+---
+title: "Assigment 1"
+subtitle: "Assigment 1"
+author: "Hans Franke"
+date: "October 12, 2020"
+output: rmarkdown::github_document
+---
+
+```{r}
+library(tidyverse)
+library(mice)
+```
+
+
+## View Data
+
+Store the nhanes dataset from the mice package in a variable called df. Print the df variable.
+
+```{r}
+head(mice::nhanes)
+
+df <- nhanes
+
+view(df)
+```
+
+## Show Missing Values
+Output the percentage missingness for each feature as a vector.
+
+```{r}
+is.na(df)
+```
+
+
+```{r}
+#Missing values in all columns
+colSums(is.na(df))
+```
+
+```{r}
+# % of Missing values in all columns
+colSums(is.na(df))/nrow(df)*100
+```
+## Use ggplot to show the % of the missing value
+
+```{r}
+#Put data in the DF
+df_missing <- tibble(
+  nmissing = colnames(is.na(df)),
+  perc_col = colSums(is.na(df))/nrow(df)*100
+)
+
+df_missing
+```
+
+```{r}
+#Plotting as a barplot
+
+ggplot(df_missing, aes(x=nmissing, y = perc_col) ) +
+         geom_bar(stat = "identity") +
+         labs(y="% Of missing values") + 
+         theme_classic()  
+      
+   
+
+```
+
+## Now display the missingness pattern per age group (1, 2, 3).
+
+```{r}
+df %>%
+  group_by(age)%>%
+  summarise_all(function(x) sum(is.na(x))/n()*100)%>%
+  round(2)
+```
+
+
+## Missing Data Patterns
+```{r}
+md.pattern(df)
+```
+## Questions
+1. how many rows are missing all data except the age feature? A: 7
+2. how many missing values are there in the bmi feature? A: 9
+3. how many rows are completely observed? A: 13
+4. how many missing data patterns are there? A: 5 (we include rows without missing values as a pattern too)
+
+```{r}
+# Others packages to try :)
+#install.packages("skimr")
+skimr::skim(df)
+```
+
+```{r}
+visdat::vis_dat(df)
+```
+
+# Assigment
+
+## Analyze the patterns of missing data for the fdgs dataset, and write a small paragraph on how you are going to solve the missingness in this data for an analyst who wants to compute the average weight of the population under study, assuming MAR.
+
+
+
