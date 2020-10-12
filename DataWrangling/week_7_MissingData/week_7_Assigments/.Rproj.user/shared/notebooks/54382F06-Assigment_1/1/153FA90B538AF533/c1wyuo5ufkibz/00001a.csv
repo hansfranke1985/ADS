@@ -1,0 +1,3 @@
+"0","# Lookinf visual if makes sense this correlation:"
+"0","ggplot(fdgs, aes(x=age, y=wgt, color=sex)) +"
+"0","  geom_point()"
