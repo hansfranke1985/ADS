@@ -157,6 +157,7 @@ colSums(is.na(data_imp))
 
 ```{r}
 #Comparison between methods (only on weight) => Try to see the diference in the mean( 0.380 vs 0.385)
+
 summary(fdgs_nomiss)
 ```
 
@@ -165,16 +166,16 @@ summary(data_imp)
 ```
 
 ```{r}
-#Look in Standard deviation
-
-print(sd(fdgs$wgt, na.rm = TRUE)) #original df
-print(sd(fdgs_nomiss$wgt)) #using mean
-print(sd(data_imp$wgt)) #using regression
+#Standard deviation
+sd(fdgs$wgt, na.rm = TRUE) #original df
+sd(fdgs_nomiss$wgt) #using mean
+sd(data_imp$wgt) #using regression
 ```
 
 ```{r}
-print(var(fdgs$wgt, na.rm = TRUE)) #original df
-print(var(fdgs_nomiss$wgt)) #using mean
-print(var(data_imp$wgt)) #using regression
+#Variance
+var(fdgs$wgt, na.rm = TRUE) #original df
+var(fdgs_nomiss$wgt) #using mean
+var(data_imp$wgt) #using regression
 ```
 

@@ -281,6 +281,7 @@ For example, use Age and Sex to predict the weight.
     ##     0     0     0     0     0     0     0     0
 
     #Comparison between methods (only on weight) => Try to see the diference in the mean( 0.380 vs 0.385)
+
     summary(fdgs_nomiss)
 
     ##        id            reg            age              sex            hgt       
@@ -317,28 +318,28 @@ For example, use Age and Sex to predict the weight.
     ##  3rd Qu.: 51.100   3rd Qu.: 0.675750   3rd Qu.: 0.7070  
     ##  Max.   :135.300   Max.   : 3.900000   Max.   : 4.7410
 
-    #Look in Standard deviation
-
-    print(sd(fdgs$wgt, na.rm = TRUE)) #original df
+    #Standard deviation
+    sd(fdgs$wgt, na.rm = TRUE) #original df
 
     ## [1] 23.14654
 
-    print(sd(fdgs_nomiss$wgt)) #using mean
+    sd(fdgs_nomiss$wgt) #using mean
 
     ## [1] 23.12345
 
-    print(sd(data_imp$wgt)) #using regression
+    sd(data_imp$wgt) #using regression
 
     ## [1] 23.13642
 
-    print(var(fdgs$wgt, na.rm = TRUE)) #original df
+    #Variance
+    var(fdgs$wgt, na.rm = TRUE) #original df
 
     ## [1] 535.7624
 
-    print(var(fdgs_nomiss$wgt)) #using mean
+    var(fdgs_nomiss$wgt) #using mean
 
     ## [1] 534.694
 
-    print(var(data_imp$wgt)) #using regression
+    var(data_imp$wgt) #using regression
 
     ## [1] 535.294
