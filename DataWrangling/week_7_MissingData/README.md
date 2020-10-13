@@ -2,10 +2,12 @@
 
 
 # Slides
-1.
+1. [Lecture 1](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/Slides/imputation_lecture_1.pdf)
 
 # Assignments:
-1. [Assigment1]https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/week_7_Assigments/Assigment_1.md
+1. [Assigment 1](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/week_7_Assigments/Assigment_1.md)
+2. [Assigment 2]()
+3. [Assigment 3]()
 
 # Summary:
 
