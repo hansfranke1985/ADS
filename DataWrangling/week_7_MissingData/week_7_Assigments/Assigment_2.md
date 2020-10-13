@@ -218,18 +218,6 @@ md.pattern( df_fgds_mean)
     ##        0   0   0   0   0   0     0     0 0
 
 ``` r
-#df with regression imputation Using mice
-
-df_fgds_reg <- df_fdgs
-
-imp <- mice(df_fgds_reg, method = "norm.predict", seed = 1,
-           m = 1, print = FALSE)
-xyplot(imp, wgt ~ age )
-```
-
-![](Assigment_2_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
-
-``` r
 #df with reg manually (u have to use df without the n/a)
 
 df_fdgs_age2 <- df_fdgs %>%
@@ -355,17 +343,103 @@ df_fdgs[rowSums(is.na(df_fdgs)) > 0,]
 #look at 3 indexes to compare the values with original df
 ids <- df_fdgs[rowSums(is.na(df_fdgs)) > 0,1] #picking every ids with n/a values
 
-filter(df3, id == 100984)
+filter(df3, id %in% ids)
 ```
 
-    ##       id   reg      age  sex   hgt      wgt  hgt.z wgt.z     age2     pred
-    ## 1 100984 North 5.760438 girl 116.6 23.92498 -0.102    NA 33.18265 23.92498
+    ##        id   reg         age  sex   hgt       wgt  hgt.z  wgt.z         age2
+    ## 1  100981  City  7.48802190  boy    NA 23.200000     NA -0.932 5.607047e+01
+    ## 2  100984 North  5.76043806 girl 116.6 23.924980 -0.102     NA 3.318265e+01
+    ## 3  103811 South  6.41204654  boy 115.7 24.993041 -1.392     NA 4.111434e+01
+    ## 4  104048  City 15.05270363 girl 167.3 54.376298  0.014     NA 2.265839e+02
+    ## 5  105706  West  1.01300479  boy    NA  8.445000     NA -1.726 1.026179e+00
+    ## 6  105872 South  2.06707734  boy  85.0 12.258248 -1.376     NA 4.272809e+00
+    ## 7  106320 South  0.36687201 girl    NA  6.960000     NA  0.654 1.345951e-01
+    ## 8  106453  West  0.93908282  boy    NA 10.420000     NA  0.358 8.818765e-01
+    ## 9  106597 South  1.18822724 girl  77.4  8.603820 -0.212     NA 1.411884e+00
+    ## 10 106796  West  2.62833676 girl    NA 14.100000     NA  0.174 6.908154e+00
+    ## 11 106924 North  1.59069131  boy  87.3 13.111547  1.034     NA 2.530299e+00
+    ## 12 106961  East  3.22245038  boy    NA 16.300000     NA  0.331 1.038419e+01
+    ## 13 107047  West  1.52224504  boy    NA 11.900000     NA  0.048 2.317230e+00
+    ## 14 107106  West  1.82067077  boy  88.0 13.303880  0.382     NA 3.314842e+00
+    ## 15 107316 South  0.78850103 girl  74.5  7.610387  1.105     NA 6.217339e-01
+    ## 16 107319 South  0.78028747  boy    NA  8.880000     NA -0.466 6.088485e-01
+    ## 17 107491  West  0.10130048  boy    NA  4.815000     NA  0.434 1.026179e-02
+    ## 18 107498 South  1.52224504 girl    NA 10.800000     NA -0.260 2.317230e+00
+    ## 19 200099  West  1.17453799 girl    NA  9.080000     NA -1.003 1.379539e+00
+    ## 20 200100  West  1.32238193  boy    NA 10.295000     NA -0.799 1.748694e+00
+    ## 21 200103  West  3.25804244  boy 100.0 17.728573 -0.032     NA 1.061484e+01
+    ## 22 202084 South 19.40862423  boy 179.6 71.665552 -0.527     NA 3.766947e+02
+    ## 23 202160  East  0.19986311  boy    NA  5.295000     NA -0.419 3.994526e-02
+    ## 24 202456  East  0.17522245 girl    NA  4.750000     NA -0.317 3.070291e-02
+    ## 25 202711  East  0.08761123 girl    NA  3.260000     NA -1.986 7.675727e-03
+    ## 26 202797  West  0.50376454  boy    NA  7.950000     NA  0.030 2.537787e-01
+    ## 27 205223  West  4.68172485  boy    NA 15.400000     NA -1.757 2.191855e+01
+    ## 28 205716 North 11.59753593  boy 155.9 45.435039  0.595     NA 1.345028e+02
+    ## 29 208005  East  2.66666667 girl  92.2 14.120843 -0.443     NA 7.111111e+00
+    ## 30 209091  East  0.83778234 girl    NA  8.570000     NA -0.395 7.018793e-01
+    ## 31 209118  East  1.64271047  boy    NA 11.900000     NA -0.172 2.698498e+00
+    ## 32 209385  City  0.64613279 girl    NA  8.180000     NA  0.080 4.174876e-01
+    ## 33 209493  East  6.24229979 girl    NA 20.100000     NA -0.802 3.896631e+01
+    ## 34 209563  West  6.13004791 girl 131.5 28.961558  2.376     NA 3.757749e+01
+    ## 35 209586  West  5.95208761  boy 115.0 24.481363 -0.970     NA 3.542735e+01
+    ## 36 210557 South 15.98083504 girl 165.5 56.696421 -0.463     NA 2.553871e+02
+    ## 37 211847  City  9.35249829 girl 135.9 33.450358 -0.590     NA 8.746922e+01
+    ## 38 211853  City  9.38535250  boy 143.0 36.769225  0.435     NA 8.808484e+01
+    ## 39 211857  City  9.02669405 girl 144.4 35.715336  1.101     NA 8.148121e+01
+    ## 40 211916  City  9.09240246  boy 143.3 36.443996  0.727     NA 8.267178e+01
+    ## 41 212986  City 10.57357974 girl    NA 48.900000     NA  1.414 1.118006e+02
+    ## 42 213000  City  9.50581793  boy 144.0 37.267826  0.494     NA 9.036057e+01
+    ## 43 213014 South 14.85010267 girl    NA 50.200000     NA -0.686 2.205255e+02
+    ##         pred
+    ## 1         NA
+    ## 2  23.924980
+    ## 3  24.993041
+    ## 4  54.376298
+    ## 5         NA
+    ## 6  12.258248
+    ## 7         NA
+    ## 8         NA
+    ## 9   8.603820
+    ## 10        NA
+    ## 11 13.111547
+    ## 12        NA
+    ## 13        NA
+    ## 14 13.303880
+    ## 15  7.610387
+    ## 16        NA
+    ## 17        NA
+    ## 18        NA
+    ## 19        NA
+    ## 20        NA
+    ## 21 17.728573
+    ## 22 71.665552
+    ## 23        NA
+    ## 24        NA
+    ## 25        NA
+    ## 26        NA
+    ## 27        NA
+    ## 28 45.435039
+    ## 29 14.120843
+    ## 30        NA
+    ## 31        NA
+    ## 32        NA
+    ## 33        NA
+    ## 34 28.961558
+    ## 35 24.481363
+    ## 36 56.696421
+    ## 37 33.450358
+    ## 38 36.769225
+    ## 39 35.715336
+    ## 40 36.443996
+    ## 41        NA
+    ## 42 37.267826
+    ## 43        NA
 
 ``` r
 md.pattern(df3)
 ```
 
-![](Assigment_2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](Assigment_2_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
     ##      id reg age sex wgt age2 wgt.z hgt hgt.z pred   
     ## 9987  1   1   1   1   1    1     1   1     1    1  0
@@ -390,3 +464,38 @@ Extra challenge: now, using the same model, perform stochastic
 regression imputation (norm.nob) as explained in section 1.3.5 of FIMD
 and compute the sample mean of weight. Do it again. Is the result the
 same? What does this variation in the sample mean represent?
+
+``` r
+#df with regression imputation Using mice
+
+df_fgds_reg <- df_fdgs
+
+imp <- mice(df_fdgs, method = "norm.nob", seed = 1,
+           m = 5, print = FALSE)
+xyplot(imp, wgt ~ age )
+```
+
+![](Assigment_2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+
+``` r
+df_fgds_reg <- complete(imp)
+#mean first time
+mean(df_fgds_reg$wgt)
+```
+
+    ## [1] 32.38399
+
+``` r
+df_fgds_reg <- df_fdgs #clean df
+
+
+imp <- mice(df_fdgs, method = "norm.nob",
+           m = 1, print = FALSE)
+
+df_fgds_reg <- complete(imp)
+
+#mean 2nd time
+mean(df_fgds_reg$wgt)
+```
+
+    ## [1] 32.38095
