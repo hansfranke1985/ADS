@@ -1,0 +1,5 @@
+"0","#df with regression imputation Using mice"
+"0","df_fgds_reg <- df_fdgs"
+"0","imp <- mice(df_fgds_reg, method = ""norm.predict"", seed = 1,"
+"0","           m = 1, print = FALSE)"
+"0","xyplot(imp, wgt ~ age )"

@@ -1,0 +1,8 @@
+"0","# Use fit to predict the value"
+"0","df3 <- df_fdgs_age2 %>% "
+"0","  #create a pred column to compare with original"
+"0","  mutate(pred = predict(multi.fit, .)) %>%"
+"0","  # Replace NA with pred in var1"
+"0","  mutate(wgt = ifelse(is.na(wgt), pred, wgt))"
+"0","# See the result"
+"0","head(df3)"

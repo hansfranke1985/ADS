@@ -1,0 +1,6 @@
+"0","#% of missing"
+"0","sum(is.na(fdgs))/(nrow(fdgs)*ncol(fdgs))*100"
+"1","[1]"
+"1"," 0.1071785"
+"1","
+"

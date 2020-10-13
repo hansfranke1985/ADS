@@ -103,6 +103,11 @@ visdat::vis_dat(df)
 #Lookinf for patterns of missing data
 md.pattern(fdgs)
 ```
+```{r}
+#% of missing
+sum(is.na(fdgs))/(nrow(fdgs)*ncol(fdgs))*100
+```
+
 
 ### Answer:
 

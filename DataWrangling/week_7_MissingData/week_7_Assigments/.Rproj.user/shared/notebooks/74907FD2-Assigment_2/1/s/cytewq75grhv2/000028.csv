@@ -1,0 +1,3 @@
+"0","#look at 3 indexes to compare the values with original df"
+"0","ids <- df_fdgs[rowSums(is.na(df_fdgs)) > 0,1] #picking every ids with n/a values"
+"0","filter(df3, id == 100984)"

@@ -1,0 +1,4 @@
+"0","?nhanes"
+"0","df <- nhanes"
+"0","df_cc <- na.omit(df) #omiting the n/a values"
+"0","df_cc"
