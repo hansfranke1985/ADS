@@ -1,0 +1,7 @@
+"0","df_fgds_reg <- complete(imp)"
+"0","#mean first time"
+"0","mean(df_fgds_reg$wgt)"
+"1","[1]"
+"1"," 32.38149"
+"1","
+"

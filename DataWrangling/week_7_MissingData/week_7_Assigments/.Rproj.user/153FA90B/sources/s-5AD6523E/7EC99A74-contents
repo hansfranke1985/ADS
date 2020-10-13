@@ -81,16 +81,7 @@ df_fgds_mean <- complete(imp_mean)
 md.pattern( df_fgds_mean)
 ```
 
-```{r}
 
-#df with regression imputation Using mice
-
-df_fgds_reg <- df_fdgs
-
-imp <- mice(df_fgds_reg, method = "norm.predict", seed = 1,
-           m = 1, print = FALSE)
-xyplot(imp, wgt ~ age )
-```
 
 ```{r}
 #df with reg manually (u have to use df without the n/a)
@@ -143,7 +134,7 @@ df_fdgs[rowSums(is.na(df_fdgs)) > 0,]
 #look at 3 indexes to compare the values with original df
 ids <- df_fdgs[rowSums(is.na(df_fdgs)) > 0,1] #picking every ids with n/a values
 
-filter(df3, id == 100984)
+filter(df3, id %in% ids)
 
 
 ```
@@ -164,3 +155,35 @@ mean(df_fdgs_cc$wgt)
 
 
 Extra challenge: now, using the same model, perform stochastic regression imputation (norm.nob) as explained in section 1.3.5 of FIMD and compute the sample mean of weight. Do it again. Is the result the same? What does this variation in the sample mean represent?
+
+```{r}
+#df with regression imputation Using mice
+
+df_fgds_reg <- df_fdgs
+
+imp <- mice(df_fdgs, method = "norm.nob", seed = 1,
+           m = 5, print = FALSE)
+xyplot(imp, wgt ~ age )
+```
+
+```{r}
+df_fgds_reg <- complete(imp)
+#mean first time
+mean(df_fgds_reg$wgt)
+```
+
+
+
+```{r}
+df_fgds_reg <- df_fdgs #clean df
+
+
+imp <- mice(df_fdgs, method = "norm.nob",
+           m = 1, print = FALSE)
+
+df_fgds_reg <- complete(imp)
+
+#mean 2nd time
+mean(df_fgds_reg$wgt)
+```
+
