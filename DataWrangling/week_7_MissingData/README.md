@@ -82,6 +82,8 @@ Mean imputation should perhaps only be used as a rapid fix when a handful of val
 1.  Mean imputation distorts the distribution in several ways
 2. Understimate the variance, disturb the relation between variables, bias any estimation (other than mean)
 3. Bias the estimation of the mean when not MCAR
+4. Biases correlations to zero
+
 
 ## 4. Regression Imputation
 
@@ -108,7 +110,8 @@ This method first estimates the intercept, slope and residual variance under the
 
 - __Disavantage__: 
 1. Can lead to strange results 
-2. 
+2. Symmetric and constant error restrictive
+3. Single imputation does not take uncertainty imputed data into account, and incorrectly treats them as real
 
 ## 6. LOCF and BOCF
 
@@ -144,3 +147,6 @@ Multiple imputation creates  m >1 complete datasets. Each of these datasets is a
 Under the appropriate conditions, the pooled estimates are unbiased and have the correct statistical properties.
 
 Another reason to use multiple imputation is that it separates the solution of the missing data problem from the solution of the complete-data problem. The missing-data problem is solved first, the complete-data problem next. Though these phases are not completely independent, the answer to the scientifically interesting question is not obscured anymore by the missing data. The ability to separate the two phases simplifies statistical modeling, and hence contributes to a better insight into the phenomenon of scientific study.
+
+
+![Multiple Imputation Flow] (MultipleImputation_FLOW.PNG)
