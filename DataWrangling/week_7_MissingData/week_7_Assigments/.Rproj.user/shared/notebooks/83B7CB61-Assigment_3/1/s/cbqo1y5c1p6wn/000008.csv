@@ -1,0 +1,4 @@
+"0","df_nhanes <- nhanes #store in df to avoid changes in original df"
+"0","imp_mean <- mice(df_nhanes, method = ""mean"", maxit = 1,"
+"0","           m = 1, print = FALSE)"
+"0","xyplot(imp_mean, bmi ~ age) #plot the inserted points (red ones) WHy there is only 3 points if total missing points is 9?"

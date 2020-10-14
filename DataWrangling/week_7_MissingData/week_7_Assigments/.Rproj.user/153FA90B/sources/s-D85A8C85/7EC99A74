@@ -5,7 +5,7 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1152331880",
+    "hash" : "0",
     "id" : "7EC99A74",
     "lastKnownWriteTime" : 1602597177,
     "last_content_update" : 1602597177575,
@@ -13,8 +13,8 @@
     "project_path" : "Assigment_2.Rmd",
     "properties" : {
         "chunk_output_type" : "inline",
-        "cursorPosition" : "167,0",
-        "scrollLine" : "166",
+        "cursorPosition" : "159,0",
+        "scrollLine" : "147",
         "tempName" : "Untitled1"
     },
     "relative_order" : 4,

@@ -7,7 +7,7 @@
 # Assignments:
 1. [Assigment 1](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/week_7_Assigments/Assigment_1.md)
 2. [Assigment 2](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/week_7_Assigments/Assigment_2.md)
-3. [Assigment 3]()
+3. [Assigment 3](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/week_7_Assigments/Assigment_3.md)
 
 # Summary:
 
@@ -26,7 +26,7 @@ An example of MNAR in public opinion research occurs if those with weaker opinio
 -> MNAR is the most complex case
 
 
-# Solutions
+# Solutions (under construction)
 
 ## Ad-hoc Solutions
 1. Listwise Deletion

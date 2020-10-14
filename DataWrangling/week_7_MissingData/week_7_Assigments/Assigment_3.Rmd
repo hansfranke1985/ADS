@@ -1,0 +1,209 @@
+---
+title: "Assigment 3"
+author: "Hans Franke"
+date: "October 12, 2020"
+output: rmarkdown::github_document
+---
+
+```{r}
+#loading libraries
+library(tidyverse)
+library(mice)
+```
+
+
+The aim of this assignment is to enhance your understanding of multiple imputation, in general. You will learn how to multiply impute simple datasets and how to obtain the imputed data for further analysis. The main objective is to increase your knowledge and understanding on applications of multiple imputation. For all imputation tasks in this assignment, we will use the mice package.
+
+# Ad Hoc imputation, redux
+
+Fit a regression model where bmi is predicted from age using the nhanes dataset, using the following code. How many observations were excluded from this analysis? Is there a significant effect of age on bmi?
+
+```{r}
+# this with() notation will come in handy later
+fit <- with(nhanes, lm(bmi ~ age))
+
+#look for statistics and missing values (# 9 observations were deleted)
+summary(fit)
+
+```
+```{r}
+#Let see the % of missing values in BMI colum 36%, so we can conclude this probably have a huge impact!
+
+#% missing
+colSums(is.na(nhanes))/nrow(nhanes)*100
+```
+
+
+Impute the missing data in the nhanes dataset with mean imputation using the mice() function. Obtain the complete dataset using the complete() function. Show a summary of the complete data using summary().
+
+```{r}
+df_nhanes <- nhanes #store in df to avoid changes in original df
+
+imp_mean <- mice(df_nhanes, method = "mean", maxit = 1,
+           m = 1, print = FALSE)
+
+xyplot(imp_mean, bmi ~ age) #plot the inserted points (red ones) WHy there is only 3 points if total missing points is 9? A: because the points inserted is always the same, plus the fact that we have only 3 "classes of age"
+```
+```{r}
+#look where is the missing points
+df_nhanes[rowSums(is.na(df_nhanes)) > 0,]
+```
+
+```{r}
+#complete DF with missing values
+
+df_nhanes_mean <- complete(imp_mean)
+
+summary(df_nhanes_mean)
+```
+
+
+Recompute the regression model using the imputations. Did the conclusions change?
+```{r}
+#Original regression without mean imputation
+summary(fit)
+```
+
+```{r}
+# Fitting with mean_imputation
+fit_mean <- with(df_nhanes_mean, lm(bmi ~ age))
+
+#look for statistics=> We conclude that STD erros decrease, the p-value descrease as well but in a lesser scale!
+summary(fit_mean)
+
+```
+
+Impute the missing data in the nhanes dataset with regression imputation.
+
+```{r}
+#create a df to store the imputaiton
+df_nhanes_reg <- df_nhanes
+
+# Use regression (fit_mean) to predict the value
+df_nhanes_reg <- df_nhanes_reg %>% 
+  #create a pred column to compare with original
+  mutate(pred = predict(fit_mean, .)) %>%
+  # Replace NA with pred in var1
+  mutate(bmi = ifelse(is.na(bmi), pred, bmi))
+  
+df_nhanes_reg  
+
+```
+
+Again, inspect the completed data and investigate the imputed data regression model. Has the inference changed?
+```{r}
+#original df
+summary(df_nhanes)
+
+```
+```{r}
+#df with imputation by regression => the value of mean is higher
+summary(df_nhanes_reg)
+```
+
+
+## Impute the missing data in the nhanes dataset with stochastic regression imputation (method = "norm.nob").
+```{r}
+#df with stocasthic regression imputation Using mice
+
+df_nhanes_stocreg <- df_nhanes
+
+imp_stoc <- mice(df_nhanes, method = "norm.nob", seed = 1,
+           m = 5, print = FALSE)
+xyplot(imp_stoc, bmi ~ age )
+#why there is much more red points than original 9 missing? A: Because we are using m =5, so there is 5*9 imputation points
+```
+```{r}
+#complete the df with imputation values (stoc regression)
+df_nhanes_stocreg <- complete(imp_stoc)
+```
+
+
+## Again, inspect the completed data and investigate the imputed data regression model.
+```{r}
+#statistics of data frame
+summary(df_nhanes_stocreg)
+```
+```{r}
+#statics of regression model => Error and p value decrease much more than original regression.
+stoc_reg <- with(df_nhanes_stocreg, lm(bmi ~age))
+summary(stoc_reg)
+```
+```{r}
+#Original regression with mean values
+summary(fit_mean)
+```
+
+## Re-run the stochastic imputation model with the argument seed 123 and verify if your results are the same as the ones below
+
+```{r}
+imp_stoc123 <- mice(df_nhanes, method = "norm.nob", seed = 123,
+            print = FALSE)
+
+df_nhanes_stoc123 <- df_nhanes #copy original
+df_nhanes_stoc123 <- complete(imp_stoc123) #complete with imputation stock seed = 123
+
+reg123 <- with(df_nhanes_stoc123, lm(age ~ bmi)) #run the regression with this imputaiton values
+summary(reg123)
+```
+
+# Multiple imputation
+
+# Perform multiple imputation in the nhanes dataset, by calling mice() on the data set. Assign the result of the function call to a variable called imp
+
+```{r}
+imp <- mice(nhanes, m = 20, print = FALSE)
+
+summary(imp)
+```
+
+The object imp contains a multiply imputed data set (of class mids). It encapsulates all information from imputing the nhanes dataset, such as the original data, the imputed values, the number of missing values, number of iterations, and so on.
+
+To obtain an overview of the information stored in the object imp, use the attributes() function:
+
+For example, the original data are stored as
+
+```{r}
+imp$data
+```
+
+and the imputations are stored as
+
+```{r}
+imp$imp
+```
+
+
+## Extract the third completed dataset
+```{r}
+df_nhanes_multi <- nhanes
+
+df_nhanes_multi <- complete(imp)
+
+df_nhanes_multi
+```
+
+
+## Perform the now familiar regression model using the with(imp, ...) notation. What do you see?
+```{r}
+reg_multi <- with(df_nhanes_multi, lm(bmi ~ age))
+summary(reg_multi)
+```
+```{r}
+summary(df_nhanes_multi)
+```
+
+## Last but not least, use the function pool() to combine these regressions. Use the summary() function on the pooled results. Use the help function and the FIMD book to explain what you see!
+
+```{r}
+#The pool() function combines the estimates from m repeated complete data analyses.
+#Imp are already did but show again just to make code clear | Every time u run the code the results changes because there are random variance added to results by multiple imputations
+imp <- mice(nhanes, m = 20, print = FALSE)
+fit <- with(data = imp, exp = lm(bmi ~ age))
+summary(pool(fit))
+```
+```{r}
+#visualise the imputation
+xyplot(imp, bmi ~age)
+```
+

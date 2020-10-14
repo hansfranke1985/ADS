@@ -1,0 +1,3 @@
+"0","df_nhanes_multi <- nhanes"
+"0","df_nhanes_multi <- complete(imp)"
+"0","df_nhanes_multi"
