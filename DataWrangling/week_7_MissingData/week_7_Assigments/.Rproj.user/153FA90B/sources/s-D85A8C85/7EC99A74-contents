@@ -18,7 +18,6 @@ In this assignment, we will again use the nhanes dataset from the mice package.
 Prepare a data frame for complete case analysis. Call this data frame df_cc.
 
 ```{r}
-?nhanes
 
 df <- nhanes
 df_cc <- na.omit(df) #omiting the n/a values
@@ -124,6 +123,7 @@ head(df3)
 
 ```
 
+
 ```{r}
 #show original df just to compare
 df_fdgs[rowSums(is.na(df_fdgs)) > 0,]
@@ -188,5 +188,8 @@ df_fgds_reg <- complete(imp)
 #mean 2nd time
 mean(df_fgds_reg$wgt)
 ```
+
+
+
 
 

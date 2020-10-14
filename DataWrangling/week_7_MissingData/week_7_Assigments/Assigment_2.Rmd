@@ -113,14 +113,14 @@ pred2
 
 ```{r}
 # Use fit to predict the value
-df3 <- df_fdgs_age2 %>% 
+df4 <- df_fdgs_age2 %>% 
   #create a pred column to compare with original
   mutate(pred = predict(multi.fit, .)) %>%
   # Replace NA with pred in var1
-  mutate(wgt = ifelse(is.na(wgt), pred, wgt))
+  mutate(wgt = ifelse(is.na(.), pred, .))
 
 # See the result
-head(df3)
+head(df4)
 
 ```
 
@@ -188,4 +188,8 @@ df_fgds_reg <- complete(imp)
 #mean 2nd time
 mean(df_fgds_reg$wgt)
 ```
+
+
+
+
 
