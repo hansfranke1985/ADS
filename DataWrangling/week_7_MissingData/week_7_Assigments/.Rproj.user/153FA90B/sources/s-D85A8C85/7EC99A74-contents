@@ -56,6 +56,7 @@ var(df_mean)
 
 
 # Assignment
+
 Perform regression imputation on the fdgs dataset according to the following paragraph, and compute the estimate of the population mean. (NB: the paragraph is the example answer from the last exercise in the previous assignment)
 
 Since the goal is to estimate the mean weight of the population, and we assume MAR, we have to impute (complete case analysis is only unbiased under MCAR). Regression imputation will work fine for this purpose. For the imputation model, I would create a linear model with wgt as the outcome. The model will include all variables (except id, and hgt.z) and also a quadratic effect of age (as weight will probably increase less as the child gets older). Then, I can impute the predicted values for the missing weight cells. The sample mean will then be the estimate of the population mean.
@@ -175,6 +176,7 @@ mean(df_fgds_reg$wgt)
 
 
 ```{r}
+#using stocasthic regression
 df_fgds_reg <- df_fdgs #clean df
 
 
@@ -186,4 +188,5 @@ df_fgds_reg <- complete(imp)
 #mean 2nd time
 mean(df_fgds_reg$wgt)
 ```
+
 
