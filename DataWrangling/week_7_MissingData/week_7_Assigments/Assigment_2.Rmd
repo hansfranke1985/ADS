@@ -18,7 +18,6 @@ In this assignment, we will again use the nhanes dataset from the mice package.
 Prepare a data frame for complete case analysis. Call this data frame df_cc.
 
 ```{r}
-?nhanes
 
 df <- nhanes
 df_cc <- na.omit(df) #omiting the n/a values
@@ -113,16 +112,17 @@ pred2
 
 ```{r}
 # Use fit to predict the value
-df4 <- df_fdgs_age2 %>% 
+df3 <- df_fdgs_age2 %>% 
   #create a pred column to compare with original
   mutate(pred = predict(multi.fit, .)) %>%
   # Replace NA with pred in var1
-  mutate(wgt = ifelse(is.na(.), pred, .))
+  mutate(wgt = ifelse(is.na(wgt), pred, wgt))
 
 # See the result
-head(df4)
+head(df3)
 
 ```
+
 
 ```{r}
 #show original df just to compare
