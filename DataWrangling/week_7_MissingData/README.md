@@ -149,4 +149,4 @@ Under the appropriate conditions, the pooled estimates are unbiased and have the
 Another reason to use multiple imputation is that it separates the solution of the missing data problem from the solution of the complete-data problem. The missing-data problem is solved first, the complete-data problem next. Though these phases are not completely independent, the answer to the scientifically interesting question is not obscured anymore by the missing data. The ability to separate the two phases simplifies statistical modeling, and hence contributes to a better insight into the phenomenon of scientific study.
 
 
-![Multiple Imputation Flow] (MultipleImputation_FLOW.PNG)
+![Multiple Imputation Flow](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/MultipleImputation_FLOW.PNG)
