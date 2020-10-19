@@ -1,1 +1,0 @@
-"0","df_nhanes[rowSums(is.na(df_nhanes)) > 0,]"

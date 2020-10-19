@@ -1,0 +1,5 @@
+"0","#Plotting as a barplot"
+"0","ggplot(df_missing, aes(x=nmissing, y = perc_col) ) +"
+"0","         geom_bar(stat = ""identity"") +"
+"0","         labs(y=""% Of missing values"") + "
+"0","         theme_classic()  "

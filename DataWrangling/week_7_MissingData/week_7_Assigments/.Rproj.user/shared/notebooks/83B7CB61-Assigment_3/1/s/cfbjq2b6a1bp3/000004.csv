@@ -1,0 +1,5 @@
+"0","imp_stoc123 <- mice(nhanes, method = ""norm.nob"", seed = 123, m=1,"
+"0","            print = FALSE)"
+"2","Error in mice(nhanes, method = ""norm.nob"", seed = 123, m = 1, print = FALSE) : 
+  could not find function ""mice""
+"

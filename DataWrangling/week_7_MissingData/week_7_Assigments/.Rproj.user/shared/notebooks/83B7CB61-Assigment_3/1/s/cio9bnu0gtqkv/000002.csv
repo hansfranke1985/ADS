@@ -1,0 +1,2 @@
+"0","#look where is the missing points"
+"0","df_nhanes[rowSums(is.na(df_nhanes)) > 0,]"

@@ -1,4 +1,4 @@
-"0","#Let see the % of missing values in BMI colum"
+"0","#Let see the % of missing values in BMI colum 36%, so we can conclude this probably have a huge impact!"
 "0","#% missing"
 "0","colSums(is.na(nhanes))/nrow(nhanes)*100"
 "1","age "

@@ -1,0 +1,6 @@
+"0","#Put data in the DF"
+"0","df_missing <- tibble("
+"0","  nmissing = colnames(is.na(df)),"
+"0","  perc_col = colSums(is.na(df))/nrow(df)*100"
+"0",")"
+"0","df_missing"

@@ -1,5 +1,6 @@
-"0","summary(df_nhanes_mean)
-"
+"0","#complete DF with missing values"
+"0","df_nhanes_mean <- complete(imp_mean)"
+"0","summary(df_nhanes_mean)"
 "1","      age      "
 "1","      bmi       "
 "1","      hyp       "

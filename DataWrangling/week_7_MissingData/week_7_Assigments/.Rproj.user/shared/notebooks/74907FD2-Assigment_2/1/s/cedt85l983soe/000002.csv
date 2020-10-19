@@ -1,0 +1,6 @@
+"0","# mean estimate with complete case analysis:"
+"0","mean(df$wgt[!na_idx])"
+"1","[1]"
+"1"," 32.38453"
+"1","
+"

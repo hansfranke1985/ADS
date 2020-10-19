@@ -64,6 +64,33 @@ Since the goal is to estimate the mean weight of the population, and we assume M
 #loading and look for summaries
 md.pattern(fdgs)
 ```
+```{r}
+df <- fdgs
+na_idx <- is.na(df$wgt)
+imp_model <- lm(wgt ~ reg + age + I(age^2) + sex + hgt, data = df, na.action = na.omit)
+
+pred_wgt <- predict(imp_model, newdata = df[na_idx,])
+pred_wgt
+
+# we can impute the predicted values like so:
+df$wgt[na_idx] <- pred_wgt
+
+# mean estimate with regression imputation:
+mean(df$wgt)
+
+```
+```{r}
+# mean estimate with complete case analysis:
+mean(df$wgt[!na_idx])
+```
+```{r}
+na_idx[1:10]
+```
+```{r}
+!na_idx[1:10]
+```
+
+
 
 ```{r}
 #Original
@@ -71,7 +98,7 @@ df_fdgs <- fdgs
 
 #df without n/a
 df_fdgs_cc <- na.omit(df_fdgs)
-
+                      
 #df with mean imputation
 imp_mean <- mice(df_fdgs, method = "mean", m = 1, maxit = 1)
 df_fgds_mean <- complete(imp_mean)
@@ -89,7 +116,7 @@ md.pattern( df_fgds_mean)
 df_fdgs_age2 <- df_fdgs %>%
   mutate( age2 = age ** 2) # elevate age to quadratic as question suggests
 
-multi.fit = lm(wgt~reg+age2+sex+hgt, data=df_fdgs_age2)
+multi.fit = lm(wgt~reg+age+age2+sex+hgt, data=df_fdgs_age2)
 summary(multi.fit)
 
 ```
@@ -98,7 +125,8 @@ summary(multi.fit)
 #predict some values
 value <- data.frame(
   reg = c("North"),
-  age2 = c(20),
+  age = 10,
+  age2 = c(100),
   sex = c("girl"),
   hgt = c(30)
 )
@@ -119,7 +147,22 @@ df3 <- df_fdgs_age2 %>%
   mutate(wgt = ifelse(is.na(wgt), pred, wgt))
 
 # See the result
-head(df3)
+df3[na_idx,]
+
+```
+```{r}
+#Same thing with diferent code
+df4 <- df_fdgs_age2 
+na_idx <- is.na(df4$wgt)
+imp_model <- lm(wgt ~ reg + age + I(age^2) + sex + hgt, data= df4, na.action = na.omit)
+
+pred_wgt <- predict(imp_model, newdata = df4[na_idx,])
+pred_wgt
+
+# we can impute the predicted values like so:
+df4$wgt[na_idx] <- pred_wgt
+
+df4[na_idx,]
 
 ```
 

@@ -1,5 +1,0 @@
-"0","#df with stocasthic regression imputation Using mice"
-"0","df_nhanes_stocreg <- df_nhanes"
-"0","imp_stoc <- mice(df_nhanes, method = ""norm.nob"", seed = 1,"
-"0","           m = 5, print = FALSE)"
-"0","xyplot(imp_stoc, bmi ~ age )"

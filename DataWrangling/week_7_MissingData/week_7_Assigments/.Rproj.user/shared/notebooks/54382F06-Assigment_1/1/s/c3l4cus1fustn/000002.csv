@@ -1,6 +1,5 @@
-"0","# % of Missing values in all columns
-colSums(is.na(df))/nrow(df)*100
-"
+"0","# % of Missing values in all columns"
+"0","colSums(is.na(df))/nrow(df)*100"
 "1","age "
 "1","bmi "
 "1","hyp "

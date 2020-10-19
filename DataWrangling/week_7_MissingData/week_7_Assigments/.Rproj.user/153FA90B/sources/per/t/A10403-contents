@@ -128,7 +128,7 @@ colSums(is.na(fdgs_nomiss))
 md.pattern(fdgs_nomiss)
 ```
 
-But this is not the best solution because replace by the means, ads a lot of variance in the samples. The best solution should be use a regression technique to predict the value considering other variables. For example, use Age and Sex to predict the weight.
+But this is not the best solution because replace by the means, u biased the samples. Mean imputation is only unbiased under MCAR assumption. The best solution should be use a regression technique to predict the value considering other variables. For example, use Age and Sex to predict the weight.
 
 ```{r}
 # Lookinf visual if makes sense this correlation:

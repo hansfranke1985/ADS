@@ -1,4 +1,4 @@
-"0","#statics of regression model"
+"0","#statics of regression model => Error and p value decrease much more than original regression."
 "0","stoc_reg <- with(df_nhanes_stocreg, lm(bmi ~age))"
 "0","summary(stoc_reg)"
 "1","

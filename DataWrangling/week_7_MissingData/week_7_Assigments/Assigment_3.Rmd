@@ -106,10 +106,10 @@ summary(df_nhanes_reg)
 ```{r}
 #df with stocasthic regression imputation Using mice
 
-df_nhanes_stocreg <- df_nhanes
+df_nhanes_stocreg <- df_nhanes[]
 
-imp_stoc <- mice(df_nhanes, method = "norm.nob", seed = 1,
-           m = 5, print = FALSE)
+imp_stoc <- mice(df_nhanes_stocreg, method = "norm.nob", seed = 1,
+           m = 1, print = FALSE)
 xyplot(imp_stoc, bmi ~ age )
 #why there is much more red points than original 9 missing? A: Because we are using m =5, so there is 5*9 imputation points
 ```
@@ -137,10 +137,10 @@ summary(fit_mean)
 ## Re-run the stochastic imputation model with the argument seed 123 and verify if your results are the same as the ones below
 
 ```{r}
-imp_stoc123 <- mice(df_nhanes, method = "norm.nob", seed = 123,
+imp_stoc123 <- mice(nhanes, method = "norm.nob", seed = 123, m=1,
             print = FALSE)
-
-df_nhanes_stoc123 <- df_nhanes #copy original
+?
+df_nhanes_stoc123 <- nhanes #copy original
 df_nhanes_stoc123 <- complete(imp_stoc123) #complete with imputation stock seed = 123
 
 reg123 <- with(df_nhanes_stoc123, lm(age ~ bmi)) #run the regression with this imputaiton values
@@ -149,7 +149,7 @@ summary(reg123)
 
 # Multiple imputation
 
-# Perform multiple imputation in the nhanes dataset, by calling mice() on the data set. Assign the result of the function call to a variable called imp
+## Perform multiple imputation in the nhanes dataset, by calling mice() on the data set. Assign the result of the function call to a variable called imp
 
 ```{r}
 imp <- mice(nhanes, m = 20, print = FALSE)
@@ -197,8 +197,8 @@ summary(df_nhanes_multi)
 
 ```{r}
 #The pool() function combines the estimates from m repeated complete data analyses.
-#Imp are already did but show again just to make code clear | Every time u run the code the results changes because there are random variance added to results by multiple imputations
-imp <- mice(nhanes, m = 20, print = FALSE)
+#Imp are already done but show again just to make code clear | Every time u run the code the results changes because there are random variance added to results by multiple imputations
+imp <- mice(nhanes, m = 5, print = FALSE)
 fit <- with(data = imp, exp = lm(bmi ~ age))
 summary(pool(fit))
 ```

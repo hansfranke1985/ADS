@@ -1,4 +1,4 @@
-"0","#df with imputation by regression"
+"0","#df with imputation by regression => the value of mean is higher"
 "0","summary(df_nhanes_reg)"
 "1","      age      "
 "1","      bmi       "

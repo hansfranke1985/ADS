@@ -1,6 +1,11 @@
-"0","# Others packages to try :)
-#install.packages(""skimr"")
-skimr::skim(df)
+"0","# Others packages to try :)"
+"0","#install.packages(""skimr"")"
+"0","skimr::skim(df)"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
 "
 "1","-- Data Summary ------------------------
 "
@@ -33,7 +38,7 @@ Group variables           "
 "1","
 "
 "1","
--- Variable type: numeric ------------------------------------------------------------------------------------------------------------------------------"
+-- Variable type: numeric ----------------------------------------------------------------------------------------------------"
 "1","
 "
 "1","# A tibble: 4 x 11"
