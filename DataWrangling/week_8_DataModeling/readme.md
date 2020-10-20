@@ -14,8 +14,9 @@
 # Summary:
 
 
+** Credits: Machine-Learning A-Z (Udemy)
 
-![Regression](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/MultipleImputation_FLOW.PNG)
+![Regression](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_8_DataModeling/Regression_Pros_Cons.pdf)
 
 
-![Classification](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_7_MissingData/MultipleImputation_FLOW.PNG)
+![Classification](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_8_DataModeling/Classification_Pros_Cons.pdf)
