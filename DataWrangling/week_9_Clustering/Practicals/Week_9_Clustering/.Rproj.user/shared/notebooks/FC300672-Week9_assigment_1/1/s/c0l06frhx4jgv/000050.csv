@@ -1,0 +1,5 @@
+"0","# We can see that the stability on each cluster (we see that k=5 has the most stability and 3 and 6 the fewer, as we see from previous example)"
+"0","clusters <- 1:6"
+"0","stability2 <- cboot.kmeansCBI$bootmean"
+"0","stability <- cboot.hclust$bootmean "
+"0","ggplot(data=NULL) + geom_line(aes(x=clusters, y=stability, color='HCLUST')) + geom_line(aes(x=clusters, y=stability2, color=""Kmeans"")) + xlim(1,6) + ylim(0,1) + labs(title=""Stability test with resampling"")"

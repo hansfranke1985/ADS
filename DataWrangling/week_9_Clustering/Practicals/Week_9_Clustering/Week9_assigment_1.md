@@ -329,3 +329,247 @@ time? where do you see differences?
 
 Find a way online to perform bootstrap stability assessment for the 3
 and 6-cluster solutions.
+
+    #install.packages("fpc") 
+    library("fpc")
+
+    ## Warning: package 'fpc' was built under R version 4.0.3
+
+    #set desire number of clusters
+    kbest.p<- 6 
+
+    #   called cboot.hclust.
+    cboot.hclust <- clusterboot(sim_df_large_un, clustermethod=hclustCBI,
+                               method="ward.D", k=kbest.p)
+
+    ## boot 1 
+    ## boot 2 
+    ## boot 3 
+    ## boot 4 
+    ## boot 5 
+    ## boot 6 
+    ## boot 7 
+    ## boot 8 
+    ## boot 9 
+    ## boot 10 
+    ## boot 11 
+    ## boot 12 
+    ## boot 13 
+    ## boot 14 
+    ## boot 15 
+    ## boot 16 
+    ## boot 17 
+    ## boot 18 
+    ## boot 19 
+    ## boot 20 
+    ## boot 21 
+    ## boot 22 
+    ## boot 23 
+    ## boot 24 
+    ## boot 25 
+    ## boot 26 
+    ## boot 27 
+    ## boot 28 
+    ## boot 29 
+    ## boot 30 
+    ## boot 31 
+    ## boot 32 
+    ## boot 33 
+    ## boot 34 
+    ## boot 35 
+    ## boot 36 
+    ## boot 37 
+    ## boot 38 
+    ## boot 39 
+    ## boot 40 
+    ## boot 41 
+    ## boot 42 
+    ## boot 43 
+    ## boot 44 
+    ## boot 45 
+    ## boot 46 
+    ## boot 47 
+    ## boot 48 
+    ## boot 49 
+    ## boot 50 
+    ## boot 51 
+    ## boot 52 
+    ## boot 53 
+    ## boot 54 
+    ## boot 55 
+    ## boot 56 
+    ## boot 57 
+    ## boot 58 
+    ## boot 59 
+    ## boot 60 
+    ## boot 61 
+    ## boot 62 
+    ## boot 63 
+    ## boot 64 
+    ## boot 65 
+    ## boot 66 
+    ## boot 67 
+    ## boot 68 
+    ## boot 69 
+    ## boot 70 
+    ## boot 71 
+    ## boot 72 
+    ## boot 73 
+    ## boot 74 
+    ## boot 75 
+    ## boot 76 
+    ## boot 77 
+    ## boot 78 
+    ## boot 79 
+    ## boot 80 
+    ## boot 81 
+    ## boot 82 
+    ## boot 83 
+    ## boot 84 
+    ## boot 85 
+    ## boot 86 
+    ## boot 87 
+    ## boot 88 
+    ## boot 89 
+    ## boot 90 
+    ## boot 91 
+    ## boot 92 
+    ## boot 93 
+    ## boot 94 
+    ## boot 95 
+    ## boot 96 
+    ## boot 97 
+    ## boot 98 
+    ## boot 99 
+    ## boot 100
+
+    #alternative version 
+    cboot.kmeansCBI <- clusterboot(sim_df_large_un, clustermethod=kmeansCBI, k=kbest.p)
+
+    ## boot 1 
+    ## boot 2 
+    ## boot 3 
+    ## boot 4 
+    ## boot 5 
+    ## boot 6 
+    ## boot 7 
+    ## boot 8 
+    ## boot 9 
+    ## boot 10 
+    ## boot 11 
+    ## boot 12 
+    ## boot 13 
+    ## boot 14 
+    ## boot 15 
+    ## boot 16 
+    ## boot 17 
+    ## boot 18 
+    ## boot 19 
+    ## boot 20 
+    ## boot 21 
+    ## boot 22 
+    ## boot 23 
+    ## boot 24 
+    ## boot 25 
+    ## boot 26 
+    ## boot 27 
+    ## boot 28 
+    ## boot 29 
+    ## boot 30 
+    ## boot 31 
+    ## boot 32 
+    ## boot 33 
+    ## boot 34 
+    ## boot 35 
+    ## boot 36 
+    ## boot 37 
+    ## boot 38 
+    ## boot 39 
+    ## boot 40 
+    ## boot 41 
+    ## boot 42 
+    ## boot 43 
+    ## boot 44 
+    ## boot 45 
+    ## boot 46 
+    ## boot 47 
+    ## boot 48 
+    ## boot 49 
+    ## boot 50 
+    ## boot 51 
+    ## boot 52 
+    ## boot 53 
+    ## boot 54 
+    ## boot 55 
+    ## boot 56 
+    ## boot 57 
+    ## boot 58 
+    ## boot 59 
+    ## boot 60 
+    ## boot 61 
+    ## boot 62 
+    ## boot 63 
+    ## boot 64 
+    ## boot 65 
+    ## boot 66 
+    ## boot 67 
+    ## boot 68 
+    ## boot 69 
+    ## boot 70 
+    ## boot 71 
+    ## boot 72 
+    ## boot 73 
+    ## boot 74 
+    ## boot 75 
+    ## boot 76 
+    ## boot 77 
+    ## boot 78 
+    ## boot 79 
+    ## boot 80 
+    ## boot 81 
+    ## boot 82 
+    ## boot 83 
+    ## boot 84 
+    ## boot 85 
+    ## boot 86 
+    ## boot 87 
+    ## boot 88 
+    ## boot 89 
+    ## boot 90 
+    ## boot 91 
+    ## boot 92 
+    ## boot 93 
+    ## boot 94 
+    ## boot 95 
+    ## boot 96 
+    ## boot 97 
+    ## boot 98 
+    ## boot 99 
+    ## boot 100
+
+    #   The results of the clustering are in 
+    #   cboot.hclust$result. The output of the hclust() 
+    #   function is in cboot.hclust$result$result. 
+    #
+    #   cboot.hclust$result$partition returns a 
+    #   vector of clusterlabels. 
+    groups<-cboot.hclust$result$partition 
+
+
+    cboot.hclust$bootmean 
+
+    ## [1] 0.7872441 0.7179041 0.6361775 0.6735265 0.8956219 0.6561686
+
+    cboot.kmeansCBI$bootmean
+
+    ## [1] 0.5777896 0.6279482 0.7752473 0.5287075 0.6762769 0.4496445
+
+    # We can see that the stability on each cluster (we see that k=5 has the most stability and 3 and 6 the fewer, as we see from previous example)
+
+    clusters <- 1:6
+    stability2 <- cboot.kmeansCBI$bootmean
+    stability <- cboot.hclust$bootmean 
+
+    ggplot(data=NULL) + geom_line(aes(x=clusters, y=stability, color='HCLUST')) + geom_line(aes(x=clusters, y=stability2, color="Kmeans")) + xlim(1,6) + ylim(0,1) + labs(title="Stability test with resampling")
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->

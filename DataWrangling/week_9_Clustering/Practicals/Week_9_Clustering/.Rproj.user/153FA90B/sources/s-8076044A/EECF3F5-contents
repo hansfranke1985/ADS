@@ -226,4 +226,42 @@ Do the same thing again a few times. Do you see the same results every time? whe
 
 Find a way online to perform bootstrap stability assessment for the 3 and 6-cluster solutions.
 
+```{r}
+#install.packages("fpc") 
+library("fpc")
+
+
+#set desire number of clusters
+kbest.p<- 6 
+
+#   called cboot.hclust.
+cboot.hclust <- clusterboot(sim_df_large_un, clustermethod=hclustCBI,
+                           method="ward.D", k=kbest.p)
+
+#alternative version 
+cboot.kmeansCBI <- clusterboot(sim_df_large_un, clustermethod=kmeansCBI, k=kbest.p)
+#   The results of the clustering are in 
+#   cboot.hclust$result. The output of the hclust() 
+#   function is in cboot.hclust$result$result. 
+#
+#   cboot.hclust$result$partition returns a 
+#   vector of clusterlabels. 
+groups<-cboot.hclust$result$partition 
+
+
+cboot.hclust$bootmean 
+cboot.kmeansCBI$bootmean
+```
+
+```{r}
+# We can see that the stability on each cluster (we see that k=5 has the most stability and 3 and 6 the fewer, as we see from previous example)
+
+clusters <- 1:6
+stability2 <- cboot.kmeansCBI$bootmean
+stability <- cboot.hclust$bootmean 
+
+ggplot(data=NULL) + geom_line(aes(x=clusters, y=stability, color='HCLUST')) + geom_line(aes(x=clusters, y=stability2, color="Kmeans")) + xlim(1,6) + ylim(0,1) + labs(title="Stability test with resampling")
+
+```
+
 
