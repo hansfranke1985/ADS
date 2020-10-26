@@ -1,0 +1,8 @@
+"0","man <- cutree(result_com_man, k=3) "
+"0","euc <- cutree(result_com_eu, k=3)"
+"0","sim_df_small_un  <- sim_df_small_un %>%"
+"0","  mutate(""man"" = man, #assign the classes from manhattan distance"
+"0","         ""euc"" = euc) #assign the classes from euclidean distance"
+"0","g1 <- ggplot(sim_df_small_un, aes(x1,x2, color=man)) + geom_point() + labs(title= ""3-Clusters Manhattan Distances"")"
+"0","g2 <- ggplot(sim_df_small_un, aes(x1,x2, color=euc)) + geom_point() + labs(title= ""3-Clusters Euclidean Distances"")"
+"0","g1 + g2"

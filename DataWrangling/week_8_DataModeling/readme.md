@@ -24,6 +24,7 @@
 1. Advantages
 - Easy to implement
 - Good results obtained in most of the cases
+- This greatly reduces the computation cost: only counts the class distribution (IF attributes are INDEPENDENT)
 2. Disadvantages
 - Assumption: class conditional independence, therefore loss of accuracy
 - Practically, dependencies exist among variables E.g., Hospitals: patients: Profile: age, family history, etc. Symptoms: fever, cough etc., Disease: lung cancer, diabetes, etc.

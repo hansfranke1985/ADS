@@ -1,0 +1,6 @@
+"0","fviz_cluster(df_kmeans, data = faithful)
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"

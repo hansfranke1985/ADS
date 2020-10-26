@@ -1,0 +1,3 @@
+"0","#look if this is true!"
+"0","sim_kmeans <- kmeans(sim_df_small_un, centers=1)"
+"0","fviz_cluster(sim_kmeans, data = sim_df_small_un)"

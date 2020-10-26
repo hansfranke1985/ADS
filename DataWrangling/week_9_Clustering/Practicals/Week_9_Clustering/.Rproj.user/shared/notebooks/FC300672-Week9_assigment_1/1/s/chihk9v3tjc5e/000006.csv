@@ -1,0 +1,8 @@
+"0","#Small dataset"
+"0","distances <- dist(sim_df_small_un, method = ""manhattan"")"
+"0","result_com_man <- hclust(distances, method = ""complete"")"
+"0","g1 <- ggdendrogram(result_com_man) + ylim(0,10) + labs(title = ""Small Dataset"")"
+"2","Scale for 'y' is already present. Adding another scale for 'y', which will replace the existing
+scale.
+"
+"0","g1"

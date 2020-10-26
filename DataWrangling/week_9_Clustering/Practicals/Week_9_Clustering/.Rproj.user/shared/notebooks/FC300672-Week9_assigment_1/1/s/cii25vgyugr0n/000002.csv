@@ -1,0 +1,2 @@
+"0","distances <- dist(faithful, method = ""euclidean"")"
+"0","result <- hclust(distances, method = ""average"")"

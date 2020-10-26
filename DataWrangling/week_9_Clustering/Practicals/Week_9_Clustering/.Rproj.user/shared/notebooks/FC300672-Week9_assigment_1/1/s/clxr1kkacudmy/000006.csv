@@ -1,0 +1,15 @@
+"0","library(MASS) # make sure to load mass before tidyverse to avoid conflicts!"
+"0","library(tidyverse)"
+"0","#install.packages(""patchwork"")"
+"0","library(patchwork)"
+"2","package ‘patchwork’ was built under R version 4.0.3"
+"2","
+Attaching package: ‘patchwork’
+
+"
+"2","The following object is masked from ‘package:MASS’:
+
+    area
+
+"
+"0","library(ggdendro)"

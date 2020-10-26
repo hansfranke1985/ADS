@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1603704236944.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EECF3F5",
+    "lastKnownWriteTime" : 1603719800,
+    "last_content_update" : 1603719897129,
+    "path" : "~/GitHub/ADS/DataWrangling/week_9_Clustering/Practicals/Week_9_Clustering/Week9_assigment_1.Rmd",
+    "project_path" : "Week9_assigment_1.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "226,59",
+        "scrollLine" : "219",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

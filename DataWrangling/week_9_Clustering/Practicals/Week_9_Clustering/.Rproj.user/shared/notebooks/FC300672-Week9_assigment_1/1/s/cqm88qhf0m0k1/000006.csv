@@ -1,0 +1,3 @@
+"0","#Original DF"
+"0","sim_kmeans <- kmeans(sim_df[,1:2], centers=3)"
+"0","fviz_cluster(sim_kmeans, data = sim_df[,1:2])"
