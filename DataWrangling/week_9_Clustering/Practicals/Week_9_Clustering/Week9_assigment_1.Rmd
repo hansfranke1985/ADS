@@ -199,8 +199,31 @@ sim_df_large_un_kmeans <- sim_df_large_un %>%
    (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k4))+geom_point() + theme_classic()) +
     (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k6))+geom_point() + theme_classic()) 
 ```
+```{r}
+k2 <- kmeans(sim_df_large_un, centers=2)
+k3 <- kmeans(sim_df_large_un, centers=3)
+k4 <- kmeans(sim_df_large_un, centers=4)
+k6 <- kmeans(sim_df_large_un, centers=6)
+
+sim_df_large_un_kmeans <- sim_df_large_un %>%
+  mutate("k2" = k2$cluster,
+         "k3" = k3$cluster,
+         "k4" = k4$cluster,
+         "k6" = k6$cluster,
+         )
+
+(ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k2))+geom_point() + theme_classic()) +
+  (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k3))+geom_point() + theme_classic()) +
+   (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k4))+geom_point() + theme_classic()) +
+    (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k6))+geom_point() + theme_classic()) 
+```
 
 Do the same thing again a few times. Do you see the same results every time? where do you see differences?
+```{r}
+#Yes as we assign random values as start position the classes can change, specialy at large the number of clusters.
+```
+
 
 Find a way online to perform bootstrap stability assessment for the 3 and 6-cluster solutions.
+
 

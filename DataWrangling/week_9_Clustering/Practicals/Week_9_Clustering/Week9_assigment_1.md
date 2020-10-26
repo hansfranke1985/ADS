@@ -3,14 +3,14 @@ R Notebook
 
     library(tidyverse)
 
-    ## -- Attaching packages ------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages ------------------------------------------ tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts ---------------------------------------------- tidyverse_conflicts() --
+    ## -- Conflicts --------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -173,9 +173,40 @@ below
 
 Prepare two unsupervised datasets by removing the class feature
 
+    sim_df_small_un <- sim_df_small[,1:2]
+    sim_df_large_un <- sim_df_large[,1:2]
+
 For each of these datasets, create a scatterplot. Combine the two plots
 into a single frame (look up the “patchwork” package to see how to do
 this!) What is the difference between the two datasets?
+
+    # at first plot we can imagine as a single cluster, in the second we can think of 3 clusters
+    g1 <- ggplot(sim_df_small_un, aes(x1,x2)) + geom_point() + ylim(0,10) + xlim(0,10)
+    g2 <- ggplot(sim_df_large_un, aes(x1,x2)) + geom_point() +ylim(0,10) + xlim(0,10)
+    g1 + g2
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+    #look if this is true!
+    sim_kmeans <- kmeans(sim_df_large_un, centers=3)
+
+    fviz_cluster(sim_kmeans, data = sim_df_large_un)
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+
+    #look if this is true!
+    sim_kmeans <- kmeans(sim_df_small_un, centers=1)
+
+    fviz_cluster(sim_kmeans, data = sim_df_small_un)
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
+    #Original DF
+    sim_kmeans <- kmeans(sim_df[,1:2], centers=3)
+
+    fviz_cluster(sim_kmeans, data = sim_df[,1:2])
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 Hierarchical clustering
 =======================
@@ -186,13 +217,65 @@ method. Make sure the two plots have the same y-scale. What is the
 difference between the dendrograms? (Hint: functions you’ll need are
 hclust, ggdendrogram, and ylim)
 
+    #Small dataset
+    distances <- dist(sim_df_small_un, method = "euclidean")
+    result_com_eu <- hclust(distances, method = "complete")
+    g1 <- ggdendrogram(result_com_eu) + ylim(0,10) + labs(title = "Small Dataset")
+
+    ## Scale for 'y' is already present. Adding another scale for 'y', which will
+    ## replace the existing scale.
+
+    #large dataset
+    distances <- dist(sim_df_large_un, method = "euclidean")
+    result <- hclust(distances, method = "complete")
+    g2 <- ggdendrogram(result) + ylim(0,10) + labs(title = "Large Dataset")
+
+    ## Scale for 'y' is already present. Adding another scale for 'y', which will
+    ## replace the existing scale.
+
+    g1 + g2
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+
+    #in the small dataset the distances are lesser than on large, so the points are closer to eachother, as we see in previous experiments. Max height = max distance = 5,5 on smalldf, and 10 in largedf.
+
 For the dataset with small differences, also run a complete
 agglomeration hierarchical cluster with manhattan distance.
+
+    #Small dataset
+    distances <- dist(sim_df_small_un, method = "manhattan")
+    result_com_man <- hclust(distances, method = "complete")
+    g1 <- ggdendrogram(result_com_man) + ylim(0,10) + labs(title = "Small Dataset")
+
+    ## Scale for 'y' is already present. Adding another scale for 'y', which will
+    ## replace the existing scale.
+
+    g1
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+
+    #now we see that the average distance increase.
 
 Use the cutree() function to obtain the cluster assignments for three
 clusters and compare the cluster assignments to the 3-cluster euclidian
 solution. Do this comparison by creating two scatter plots with cluster
 assignment mapped to the colour aesthetic. Which difference do you see?
+
+    man <- cutree(result_com_man, k=3) 
+    euc <- cutree(result_com_eu, k=3)
+
+    sim_df_small_un  <- sim_df_small_un %>%
+      mutate("man" = man, #assign the classes from manhattan distance
+             "euc" = euc) #assign the classes from euclidean distance
+
+    g1 <- ggplot(sim_df_small_un, aes(x1,x2, color=man)) + geom_point() + labs(title= "3-Clusters Manhattan Distances")
+    g2 <- ggplot(sim_df_small_un, aes(x1,x2, color=euc)) + geom_point() + labs(title= "3-Clusters Euclidean Distances")
+
+    g1 + g2
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+
+    #we see the boundaries of the classes mostly in the middle-points is different
 
 K-means clustering
 ==================
@@ -201,8 +284,48 @@ Create k-means clusterings with 2, 3, 4, and 6 classes on the large
 difference data. Again, create coloured scatter plots for these
 clusterings.
 
+    k2 <- kmeans(sim_df_large_un, centers=2)
+    k3 <- kmeans(sim_df_large_un, centers=3)
+    k4 <- kmeans(sim_df_large_un, centers=4)
+    k6 <- kmeans(sim_df_large_un, centers=6)
+
+    sim_df_large_un_kmeans <- sim_df_large_un %>%
+      mutate("k2" = k2$cluster,
+             "k3" = k3$cluster,
+             "k4" = k4$cluster,
+             "k6" = k6$cluster,
+             )
+
+    (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k2))+geom_point() + theme_classic()) +
+      (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k3))+geom_point() + theme_classic()) +
+       (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k4))+geom_point() + theme_classic()) +
+        (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k6))+geom_point() + theme_classic()) 
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+
+    k2 <- kmeans(sim_df_large_un, centers=2)
+    k3 <- kmeans(sim_df_large_un, centers=3)
+    k4 <- kmeans(sim_df_large_un, centers=4)
+    k6 <- kmeans(sim_df_large_un, centers=6)
+
+    sim_df_large_un_kmeans <- sim_df_large_un %>%
+      mutate("k2" = k2$cluster,
+             "k3" = k3$cluster,
+             "k4" = k4$cluster,
+             "k6" = k6$cluster,
+             )
+
+    (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k2))+geom_point() + theme_classic()) +
+      (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k3))+geom_point() + theme_classic()) +
+       (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k4))+geom_point() + theme_classic()) +
+        (ggplot(sim_df_large_un_kmeans, aes(x1,x2, color=k6))+geom_point() + theme_classic()) 
+
+![](Week9_assigment_1_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+
 Do the same thing again a few times. Do you see the same results every
 time? where do you see differences?
+
+    #Yes as we assign random values as start position the classes can change, specialy at large the number of clusters.
 
 Find a way online to perform bootstrap stability assessment for the 3
 and 6-cluster solutions.
