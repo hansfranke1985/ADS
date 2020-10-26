@@ -16,6 +16,7 @@
 1) random assign a class to each point
 
 2) repeat until the algorithm dosent change
+
 2.1) Assign a centroid to each cluster
 
 2.2) Assign each point to the closest centroid (euclidean distance)
