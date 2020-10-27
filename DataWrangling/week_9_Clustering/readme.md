@@ -6,8 +6,9 @@
 1. [Lecture 1]()
 
 # Assignments:
-1. [Assigment 1]()
-2. [Tutorial]()
+1. [Assigment 1](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_9_Clustering/Practicals/Week_9_Clustering/Week9_assigment_1.md)
+2. [Assigment 2](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_9_Clustering/Practicals/Week_9_Clustering/Week9_assigment_2.md)
+
 
 # Summary:
 
