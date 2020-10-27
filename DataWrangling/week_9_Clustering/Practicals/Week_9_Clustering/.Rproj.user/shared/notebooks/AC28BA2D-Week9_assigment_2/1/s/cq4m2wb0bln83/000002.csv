@@ -1,0 +1,6 @@
+"0","library(MASS) # make sure to load mass before tidyverse to avoid conflicts!"
+"0","library(tidyverse)"
+"0","#install.packages(""patchwork"")"
+"0","library(patchwork)"
+"0","library(ggdendro)"
+"0","library(mclust)"

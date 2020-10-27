@@ -1,0 +1,2 @@
+"0","df <- as_tibble(banknote)"
+"0","head(df)"

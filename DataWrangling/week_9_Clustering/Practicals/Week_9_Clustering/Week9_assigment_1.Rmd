@@ -1,5 +1,6 @@
 ---
-title: "R Notebook"
+title: "Week9_Assigment 1"
+author: "Hans Franke"
 output: rmarkdown::github_document
 ---
 

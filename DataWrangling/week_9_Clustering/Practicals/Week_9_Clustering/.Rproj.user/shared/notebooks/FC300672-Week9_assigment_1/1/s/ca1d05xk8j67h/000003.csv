@@ -1,0 +1,1 @@
+"0","fviz_nbclust(faithful, FUN=hcut, method = ""wss"") #elbow method"
