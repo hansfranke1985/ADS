@@ -66,27 +66,96 @@ Create density plots for all columns in the dataset. Which single feature is lik
 ```
 ```{r check feature}
 (ggplot(df )+
-     geom_density(aes(x=Diagonal, color=Status)) )
+     geom_density(aes(x=Diagonal, color=Status)) ) + theme_minimal()
 
 #As we imagine, indeed there is 2 normal distribution explaining the classes
 ```
 
+```{r}
+(ggplot(df )+
+     geom_density(aes(x=Length, color=Status)) ) + theme_minimal()
+```
 
 # Univariate model-based clustering
 
+```{r}
+class <- df_unlabel[,6]
+fit_E_2 <- Mclust(class)
+summary(fit_E_2)
+
+#fit_E_2$parameters
+```
+
+
+
 Use Mclust to perform model-based clustering with 2 clusters on the feature you chose. Assume equal variances. Name the model object fit_E_2. What are the means and variances of the clusters?
+
+```{r}
+class <- df_unlabel[,6]
+fit_E_2 <- Mclust(class, modelNames = c("E"))
+summary(fit_E_2)
+
+fit_E_2$parameters
+```
+
 
 Use the formula from the slides and the model’s log-likelihood (fit_E_2$loglik) to compute the BIC for this model. Compare it to the BIC stored in the model object (fit_E_2$bic). Explain how many parameters (m) you used and which parameters these are.
 
+```{r}
+#stored
+fit_E_2$bic
+
+#m = number of parameters( m = ( k - 1) + k*p + K*p  + K*( (p(p-1))/2) )
+#k = 2 (2 clusters)
+#p = 1 (variable)
+(2-1) + 2*1 +2*1 + 2*(1*(1-1)/2)
+
+#the parameters are (variance in each cluster = 2)
+#from book (we can see 5 parameters)
+fit_E_2$loglik
+```
+
+
 Plot the model-implied density using the plot() function. Afterwards, add rug marks of the original data to the plot using the rug() function from the base graphics system.
+
+```{r}
+plot(fit_E_2)
+
+```
 
 Use Mclust to perform model-based clustering with 2 clusters on this feature again, but now assume unequal variances. Name the model object fit_V_2. What are the means and variances of the clusters? Plot the density again and note the differences.
 
+```{r}
+class <- df_unlabel[,6]
+fit_V_2 <- Mclust(class, modelNames = c("V"))
+summary(fit_V_2)
+
+fit_V_2$parameters
+```
+```{r}
+plot(fit_V_2)
+```
+
 How many parameters does this model have? Name them.
 
+```{r}
+summary(fit_V_2)
+```
+
 According to the deviance, which model fits better?
+```{r}
+fit_E_2$loglik
+fit_V_2$loglik
+```
+
 
 According to the BIC, which model is better?
+
+```{r}
+fit_E_2$bic
+fit_V_2$bic
+```
+
 
 # Multivariate model-based clustering
 
