@@ -7,14 +7,14 @@ library(MASS) # make sure to load mass before tidyverse to avoid conflicts!
 library(tidyverse)
 ```
 
-    ## -- Attaching packages --------------------------------------------------------------- tidyverse 1.3.0 --
+    ## -- Attaching packages ------------------------------------------ tidyverse 1.3.0 --
 
     ## v ggplot2 3.3.2     v purrr   0.3.4
     ## v tibble  3.0.3     v dplyr   1.0.2
     ## v tidyr   1.1.2     v stringr 1.4.0
     ## v readr   1.3.1     v forcats 0.5.0
 
-    ## -- Conflicts ------------------------------------------------------------------ tidyverse_conflicts() --
+    ## -- Conflicts --------------------------------------------- tidyverse_conflicts() --
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
     ## x dplyr::select() masks MASS::select()
@@ -414,14 +414,152 @@ Use Mclust with all 6 features to perform clustering. Allow all model
 types (shapes), and from 1 to 9 potential clusters. What is the optimal
 model based on the BIC?
 
+``` r
+fit_multi <- Mclust(df_unlabel, G=2)
+summary(fit_multi)
+```
+
+    ## ---------------------------------------------------- 
+    ## Gaussian finite mixture model fitted by EM algorithm 
+    ## ---------------------------------------------------- 
+    ## 
+    ## Mclust EVE (ellipsoidal, equal volume and orientation) model with 2 components: 
+    ## 
+    ##  log-likelihood   n df       BIC       ICL
+    ##       -755.4051 200 39 -1717.445 -1717.493
+    ## 
+    ## Clustering table:
+    ##   1   2 
+    ## 101  99
+
+``` r
+plot(fit_multi, what="BIC")
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
+``` r
+fit_multi$parameters
+```
+
+    ## $pro
+    ## [1] 0.5048853 0.4951147
+    ## 
+    ## $mean
+    ##               [,1]       [,2]
+    ## Length   214.82375 214.969671
+    ## Left     130.29900 129.940499
+    ## Right    130.19306 129.715276
+    ## Bottom    10.50530   8.308237
+    ## Top       11.13364  10.157828
+    ## Diagonal 139.45134 141.536032
+    ## 
+    ## $variance
+    ## $variance$modelName
+    ## [1] "EVE"
+    ## 
+    ## $variance$d
+    ## [1] 6
+    ## 
+    ## $variance$G
+    ## [1] 2
+    ## 
+    ## $variance$sigma
+    ## , , 1
+    ## 
+    ##               Length        Left       Right      Bottom         Top
+    ## Length    0.12128018  0.02983384  0.02347435 -0.03672751 -0.03497227
+    ## Left      0.02983384  0.06523270  0.04428793  0.01572557 -0.04391976
+    ## Right     0.02347435  0.04428793  0.07879348  0.01009680 -0.03127613
+    ## Bottom   -0.03672751  0.01572557  0.01009680  1.08220619 -0.54662168
+    ## Top      -0.03497227 -0.04391976 -0.03127613 -0.54662168  0.58156360
+    ## Diagonal  0.01137744 -0.01387210  0.02182986  0.10623771  0.02943227
+    ##             Diagonal
+    ## Length    0.01137744
+    ## Left     -0.01387210
+    ## Right     0.02182986
+    ## Bottom    0.10623771
+    ## Top       0.02943227
+    ## Diagonal  0.25794327
+    ## 
+    ## , , 2
+    ## 
+    ##               Length        Left       Right       Bottom         Top
+    ## Length    0.14709389  0.06327080  0.05401219  0.013895867  0.03314377
+    ## Left      0.06327080  0.13447708  0.08768475  0.048515954  0.04643387
+    ## Right     0.05401219  0.08768475  0.13475432  0.037696734  0.03936757
+    ## Bottom    0.01389587  0.04851595  0.03769673  0.543713908 -0.21666092
+    ## Top       0.03314377  0.04643387  0.03936757 -0.216660919  0.33914430
+    ## Diagonal -0.01377230 -0.04186735 -0.02238186 -0.002601546 -0.06716311
+    ##              Diagonal
+    ## Length   -0.013772301
+    ## Left     -0.041867348
+    ## Right    -0.022381857
+    ## Bottom   -0.002601546
+    ## Top      -0.067163113
+    ## Diagonal  0.164764353
+    ## 
+    ## 
+    ## $variance$scale
+    ## [1] 0.1637074
+    ## 
+    ## $variance$shape
+    ##           [,1]      [,2]
+    ## [1,] 0.6405685 2.2132067
+    ## [2,] 0.1419138 0.2686066
+    ## [3,] 0.4856761 0.5519435
+    ## [4,] 8.7918070 4.1771161
+    ## [5,] 2.0307380 0.7243907
+    ## [6,] 1.2686179 1.0072037
+    ## 
+    ## $variance$orientation
+    ##              Length        Left       Right       Bottom         Top   Diagonal
+    ## Length    0.3692057 -0.12033415 -0.75112403 -0.007725077 -0.14224443  0.5145157
+    ## Left      0.4942600  0.76733963  0.30523083  0.026613098 -0.13703395  0.2329045
+    ## Right     0.4419492 -0.61589894  0.55525864  0.020294524 -0.03703309  0.3394907
+    ## Bottom    0.2991708 -0.03295933 -0.11157492  0.841327026  0.33205379 -0.2808392
+    ## Top       0.4658443 -0.02058586 -0.11775873 -0.535824500  0.59686264 -0.3540414
+    ## Diagonal -0.3428718  0.12596816  0.08954664  0.062298792  0.70221937  0.6012979
+    ## 
+    ## 
+    ## $Vinv
+    ## NULL
+
 How many mean parameters does this model have?
+
+``` r
+fit_multi$df
+```
+
+    ## [1] 39
 
 Run a 2-component VVV model on this data. Create a matrix of bivariate
 contour (“density”) plots using the plot() function. Which features
 provide good component separation? Which do not?
+
+``` r
+fit_multi_VVV <- Mclust(df_unlabel, G=2, modelNames = c("VVV"))
+
+plot(fit_multi_VVV, what="density")
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 Create a scatter plot just like the first scatter plot in this tutorial,
 but map the estimated class assignments to the colour aesthetic. Map the
 uncertainty (part of the fitted model list) to the size aesthetic, such
 that larger points indicate more uncertain class assignments. Jitter the
 points to avoid overplotting. What do you notice about the uncertainty?
+
+``` r
+ggplot(df, aes(Left, Right, color=fit_multi_VVV$classification, size=fit_multi_VVV$uncertainty))+geom_jitter()
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+
+``` r
+#now with the best separation between features
+ggplot(df, aes(Top, Diagonal, color=fit_multi_VVV$classification, size=fit_multi_VVV$uncertainty))+geom_jitter()
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->

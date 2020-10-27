@@ -198,3 +198,8 @@ Create a scatter plot just like the first scatter plot in this tutorial, but map
 ggplot(df, aes(Left, Right, color=fit_multi_VVV$classification, size=fit_multi_VVV$uncertainty))+geom_jitter()
 ```
 
+```{r}
+#now with the best separation between features
+ggplot(df, aes(Top, Diagonal, color=fit_multi_VVV$classification, size=fit_multi_VVV$uncertainty))+geom_jitter()
+```
+
