@@ -80,9 +80,10 @@ Create density plots for all columns in the dataset. Which single feature is lik
 
 ```{r}
 class <- df_unlabel[,6]
-fit_E_2 <- Mclust(class)
-summary(fit_E_2)
+fit <- Mclust(class)
+summary(fit)
 
+plot(fit, what="BIC")
 #fit_E_2$parameters
 ```
 
@@ -92,7 +93,7 @@ Use Mclust to perform model-based clustering with 2 clusters on the feature you 
 
 ```{r}
 class <- df_unlabel[,6]
-fit_E_2 <- Mclust(class, modelNames = c("E"))
+fit_E_2 <- Mclust(class, modelNames = c("E"), G=2)
 summary(fit_E_2)
 
 fit_E_2$parameters
@@ -119,27 +120,30 @@ fit_E_2$loglik
 Plot the model-implied density using the plot() function. Afterwards, add rug marks of the original data to the plot using the rug() function from the base graphics system.
 
 ```{r}
-plot(fit_E_2)
-
+plot(fit_E_2, what="BIC")
+plot(fit_E_2, what="classification")
 ```
 
 Use Mclust to perform model-based clustering with 2 clusters on this feature again, but now assume unequal variances. Name the model object fit_V_2. What are the means and variances of the clusters? Plot the density again and note the differences.
 
 ```{r}
 class <- df_unlabel[,6]
-fit_V_2 <- Mclust(class, modelNames = c("V"))
+fit_V_2 <- Mclust(class, modelNames = c("V"), G=2)
 summary(fit_V_2)
 
 fit_V_2$parameters
 ```
 ```{r}
-plot(fit_V_2)
+
+plot(fit_V_2, what="BIC")
+plot(fit_V_2, what="classification")
+
 ```
 
 How many parameters does this model have? Name them.
 
 ```{r}
-summary(fit_V_2)
+fit_V_2$parameters
 ```
 
 According to the deviance, which model fits better?

@@ -106,8 +106,8 @@ sim_df_large_un <- sim_df_large[,1:2]
 For each of these datasets, create a scatterplot. Combine the two plots into a single frame (look up the “patchwork” package to see how to do this!) What is the difference between the two datasets?
 ```{r}
 # at first plot we can imagine as a single cluster, in the second we can think of 3 clusters
-g1 <- ggplot(sim_df_small_un, aes(x1,x2)) + geom_point() + ylim(0,10) + xlim(0,10)
-g2 <- ggplot(sim_df_large_un, aes(x1,x2)) + geom_point() +ylim(0,10) + xlim(0,10)
+g1 <- ggplot(sim_df_small_un, aes(x1,x2)) + geom_point() + ylim(0,10) + xlim(0,10)+ggtitle("Small")
+g2 <- ggplot(sim_df_large_un, aes(x1,x2)) + geom_point() +ylim(0,10) + xlim(0,10)+ggtitle("Large")
 g1 + g2
 ```
 ```{r}
@@ -264,5 +264,20 @@ stability <- cboot.hclust$bootmean
 ggplot(data=NULL) + geom_line(aes(x=clusters, y=stability, color='HCLUST')) + geom_line(aes(x=clusters, y=stability2, color="Kmeans")) + xlim(1,6) + ylim(0,1) + labs(title="Stability test with resampling")
 
 ```
+
+```{r}
+#solution from Ayob
+
+boot_3 <- clusterboot(sim_df_large_un, B = 1000, clustermethod = kmeansCBI, k = 3, 
+                      count = FALSE)
+boot_6 <- clusterboot(sim_df_large_un, B = 1000, clustermethod = kmeansCBI, k = 6, 
+                      count = FALSE)
+
+# the average stability is much lower for 6 means than for 3 means:
+boot_3$bootmean
+
+boot_6$bootmean
+```
+
 
 

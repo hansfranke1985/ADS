@@ -163,8 +163,8 @@ feature is likely to be best for clustering?
 
 ``` r
 class <- df_unlabel[,6]
-fit_E_2 <- Mclust(class)
-summary(fit_E_2)
+fit <- Mclust(class)
+summary(fit)
 ```
 
     ## ---------------------------------------------------- 
@@ -179,6 +179,12 @@ summary(fit_E_2)
     ## Clustering table:
     ##   1   2   3 
     ##  12  88 100
+
+``` r
+plot(fit, what="BIC")
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
 #fit_E_2$parameters
@@ -190,7 +196,7 @@ fit\_E\_2. What are the means and variances of the clusters?
 
 ``` r
 class <- df_unlabel[,6]
-fit_E_2 <- Mclust(class, modelNames = c("E"))
+fit_E_2 <- Mclust(class, modelNames = c("E"), G=2)
 summary(fit_E_2)
 ```
 
@@ -198,25 +204,25 @@ summary(fit_E_2)
     ## Gaussian finite mixture model fitted by EM algorithm 
     ## ---------------------------------------------------- 
     ## 
-    ## Mclust E (univariate, equal variance) model with 3 components: 
+    ## Mclust E (univariate, equal variance) model with 2 components: 
     ## 
     ##  log-likelihood   n df       BIC       ICL
-    ##       -258.4995 200  6 -548.7889 -556.8668
+    ##       -274.1367 200  4 -569.4667 -574.2533
     ## 
     ## Clustering table:
-    ##   1   2   3 
-    ##  12  88 100
+    ##   1   2 
+    ## 100 100
 
 ``` r
 fit_E_2$parameters
 ```
 
     ## $pro
-    ## [1] 0.05662868 0.44844245 0.49492888
+    ## [1] 0.5003518 0.4996482
     ## 
     ## $mean
-    ##        1        2        3 
-    ## 138.2822 139.6006 141.5353 
+    ##        1        2 
+    ## 139.4464 141.5221 
     ## 
     ## $variance
     ## $variance$modelName
@@ -226,10 +232,14 @@ fit_E_2$parameters
     ## [1] 1
     ## 
     ## $variance$G
-    ## [1] 3
+    ## [1] 2
     ## 
     ## $variance$sigmasq
-    ## [1] 0.1495661
+    ## [1] 0.244004
+    ## 
+    ## 
+    ## $Vinv
+    ## NULL
 
 Use the formula from the slides and the model’s log-likelihood
 (fit\_E\_2\(loglik) to compute the BIC for this model. Compare it to the BIC stored in the model object (fit_E_2\)bic).
@@ -240,7 +250,7 @@ Explain how many parameters (m) you used and which parameters these are.
 fit_E_2$bic
 ```
 
-    ## [1] -548.7889
+    ## [1] -569.4667
 
 ``` r
 #m = number of parameters( m = ( k - 1) + k*p + K*p  + K*( (p(p-1))/2) )
@@ -257,17 +267,23 @@ fit_E_2$bic
 fit_E_2$loglik
 ```
 
-    ## [1] -258.4995
+    ## [1] -274.1367
 
 Plot the model-implied density using the plot() function. Afterwards,
 add rug marks of the original data to the plot using the rug() function
 from the base graphics system.
 
 ``` r
-plot(fit_E_2)
+plot(fit_E_2, what="BIC")
 ```
 
-![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-6-4.png)<!-- -->
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+``` r
+plot(fit_E_2, what="classification")
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 Use Mclust to perform model-based clustering with 2 clusters on this
 feature again, but now assume unequal variances. Name the model object
@@ -276,7 +292,7 @@ density again and note the differences.
 
 ``` r
 class <- df_unlabel[,6]
-fit_V_2 <- Mclust(class, modelNames = c("V"))
+fit_V_2 <- Mclust(class, modelNames = c("V"), G=2)
 summary(fit_V_2)
 ```
 
@@ -284,25 +300,25 @@ summary(fit_V_2)
     ## Gaussian finite mixture model fitted by EM algorithm 
     ## ---------------------------------------------------- 
     ## 
-    ## Mclust V (univariate, unequal variance) model with 3 components: 
+    ## Mclust V (univariate, unequal variance) model with 2 components: 
     ## 
     ##  log-likelihood   n df       BIC       ICL
-    ##       -259.1326 200  8 -560.6517 -624.2987
+    ##         -268.51 200  5 -563.5115 -571.7465
     ## 
     ## Clustering table:
-    ##  1  2  3 
-    ## 78 24 98
+    ##   1   2 
+    ## 104  96
 
 ``` r
 fit_V_2$parameters
 ```
 
     ## $pro
-    ## [1] 0.3136025 0.2073347 0.4790628
+    ## [1] 0.5219834 0.4780166
     ## 
     ## $mean
-    ##        1        2        3 
-    ## 139.5957 139.3559 141.5527 
+    ##        1        2 
+    ## 139.4973 141.5604 
     ## 
     ## $variance
     ## $variance$modelName
@@ -312,38 +328,54 @@ fit_V_2$parameters
     ## [1] 1
     ## 
     ## $variance$G
-    ## [1] 3
+    ## [1] 2
     ## 
     ## $variance$sigmasq
-    ## [1] 0.08534532 0.77557202 0.15667240
+    ## [1] 0.3589844 0.1500838
     ## 
     ## $variance$scale
-    ## [1] 0.08534532 0.77557202 0.15667240
+    ## [1] 0.3589844 0.1500838
 
 ``` r
-plot(fit_V_2)
+plot(fit_V_2, what="BIC")
 ```
 
-![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+``` r
+plot(fit_V_2, what="classification")
+```
+
+![](Week9_assigment_2_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
 
 How many parameters does this model have? Name them.
 
 ``` r
-summary(fit_V_2)
+fit_V_2$parameters
 ```
 
-    ## ---------------------------------------------------- 
-    ## Gaussian finite mixture model fitted by EM algorithm 
-    ## ---------------------------------------------------- 
+    ## $pro
+    ## [1] 0.5219834 0.4780166
     ## 
-    ## Mclust V (univariate, unequal variance) model with 3 components: 
+    ## $mean
+    ##        1        2 
+    ## 139.4973 141.5604 
     ## 
-    ##  log-likelihood   n df       BIC       ICL
-    ##       -259.1326 200  8 -560.6517 -624.2987
+    ## $variance
+    ## $variance$modelName
+    ## [1] "V"
     ## 
-    ## Clustering table:
-    ##  1  2  3 
-    ## 78 24 98
+    ## $variance$d
+    ## [1] 1
+    ## 
+    ## $variance$G
+    ## [1] 2
+    ## 
+    ## $variance$sigmasq
+    ## [1] 0.3589844 0.1500838
+    ## 
+    ## $variance$scale
+    ## [1] 0.3589844 0.1500838
 
 According to the deviance, which model fits better?
 
@@ -351,13 +383,13 @@ According to the deviance, which model fits better?
 fit_E_2$loglik
 ```
 
-    ## [1] -258.4995
+    ## [1] -274.1367
 
 ``` r
 fit_V_2$loglik
 ```
 
-    ## [1] -259.1326
+    ## [1] -268.51
 
 According to the BIC, which model is better?
 
@@ -365,13 +397,13 @@ According to the BIC, which model is better?
 fit_E_2$bic
 ```
 
-    ## [1] -548.7889
+    ## [1] -569.4667
 
 ``` r
 fit_V_2$bic
 ```
 
-    ## [1] -560.6517
+    ## [1] -563.5115
 
 # Multivariate model-based clustering
 
