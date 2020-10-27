@@ -7,14 +7,14 @@
     "folds" : "",
     "hash" : "0",
     "id" : "708CC271",
-    "lastKnownWriteTime" : 1603810370,
-    "last_content_update" : 1603810370391,
+    "lastKnownWriteTime" : 1603811271,
+    "last_content_update" : 1603811271636,
     "path" : "~/GitHub/ADS/DataWrangling/week_9_Clustering/Practicals/Week_9_Clustering/Week9_assigment_2.Rmd",
     "project_path" : "Week9_assigment_2.Rmd",
     "properties" : {
         "chunk_output_type" : "inline",
-        "cursorPosition" : "167,12",
-        "scrollLine" : "152",
+        "cursorPosition" : "196,6",
+        "scrollLine" : "195",
         "tempName" : "Untitled1"
     },
     "relative_order" : 6,

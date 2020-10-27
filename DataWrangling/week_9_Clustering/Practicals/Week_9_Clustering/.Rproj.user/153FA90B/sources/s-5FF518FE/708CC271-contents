@@ -160,15 +160,41 @@ fit_E_2$bic
 fit_V_2$bic
 ```
 
-
 # Multivariate model-based clustering
 
 We will now use all available information in the dataset to cluster the observations.
 
+
 Use Mclust with all 6 features to perform clustering. Allow all model types (shapes), and from 1 to 9 potential clusters. What is the optimal model based on the BIC?
+
+```{r}
+fit_multi <- Mclust(df_unlabel, G=2)
+summary(fit_multi)
+plot(fit_multi, what="BIC")
+```
+```{r}
+fit_multi$parameters
+```
+
 
 How many mean parameters does this model have?
 
+```{r}
+fit_multi$df
+
+```
+
 Run a 2-component VVV model on this data. Create a matrix of bivariate contour (“density”) plots using the plot() function. Which features provide good component separation? Which do not?
 
+```{r}
+fit_multi_VVV <- Mclust(df_unlabel, G=2, modelNames = c("VVV"))
+
+plot(fit_multi_VVV, what="density")
+```
+
 Create a scatter plot just like the first scatter plot in this tutorial, but map the estimated class assignments to the colour aesthetic. Map the uncertainty (part of the fitted model list) to the size aesthetic, such that larger points indicate more uncertain class assignments. Jitter the points to avoid overplotting. What do you notice about the uncertainty?
+
+```{r}
+ggplot(df, aes(Left, Right, color=fit_multi_VVV$classification, size=fit_multi_VVV$uncertainty))+geom_jitter()
+```
+
