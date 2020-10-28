@@ -1,0 +1,2 @@
+"0","# add the observations using rug marks"
+"0","rug(df_unlabel %>% pull(Diagonal))"
