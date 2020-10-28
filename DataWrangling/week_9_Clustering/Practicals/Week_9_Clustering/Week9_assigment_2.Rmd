@@ -106,13 +106,13 @@ Use the formula from the slides and the model’s log-likelihood (fit_E_2$loglik
 #stored
 fit_E_2$bic
 
-#m = number of parameters( m = ( k - 1) + k*p + K*p  + K*( (p(p-1))/2) )
+#parameters
+fit_E_2$parameters
 #k = 2 (2 clusters)
 #p = 1 (variable)
-(2-1) + 2*1 +2*1 + 2*(1*(1-1)/2)
+#the parameters are (1 class probability pi, 2 means, and 1 variance)
 
-#the parameters are (variance in each cluster = 2)
-#from book (we can see 5 parameters)
+#from book (we can see 4 parameters)
 fit_E_2$loglik
 ```
 
@@ -121,7 +121,9 @@ Plot the model-implied density using the plot() function. Afterwards, add rug ma
 
 ```{r}
 plot(fit_E_2, what="BIC")
-plot(fit_E_2, what="classification")
+plot(fit_E_2, what="density")
+# add the observations using rug marks
+rug(df_unlabel %>% pull(Diagonal))
 ```
 
 Use Mclust to perform model-based clustering with 2 clusters on this feature again, but now assume unequal variances. Name the model object fit_V_2. What are the means and variances of the clusters? Plot the density again and note the differences.
@@ -136,7 +138,9 @@ fit_V_2$parameters
 ```{r}
 
 plot(fit_V_2, what="BIC")
-plot(fit_V_2, what="classification")
+plot(fit_V_2, what="density")
+# add the observations using rug marks
+rug(df_unlabel %>% pull(Diagonal))
 
 ```
 
@@ -144,12 +148,17 @@ How many parameters does this model have? Name them.
 
 ```{r}
 fit_V_2$parameters
+
+# 1 class probability (pi)
+# 2 means
+# 2 variances
 ```
 
 According to the deviance, which model fits better?
 ```{r}
-fit_E_2$loglik
-fit_V_2$loglik
+#deviance = -2 * log(l)
+-2*fit_E_2$loglik
+-2*fit_V_2$loglik
 ```
 
 
@@ -168,19 +177,21 @@ We will now use all available information in the dataset to cluster the observat
 Use Mclust with all 6 features to perform clustering. Allow all model types (shapes), and from 1 to 9 potential clusters. What is the optimal model based on the BIC?
 
 ```{r}
-fit_multi <- Mclust(df_unlabel, G=2)
+fit_multi <- Mclust(df_unlabel)
 summary(fit_multi)
 plot(fit_multi, what="BIC")
 ```
 ```{r}
 fit_multi$parameters
+# 3 clusters * 6 variables = 18 mean parameters
 ```
 
 
 How many mean parameters does this model have?
 
 ```{r}
-fit_multi$df
+fit_multi$parameters$mean
+# 3 clusters * 6 variables = 18 mean parameters
 
 ```
 
