@@ -1,0 +1,2 @@
+"0","xsc=scale(x)"
+"0","plot(hclust(dist(xsc), method =""complete""), main="" Hierarchical Clustering with Scaled Features "")"

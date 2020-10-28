@@ -1,0 +1,3 @@
+"0","df <- df %>% "
+"0","  mutate('label' = sample.int(2, size=6, replace=TRUE))"
+"0","df"

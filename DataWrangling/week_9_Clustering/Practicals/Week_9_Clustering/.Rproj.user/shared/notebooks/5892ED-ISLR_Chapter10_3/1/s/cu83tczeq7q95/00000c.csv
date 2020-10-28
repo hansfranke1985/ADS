@@ -1,0 +1,1 @@
+"0","ggplot(df, aes(X1,X2)) + geom_point() + theme_minimal()+ggtitle(""Simple plot X1 and X2"")"

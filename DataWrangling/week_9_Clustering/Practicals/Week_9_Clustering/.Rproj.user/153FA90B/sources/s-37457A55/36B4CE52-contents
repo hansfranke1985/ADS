@@ -1,0 +1,120 @@
+---
+title: "Assigment 3 "
+aurtor: "Hans franke"
+output: html_notebook
+---
+
+# Programming assignment: manual K-means clustering
+
+In this assignment, you will program a clustering algorithm from scratch. Programming is an excellent way to learn about the inner workings of many algorithms in statistics and data science!
+
+Run the following code to load some clustering data with 2 features into your session.
+
+```{r}
+library(tidyverse)
+clus_df <- read_csv("https://raw.githubusercontent.com/vankesteren/dav_practicals/master/12_Unsupervised_learning_Clustering/data/clusterdata.csv")
+```
+
+The euclidian distance between two vectors x and y of length n is D=||x−y||2=∑ni=1(xi−yi)2−−−−−−−−−−−−√. 
+
+These two vectors represent points in n-dimensional space and the euclidian distance is the straight-line distance between these points.
+
+## Write a function l2_dist(x, y) that takes in two vectors and outputs the euclidian distance between the two vectors.
+
+```{r}
+l2_dist <- function (x, y) {
+  
+  return (dist(rbind(x,y), method="euclidean"))
+  
+} 
+
+x <- c(3,4)
+y <- c(1,4,3,8)
+
+l2_dist(x,y)
+```
+
+
+## Read section 14.3.10 from the book Elements of Statistical Learning (the big brother of ISLR). Program a K-Medioids clustering algorithm called kmedioids. The inputs of this function should be X, a data frame, and K, an integer stating how many clusters you want. The output is at least the cluster assignments (an integer vector). Use your l2_dist function to compute the euclidian distance. Create helpful comments in the code along the way. Apply the kmedioids function on clus_df and visualise your result. Good luck!
+
+```{r}
+X1 <- c(1,1,0,5,6,4,6,7,2,4,6,7,8,9,0,2)
+X2 <- c(4,3,4,1,2,0,3,5,1,3,8,2,3,1,9,2)
+X <- tibble(X1=X1,X2=X2)
+
+
+
+kmedioids <- function(X, K) {
+  #initialize / store local parameters
+  df <- X
+  lab <- c(1,k) #list of possible labels 
+  cols <- ncol(df)
+  #assign random labels
+  df <- df %>% 
+    mutate('label' = sample.int(K, size=nrow(df), replace=TRUE))
+  
+  centroid = 0
+  #initialize first time 
+  for (val in 1:cols) {
+    cluster = filter(df, df$label == val)
+    centroid <- tibble(val = mean(cluster$val))
+  }
+  
+  labels = df$label 
+  return(labels)
+}
+```
+```{r}
+kmedioids(X,2)
+```
+
+
+```{r}
+#initialize first time 
+cluster1 <- filter(df, df$label == 1)
+cluster2 <- filter(df, df$label == 2)
+
+centroid1 <- tibble("X1" = mean(cluster1$X1), "X2" = mean(cluster1$X2))
+centroid2 <- tibble("X1" = mean(cluster2$X1), "X2" = mean(cluster2$X2))
+
+centroid1_new = 0
+centroid2_new = 0
+
+ggplot(df, aes(X1,X2,color=label)) + geom_point() + geom_point(aes(centroid1$X1, centroid1$X2), color = "red", size=4) + geom_point(aes(centroid2$X1, centroid2$X2), color = "green", size=4) + theme_minimal()+ggtitle("Initial Plot")
+
+while ((centroid1_new != centroid1) & centroid2_new != centroid2) {
+  
+#assign centroids
+cluster1 <- filter(df, df$label == 1)
+cluster2 <- filter(df, df$label == 2)
+
+centroid1 <- tibble("X1" = mean(cluster1$X1), "X2" = mean(cluster1$X2))
+centroid2 <- tibble("X1" = mean(cluster2$X1), "X2" = mean(cluster2$X2))
+
+
+for (val in 1:nrow(df)) {
+  
+  var <- df[val,1:2] #store position of each element to compare with centroid
+  
+  #evaluate distance of each obs x each centroid
+  dist1 = dist(rbind(var, centroid1), method="euclidean")
+  dist2 = dist(rbind(var, centroid2), method="euclidean") 
+
+  #assign label to the closest distance!  
+  df[val, 3] = case_when(dist1 <= dist2 ~ 1, dist2 < dist1 ~ 2) 
+ 
+}
+
+#iterating with visuals
+print(  
+  ggplot(df, aes(X1,X2,color=label)) + geom_point() + geom_point(aes(centroid1$X1, centroid1$X2), color = "red", size=4) + geom_point(aes(centroid2$X1, centroid2$X2), color = "green", size=4) + theme_minimal()+ggtitle("Iterative PLOT")
+  )
+cluster1 <- filter(df, df$label == 1)
+cluster2 <- filter(df, df$label == 2)
+
+centroid1_new <- tibble("X1" = mean(cluster1$X1), "X2" = mean(cluster1$X2))
+centroid2_new <- tibble("X1" = mean(cluster2$X1), "X2" = mean(cluster2$X2))
+
+}
+```
+

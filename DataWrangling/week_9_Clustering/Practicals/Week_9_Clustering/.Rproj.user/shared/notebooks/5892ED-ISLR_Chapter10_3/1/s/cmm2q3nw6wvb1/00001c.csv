@@ -1,0 +1,6 @@
+"0","cluster1 <- filter(df, df$label == 1)"
+"0","cluster2 <- filter(df, df$label == 2)"
+"0","centroid1 <- tibble(""X1"" = mean(cluster1$X1), ""X2"" = mean(cluster1$X2))"
+"0","#centroid1"
+"0","centroid2 <- tibble(""X1"" = mean(cluster2$X1), ""X2"" = mean(cluster2$X2))"
+"0","#centroid2"
