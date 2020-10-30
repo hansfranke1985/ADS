@@ -3,7 +3,8 @@
 # Week 9: Data Modeling -> Clustering
 
 # Slides
-1. [Lecture 1]()
+1. [Lecture 1](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_9_Clustering/Lectures/clustering_lecture_1.pdf)
+2. [Lecture 2](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_9_Clustering/Lectures/clustering_lecture_2.pdf)
 
 # Assignments:
 1. [Assigment 1](https://github.com/hansfranke1985/ADS/blob/master/DataWrangling/week_9_Clustering/Practicals/Week_9_Clustering/Week9_assigment_1.md)
