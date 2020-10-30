@@ -198,8 +198,10 @@ fit_multi$parameters$mean
 Run a 2-component VVV model on this data. Create a matrix of bivariate contour (“density”) plots using the plot() function. Which features provide good component separation? Which do not?
 
 ```{r}
+
+
 fit_multi_VVV <- Mclust(df_unlabel, G=2, modelNames = c("VVV"))
-#summary(fit_multi_VVV)
+
 
 plot(fit_multi_VVV, what="density")
 ```
@@ -212,11 +214,17 @@ ggplot(df, aes(Left, Right, color=as_factor(fit_multi_VVV$classification), size=
 
 ```{r}
 #now with the best separation between features
-ggplot(df, aes(Top, Diagonal, color=as_factor(fit_multi_VVV$classification), size=fit_multi_VVV$uncertainty))+geom_jitter()
+ggplot(df, aes(Bottom, Diagonal, color=as_factor(fit_multi_VVV$classification), size=fit_multi_VVV$uncertainty))+geom_jitter()
 ```
 
 ```{r}
 fit_multi_XXX <- Mclust(df_unlabel[,1:2], G=3, modelNames = c("VVV"))
-summary(fit_multi_XXX)
+fit_multi_XXX$df
+
+fit_multi_XXX <- Mclust(df_unlabel[,1:2], G=3, modelNames = c("EEE"))
+fit_multi_XXX$df
+
+fit_multi_XXX <- Mclust(df_unlabel[,1:2], G=3, modelNames = c("VVE"))
+fit_multi_XXX$df
 ```
 
