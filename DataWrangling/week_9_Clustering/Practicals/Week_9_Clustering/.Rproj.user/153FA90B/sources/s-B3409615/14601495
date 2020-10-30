@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1603890803964.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "14601495",
+    "lastKnownWriteTime" : 1603983390,
+    "last_content_update" : 1603983390441,
+    "path" : "~/GitHub/ADS/DataWrangling/week_9_Clustering/Practicals/Week_9_Clustering/ISLR_Chapter10_3.Rmd",
+    "project_path" : "ISLR_Chapter10_3.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "5,3",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
