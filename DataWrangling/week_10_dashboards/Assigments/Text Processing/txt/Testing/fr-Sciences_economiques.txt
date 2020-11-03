@@ -1,0 +1,705 @@
+Sciences économiques
+
+Un article de Wikipédia, l'encyclopédie libre.
+
+Sauter à la navigation	Sauter à la recherche
+
+Article connexe : Économie (discipline).
+
+Économie
+
+Sous-classe de
+
+Sciences sociales
+
+Partie de
+
+Sciences économiques et sociales
+
+Pratiqué par
+
+Économiste
+
+Champs
+
+Microéconomie, macroéconomie, économétrie, économie publique, économie de l'éducation, économie du travail
+
+Objets
+
+Économie, bien, service
+
+Histoire
+
+Histoire de la pensée économique
+
+modifier - modifier le code - modifier Wikidata
+
+Les sciences économiques (ou la science économique ou encore l'économie) est une discipline des sciences humaines et sociales qui étudie de façon scientifique le fonctionnement de l'économie c'est-à-dire la description et l'analyse de la production, des échanges et de la consommation des biens et des services.
+
+Traditionnellement, au sein de la discipline, on distingue deux branches qui se distinguent par leur objets d'étude et leurs méthodes : la macroéconomie et la microéconomie. La macroéconomie étudie les grands agrégats économiques (l'épargne, l'investissement, la consommation, la croissance économique), alors que la microéconomie étudie le comportement des agents économiques (individus, ménages, entreprises) et leurs interactions, notamment sur les marchés. Comme dans d'autres disciplines, la science économique se décline selon un spectre depuis la théorie économique, qui vise à construire un corpus de résultats fondamentaux et abstraits sur le fonctionnement de l'économie, jusqu'à l'économie appliquée, qui utilise les outils de la théorie économique et des disciplines connexes pour étudier des domaines précis comme le travail, la santé, l'immobilier, l'organisation industrielle ou encore l'éducation. La branche de l'économie consacrée plus spécifiquement à l'étude quantitative des modèles économiques est l'économétrie, qui a pris une grande place dans la discipline avec un usage important des méthodes statistiques. On estime en effet qu'en 2011, 80% des articles publiés dans les meilleurs revues en économie contiennent au moins un test empirique [1].
+
+Sommaire
+
+• 1 La science économique en perspective
+
+• 1.1 Naissance de la science économique
+• 1.2 Champs et approches de l'économie en termes de science
+• 1.3 Développement du champ de la science économique au vingtième siècle
+
+• 2 Les fondements de l'analyse économique (science)
+
+• 2.1 La rationalité et la théorie de l'utilité
+• 2.2 Offre et demande et théories du consommateur et de l'entreprise
+• 2.3 La notion d'équilibre
+
+• 3 Modèles, théories et lois
+
+• 3.1 Modèles et théories
+• 3.2 Les grands traits de l'économie en tant que science
+• 3.3 La science économique comme science de l'esprit et de la matière chez Mill
+• 3.4 La notion de lois en économie
+
+• 4 Méthodes
+
+• 4.1 La méthode hypothético-déductive
+• 4.2 La méthode déductive ou a priori de John Stuart Mill
+• 4.3 La révolution méthodologique des années 1930 à 1950
+• 4.4 Méthodes statistiques
+• 4.5 Méthodes expérimentales
+• 4.6 Méthode historique
+
+• 5 Liens avec d'autres disciplines
+
+• 5.1 Liens avec la sociologie
+• 5.2 Liens avec la psychologie
+• 5.3 Liens avec les sciences politiques
+• 5.4 Liens avec les neurosciences
+• 5.5 Liens avec la physique
+
+• 6 La science économie et science exacte
+
+• 6.1 Les tests empiriques des faits économiques et leurs limites
+• 6.2 Reproductibilité et réplication en économie
+
+• 7 Épistémologie de l'économie
+• 8 Sciences économiques et société
+
+• 8.1 Rôle politique des sciences économiques
+
+• 9 Courants de pensées en sciences économiques [52]
+
+• 9.1 Courant marxiste
+• 9.2 Courant keynésien et post keynésien
+• 9.3 Courant libéral
+
+• 9.3.1 Courant classique
+• 9.3.2 Courant néo classiques
+
+• 10 Critiques
+
+• 10.1 Contestation de la scientificité de l'économie
+
+• 11 Prix et distinctions en économie
+• 12 Place des femmes en économie
+• 13 Notes et références
+
+• 13.1 Notes
+• 13.2 Références
+
+• 14 Bibliographie
+
+• 14.1 Ouvrages fondamentaux
+• 14.2 Articles de revue
+• 14.3 Articles fondamentaux
+• 14.4 Ouvrages de vulgarisation
+• 14.5 Encyclopédies
+• 14.6 Articles encyclopédiques
+• 14.7 Autres
+
+• 15 Voir aussi
+
+• 15.1 Liens internes
+• 15.2 Liens externes
+
+La science économique en perspective[modifier | modifier le code]
+
+Article détaillé : Histoire de la pensée économique.
+
+Naissance de la science économique[modifier | modifier le code]
+
+Le terme d'économie provient du grec. Si Xénophon et Aristote ont chacun écrit un traité sur l'économie, néanmoins la pensée économique moderne se développe avec le mercantilisme au XVIIe siècle, les physiocrates au XVIIIe siècle. L'économie politique débute avec Adam Smith (fin du XVIIIe siècle), et surtout David Ricardo ou encore Jean-Baptiste Say (début XIXe siècle). C'est avec la révolution marginaliste à la fin du XIXe siècle que l'économie se constitue comme une discipline scientifique.
+
+À la fin du XIXe siècle et au début du XXe siècle, les sciences économiques se structurent comme une discipline académique avec la création de départements d'économie dans les universités, de revues académiques spécialisées et d'associations professionnelles. Par exemple aux États-Unis, le département d'économie de l'université Harvard est créé en 1897 et le département d'économie de l'université de Californie à Berkeley est créé en 1903[2],[3]. L'American Economic Association est créée en 1885, le Quarterly Journal of Economics en 1886, le Journal of Political Economy en 1892 et l'American Economic Review en 1911. Au Royaume-Uni, la British Economic Association, ancêtre de la Royal Economic Society est fondée en 1890, la revue The Economic Journal en 1891 et la London School of Economics en 1895[notes 1].
+
+Champs et approches de l'économie en termes de science[modifier | modifier le code]
+
+Au début du XIXe siècle, Henry Charles Carey conçoit l'économie comme une « science physique »[4] en indiquant que les industries permettent une économie de travail par un surplus de biens, grâce à une meilleure utilisation de l'énergie, permettant de favoriser la créativité humaine, humain pour lequel les nouvelles découvertes sont le moteur réel de l'économie, ceci afin d'améliorer l'économie de travail des industries, tout ceci se cumulant[5],[6]. Cependant, la définition la plus courante des sciences économiques est due à l'économiste Lionel Robbins. Il définit l'économie comme « la science qui étudie l'allocation de biens rares à des fins alternatives »[7]. La définition de Robbins s'étend à toutes les activités humaines, pas seulement aux opérations strictement économiques comme la production, l'échange, la consommation ou la redistribution. En cela, elle se différencie de celle donnée en 1836 par John Stuart Mill qui définissait l'économie « comme la science qui détermine les lois des phénomènes sociaux résultants des opérations combinés de l'humanité visant à la production de richesse pour autant que ces phénomènes ne soient pas modifiés par la poursuite d'un autre objet (Mill 1836, p.323) »[8].
+
+Développement du champ de la science économique au vingtième siècle[modifier | modifier le code]
+
+Dans les années 1930, la science économique connaît deux grandes révolutions avec l'apparition de la macroéconomie et de l'économétrie.
+
+Avec la publication de la Théorie générale de l'emploi, de l'intérêt et de la monnaie (1936), John Maynard Keynes crée le champ de la macroéconomie.
+
+John Maynard Keynes est considéré comme le père fondateur de la macroéconomie.
+
+Ragnar Frisch fonde la société d'économétrie en 1930 et la revue Econometrica en 1933.
+
+Les années 1930 sont aussi marquées par le développement de l'économétrie. Ragnar Frisch crée la société d'économétrie en 1930 et la revue Econometrica en 1933. Le développement de l'économétrie conduit à un usage de plus en plus importants des statistiques dans la science économique. Les modèles économétriques peuvent aussi bien être utilisés pour calibrer un modèle économique existant que pour tester sa validité empirique.
+
+Dans son ouvrage Foundations of Economic Analysis, Paul Samuelson a trouvé une structure mathématique commune à un grand nombre de modèles économiques.
+
+Dans les années 1940 et 1950, les sciences économiques sont marquées par le développement des théories de la croissance économique avec le modèle de Harrod-Domar et surtout le modèle de Solow (Solow 1956), le développement des fondements de la théorie des jeux avec l'ouvrage fondateur de John von Neumann et Oskar Morgenstern (von Neumann et Morgenstern 1944) et les travaux de John Nash, et l'accomplissement des recherches sur l'équilibre général en concurrence parfaite avec les travaux de Kenneth Arrow et Gérard Debreu qui montrent les conditions d'existence et d'unicité de l'équilibre général imaginé par Léon Walras.
+
+Dans les années 1960, les sciences économiques explorent de nouveaux sujets comme l'éducation, la criminalité ou encore la famille. Les travaux de Gary Becker sont emblématiques de cette tendance à utiliser la théorie économique pour analyser des sujets hors du domaine traditionnel de l'économie. En macroéconomie, les années 1960 sont marquées par les débats sur l'arbitrage inflation-chômage mis en évidence par la courbe de Phillips (Philipps 1958). La remise en cause de cette courbe avec le phénomène de stagflation conduit à formuler différentes hypothèses sur les anticipations des agents (anticipations adaptatives puis anticipations rationnelles).
+
+Dans les années 1970 se développent les modèles économiques en information imparfaite comme le modèle de George Akerlof sur les asymétries d'information dans un marché (Akerlof 1970).
+
+En macroéconomie, la fin des années 1980 et le début des années 1990 est marqué par un renouvellement des travaux sur la croissance économique autour de la notion de croissance endogène.
+
+Les années 1990 et 2000 sont caractérisées par une part de plus en plus importantes de travaux empiriques dans la recherche en économie. Cette évolution est particulièrement vraie en économie du travail, en économie de l'éducation ou encore en économie du développement[9],[10]. Le développement de l'économétrie appliquée dans ces années là est notamment lié au développement d'un champ de recherche autour de l'inférence causale (voir notamment le modèle causal de Neymann-Rubin) et la diffusion de protocoles de recherche comme la méthode des variables instrumentales, la méthode des doubles différences ou encore la régression sur discontinuité. Les travaux de David Card sur l'effet de l'immigration sur le marché du travail (Card 1990) ou de David Card et Alan Krueger sur l'effet du salaire minimum sur l'emploi (Card et Krueger 1994) sont représentatifs de ce champ de recherche.
+
+Les fondements de l'analyse économique (science)[modifier | modifier le code]
+
+La rationalité et la théorie de l'utilité[modifier | modifier le code]
+
+Ce qui différencie la science économique notamment la micro-économie des autres sciences, c'est son aspect normatif, son hypothèse qui veut que les agents économiques agissent rationnellement. Les économistes supposent aussi que les achats dépendent non seulement des préférences des agents mais aussi de leur tendance, supposée rationnelle, à maximiser leur utilité[11]. La maximisation de l'utilité n'a pas ici un caractère utilitariste au sens de Jeremy Bentham. Les consommateurs ne cherchent pas en effet une utilité autre que celle de consommer, ils cherchent juste à maximiser un jeu de préférences, à consommer de façon à maximiser leurs préférences[12]. Dans cette optique, en 1938, Paul Samuelson a développé la théorie de la préférence révélée qui veut que si je choisis x au lieu de y, je révèle ma préférence pour x d'où l'on peut déduire que y est pour moi moins intéressant que X.
+
+Offre et demande et théories du consommateur et de l'entreprise[modifier | modifier le code]
+
+Article détaillé : loi de l'offre et de la demande.
+
+Quantité offerte et demandée en fonction du prix
+
+L'offre et la demande sont deux éléments fondamentaux de la science économique. L'offre est dépend des produits offerts par les entreprises, elle dépend des entreprises dont le comportement est formalisée par la théorie de l'entreprise. La demande est représentée par la théorie du choix du consommateur.
+
+L'offre sur les marchés dépend à la fois des prix et de la technologie. Plus les prix sont hauts plus les entreprises offrent des biens. Le comportement des entreprises est formalisé par la théorie de la firme organisée autour de trois lois. La loi des rendements décroissants (si on augmente la quantité d'un des facteurs de production(a) en laissant les autres fixes alors la production ne sera plus une fonction croissante de (a)[13]. La loi des rendements d'échelle constant à proximité du point d'équilibre qui veut que l'augmentation ou la diminution des facteurs de production autour du point d'équilibre entraîne une variation équivalente de production[13]. Enfin, La loi de maximisation des profits[13].
+
+La demande sur les marchés dépend : (1) du prix de vente ; (2) du prix des produits de substitution (la demande de beurre dépend du prix de la margarine) ; (3) du produit des biens complémentaires (la demande de DVD dépend du prix des lecteurs de DVD) ; (4) des revenus et de la richesse des clients; (5) des goûts des consommateurs[14]. La façon dont les clients vont effectuer leur choix est formalisée par la théorie du choix du consommateur qui repose sur trois postulats comportementaux ou lois : la rationalité des individus, la volonté de consommer le plus possible et le taux marginal de substitution[15].
+
+La notion d'équilibre[modifier | modifier le code]
+
+Articles détaillés : équilibre économique, équilibre partiel et équilibre général.
+
+La notion d'équilibre est centrale en économie. Elle suppose que les marchés s'équilibrent (clear en anglais) rapidement. La microéconomie s'intéresse principalement à l'équilibre sur un marché et raisonne donc en équilibre partiel. Au contraire la notion d'équilibre général suppose l'existence d'un équilibre sur tous les marchés[16]. Selon Hausman, si la théorie de l'équilibre est au fondement même de la science économique, la théorie de l'équilibre général n'est qu'une application particulière de l'équilibre[17].
+
+Il est possible de distinguer trois types de modèle d'équilibre général : les modèles limités à un nombre limité d'agent proches en intention des modèles d'équilibre partie ; les modèles basés sur une matrice entrée-sortie utilisés à des fins pratiques pour réaliser des prédictions et les modèles d'équilibre général abstraits[18]. Concernant ce dernier cas, les économistes s'opposent. Si pour Gérard Debreu ces modèles permettent de donner des explications sur les prix, pour Kenneth Arrow et Frank Hahn ils n'ont aucun pouvoir explicatif. De même pour Mark Blaug et Rosenberg, ces modèles n'ont rien à voir avec la science empirique[17].
+
+Les états d'équilibre tels que définis par ces modèles ne se produisent jamais dans la réalité, sauf en tant qu'« états de repos » temporaires tels que définis par Ludwig von Mises. Ces modèles sont des constructions intellectuelles qui peuvent éventuellement aider dans certains raisonnements, mais ne représentent aucune réalité observable et ne correspondent donc pas à la définition des modèles comme « représentations simplifiées de la réalité ».
+
+Modèles, théories et lois[modifier | modifier le code]
+
+Modèles et théories[modifier | modifier le code]
+
+Article détaillé : Modèle (économie).
+
+Le positivisme logique conçoit les théories scientifiques comme étant un ensemble de phrases exprimées dans un langage formel[19]. Les difficultés rencontrés avec cette conception des théories (problème des traductions vues comme des reformulations, difficulté d'exprimer les théories en langage formel, et plus généralement une trop grande focalisation sur le langage) ont conduit des philosophes des sciences (Bas van Fraassen, Frederick Suppe à proposer une vue sémantique des théories dans les années 1970-1980 qui remet à la première place les choses, les objets et non les phrases[20]. Pour Daniel Hausman les modèles en économie ressemblent aux idéaux-types de Max Weber, c'est-dire qu'elles servent à construire des hypothèses qui permettent de comprendre de façon pragmatique les caractéristiques d'un phénomène. Par rapport aux idéaux-types, les modèles sont d'abord un ensemble d'hypothèses. Par exemple les économistes estiment que la continuité, la complétude la transitivité des préférences ainsi que la maximisation de l'utilité constituent un modèle acceptable de ce qu'est la rationalité en économie[21]. Pour Daniel Hausman[22] comme dans les autres sciences, en économie les théories sont dévolues à l'exploration des modèles. En effet en science le travail théorique consiste d'abord à simplifier la réalité et pour se faire comme l'avançait Galilée à construire des modèles. De sorte construire des modèles irréalistes sont inévitables pour les théoriciens de l'économie[22].
+
+Les économistes que Daniel Hausman appelle instrumentalistes c'est-à-dire ceux qui ne cherchent pas à découvrir des vérités théoriques mais seulement des outils pour prédire et contrôler les phénomènes sont très attirés par les modèles car cela leur évite de juger, de discuter du caractère universel des lois. Pour Hausman en faisant cela ils se soustraient pour partie à l'exigence scientifique qui enjoint à la recherche de la généralité[23].
+
+Modèles (tableau traduit à partir de (Hausman 1992, p.77)) théories
+
+1. Définitions de prédicats, de concepts, ou de systèmes Ensemble d'assertions ressemblant à des lois
+
+2. Trivialement vrai ou ni vrai ni faux vrai ou faux
+
+3. But : exploration conceptuelle But : exprimer des vues sur ce que devrait être le monde
+
+4. Peut-être évalué mathématiquement ou conceptuellement, mais n'est pas testable Peut être évalué empiriquement, testable
+
+5.Consiste en un ensemble hypothèses Consiste en un ensemble d'affirmations
+
+Les grands traits de l'économie en tant que science[modifier | modifier le code]
+
+Essays on economics and society, 1967.
+
+Pour John Stuart Mill, l'économie pour être une science « ne peut être un recueil de règles pratiques »[24], elle doit établir des lois que le praticien utilisera avec art. Il note à ce propos « L’Économie Politique, par elle-même, ne dit pas comment rendre une nation riche ; mais toute personne qualifiée pour juger du moyen de rendre une nation riche doit d'abord être économiste politique »[24]. Il en ressort que la science économie concerne les domaines où des facteurs causaux économiques sont à l'œuvre et prédominent sur les autres facteurs[25]. Les lois des facteurs causaux prédominants sont largement connus. Pour John Stuart Mill et Lionel Robbins ces facteurs sont fondamentalement mentaux. Pour Mills il s'agit du fait que les individus préfèrent un plus grand gain qu'un petit, et pour Lionel Robbins, il s'agit de la capacité des individus à classer leurs préférences[26]. Enfin les théories économiques et les modèles fournissent un cadre unifié, complet même si inexact du champ économique[26]. la théorie de l'équilibre général permet d'unifier lois propres à certains sous-domaines économiques. Le but de la théorie économique est de remonter des phénomènes économiques aux causes économiques fondamentales sans se préoccuper de ce qui relève des autres sciences[27]. Pour John Stuart Mill la science en économie « décrit les lois des phénomènes de société qui se produisent du fait des opérations conjointes de l'humanité pour la production de richesses, entant que ces phénomènes ne sont pas modifiés par la recherche d'un autre objet »[28].
+
+La science économique comme science de l'esprit et de la matière chez Mill[modifier | modifier le code]
+
+Article détaillé : John Stuart Mill.
+
+John Stuart Mill distingue les sciences physiques des sciences morales. Les premières traitent uniquement des lois de la matière tandis que les autres s'occupent à la fois des lois de la matière et de l'esprit. Il note à ce propos « la plupart des sciences morales présupposent la science physique; mais rares sont les sciences physiques qui présupposent une science morale »[29]. Pour lui l'économie politique ne s'étend pas comme chez Jean-Baptiste Say à tous les aspects « de la nature humaine en tant qu'elle influence la conduite ou la condition de l'homme dans la société »[30] mais se limite à « l'homme en tant qu'être animé du désir de posséder la richesse, et capable de juger de l'efficacité comparée des moyens visant à atteindre cette fin »[31]. Globalement, pour John Stuart Mill, la science de l'économie politique est une science des tendances, ou des lois inexactes, qui n'est vraie que dans l'abstrait. Dans le concret il faut tenir compte comme en physique des frottements et de ce qu'il appelle les « causes perturbatrices »[32].
+
+La notion de lois en économie[modifier | modifier le code]
+
+L'inexactitude des lois peut être analysée de quatre façons différentes : 1) lois sont inexactes parce que approximatives; les lois sont inexactes parce que découlant de probabilité ou des statistiques, elles indiquent seulement ce qui se passerait en l'absence d'interférences et 4) Les lois sont inexactes parce qu'elles recourent à la clause toutes choses égales par ailleurs[33]. Si John Stuart Mill insiste dans son ouvrage sur l'inexactitude liée aux méthodes d'investigation et aux interférences, Daniel Hausman et John Neville Keynes insistent au contraire, sur le caractère inexact lié à la clause toute chose égale par ailleurs[33].
+
+Méthodes[modifier | modifier le code]
+
+Article détaillé : Méthodologie économique.
+
+La méthode hypothético-déductive[modifier | modifier le code]
+
+William Nassau Senior (1790-1864) Le premier professeur d'économie dans une université anglaise (Oxford 1825).
+
+Cette méthode a dominé jusqu'aux années 1940. Elle a été utilisée par David Ricardo et explicitement formulée par John Stuart Mill en 1836 et 1843 et Nassau Senior en 1836[34]. Elle comporte quatre étapes : 1) formuler une hypothèse, 2) en déduire une prédiction, 3) tester la prédiction, 4) évaluer l'hypothèse en fonction de la pertinence de la prédiction[34]. Selon Mill, les hypothèses de base de l'économie sont constituées par des introspections psychologiques (les individus veulent plus de richesses) soit sur des hypothèses que l'on peut vérifier empiriquement (la loi des rendements décroissants). Pour lui, la science économique est davantage destinée à vérifier les hypothèses de base que de tester la précision des prédictions qui dépend de multiples causes. Pour Mill donc, l'économie est une science inexacte qui ne peut dégager que des tendances et qui doit se confronter aux tests empiriques de façon à progresser[35].
+
+Cette méthode sera reprise par J. E. Cairns en 1875 et par John Neville Keynes en 1891[35]. Si les néo-classiques de tradition autrichienne ou Walrassienne sont d'abord focalisés sur la prise de décision individuelle et sur les effets micro-économiques de court terme, néanmoins, ils adoptent eux aussi la méthode hypothético-déductive comme le montrent les écrits de Frank Knight (1935 et 1940), de Ludwig Von Mises (1949, 1978, 1981) et de Lionel Robbins (1935)[36].
+
+La méthode déductive ou a priori de John Stuart Mill[modifier | modifier le code]
+
+Pour John Stuart Mill, non seulement « la méthode à priori est un mode légitime d'investigation philosophique dans les sciences morales » mais « elle en est le mode unique[37] ». Pour Daniel Hausman la méthode à priori ou inductive comporte trois phases : l'observation des faits, des phénomènes ; la déduction de lois et enfin la vérification des lois en examinant leur pouvoir prédictif. Il ne s'agit pas ici de vérifier la véracité des lois mais leur pouvoir prédictif[38].
+
+La révolution méthodologique des années 1930 à 1950[modifier | modifier le code]
+
+Le livre de Terence Hutchison intitulé The Significance and Basic Postulates of Economic Theory est le premier à critiquer la théorie économique du point de vue de l'empirisme logique. Il reproche à la théorie économique de ne pas avoir de contenu testable[39]. À sa suite, Paul Samuelson va développer une approche qualifiée d'« opérationaliste » par Daniel Hausman visant à donner une place importante au comportement des individus mais qui entre en conflit avec une volonté d'avoir une théorie économique[40]. Fritz Machlup accuse Hutchinson et Samuelson de vouloir directement atteindre les postulats de la théorie économique au lieu de se focaliser sur leur conséquences observables[41]. Friedman dans son livre The Methodology of Positive Economics, l'ouvrage le plus influent de la période insiste sur le fait que la science et la théorie ont exclusivement un but prédictif. Aussi l'important pour juger d'une théorie ne réside pas dans le caractère réaliste ou non des hypothèses mais dans la capacité de la théorie à prédire ce qui va se passer[42].
+
+Méthodes statistiques[modifier | modifier le code]
+
+Article détaillé : Économétrie.
+
+L'usage des modèles statistiques en économie s'est développé avec la création de la Société d'économétrie en 1930 et de la revue Econometrica en 1933. Depuis lors, l'économétrie n'a cessé de se développer et de prendre une importance croissante au sein de la science économique. Aujourd'hui, l'on distingue l'économétrie théorique de l'économétrie appliquée. L'économétrie théorique se focalise essentiellement sur deux questions, l'identification et l'estimation statistique. Tandis que l'économétrie appliquée utilise les méthodes économétriques pour comprendre des domaines de l'économie comme l'analyse du marché du travail, l'économie de l'éducation ou encore tester la pertinence empirique des modèles de croissance.
+
+Méthodes expérimentales[modifier | modifier le code]
+
+Article détaillé : Économie expérimentale.
+
+Daniel Kahneman a diffusé en économie la méthode des expériences de laboratoire et remis en cause les hypothèses standards de la théorie de la décision rationnelle.
+
+Depuis les travaux des psychologues Amos Tversky et Daniel Kahneman et de Vernon Smith, les expériences de laboratoire sont devenues une méthode à part entière en sciences économiques pour valider empiriquement la pertinence des théories économiques. Ainsi, les travaux expérimentaux en théorie de la décision ont montré que les agents ne se comportaient pas selon la théorie de l'utilité espérée (théorie développée par John von Neumann et Oskar Morgenstern dans Theory of Games and Economic Behavior). La théorie des perspectives, développée par Amos Tversky et Daniel Kahneman (Kahneman et Tversky 1979), est plus conforme aux résultats expérimentaux.
+
+Parallèlement aux expériences de laboratoires, les économistes développent également des expériences de terrain à grande échelle pour tester des théories économiques ou encore évaluer l'effet de politiques publiques. Ces méthodes se sont largement développées depuis les années 1990. En économie du développement par exemple, les économistes Esther Duflo et Abhijit Banerjee ont largement diffusé l'usage de ces méthodes, notamment à travers la création d'un institut voué à ces méthodes, le Abdul Latif Jameel Poverty Action Lab.
+
+Méthode historique[modifier | modifier le code]
+
+Article détaillé : Histoire économique.
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Liens avec d'autres disciplines[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Liens avec la sociologie[modifier | modifier le code]
+
+Articles détaillés : Impérialisme économique (économie) et Sociologie économique.
+
+Gary Becker a appliqué les méthodes de la théorie économique à la compréhension de phénomènes sociaux comme l'éducation (Becker 1964), les discriminations (Becker 1957), la famille (Becker 1981), l'addiction ou encore la criminalité.
+
+Depuis les travaux de Gary Becker sur la famille (Becker 1981), la criminalité (Becker 1957) ou l'éducation (Becker 1964), les sciences économiques ont tendance à explorer des sujets d'ordinaire réservés à la sociologie. On désigne par impérialisme économique cette tendance des sciences économiques à analyser des sujets traditionnellement du domaine de la sociologie.
+
+À l'inverse, la sociologie économique analyse l'économie avec les outils et les théories sociologiques. Ainsi les travaux de Mark Granovetter ont montré l'importance des réseaux sur le marché du travail (ce que les économistes avaient ignoré jusque-là). De même, les travaux de sociologie des marchés montrent le caractère socialement construits des marchés à l'opposé de la vision naturaliste des économistes.
+
+Liens avec la psychologie[modifier | modifier le code]
+
+Articles détaillés : Psychologie économique et Économie comportementale.
+
+Les travaux pionniers de Daniel Kahneman et Amos Tversky sur la théorie de la décision en univers risqué (Kahneman Tversky) ont donné lieu à un domaine de recherche qui relève à la fois de la psychologie et de l'économie.
+
+Liens avec les sciences politiques[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Les sciences économiques sont héritières de l'économie politique et leur statut de "sciences" est souvent critiqué[43]. Considérant notamment que l'économie politique d'Adam Smith s'inscrit dans la lignée de l'arithémétique politique du siècle précédent, des économistes comme François Fourquet n'hésitent pas à considérer une telle discipline comme forme réflexive et théorique de la politique économique[44]. Par ailleurs, il est assez notable que la théorie d'Adam Smith elle-même inclut l'action étatique, l'économie politique étant définie comme branche de savoir du législateur[45].
+
+Liens avec les neurosciences[modifier | modifier le code]
+
+Article détaillé : Neuroéconomie.
+
+Dans la lignée des travaux en économie comportementale, la neuroéconomie utilise les méthodes des neurosciences cognitives pour comprendre la manière dont les agents prennent leurs décision[46].
+
+Liens avec la physique[modifier | modifier le code]
+
+Article détaillé : Éconophysique.
+
+L'éconophysique est une discipline qui utilise des modèles de physique statistique pour étudier des phénomènes économiques[47].
+
+La science économie et science exacte[modifier | modifier le code]
+
+Les tests empiriques des faits économiques et leurs limites[modifier | modifier le code]
+
+Selon Quiquerez[48], « le test empirique n'est certainement pas, en économie, le juge de paix que certains présupposent ». À cela trois grandes raisons. Tout d'abord toutes les propositions n'ont pas une portée empirique. Par exemple les modèles ne sont ni vrais ni faux et ont surtout pour but d'expliquer le monde réel. Ce n'est que lorsqu'ils servent de base à des préconisations de politique économique qu'ils se trouvent confrontés au réel[49]. Par ailleurs, « toutes les propositions explicitement empiriques de l'économie ne sont pas testables »[49]. C'est notamment les propositions métaphysiques tel l'existence d'un équilibre de long terme, ou des hypothèses concernant la stationnarité ou la normalité des variables. Enfin les résultats des tests sont ambigus et ne permettent pas de départager deux théories opposées. Ce point est d'autant plus sensible que Dehem-Quine, ont montré que l'on ne pouvait tester que des systèmes théoriques[49].
+
+Enfin la notion de faits économiques est elle-même très différentes des faits de la matière sur laquelle travaille la physique car d'une part, les faits économiques sont fondamentalement complexes, historiques (liés à une période) ; culturels voire institutionnels car liés au contexte social et juridique ; sensibles à la façon dont on les perçoit[50].
+
+Reproductibilité et réplication en économie[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+D'après une étude publiée dans la revue Science en 2016, 40 % des expériences en économie échouent à être reproduites[51],[notes 2].
+
+Épistémologie de l'économie[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Sciences économiques et société[modifier | modifier le code]
+
+Rôle politique des sciences économiques[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Les économistes sont amenés à intervenir dans le débat public ou à conseiller les gouvernements pour faire des recommandations de politique économique. Aux États-Unis, le Council of Economic Advisers a été créé en 1946 pour conseiller le président des États-Unis. En France, le Conseil d'analyse économique a été créé en 1997.
+
+Les économistes peuvent aussi jouer un rôle dans l'évaluation des politiques publiques.
+
+Courants de pensées en sciences économiques [52][modifier | modifier le code]
+
+Courant marxiste[modifier | modifier le code]
+
+XIXe siècle. B. Friot, G. Duménil, D. Lévy, M. Husson, C. Durand, F. Boccara.
+
+Cette économie est une analyse négative du système capitaliste. Elle correspond à des rapports de dominations entre le facteur travail et le facteur capital (L;K). C’est une économie hiérarchisée. Son concept est, la théorie de la valeur (la valeur d'un bien et d'un service dépend de la quantité de travail à l'intérieur mais le salaire ne représente pas en réalité la valeur du bien ou du service) – travail, plus-value (profit) – exploitations.
+
+Pour eux il y a aucun progrès social avec les classiques malgré les progrès techniques. Les détenteurs de capitaux détiennent un pouvoir sur les salariés. Ces économistes pensent qu’une partie devrait être redistribuée aux salariés. Nous sommes dans une économie qui produit mais qui redistribue mal.
+
+Courant keynésien et post keynésien[modifier | modifier le code]
+
+XX et XXIe siècle. T. Piketty, M. Lavoie, D. Lang, L. Hoang-Ngoc et B. Tinel.
+
+Cette économie est un circuit économique. Ses concepts sont la macro économie et l’intervention de l'état. Les keynésiens estiment que l'approche classique et néoclassique ne permettent pas de comprendre le fonctionnement économique. Keynes : « L'économie n'est pas un marché où s'échange des biens et services contre d'autres biens et services mais un circuit irriguer par un bien particulier qui est la monnaie ». L’économie est un service qui est irrigué par la monnaie (valeur monétaire).
+
+Courant libéral[modifier | modifier le code]
+
+Courant classique[modifier | modifier le code]
+
+XVII, XVIIIe siècle. A. Smith, D. Ricardo, J.B. Say, R. Malthus.
+
+Cette économie est une économie dite de grand marché. Ses concepts sont, division du travail et spécialisation A. Smith, la loi des débouchés (J.B. Say = toute offre de production créer sa propre demande), le principe de la main invisible (implique que tous les échanges économiques se fait par le marché, conciliation entre intérêt personnel et général), le libéralisme économique (libre entreprise, tout le monde peut créer son entreprise, l'état a une fonction régalienne). Pour les classiques ou libéraux, l'économie est toujours en équilibre grâce à la fluctuation des prix.
+
+Courant néo classiques[modifier | modifier le code]
+
+XIX, XX et XXIe siècle. L. Walras, A. Marshall, F. Hayek, M. Friedman.
+
+Ses concepts sont, analyse microéconomique (comportement du producteur ou du consommateur), équilibre général (tous les marchés sont interconnectés), utilité marginale (utilisé pour la prise de décision, d'acceptation de commande, etc.) profit maximum (optimum économique) => coût marginal = recette marginale.
+
+Critiques[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Article connexe : Crise de la reproductibilité.
+
+Contestation de la scientificité de l'économie[modifier | modifier le code]
+
+De nombreux auteurs, comme Bernard Guerrien ou Daniel Duet contestent la prétention de l'économie orthodoxe à être considérée comme une science. Ces auteurs mettent notamment en cause l'irréalisme des hypothèses du paradigme standard en économie (la transitivité des préférences, le comportement de l'homo oeconomicus, hypothèse de concurrence parfaite, etc). Selon ces auteurs, les hypothèses n'ont pas fait l'objet de vérifications empiriques[53],[54].
+
+Prix et distinctions en économie[modifier | modifier le code]
+
+Comme dans les autres disciplines scientifiques, la science économique récompense les travaux révolutionnaires ou les meilleurs économistes. Cette tradition de récompenser l'excellence a depuis pris de l'ampleur. Ainsi, au travers le monde, il existe des prix par pays (le cas de médaille John-Bates-Clark pour les Etats-unis d'Amérique, Prix du meilleur jeune économiste de France pour la France, Prix Nakahara pour le Japon, etc.), pour la promotion du genre (le Prix Elaine-Bennett pour la recherche), par région ou continent (le cas Prix Yrjö-Jahnsson pour le continent européen, par exemple), pour un domaine spécifique (le cas de Prix Fischer-Black la finance, le cas de Prix IZA de l'économie du travail pour l'économie du travail, par exemple), etc.
+
+Depuis 1969, la Banque de Suède décerne annuellement le prix de la Banque de Suède en sciences économiques en mémoire d'Alfred Nobel communément appelé prix Nobel d'économie. Il est le prix le plus prestigieux de la discipline. Après ce prix, la médaille John-Bates-Clark est la récompense la plus prestigieuse en économie. D'ailleurs, une proportion importante de lauréats décrochent le « Nobel » par la suite.
+
+Place des femmes en économie[modifier | modifier le code]
+
+Cette section est vide, insuffisamment détaillée ou incomplète. Votre aide est la bienvenue ! Comment faire ?
+
+Joan Robinson (1903-1983) est une des rares femmes économistes du courant du XXe siècle. Elle est une figure importante de l'école de Cambridge et du keynésianisme.
+
+Seules deux femmes ont reçu le prix Nobel d'économie : Elinor Ostrom en 2009 et Esther Duflo en 2019, et deux la médaille John-Bates-Clark : Susan Athey en 2007 et Esther Duflo en 2010.
+
+Notes et références[modifier | modifier le code]
+
+Notes[modifier | modifier le code]
+
+• ↑ Le plus ancien département d'économie du Royaume-Uni est le département d'économie politique de University College London fondé en 1826 (lire en ligne).
+• ↑ (en) Pour aller plus loin, voir le dossier dans l'American Economic Review du mois de mai 2017 [lire en ligne].
+
+Références[modifier | modifier le code]
+
+• ↑ (en) Daniel S Hamermesh, « Six Decades of Top Economics Publishing: Who and How? », Journal of Economic Literature, vol. 51, no 1,‎ mars 2013, p. 162–172 (ISSN 0022-0515, DOI 10.1257/jel.51.1.162, lire en ligne, consulté le 29 octobre 2019)
+• ↑ « About », sur université Havard (consulté le 19 juillet 2017)
+• ↑ « A Brief History: Economics at the University of California », sur université de Berkeley (consulté le 19 juillet 2017)
+• ↑ Vezina Simon Mémoire sur Henry Charles Carey [1] page 56
+• ↑ Ibid., V.3, p. 70.
+• ↑ Carey, Principles of Social Science, V.1, p. 154-5
+• ↑ Chartoire et Loiseau 2005, p. 4
+• ↑ Hausman 1992, p. 2.
+• ↑ « An empirical turn in economics research », sur American Economic Association (consulté le 19 juillet 2017)
+• ↑ (en) Joshua Angrist, Pierre Azoulay, Glenn Ellison, Ryan Hill et Susan Feng Lu, « Economic Research Evolves: Fields and Styles », American Economic Review, vol. 107, no 5,‎ 2017, p. 293-97 (DOI 10.1257/aer.p20171117)
+• ↑ Hausman 1992, p. 13.
+• ↑ Hausman 1992, p. 18.
+• ↑ a b et c Hausman 1992, p. 43.
+• ↑ Hausman 1992, p. 29.
+• ↑ Hausman 1992, p. 30.
+• ↑ Hausman 1992, p. 53.
+• ↑ a et b Hausman 1992, p. 55.
+• ↑ Hausman 1992, p. 54.
+• ↑ Hausman 1992, p. 71.
+• ↑ Hausman 1992, p. 72.
+• ↑ Hausman 1992, p. 80.
+• ↑ a et b Hausman 1992, p. 81.
+• ↑ Hausman 1992, p. 78.
+• ↑ a et b Mill 2003, p. 57.
+• ↑ Hausman 1992, p. 91.
+• ↑ a et b Hausman 1992, p. 93.
+• ↑ Hausman 1992, p. 94.
+• ↑ Mill 2003, p. 70.
+• ↑ Mill 2003, p. 63.
+• ↑ Mill 2003, p. 67.
+• ↑ Mill 2003, p. 68.
+• ↑ Mill 2003, p. 79.
+• ↑ a et b Hausman 1992, p. 128.
+• ↑ a et b Hausman 1992, p. 123.
+• ↑ a et b Hausman 1992, p. 124.
+• ↑ Hausman 1992, p. 125.
+• ↑ Mill 2003, p. 75.
+• ↑ Hausman 1992, p. 143.
+• ↑ Hausman 1992, p. 155.
+• ↑ Hausman 1992, p. 157.
+• ↑ Hausman 1992, p. 160.
+• ↑ Hausman 1992, p. 163.
+• ↑ « De l'économie politique à la science économique », sur Alternatives Economiques (consulté le 13 septembre 2019)
+• ↑ François Fourquet, Richesse et puissance. Une généaologie de la valeur, Paris, La Découverte, 2002
+• ↑ Adam Smith, Recherche sur la nature et les causes de la richesse des nations, 1776, Paris, PUF, 1995
+• ↑ (en) Colin Camerer, George Loewenstein et Drazen Prelec, « Neuroeconomics: How Neuroscience Can Inform Economics », Journal of Economic Literature, vol. 43,‎ 2005, p. 9-64
+• ↑ (en) H. Eugene Stanley et al., « Econophysics: Can physicists contribute to the science of economics? », Physica A: Statistical Mechanics and its Applications, vol. 269, no 1,‎ 1999, p. 156-169
+• ↑ Quiquerez 2015, p. 49.
+• ↑ a b et c Quiquerez 2015, p. 50.
+• ↑ Quiquerez 2015, p. 51.
+• ↑ (en) John Bohannon, « About 40% of economics experiments fail replication survey », Science,‎ 3 mars 2016 (DOI 10.1126/science.aaf4141, lire en ligne).
+• ↑ Anne-Marie Alcolea-Bureth. Pratiques et théories de l'économie solidaire: Un essai de conceptualisation : 2004.
+• ↑ Bernard Guerrien, « L’économie : science ou pseudo science ? », Science ou pseudo-science,‎ 2005 (lire en ligne)
+• ↑ Daniel Duet, « La science économique n’aura pas lieu », Les Cahiers pour l’histoire de l’épargne, no 12,‎ 2009 (lire en ligne)
+
+Bibliographie[modifier | modifier le code]
+
+Ouvrages fondamentaux[modifier | modifier le code]
+
+• Vilfredo Pareto, Manuel d'économie politique, V. Giard & E. Brière, 1909
+• (en) A.C. Pigou, The Economics of Welfare, Londres, Macmillan Co., 1948, 4e éd. (1re éd. 1932)
+• John Maynard Keynes, Théorie générale de l'emploi, de l'intérêt et de la monnaie, 1936
+• (en) John von Neumann et O. Morgenstern, Theory of Games and Economic Behavior, Princeton, Princeton University Press, 1944
+• (en) P. A. Samuelson, Foundations of Economic Analysis, Cambridge, Mass., Harvard University Press, 1947
+• Kenneth Arrow, Social Choice and Individual Values, New York, Wiley, 1951 (ISBN 0-300-01364-7)
+• (en) Gary S. Becker, The Economics of Discrimination, Chicago, University of Chicago Press, 1957, 1re éd. (ISBN 0-226-04115-8)
+• (en) Anthony Downs, An Economic Theory of Democracy, Prentice Hall, 1957, 1re éd. (ISBN 978-0060417505)
+• (en) Gary S. Becker, Human Capital : A Theoretical and Empirical Analysis, with Special Reference to Education, Chicago, University of Chicago Press, 1964, 1re éd. (ISBN 978-0-226-04120-9)
+• (en) Gary S. Becker, A Treatise on the Family, Cambridge, MA, Harvard University Press., 1981 (ISBN 0-674-90698-5)
+• (en) Steve Keen, Debunking Economics : The Naked Emperor of the Social Sciences, Zed Books, 2001
+• John Stuart Mill, Sur la définition de l'économie politique; et sur la méthode d'investigation qui lui est propre, Michel Houdiard Éditeur, 2003[1844]
+• (en) Daniel M. Hausman, The inexact and separate science of economics, Cambridge, Cambridge university press, 1992, 372 p..
+
+Articles de revue[modifier | modifier le code]
+
+• Guillaume Quiquerez, « Essai sur la définition de la philosophie économique », Revue de philosophie économique, vol. 16, no 2,‎ 2015
+
+Articles fondamentaux[modifier | modifier le code]
+
+• Paul A. Samuelson, « The Pure Theory of Public Expenditure », The Review of Economics and Statistics, The MIT Press, vol. 36, no 4,‎ novembre 1954, p. 387-389 (DOI 10.2307/1925895, JSTOR 1925895)
+• (en) R.H. Coase, « The Problem of Social Cost », Journal of Law and Economics,‎ 1960, p. 1-44
+• (en) Robert M. Solow, « A Contribution to the Theory of Economic Growth », Quarterly Journal of Economics, vol. 70, no 1,‎ 1956, p. 65–94 (lire en ligne)
+• (en) Alban W. Phillips, « The relation between unemployment and the rate of change of money wage rates in the United Kingdom, 1861–1957 », Economica,‎ 1958, p. 283-299
+• George Akerlof, « The Market for Lemons : Quality Uncertainty and the Market Mechanism », Quarterly Journal of Economics, vol. 84,‎ 1970, p. 488-500
+• (en) Daniel Kahneman et Amos Tversky, « Prospect Theory: An Analysis of Decision under Risk », Econometrica, vol. 47, no 2,‎ 1979, p. 263-291
+• (en) David Card, « The Impact of the Mariel Boatlift on the Miami Labor Market », Industrial and Labor Relations Review, vol. 43,‎ 1990, p. 245-257
+• (en) David Card et Alan B. Krueger, « Minimum Wages and Employment : A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania », American Economic Review, vol. 84,‎ 1994, p. 772-793
+
+Ouvrages de vulgarisation[modifier | modifier le code]
+
+• Renaud Chartoire et Sophie Loiseau, L'Économie, Nathan, coll. « Repères », 2005, 159 p.
+• (en) Steven Levitt et Stephen Dubner, Freakonomics : A Rogue Economist Explores the Hidden Side of Everything, William Morrow, 2005, 242 p.
+• Alexandre Delaigue et Stéphane Ménia, Sexe, drogue... et économie, Pearson, 2008
+• Bernard Maris, Antimanuel d'économie, t. 1 : Les Fourmis, Bréal, 2003 (ISBN 2-7495-0078-8)
+• Bernard Maris, Antimanuel d'économie, t. 2 : Les Cigales, Bréal, 2006 (ISBN 2-7495-0078-8)
+
+Encyclopédies[modifier | modifier le code]
+
+• The New Palgrave Dictionary of Economics
+
+Articles encyclopédiques[modifier | modifier le code]
+
+• (en) Craufurd D. Goodwin, « History of economic thought », The New Palgrave,‎ 2008
+
+Autres[modifier | modifier le code]
+
+• Laville J.L & Cattani A.D (2005) Dictionnaire de l'autre économie (Vol. 123). Desclée de Brouwer.
+• Laville J.L (2003) Avec Mauss et Polanyi, vers une théorie de l'économie plurielle (No. 1, p. 237-249). La Découverte.
+
+Voir aussi[modifier | modifier le code]
+
+Sur les autres projets Wikimedia :
+
+• Sciences économiques, sur Wikimedia Commons
+• Sciences économiques, sur Wikisource
+• Sciences économiques, sur Wikiquote
+
+Liens internes[modifier | modifier le code]
+
+• Chronologie des faits économiques
+• Chronologie de la pensée économique
+• Histoire de la pensée économique
+• Théories économiques
+• Orthodoxie et hétérodoxie en économie
+• Liste des revues académiques en économie
+• Économiste
+• indépendance des économistes financiers
+• Économie en France
+
+Liens externes[modifier | modifier le code]
+
+• (fr) Les échanges entre science économique et autres sciences sociales, Edmond Malinvaud, 2001
+
+v · m
+
+Courants de la pensée économique
+
+Article principal : Histoire de la pensée économique
+(Ordre chronologique ; en italique, les principaux courants contemporains) — Voir aussi : Libéralisme économique
+
+Chrématistique · Mercantilisme · Physiocratie · École classique · Marxisme · Keynésianisme · Monétarisme · École autrichienne · École néoclassique · Néokeynésianisme · Nouvelle économie keynésienne · Économie de l'offre · Synthèse néoclassique · Nouvelle économie classique
+
+v · m
+
+Systèmes économiques
+
+Idéologie
+
+• Capitalisme
+
+• d'État
+• rhénan
+• de connivence
+• Économie sociale de marché
+• Laissez-faire
+• Mercantilisme
+• Néomercantilisme
+
+• Corporatisme
+• Économie des régimes fascistes
+• Économie socialiste
+
+• Mutualisme
+• Économie socialiste de marché
+• Économie participative
+• Interventionnisme
+
+• Georgisme
+• Religieuse
+
+• catholique
+• islamique
+• bouddhiste
+
+Organisation de l'économie
+
+• Autarcie
+• Économie de marché
+• Économie de subsistance
+• Économie mixte
+• Économie ouverte
+• Économie planifiée
+
+Autres aspects
+
+• Chasseur-cueilleur
+• État-providence
+• Économie informelle
+• Économie de transition
+• Économie duale
+• Économie de l'abondance
+• Économie circulaire
+• Économie de don
+• Économie de guerre
+• Économie post-industrielle
+• Économie palatiale
+• Économie participative
+• Économie de plantation
+• Économie sociale
+• Économie souterraine
+• Économie virtuelle
+• Libre marché
+• Protectionnisme
+
+• Patriotisme économique
+• Autarcie
+
+• Rareté
+• Troc
+
+v · m
+
+Branches des sciences économiques
+
+Macroéconomie · Microéconomie
+
+Économie quantitative · Économie internationale · Économie monétaire · Économie financière · Économie publique · Économie du bonheur · Économie du bien-être · Économie de l'éducation · Économie du travail · Analyse économique du droit · Organisation industrielle · Économie d'entreprise · Histoire économique · Économie comportementale · Économie de la culture · Économie du développement · Économie de l'environnement · Économie expérimentale · Économie géographique · Économie des institutions · Économie de l'information · Économie politique · Économie de l’attention · Économie circulaire · Économie du savoir
+
+• Portail de l’économie
+
+Ce document provient de « https://fr.wikipedia.org/w/index.php?title=Sciences_économiques&oldid=166254525 ».
+
+Catégorie :
+
+• Économie
+
+Catégories cachées :
+
+• Page utilisant P279
+• Page utilisant P361
+• Page utilisant P3095
+• Page utilisant P527
+• Page utilisant P2578
+• Page utilisant P2184
+• Article à illustrer Entreprise
+• Page utilisant Infobox Discipline
+• Article utilisant une Infobox
+• Article avec une section vide ou incomplète
+• Catégorie Commons avec lien local identique sur Wikidata
+• Portail:Économie/Articles liés
+• Bon article en chinois classique
+
+Menu de navigation
+
+Outils personnels
+
+• Non connecté
+• Discussion
+• Contributions
+• Créer un compte
+• Se connecter
+
+Espaces de noms
+
+• Article
+• Discussion
+
+Variantes
+
+Affichages
+
+• Lire
+• Modifier
+• Modifier le code
+• Voir l’historique
+
+Plus
+
+Rechercher
+
+Navigation
+
+• Accueil
+• Portails thématiques
+• Article au hasard
+• Contact
+
+Contribuer
+
+• Débuter sur Wikipédia
+• Aide
+• Communauté
+• Modifications récentes
+• Faire un don
+
+Outils
+
+• Pages liées
+• Suivi des pages liées
+• Téléverser un fichier
+• Pages spéciales
+• Lien permanent
+• Informations sur la page
+• Élément Wikidata
+• Citer cette page
+
+Dans d’autres projets
+
+• Wikimedia Commons
+• Wikiquote
+
+Imprimer / exporter
+
+• Créer un livre
+• Télécharger comme PDF
+• Version imprimable
+

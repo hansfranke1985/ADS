@@ -1,0 +1,210 @@
+Wirtschaftswissenschaft
+
+aus Wikipedia, der freien Enzyklopädie
+
+Zur Navigation springen	Zur Suche springen
+
+Ökonomie ist eine Weiterleitung auf diesen Artikel. Weitere Bedeutungen sind unter Ökonomie (Begriffsklärung) aufgeführt.
+
+Die Wirtschaftswissenschaft, auch Ökonomie[1] und vereinzelt auch Ökonomik,[2] ist die Wissenschaft von der Wirtschaft. Die Wirtschaftswissenschaft untersucht den rationalen Umgang mit knappen, also nur begrenzt verfügbaren, Gütern.[3]
+
+Inhaltsverzeichnis
+
+• 1 Etymologie
+• 2 Historische Entwicklung
+
+• 2.1 Volkswirtschaft
+• 2.2 Betriebswirtschaft
+
+• 3 Inhalte
+• 4 Siehe auch
+• 5 Literatur
+• 6 Weblinks
+• 7 Einzelnachweise
+
+Etymologie[Bearbeiten | Quelltext bearbeiten]
+
+Dieser Artikel oder Abschnitt bedarf einer Überarbeitung. Näheres sollte auf der Diskussionsseite angegeben sein. Bitte hilf mit, ihn zu verbessern, und entferne anschließend diese Markierung.
+
+Eine erste systematische ökonomische Theorie stammt von Aristoteles, für den zielgerichtetes Handeln in der Ökonomie (altgriechisch οἶκος oikos, deutsch ‚Haus, Besitz‘; altgriechisch νόμος nomos, deutsch ‚Gesetz‘; „nach Gesetzen wirtschaften“) legitim ist. Er unterschied zwischen naturgemäßem Erwerb und Verwendung der materiellen Mittel für das gute Leben (altgriechisch οἰκονομικέ oikonomiké) und dem (naturwidrigen) Erwerb dieser Mittel (altgriechisch χρεματιστικέ chrematistiké). Die Hauptkonturen seiner ökonomischen Theorie finden sich in seinen Werken Politik und Nikomachische Ethik.
+
+Historische Entwicklung[Bearbeiten | Quelltext bearbeiten]
+
+Volkswirtschaft[Bearbeiten | Quelltext bearbeiten]
+
+→ Hauptartikel: Geschichte der Volkswirtschaftslehre
+
+Die großen Denker der Antike und des Mittelalters gelten als Ahnherren der Wirtschaftswissenschaft. Auch das Mittelalter kannte bereits einige ökonomische Darstellungen. Thomas von Aquin behandelte in seinem zwischen 1265 und 1273 entstandenen Hauptwerk Summa theologica auch ökonomische Fragestellungen. Er stufte Landwirtschaft und Handwerk höher ein als den Handel. Gewinnstreben darf nicht den Schwächeren oder die Allgemeinheit schädigen. Kernstück bildete seine Lehre vom gerechten Preis. Joseph Schumpeter schrieb in seiner History of Economic Analysis (1954) die Entwicklung der wissenschaftlichen Untersuchung ökonomischer Zusammenhänge bereits den Spätscholastikern (im 14. und 15. Jahrhundert) zu. Allerdings unterschied sich die alteuropäische Ökonomik in ihrer Grundkonzeption stark von der heutigen Sichtweise. Nikolaus Kopernikus beschäftigte sich in der Folge der Inflation der Bauernkriegszeit mit Geldtheorie. Bei Johannes Buridan (1300–1385) finden sich erste Ansätze deskriptiver Ökonomie, indem er im Metallismus den Geldwert durch seinen Metallwert bestimmt sieht. Von Nicolaus Oresmius (1325–1385) stammte mit dem Traktat über Geldabwertungen (1373) das erste rein ökonomische Werk.
+
+Als „frühmoderne“ (auch „vorklassische“) Ökonomen werden die Merkantilisten und die Physiokraten eingeordnet. Seit etwa 1450 setzte der Merkantilismus ein, während dessen der Ökonom James Denham-Steuart mit seinem merkantilistischen Summa (1767) die erste Gesamtdarstellung der Ökonomie vorlegte und so die Ökonomie als eigenständige Wissenschaft begründete.[4] Die „natürliche Ordnung“ (französisch ordre naturel) der Physiokratie war geprägt von Freiheit, Wettbewerb und Privateigentum, was am besten in ihrem 1751 von Vincent de Gournay geprägten Schlagwort „laufen lassen und geschehen lassen“ (französisch laissez-faire, laissez-passer) zum Ausdruck kommt. Als Geburtsstunde der Wirtschaftswissenschaft in der heute verstandenen Form als Forschungsdisziplin mit eigenständigen Theoriegebilden wird häufig das Jahr 1758 genannt, in welchem der französische Arzt Francois Quesnay sein Hauptwerk Tableau économique veröffentlichte. Der zum Zeitpunkt der Veröffentlichung 64-jährige Gelehrte verstand die Abhängigkeiten von Geld- und Güterströmen als Kreislauf.
+
+Auch der Schotte Adam Smith wird als Begründer der modernen Wirtschaftswissenschaft angesehen. Er veröffentlichte 1776 sein Buch Der Wohlstand der Nationen (An Inquiry into the Nature and Causes of the Wealth of Nations) und kritisierte dort den bis dahin zumeist vorherrschenden Merkantilismus. Sein weitverbreitetes Werk fand in Großbritannien und den USA große Anerkennung und vermittelte erstmals die Idee einer neuen Wissenschaftsrichtung zur Untersuchung des wirtschaftlichen Handelns.
+
+Seit David Ricardos Schrift Principles of Political Economy and Taxation (1821)[5] setzte sich die „deduktive Methode“ mit quantitativer Betrachtung durch. Mit Verbreitung dieser Methode wurden die sozialen Rahmenbedingungen zunehmend aus der Untersuchung der Politischen Ökonomie eliminiert; es setzte sich zunächst ein rein logisch-mathematisches Verständnis der Marktverhältnisse durch (Volkswirtschaftslehre als Naturwissenschaft).
+
+Unter dem Eindruck der Industrialisierung im 19. Jahrhundert entwickelten Karl Marx und Friedrich Engels die marxistische Wirtschaftstheorie. Die Klassische Nationalökonomie wurde, beginnend gegen Ende des 19. Jahrhunderts, abgelöst durch die Neoklassische Theorie, die die moderne Volkswirtschaftslehre bis heute prägt. Über mehrere Jahrzehnte – bis in die 1960er/70er Jahre – dominierten allerdings die Veröffentlichungen von John Maynard Keynes die Diskussion.
+
+Seit der zweiten Hälfte des 20. Jahrhunderts gewinnen zunehmend die an Smith anknüpfenden Ideen des wirtschaftlichen Liberalismus Verbreitung. Als einer der bedeutendsten Ökonomen dieser Richtung gilt Milton Friedman. Daneben existieren unter anderem mit dem Sammelbegriff Heterodoxen Ökonomie oder Plurale Ökonomik kritische Positionen zum Mainstream.
+
+Betriebswirtschaft[Bearbeiten | Quelltext bearbeiten]
+
+→ Hauptartikel: Geschichte der Betriebswirtschaftslehre
+
+Die Betriebswirtschaftslehre (BWL) als reine Beschreibung von Tätigkeiten und deren Zwecken in einzelnen Unternehmen begann schon im 15. Jahrhundert in Italien. Dort wurde im Jahre 1494 auch für das Rechnungswesen der BWL die Technik der doppelten Buchführung durch Luca Pacioli entwickelt und veröffentlicht.
+
+Als Begründer der Handlungswissenschaft gilt der Franzose Jacques Savary, der im Jahre 1675 das erste systematisch gegliederte Lehrbuch zur Betriebswirtschaft veröffentlichte: Le parfait Négociant. Darin fasste er das gesamte kaufmännische Wissen seiner Zeit zusammen, beschrieb das Handelsgeschäft und die damit verbundenen Risiken und schlug unter anderem vor, zur bilanziellen Bewertung des betrieblichen Vermögens das Niederstwertprinzip anzuwenden und für den periodengerechten Abschluss transitorische Posten vorzusehen.[6] Savary hatte großen Einfluss auf Paul Jacob Marperger aus Nürnberg, der in seinem 1714 veröffentlichten Hauptwerk Nothwendige und nützliche Fragen über die Kauffmannschafft ebenfalls das Handelsgeschäft beschrieb und die Handelsspanne rechtfertigte. Als Erster begründete er den wissenschaftlichen Anspruch des Fachs, indem er forderte, auf Universitäten öffentliche Professores Mercaturae zu verordnen.[7]
+
+Als Savarys eigentlicher Nachfolger im deutschen Sprachraum aber gilt jedoch Carl Günther Ludovici, der „sein Augenmerk allein auf das Zusammentragen und systematische Aufbauen des Stoffes“ richtete und mit seinem Werk „Eröffnete Akademie der Kaufleute oder vollständiges Kaufmannslexikon die beste Sammlung seiner Zeit schuf“ (Eduard Weber), in deren Anhang sich mit dem Grundriss eines vollständigen Kaufmanns-Systems eine systematische Darstellung der Handlungswissenschaft findet, die den Stoff gliedert in die Arten der Handels- und Handelshilfsbetriebe, die produktiven Faktoren (Waren, Personen, Sachmittel) sowie die Handelstätigkeit als Ein- und Verkauf.
+
+Nach einer Zeit des Niederganges der Betriebswirtschaftslehre und der Verdrängung durch die Volkswirtschaftslehre nahm ihre Bedeutung seit Beginn des 20. Jahrhunderts erheblich zu.
+
+Inhalte[Bearbeiten | Quelltext bearbeiten]
+
+Im deutschen Sprachraum wird die Wirtschaftswissenschaft üblicherweise in die Bereiche Betriebswirtschaftslehre (BWL) und Volkswirtschaftslehre (VWL, Nationalökonomie) unterteilt.[8] Die zugehörigen Berufsbezeichnungen sind Wirtschaftswissenschaftler, Volkswirt und Betriebswirt (oder auch Ökonom).
+
+Die Volkswirtschaftslehre untersucht grundlegende wirtschaftliche Zusammenhänge und Gesetzmäßigkeiten in einer Gesellschaft, sowohl in Bezug auf einzelne wirtschaftende Einheiten (Mikroökonomie) als auch gesamtwirtschaftlich (Makroökonomie). Erkenntnisobjekte sind das Wirtschaften, also der planmäßige und effiziente Umgang mit knappen Ressourcen zwecks bestmöglicher Bedürfnisbefriedigung in der Umgebung der Wirtschaft. Die Betriebswirtschaftslehre befasst sich mit den wirtschaftlichen Zusammenhängen und Gesetzmäßigkeiten einzelner Unternehmen und liefert Erkenntnisse über betriebliche Strukturen und Prozesse.
+
+Um wirtschaftstheoretische Modelle empirisch zu überprüfen und ökonomische Phänomene quantitativ zu analysieren, werden ökonometrische Methoden eingesetzt, die letztlich auf mathematischen Modellen beruhen. Diese Modelle dienen auch dazu, Prognosen für wirtschaftliche Entwicklungen zu erstellen.
+
+Zur Wirtschaftswissenschaft im weiteren Sinne zählen auch interdisziplinäre Bereiche wie
+
+• Verkehrswirtschaftslehre,
+• Wirtschaftschemie,
+• Wirtschaftsethik,
+• Wirtschaftsgeographie,
+• Wirtschaftsgeschichte,
+• Wirtschaftsinformatik,
+• Wirtschaftsingenieurwesen,
+• Wirtschaftsmathematik,
+• Wirtschaftsstatistik,
+• Wirtschaftspädagogik,
+• Wirtschaftsphilosophie,
+• Wirtschaftspsychologie,
+• Wirtschaftsrecht und
+• Wirtschaftssoziologie.
+
+Die Wirtschaftswissenschaft zählt zu den Sozialwissenschaften. Wirtschaftswissenschaftliche Aspekte werden auch in anderen sozialwissenschaftlichen Bereichen untersucht.
+
+Siehe auch[Bearbeiten | Quelltext bearbeiten]
+
+Portal: Wirtschaft – Übersicht zu Wikipedia-Inhalten zum Thema Wirtschaft
+
+• Bundesverband Deutscher Volks- und Betriebswirte (bdvb)
+• Chrematistik
+• Deutsche Zentralbibliothek für Wirtschaftswissenschaften
+• Virtuelle Fachbibliothek Wirtschaftswissenschaften (EconBiz)
+• Liste wirtschaftswissenschaftlicher Zeitschriften
+• Alfred-Nobel-Gedächtnispreis für Wirtschaftswissenschaften
+
+Literatur[Bearbeiten | Quelltext bearbeiten]
+
+• Alfred Bürgin: Zur Soziogenese der Politischen Ökonomie. Wirtschaftsgeschichtliche und dogmenhistorische Betrachtungen, 2. Aufl., Marburg 1996
+• Karl Eman Pribram: Geschichte des ökonomischen Denkens. Übersetzung der Originalausgabe A History of Economic Reasoning. Erster und zweiter Band. Suhrkamp Verlag, Frankfurt/M. 1998, ISBN 3-518-28956-X
+• Adam Smith, 1776: An Inquiry into the Nature and Causes of the Wealth of Nations
+
+• Deutsche Ausgabe: Der Wohlstand der Nationen. 1999, ISBN 3-423-30149-X
+
+• Joachim Starbatty (Hrsg.): Klassiker des ökonomischen Denkens: Von Platon bis John Maynard Keynes. Teil 1 und 2 in einer Gesamtausgabe. Hamburg 2008, ISBN 978-3-937872-92-6
+
+Weblinks[Bearbeiten | Quelltext bearbeiten]
+
+Commons: Ökonomie – Sammlung von Bildern, Videos und Audiodateien
+
+Wiktionary: Wirtschaftswissenschaft – Bedeutungserklärungen, Wortherkunft, Synonyme, Übersetzungen
+
+Wikibooks: Regal:Wirtschaftswissenschaft – Lern- und Lehrmaterialien
+
+• Bundesverband Deutscher Volks- und Betriebswirte e. V. – Das Netzwerk für Ökonomen (bdvb) – der Verband für Wirtschaftsakademiker und -studenten, auch für Nachbardisziplinen (z. B. Wirtschaftsinformatiker, Wirtschaftsrechtler)
+• EconBiz – virtuelle Fachbibliothek für Wirtschaftswissenschaften
+• Linkkatalog zum Thema Wirtschaftswissenschaften bei curlie.org (ehemals DMOZ)
+
+Einzelnachweise[Bearbeiten | Quelltext bearbeiten]
+
+• ↑ Ökonomie im Duden: von lateinisch oeconomia ‚gehörige Einteilung‘, dieses von altgriechisch οἰκονομία oikonomía, deutsch ‚Haushaltung, Verwaltung‘ aus οἶκος oíkos, deutsch ‚Haus‘ und νόμος nómos, deutsch ‚Gesetz, Sitte, Brauch‘ und dem Suffix -ική -ikḗ.
+• ↑ Ökonomik im Duden: zu lateinisch oeconomicus ‚ökonomisch‘.
+• ↑ Gabler Wirtschaftslexikon: Definition Wirtschaftswissenschaften, abgerufen: 30, September 2019
+• ↑ Fritz Söllner: Die Geschichte des ökonomischen Denkens. 2001, S. 11.
+• ↑ David Ricardo: Principles of Political Economy and Taxation. 1821 (socserv2.socsci.mcmaster.ca [abgerufen am 25. September 2019]).
+• ↑ Edmund Sundhoff: Dreihundert Jahre Handelswissenschaft. 1979, S. 37.
+• ↑ Paul Jacob Marperger: Nothwendige und nützliche Fragen über die Kauffmannschafft. 1714, S. 138–141.
+• ↑ Womit beschäftigt sich die Wirtschaftswissenschaft? (Memento vom 22. Februar 2011 im Internet Archive) Universität Marburg.
+
+Normdaten (Sachbegriff): GND: 4066528-8 (OGND, AKS)
+
+Abgerufen von „https://de.wikipedia.org/w/index.php?title=Wirtschaftswissenschaft&oldid=195526346“
+
+Kategorie:
+
+• Wirtschaftswissenschaft
+
+Versteckte Kategorie:
+
+• Wikipedia:Überarbeiten
+
+Navigationsmenü
+
+Meine Werkzeuge
+
+• Nicht angemeldet
+• Diskussionsseite
+• Beiträge
+• Benutzerkonto erstellen
+• Anmelden
+
+Namensräume
+
+• Artikel
+• Diskussion
+
+Varianten
+
+Ansichten
+
+• Lesen
+• Bearbeiten
+• Quelltext bearbeiten
+• Versionsgeschichte
+
+Mehr
+
+Suche
+
+Navigation
+
+• Hauptseite
+• Themenportale
+• Zufälliger Artikel
+
+Mitmachen
+
+• Artikel verbessern
+• Neuen Artikel anlegen
+• Autorenportal
+• Hilfe
+• Letzte Änderungen
+• Kontakt
+• Spenden
+
+Werkzeuge
+
+• Links auf diese Seite
+• Änderungen an verlinkten Seiten
+• Spezialseiten
+• Permanenter Link
+• Seiten­informationen
+• Wikidata-Datenobjekt
+• Artikel zitieren
+
+In anderen Projekten
+
+• Commons
+• Wikibooks
+• Wikinews
+• Wikiquote
+
+Drucken/­exportieren
+
+• Buch erstellen
+• Als PDF herunterladen
+• Druckversion
+

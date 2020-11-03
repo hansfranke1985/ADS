@@ -1,0 +1,386 @@
+Economie
+
+Uit Wikipedia, de vrije encyclopedie
+
+Naar navigatie springen	Naar zoeken springen
+
+Zie Economie (doorverwijspagina) voor andere betekenissen van Economie.
+
+Economie
+
+Dit artikel maakt deel uit van de serie:
+Economische wetenschap
+
+----------
+
+Deelgebieden
+
+Micro-economie
+Macro-economie
+Econometrie
+Internationale economie
+Ontwikkelingseconomie
+Bedrijfseconomie
+
+----------
+
+Invloedrijke economen
+
+Adam Smith
+
+David Ricardo
+
+Karl Marx
+
+Alfred Marshall
+
+Joseph Schumpeter
+
+John Maynard Keynes
+
+Milton Friedman
+
+Friedrich Hayek
+
+----------
+
+Verwante vakgebieden
+
+Economische sociologie
+
+Geschiedenis van de economie
+
+Internationale politieke economie
+
+Politieke economie
+
+----------
+
+Portaal Economie
+
+Economie (uit het Griekse oikos (οἶκος), huis en nomos (νόμος), regel; letterlijk dus huishoudkunde) is een wetenschap die zich bezighoudt met de menselijke behoeftebevrediging. De economie bestudeert keuzes die mensen maken bij de productie, consumptie en distributie van schaarse goederen en diensten. Daarbij wordt onderscheid gemaakt tussen macro-economie, waar vragen naar voren komen over de nationale en wereldwijde economie, zoals werkloosheid, inflatie en rentestanden, meso-economie en micro-economie, over het gedrag van bedrijven en consumenten. Algemene economie kan worden opgesplitst in de vakgebieden commerciële economie of marketing en bedrijfseconomie.
+
+In Nederland wordt economie onder de sociale wetenschappen gerekend, in Vlaanderen onder de gedragswetenschappen. Analoog aan deze wetenschappen houdt de economische wetenschap zich niet alleen bezig met beschrijvende uitspraken, oftewel hoe de economie werkt, maar in de politieke economie ook met normatieve uitspraken, oftewel wat gewenste situaties zijn.
+
+Inhoud
+
+• 1 Geschiedenis van de economie
+• 2 Economische vragen
+
+• 2.1 Wat, hoe en voor wie
+• 2.2 Eigenbelang en algemeen belang
+
+• 3 Aannames
+• 4 Kernbegrippen uit de economie
+
+• 4.1 Economische organisatievormen
+• 4.2 Schaarste
+• 4.3 Prijzen
+• 4.4 Verdere begrippen
+
+• 5 Deelterreinen
+
+• 5.1 Macro-economie
+• 5.2 Micro-economie
+• 5.3 Internationale economische betrekkingen
+• 5.4 Openbare financiën
+• 5.5 Bedrijfseconomie
+
+• 6 Gerelateerde vakgebieden
+• 7 Kritiek op het mainstream economisch denken
+• 8 Zie ook
+
+Geschiedenis van de economie[bewerken]
+
+The Wealth of Nations van Adam Smith wordt over het algemeen gezien als het eerste moderne werk op het gebied van economie
+
+Zie Geschiedenis van het economisch denken voor het hoofdartikel over dit onderwerp.
+
+De bakermat voor de moderne economie ligt in het Verenigd Koninkrijk. De Schot John Law beschreef met zijn 'Water Diamanten'-theorie in 1705 het systeem van vraag en aanbod op de markt. De vader van de economie is Adam Smith. Zijn boek An Inquiry into the Nature and Causes of the Wealth of Nations uit 1776 is het begin voor de economie als wetenschappelijke discipline. Anderen hebben zijn werk verder uitgewerkt. Het grote moment in de geschiedenis van de economie is de eerste industriële revolutie. Deze revolutie vond plaats in de jaren 1780-1850. De productie van goederen en diensten wordt anders opgezet en neemt indrukwekkend toe.
+
+In navolging van Adam Smiths The Wealth of Nations, analyseerden klassieke economen zoals David Ricardo en John Stuart Mill de manieren waarop de grondbezitters, kapitalisten, en de werkende klasse nationale rijkdom produceerden en verdeelden. Te midden van de Londense achterstandswijken verwierp Karl Marx het exploitatieve en ontvreemdende kapitalistische systeem dat hij om zich heen zag, alvorens de neoklassieke economen in het nieuwe imperialistische tijdperk een positieve, wiskundige en wetenschappelijke fundering probeerden te leggen voor de economie.
+
+Na de Tweede Wereldoorlog leidde John Maynard Keynes een reactie tegen de terughoudendheid van de overheid in de economie en bepleitte een interventioneel fiscaal beleid om de economische vraag, groei en voorspoed te stimuleren. Maar in een wereld verdeeld tussen de kapitalistische eerste wereld, de socialistische tweede wereld en de arme derde wereld, hield de naoorlogse consensus geen stand.
+
+Mensen als Milton Friedman en Friedrich von Hayek inspireerden Westerse leiders met hun waarschuwing voor de The Road to Serfdom en socialisme, en focusten hun theorie op wat kon worden bereikt met een beter monetair beleid en deregulatie. Dit werd in de jaren tachtig voor een groot deel overgenomen in beleid maar werd al snel uitgedaagd door ontwikkelingseconomen zoals Amartya Sen en informatie-economen zoals Joseph Stiglitz, die nieuw licht laten schijnen op het economisch denken van de eenentwintigste eeuw.
+
+Economische vragen[bewerken]
+
+Belangrijke economische vragen zijn:
+
+• in hoeverre bepalen de gemaakte keuzes wat, hoe en voor wie wordt geproduceerd;
+• in hoeverre dragen keuzes uit eigenbelang bij aan het algemene belang.
+
+Wat, hoe en voor wie[bewerken]
+
+Wat geproduceerd wordt is in een vrije markt afhankelijk van vraag en aanbod. Vraag en aanbod komen samen op de markt. Door vraag en aanbod samen ontstaat de prijs van een product - goederen en diensten. Prijzen zijn schaarste-indicatoren.
+
+Aan de aanbodzijde bepalen de productiefactoren hoe producten worden geproduceerd. Er worden vier productiefactoren onderscheiden:
+
+• land: naast landbouw- en bouwgrond ook natuurlijke hulpbronnen;
+• arbeid;
+• kapitaal: dit is fysiek of economisch kapitaal zoals gebouwen, inventaris, machines, installaties en transportmiddelen, de bezittingen die gebruikt worden voor de bedrijfsvoering. Financieel kapitaal valt hier niet onder aangezien dit geen productie voortbrengt;
+• ondernemerschap: dit is de factor die innovatie en management inbrengt en die het risico draagt.
+
+Elke productiefactor heeft een eigen beloning:
+
+• voor arbeid is dat loon;
+• voor kapitaal is dat interest;
+• voor land is dat pacht;
+• voor ondernemerschap is dat winst.
+
+Voor wie wordt geproduceerd wordt bepaald door de vraagzijde:
+
+• voor de consument via consumptie;
+• voor het bedrijfsleven via investeringen;
+• voor de overheid via overheidsuitgaven.
+
+Eigenbelang en algemeen belang[bewerken]
+
+De economische theorie stelt dat eigenbelang het nastreven van maximaal nut is, waarbij nut een maat is voor relatieve tevredenheid. Een belangrijke vraag is dan of dit individuele streven collectief kan leiden tot een maximaal nut voor iedereen, oftewel of de onzichtbare hand van Adam Smith inderdaad het algemeen belang dient. De vraag of en in hoeverre de onzichtbare hand zelfregulerend werkt zonder overheidsingrijpen is tot op heden actueel.
+
+Aannames[bewerken]
+
+Binnen de economie wordt een aantal aannames gedaan. Over een aantal bestaat overeenstemming, maar de meningsverschillen over andere zijn aanleiding geweest tot het ontstaan van verschillende economische scholen. Belangrijke aannames zijn:
+
+• schaarste maakt dat elke keuze een afweging is tussen alternatieven;
+• bij veel economische modellen wordt ervan uitgegaan dat er rationele keuzes worden gemaakt;
+• een belangrijke rol bij keuzes zijn de voordelen die te behalen zijn. Die voordelen worden uitgedrukt als nut en zijn gebaseerd op de preferenties of voorkeuren;
+• keuzes gaan gepaard met kosten waaronder het verlies van de alternatieve optie, dan ook wel alternatieve kosten of opportuniteitskosten genoemd;
+• als de keuze niet alles of niets is, maar beide opties deels mogelijk zijn, dan is de optimale keuze die waar de marginale opbrengst gelijk is aan de marginale kosten. Buiten dat optimum levert het opgeven van het ene product minder op dan het andere product oplevert;
+• keuzes worden gemaakt uit eigenbelang op basis van de prikkels (incentives) die men ontvangt.
+
+Kernbegrippen uit de economie[bewerken]
+
+Economische organisatievormen[bewerken]
+
+Eenvoudig kringloopmodel van de economie waarin het bedrijfsleven is geplaatst tegenover de huishoudens, ofwel producenten tegenover consumenten.
+
+Zie Economie (systeem) voor het hoofdartikel over dit onderwerp.
+
+Er zijn verschillende manieren om de staatshuishouding en het productieproces te organiseren. De belangrijkste vormen zijn:
+
+• centraal geleide of planeconomie die in praktijk is gebracht door het socialisme.
+• vrijemarkteconomie of kapitalisme dat in zijn pure vorm voorkwam in de beginfase van de industriële revolutie.
+• gemengde economie die nu min of meer in praktijk wordt gebracht in bijna alle landen op de wereld. De ene samenleving zal meer het karakter vertonen van een centraal geleide economie terwijl een andere samenleving meer het karakter heeft van een vrijemarkteconomie. Hier zijn verschillende vormen van organisatie mogelijk. De meeste westerse samenlevingen kennen een vorm van gemengde economie met de nadruk op het vrijemarktmodel.
+
+In de organisatieleer wordt ingegaan op zwakke en sterke punten van verschillende economische stelsels.
+
+Schaarste[bewerken]
+
+De schaarste van goederen en productiemiddelen, en het beheer daarvan vormt de vraagstelling voor de economie als wetenschap. De kernvraag voor de economie als wetenschap is de optimale verdeling van de schaarste. Schaarste heeft in de economie niet de betekenis van een tekort maar van beperkt beschikbaar. Die vraag heeft ook raakvlakken met de politiek en de politieke filosofie. Het economische vraagstuk omvat onder meer productie, distributie, welvaart en consumptie. Economisch handelen ontstaat omdat men niet alles tegelijk kan hebben. Er moeten keuzen worden gemaakt.
+
+Prijzen[bewerken]
+
+De economische wetenschap bestudeert de factoren die deze keuzes bepalen. Prijzen zijn hierbij belangrijk. Economie wordt ook wel opgevat als de studie van de ruil in de ruimste zin van het woord. Het voordeel daarvan is dat die wat specifieker is dan de bovengenoemde, en de kern raakt van datgene waar het in de economie om gaat (lonen, prijzen, verkoop, koop), maar het nadeel ervan is dat deze iets te beperkt is: niet alle economische handelingen hebben direct met ruil te maken
+
+Verdere begrippen[bewerken]
+
+Daarnaast zijn meer kernbegrippen uit de economie de volgende: aanbod, aandeel, balans, bank, bedrijf, belegging, beroep, centrale bank, economisch model, economische groei, effectenbeurs, elasticiteit, geld, handel, handelsoorlog, handelsrecht, handelsregister, inflatie, kredietcrisis, lening, Kamer van Koophandel, marketing, markt, marktaandeel, marktfalen, marktwerking, mededinging, modaal inkomen, monopolie, omzetbelasting, overheidsfalen, perfecte markt, prijs, prijsafspraak, oligopolie, solvabiliteit, staatsschuld en vraag.
+
+Deelterreinen[bewerken]
+
+Het brede terrein van de economische wetenschap kan in een aantal deelterreinen worden onderscheiden. Een belangrijk eerste onderscheid is:
+
+• algemene economie;
+• bedrijfseconomie;
+• fiscale economie;
+• commerciële economie.
+
+Binnen het vakgebied van de algemene economie zijn er weer verschillende deelterreinen:
+
+• macro-economie;
+• micro-economie;
+• econometrie;
+• internationale economische betrekkingen ofwel internationale politieke economie;
+• openbare financiën;
+• institutionele economie;
+• wiskundige economie en econometrie.
+
+De economische wetenschap die de nationale economie bestudeert wordt ook wel staathuishoudkunde genoemd. Verder zijn er nog weer andere deelterreinen zoals de transporteconomie, de monetaire economie, landbouweconomie etc.
+
+Macro-economie[bewerken]
+
+Het IS-LM-model is een macro-economisch middel dat de relatie tussen de rentestanden en de reële productie in de goederen- en dienstenmarkt (IS) aan de ene kant en de geldmarkt (LM) aan de andere kant laat zien.
+
+Zie macro-economie voor het hoofdartikel over dit onderwerp.
+
+De macro-economie wil de verschillende geaggregeerde (opgetelde) grootheden in de volkshuishouding vaststellen en hun ontwikkeling verklaren. Enkele belangrijke grootheden in de macro-economie zijn: het nationaal inkomen, de werkgelegenheid, de betalingsbalans, de consumptie, de investeringen, de inflatie en de overheidsbestedingen. In de macro-economie wordt nagegaan hoe deze grootheden zich in de toekomst gaan ontwikkelen en hoe ze zich in de toekomst kunnen ontwikkelen. Van groot belang hierbij is het inzicht in de conjunctuur, het ondernemersklimaat, de productiecapaciteit, de hoogte van de wisselkoersen, de rentevoet enzovoort.
+
+Op basis van de relaties tussen economische sectoren zoals productiehuishoudingen, consumptiehuishoudingen, overheid en buitenland tracht de macro-economie inzicht te verschaffen in toekomstige ontwikkelingen. Vooral de groei van het nationaal inkomen heeft de aandacht van economen en politici.
+
+Micro-economie[bewerken]
+
+Zie micro-economie voor het hoofdartikel over dit onderwerp.
+
+Micro-economie houdt zich bezig met gedragingen van individuele economische agenten. Hierbij kan het gaan om gezinnen, bedrijven maar eveneens om politici of belangengroepen. In deze tak van de economie staan vraag en aanbod centraal. Vraag en aanbod komen samen op de markt waar via het prijsmechanisme een prijs tot stand komt. Prijzen beïnvloeden de gedragingen van personen. De micro-economie tracht te verklaren in welke mate de prijs het aankoop- en verkoopgedrag beïnvloedt.
+
+Hiervoor zijn elasticiteiten erg belangrijk. Een voorbeeld van een elasticiteit is de prijselasticiteit van de vraag. Dit is een getal dat aangeeft met hoeveel procent de gevraagde hoeveelheid van een goed verandert als de prijs van dat goed met één procent verandert. Bijvoorbeeld: als de prijs van iPods met 1% stijgt, met hoeveel procent zal dan de gevraagde hoeveelheid van iPods dalen? De daling kan aan de hand van elasticiteiten berekend worden. De laatste jaren staat ook de speltheorie erg in de belangstelling binnen de micro-economie.
+
+Internationale economische betrekkingen[bewerken]
+
+Zie internationale economie voor het hoofdartikel over dit onderwerp.
+
+Dit onderdeel van de economie kent twee poten: de reële sfeer en de monetaire sfeer. In de reële sfeer gaat het om de bestudering van internationale goederen- en dienstenstromen. Een mogelijke verklaringsgrond voor die stromen ligt in het feit dat landen verschillen. Een andere bron is gelegen in onvolledige mededinging tussen bedrijven. Bedrijven met een grotere afzetmarkt kunnen goedkoper produceren en eventueel gaan exporteren. De monetaire sfeer bestudeert de geldstromen tussen de landen. Hierbij komen zaken aan de orde als betalingsbalans, wisselkoersen en kapitaalstromen. De studie van internationale economische betrekkingen is ook wel bekend als internationale politieke economie.
+
+Openbare financiën[bewerken]
+
+Zie Openbare financiën voor het hoofdartikel over dit onderwerp.
+
+Openbare financiën houdt zich bezig met de inkomsten en de uitgaven van de overheid. De effecten van de belastingen en de overheidsuitgaven op de economie worden in kaart gebracht. Ook wordt nagedacht over de vraag wat tot de taak van de overheid hoort en wat niet. Vragen rond bijvoorbeeld privatisering, draagkrachtbeginsel en profijtbeginsel komen in de leer van de openbare financiën aan de orde.
+
+Bedrijfseconomie[bewerken]
+
+Zie bedrijfseconomie voor het hoofdartikel over dit onderwerp.
+
+Binnen het deelterrein van de bedrijfseconomie zijn globaal vier deelterreinen te onderscheiden met elk weer hun eigen specialistische onderverdeling:
+
+• kosten- en waardeleer : externe rapportage, jaarverslag, accounting
+• financiering: treasury, cash management, werkkapitaalbeheer, ondernemingsfinanciering, rente- en valutamanagement
+• marketing
+• interne organisatie ofwel management en organisatie : bedrijfsethiek, logistiek, management, organisatiekunde
+
+Gerelateerde vakgebieden[bewerken]
+
+• Beroepseconomie
+• Communicatie
+• Econometrie
+• Ethiek
+• Informatiekunde
+• Ondernemingsrecht
+• Operationeel onderzoek
+• Statistiek
+• Wiskunde
+
+Kritiek op het mainstream economisch denken[bewerken]
+
+De economische wetenschap wordt regelmatig verweten dat ze berust op onrealistische, onverifieerbare of sterk gesimplificeerde aannames. Voorbeelden van dergelijke aannames zijn de notie van volledige informatie, winstmaximalisatie en rationele keuzes.[1] Vanuit de kritiek op de aanname van volledige rationaliteit is in de laatste jaren het terrein van de gedragseconomie sterk gegroeid. Daarnaast hebben prominente mainstream-economen zoals Keynes[2] opgemerkt dat belangrijke aspecten van de economie eerder conceptueel dan kwantitatief zijn, en daarmee moeilijk te modelleren en kwantitatief te formaliseren. In 1992 publiceerde een groep economen waaronder Nederlandse Nobelprijswinnaar Jan Tinbergen een oproep in de American Economic Review om het intellectueel monopolie van de economisch mainstream te doorbreken en een 'nieuw pluralisme' te laten ontstaan.[3] In 2009 stelde Nobelprijswinnaar Paul Krugman dat de kredietcrisis niet was voorzien omdat de economische discipline als groep mathematische schoonheid was gaan aanzien voor waarheid en het realiteitsgehalte van haar modellen vergat te testen.[4]
+
+Recentelijk is ook feministische kritiek van neoklassieke modellen meer naar de voorgrond gekomen. Uit deze kritiek ontstond de feministische economie.[5] In tegenstelling tot de gebruikelijke perceptie van economie als een positieve en objectieve wetenschap vestigen feministische economen aandacht op het feit dat economisch denken sociaal geconstrueerd is,[6] en wijzen erop dat veel economische modellen en onderzoeksmethoden masculiene voorkeuren weerspiegelen. Enkele van hun primaire kritieken richten zich op het gebrek aan discussie over: de egoïstische aard van actoren (homo economicus); exogene voorkeuren; de onmogelijkheid van interpersoonlijke nutsvergelijkingen; het negeren van vrijwilligerswerk en huishoudelijk werk; en het negeren van klasse- en genderverschillen. De ecologische economie ontstond in de jaren '80 vanuit een kritiek op de manier waarop natuur werd gemodelleerd in de mainstream economie. Ook Nassim Nicholas Taleb bekritiseert het conventionele of mainstream economisch denken. Taleb is het oneens met het grootste deel van de economische theorie, wat in zijn visie sterk lijdt onder het overmatig gebruik van Plato’s ideeënleer, en roept op tot de intrekking van de Nobelprijs voor de Economie, aangezien economische theorieën volgens hem enorme schade kunnen veroorzaken.
+
+Ondanks dergelijke kritiek is het academisch economisch onderwijs de afgelopen jaren steeds technischer en wiskundiger van aard geworden.[7]
+
+Zie ook[bewerken]
+
+Op andere Wikimedia-projecten:
+
+Mediabestanden
+
+Media op Wikimedia Commons
+
+WikiWoordenboek
+
+Definitie op WikiWoordenboek
+
+Wikibooks
+
+Boeken op Wikibooks
+
+Wikisource
+
+Bronnen op Wikisource
+
+Wikiquote
+
+Citaten op Wikiquote
+
+Wikinieuws
+
+Nieuwsartikelen op Wikinieuws
+
+• Begrippen in de economische wetenschap
+• Economie als systeem
+• Econoom, onder meer voor opleidingen in de economie
+• Lijst van bekende economen
+• Prijs van de Zweedse Rijksbank voor economie (Nobelprijs voor de Economie)
+• Sociale economie
+• Evolutionaire economie
+
+Bronnen, noten en/of referenties
+
+• ↑ Rappaport, Steven (28 July 1996) . Abstraction and Unrealistic Assumptions in Economics 3 (2) . DOI: 10.1080/13501789600000016.
+• Rappaport, Steven, Models and Reality in Economics. Edward Elgar (1998), “Chapter 6: Economic Models”. ISBN 978-1-85898-575-6.
+&nbsp
+• ↑ Keynes, J. M. (September 1924) . Alfred Marshall 1842–1924. The Economic Journal 34 (135): 311–72 . DOI: 10.2307/2222645.
+• ↑ "The 1992 Plea for a Pluralistic and Rigorous Economics" Foundation for European Economic Development, May 1992
+• ↑ "How Did Economists Get It So Wrong?" Paul Krugman, New York Times, 2 september 2009
+• ↑ England, Paula, Beyond Economic Man: Feminist Theory and Economics. University of Chicago Press (1993), “The Separative Self: Androcentric Bias in Neoclassical Assumptions”, p. 37–53. ISBN 978-0-226-24201-9.
+• ↑ Feminist Economics Today: Beyond Economic Man. University of Chicago Press (2003), “Introduction: Beyond Economic Man: Ten Years Later”. ISBN 978-0-226-24207-1.
+• ↑ •(en) Johansson, D. (2004) . Economics without Entrepreneurship or Institutions: A Vocabulary Analysis of Graduate Textbooks. Econ Journal Watch 1 (3): 515–538 . Gearchiveerd van origineel op 25 June 2008.
+• (May 2007) . Where Would Adam Smith Publish Today? The Near Absence of Math-free Research in Top Journals. Econ Journal Watch 4 (2) .
+
+Overgenomen van "https://nl.wikipedia.org/w/index.php?title=Economie&oldid=55360923"
+
+Categorieën:
+
+• Economie
+• Wetenschapsgeschiedenis
+
+Navigatiemenu
+
+Persoonlijke instellingen
+
+• Niet aangemeld
+• Overleg
+• Bijdragen
+• Registreren
+• Aanmelden
+
+Naamruimten
+
+• Artikel
+• Overleg
+
+Varianten
+
+Weergaven
+
+• Lezen
+• Bewerken
+• Geschiedenis
+
+Meer
+
+Zoeken
+
+Navigatie
+
+• Hoofdpagina
+• Vind een artikel
+• Vandaag
+• Etalage
+• Categorieën
+• Recente wijzigingen
+• Nieuwe artikelen
+• Willekeurige pagina
+
+Informatie
+
+• Gebruikersportaal
+• Snelcursus
+• Hulp en contact
+• Donaties
+
+Hulpmiddelen
+
+• Links naar deze pagina
+• Verwante wijzigingen
+• Bestand uploaden
+• Speciale pagina's
+• Permanente koppeling
+• Paginagegevens
+• Wikidata-item
+• Deze pagina citeren
+
+In andere projecten
+
+• Wikimedia Commons
+• Wikibooks
+• Wikiquote
+
+Afdrukken/exporteren
+
+• Boek maken
+• Downloaden als PDF
+• Printvriendelijke versie
+
