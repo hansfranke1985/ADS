@@ -7,21 +7,29 @@ library(shiny)
 library(shinydashboard)
 library(DT)
 library(tidyverse)
-
+library(factoextra)
+library(patchwork)
+library(shinythemes)
 
 
 ##  content
-u <- dashboardPage(
+
+u <- fluidPage(
+  
+  dashboardPage(
+ 
   dashboardHeader(title = "My Dashboard"),
   ## Sidebar content
   dashboardSidebar(
     sidebarMenu(
       menuItem("Select Data", tabName = "load"),
+      menuItem("Correlation", tabName = 'correlation'),
       menuItem("Data Exploration", tabName = "explore"),
       menuItem("Outlier Detection", tabName = "od"),
       menuItem("Clustering", tabName = "cluster")
     )
   ),
+  #DashBoard Content
   dashboardBody(
     tabItems(
       # First tab content
@@ -35,6 +43,14 @@ u <- dashboardPage(
               mainPanel(
                 uiOutput("download"),
                 DT::dataTableOutput("filetable")
+              )
+      ),
+      #Correlation tab (not in order...)
+      tabItem(tabName = "correlation",
+             
+              mainPanel(
+                textOutput(outputId = "corretext"),
+                plotOutput("corre")
               )
       ),
       
@@ -60,7 +76,6 @@ u <- dashboardPage(
                                  uiOutput("expCol2"),
                                  sliderInput(inputId = 'n_bins', label = 'Number of histogram bins', value = 20,
                                              min = 5, max = 25, step = 5)
-                                 
                                ),
                                mainPanel(
                                  plotOutput('histPlot')
@@ -69,7 +84,6 @@ u <- dashboardPage(
               conditionalPanel(condition = "(input.visStyle == 'Tabular')",
 
                                mainPanel(
-                                 
                                  sliderInput(inputId = "nrows", label = "Chose number of rows", min = 1, max = 100, value = 5 ),
                                  tableOutput('table')
                                )
@@ -126,7 +140,7 @@ u <- dashboardPage(
     )
   )
   
-)
+))
 
 s <- function(input, output) {
   #This function is repsonsible for loading in the selected file
@@ -279,7 +293,6 @@ s <- function(input, output) {
 
     library("fpc")
     fpc_dbs <- fpc::dbscan(df, eps = input$num_eps, MinPts = 5)
-
     fviz_cluster(fpc_dbs, df, geom = "point", pointsize = input$num_eps)
  
   })
@@ -287,12 +300,32 @@ s <- function(input, output) {
   #this runs boxplot (outlier detection)
   output$boxplot <- renderPlot({
       df <- filedata()
+
+      (ggplot(df, aes(y=A, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)+ 
+        ggplot(df, aes(y=B, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label) + 
+          ggplot(df, aes(y=B, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)+
+          ggplot(df, aes(y=C, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)+
+          ggplot(df, aes(y=D, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)+
+          ggplot(df, aes(y=E, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)+
+          ggplot(df, aes(y=F, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)+
+          ggplot(df, aes(y=G, x=Label, color = as_factor(Label)) )+geom_boxplot()+theme_minimal()+facet_wrap(~Label)
+          )
       
-      ggplot(df, aes(x=df[,8]),y=df[,1])+geom_boxplot()+theme_minimal()
       
-     
-  }
-  )
+        })
+  
+  #implement correlation
+  output$corre <- renderPlot({
+    df <- filedata()
+    
+    library(corrplot)
+    library(RColorBrewer)
+    M <-cor(df)
+    corrplot(M, type="upper", order="hclust", col=brewer.pal(n=8, name="RdYlBu"))
+    
+  })
+  
+  output$corretext <- renderText("Correlation Between Variables")
 }
 
 shinyApp(ui = u, server = s)

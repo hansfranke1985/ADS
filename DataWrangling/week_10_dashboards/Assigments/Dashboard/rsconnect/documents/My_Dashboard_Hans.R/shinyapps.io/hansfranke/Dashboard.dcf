@@ -5,9 +5,9 @@ account: hansfranke
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3154063
-bundleId: 3819395
+bundleId: 3823079
 url: https://hansfranke.shinyapps.io/Dashboard/
-when: 1604495204.17208
+when: 1604567685.88825
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .RData|app.R|app1.R|app2.R|app3.R|app4.R|app5.R|Dashboard.pdf|GaussianContours.R|pid.csv|Week_10_Assigment/app.R|Week_10_Assigment/Template.R|Week_10_Assigment/rsconnect/shinyapps.io/hansfranke/Week_10_Assigment.dcf
+ignoredFiles: .RData|app.R|Dashboard.pdf|GaussianContours.R|pid.csv|shiny-cheatsheet.pdf|Template.R|Hakim_Examples/app1.R|Hakim_Examples/app2.R|Hakim_Examples/app3.R|Hakim_Examples/app4.R|Hakim_Examples/app5.R|Week_10_Assigment/app.R|Week_10_Assigment/Template.R|Week_10_Assigment/rsconnect/shinyapps.io/hansfranke/Week_10_Assigment.dcf
