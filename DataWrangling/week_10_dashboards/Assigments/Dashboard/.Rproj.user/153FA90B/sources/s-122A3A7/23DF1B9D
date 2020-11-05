@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1604423044987.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "23DF1B9D",
+    "lastKnownWriteTime" : 1604422904,
+    "last_content_update" : 1604422904,
+    "path" : "~/GitHub/ADS/DataWrangling/week_10_dashboards/Assigments/Dashboard/My_Dashboard_Hans.R",
+    "project_path" : "My_Dashboard_Hans.R",
+    "properties" : {
+        "cursorPosition" : "103,25",
+        "scrollLine" : "83"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

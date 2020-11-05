@@ -1,0 +1,13 @@
+name: Dashboard
+title: Dashboard
+username:
+account: hansfranke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3154063
+bundleId: 3816347
+url: https://hansfranke.shinyapps.io/Dashboard/
+when: 1604424532.06359
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app1.R|app2.R|app3.R|app4.R|app5.R|Dashboard.pdf|GaussianContours.R|My_Dashboard_Hans.R|pid.csv|appServer/server.R|appServer/ui.R|Week_10_Assigment/app.R|Week_10_Assigment/Template.R|Week_10_Assigment/rsconnect/shinyapps.io/hansfranke/Week_10_Assigment.dcf
