@@ -54,6 +54,8 @@ u <- fluidPage(
               )
       ),
       
+      loplot()
+      
       # Second tab content
       tabItem(tabName = "explore",
               selectInput("visStyle", "Visualization Style", c("Select an option .. ", "Scatter", "Histogram", "Tabular")),
@@ -61,7 +63,7 @@ u <- fluidPage(
                                sidebarPanel(
                                  uiOutput("expCol"),
                                  #uiOutput("expCol2"),
-                                 uiOutput("expCol5"),
+                                 uiOutput("expCol5")
                                  #selectInput(inputId = 'shape', label = "Point Shape", seq(from = 1, to = 20), selected = 5),
                                  #selectInput(inputId = 'color', label = "Point Color", seq(from = 1, to = 20), selected = 2),
                                  #selectInput(inputId = 'msize', label = "Marker Size", seq(from = 1, to = 10), selected = 2),
@@ -69,7 +71,7 @@ u <- fluidPage(
                                ),
                                mainPanel(
                                  plotOutput('scatterPlot')
-                               ),
+                               )
               ),
               conditionalPanel(condition = "(input.visStyle == 'Histogram')",
                                sidebarPanel(
@@ -102,7 +104,7 @@ u <- fluidPage(
                 ),
                   
                 tabPanel("Distance-Based Outleir Detection", "TODO: implement distance-based outlier detection")
-              ),
+              )
       ),
       
       # Fourth tab content
@@ -135,7 +137,7 @@ u <- fluidPage(
                       
                       plotOutput('DBSCAN', height = "300px")     
                     ) )
-              ),
+              )
       )
     )
   )
@@ -321,7 +323,7 @@ s <- function(input, output) {
     library(corrplot)
     library(RColorBrewer)
     M <-cor(df)
-    corrplot(M, type="upper", order="hclust", col=brewer.pal(n=8, name="RdYlBu"))
+    corrplot(M, type="upper", order="hclust", col=brewer.pal(n=4, name="RdYlBu"))
     
   })
   
