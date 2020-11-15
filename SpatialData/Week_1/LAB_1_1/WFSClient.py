@@ -7,7 +7,7 @@ from owslib.wfs import WebFeatureService
 # url: a string value indicating the URL of the WFS
 # version: a string value indicating the version of the WFS;
 #       PDOK supporta WFS 2.0.0 but we will use the previous version 1.1.0 that supports the srsname parameter
-mywfs = WebFeatureService(url='http://geodata.nationaalgeoregister.nl/bestuurlijkegrenzen/wfs', version='1.1.0')
+mywfs = WebFeatureService(url='https://maps.amsterdam.nl/open_geodata/geojson.php?KAARTLAAG=AFWC_2020&THEMA=afwc_2020')
 
 # list available feature types; in other words, list datasets that can be downloaded from this WFS server
 # the expected output: ['bestuurlijkegrenzen:gemeenten', 'bestuurlijkegrenzen:landsgrens', 'bestuurlijkegrenzen:provincies']
