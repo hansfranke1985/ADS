@@ -29,7 +29,7 @@ rdNew.ImportFromEPSG(28992)
 #Create the new dataset with the output layer centroids using a point geometry type as:
 centroid_source = ogr.GetDriverByName('GPKG').CreateDataSource('centroids.gpkg')
 
-   
+#HERE   
 centroid_layer = centroid_source.CreateLayer('centroids', srs=rdNew, geom_type=ogr.wkbPoint)
 
 
