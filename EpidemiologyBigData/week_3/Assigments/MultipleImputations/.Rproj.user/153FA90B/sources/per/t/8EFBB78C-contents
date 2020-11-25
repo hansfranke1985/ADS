@@ -1,0 +1,178 @@
+---
+title: "MultipleImputation"
+author: "Hans Franke"
+date: "November 23, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# load Libraries
+library("VIM")
+library("mnormt")
+library("mice")
+```
+
+```{r}
+packageVersion("mice")
+```
+
+```{r}
+#load dataset
+load("miss.data.uni.RData") # if the data is in your working directory
+
+#set seed to compare results:
+set.seed(111111)
+```
+
+```{r}
+Formula <- formula(hosp ~ vacc + DM + cvd + pulm + I(log(contact)) + age + sex)
+summary(miss.data.uni)
+```
+```{r}
+str(miss.data.uni)
+```
+
+```{r}
+pctMissing <- function(x) round(colMeans(is.na(x)) * 100, 2) 
+pct.missing <- pctMissing(miss.data.uni)
+pct.missing
+```
+
+```{r}
+miss.cvd <- is.na(miss.data.uni$cvd) # Indicators of missing information on cvd.
+
+aggr(miss.data.uni, numbers = TRUE)
+```
+
+# Simple Method
+
+A.Complete Case Analysis
+B. Dropping predictors with missing values
+C. Mean Imputation
+
+```{r}
+#Create a DF to store the values:
+results.vacc <- data.frame("b" = numeric(), "se" = numeric())
+results.vacc
+```
+
+## A.Complete Case Analysis
+
+```{r }
+CCAmodel <- glm(formula = Formula, family = binomial(), data = miss.data.uni)
+CCAmodel
+```
+
+```{r}
+results.vacc["CCA",] <- c(coef(CCAmodel)["vacc"], coef(summary(CCAmodel))["vacc", "Std. Error"])
+results.vacc
+```
+
+## B. Drop covariates
+
+```{r}
+dropmodel <- glm(hosp ~ vacc + DM + pulm + I(log(contact)) + age + sex, data = miss.data.uni, family = binomial()) 
+dropmodel
+```
+
+```{r}
+results.vacc["Drop", ] <- c(coef(dropmodel)["vacc"], coef(summary(dropmodel))["vacc", "Std. Error"])
+results.vacc
+```
+
+## C. Mean imputation
+```{r}
+mean.imputed.data <- miss.data.uni 
+mean.imputed.data$cvd[miss.cvd] <- mean(miss.data.uni$cvd, na.rm = TRUE)
+summary(mean.imputed.data)
+```
+
+```{r}
+mean(miss.data.uni$cvd, na.rm = TRUE) # Results from CCA
+
+mean(mean.imputed.data$cvd) # Results from mean imputation
+
+sd(miss.data.uni$cvd, na.rm = TRUE) # Results from CCA
+sd(mean.imputed.data$cvd) # Results from mean imputation
+cor(miss.data.uni, use = "complete.obs")["cvd", "vacc"]
+cor(mean.imputed.data)["cvd", "vacc"]
+```
+```{r}
+meanmodel <- glm(Formula, data = mean.imputed.data, family = binomial())
+meanmodel
+```
+```{r}
+results.vacc["Mean imputation", ] <- c(coef(meanmodel)["vacc"], 
+                                       coef(summary(meanmodel))["vacc", "Std. Error"])
+results.vacc
+```
+
+# Regression
+
+## Predict
+
+```{r}
+imp.outcome <- "cvd"
+imp.predictors <- "hosp + vacc + DM + pulm + I(log(contact)) + age + sex"
+imp.formula <- formula(paste(imp.outcome, "~", imp.predictors) )
+impmodel1   <- glm(imp.formula, data = miss.data.uni, family = binomial())
+
+regression1.data <- miss.data.uni
+regression1.data$cvd[miss.cvd] <- prob.cvd2 <- predict(impmodel1, newdata = miss.data.uni[miss.cvd, ], type = "response")
+
+cvd.data <- data.frame(cvd.original = miss.data.uni$cvd, cvd.imputed = regression1.data$cvd)
+head(cvd.data)
+```
+
+```{r}
+regression1model <- glm(Formula, data = regression1.data, family = binomial())
+regression1model 
+```
+
+
+```{r}
+results.vacc["Regression 1", ] <- c(coef(regression1model)["vacc"], 
+                                    coef(summary(regression1model))["vacc", "Std. Error"])
+results.vacc
+```
+
+## E. Predict + noise
+
+```{r}
+N <- sum(miss.cvd) # Number of missing cvd
+regression2.data <- miss.data.uni
+regression2.data$cvd[miss.cvd] <- rbinom(n = N, size = 1, prob = prob.cvd2)
+
+cvd.data <- data.frame(cvd.original = miss.data.uni$cvd, cvd.imputed1 = regression1.data$cvd, cvd.imputed2 = regression2.data$cvd)
+head(cvd.data)
+```
+
+```{r}
+regression2model <- glm(Formula, data = regression2.data, family = binomial())
+regression2model 
+```
+
+```{r}
+results.vacc["Regression 2", ] <- c(coef(regression2model)["vacc"], coef(summary(regression2model))["vacc", "Std. Error"])
+results.vacc
+```
+
+## H. Multiple Imputation in mice()
+
+```{r}
+data.mice <- model.frame(formula(paste("~ 0 + ", imp.predictors, "+", imp.outcome)), data = miss.data.uni, na.action = 'na.pass')
+data.mice$cvd <- as.factor(data.mice$cvd)
+colnames(data.mice)[5] <- "logContact"
+head(data.mice)
+```
+
+
+```{r}
+library(tidyverse)
+miss.data.uni %>% group_by(vacc, hosp) %>% summarise(n = n())
+```
+

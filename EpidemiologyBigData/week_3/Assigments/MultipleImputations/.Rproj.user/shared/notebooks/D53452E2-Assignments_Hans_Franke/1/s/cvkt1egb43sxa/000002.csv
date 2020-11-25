@@ -1,0 +1,8 @@
+"0","imp.outcome <- ""cvd"""
+"0","imp.predictors <- ""hosp + vacc + DM + pulm + I(log(contact)) + age + sex"""
+"0","imp.formula <- formula(paste(imp.outcome, ""~"", imp.predictors) )"
+"0","impmodel1   <- glm(imp.formula, data = miss.data.uni, family = binomial())"
+"0","regression1.data <- miss.data.uni"
+"0","regression1.data$cvd[miss.cvd] <- prob.cvd2 <- predict(impmodel1, newdata = miss.data.uni[miss.cvd, ], type = ""response"")"
+"0","cvd.data <- data.frame(cvd.original = miss.data.uni$cvd, cvd.imputed = regression1.data$cvd)"
+"0","head(cvd.data)"

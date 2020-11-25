@@ -1,0 +1,3 @@
+"0","#Create a DF to store the values:"
+"0","results.vacc <- data.frame(""b"" = numeric(), ""se"" = numeric())"
+"0","results.vacc"

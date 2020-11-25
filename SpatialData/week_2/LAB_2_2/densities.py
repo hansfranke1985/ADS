@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 19 19:09:10 2020
-
-@author: hansf
-"""
 from osgeo import gdal, ogr
 from tqdm import tqdm #progress bar
 
@@ -66,8 +60,6 @@ for i in range(1,num_features+1):
 
 #b. Iterating over a layer works once. For a repeated iteration over a layer you need to use
 #ResetReading() before you attempt to iterate another time:
-
-#centroid_layer.ResetReading()
     
 #c. c. For each centroid test whether it is in the current district geometry. If so, accumulate the number and
 #area. You can use Within to test the geometries:
@@ -78,11 +70,9 @@ for x in tqdm(range(1, layer_wijken.GetFeatureCount()+1)):  #for each feature in
     district_geometry = district_feature.GetGeometryRef()
     centroid = district_geometry.Centroid()
     district_area = district_geometry.GetArea()
-    name = district_feature["Buurtcombinatie"] #get the district name
-    
+    name = district_feature["Buurtcombinatie"] #get the district name    
     houses = 0
-    area = 0
-    
+    area = 0    
     layer_centroids.ResetReading() 
     
     for y in range(1, layer_centroids.GetFeatureCount()+1):      
@@ -94,11 +84,9 @@ for x in tqdm(range(1, layer_wijken.GetFeatureCount()+1)):  #for each feature in
             houses += 1
             area += centroid_feature.area
 
-    #d. Compute the density and fraction and assign these with the name of the current district to the output
-#layer               
+    #d. Compute the density and fraction and assign these with the name of the current district to the output #layer               
     density = houses / (district_area / 1000000) 
-    fraction = area / district_area * 100
-    
+    fraction = area / district_area * 100    
     point_feature = ogr.Feature(density_layer_def) # create a new feature 
     point = ogr.Geometry(ogr.wkbPoint) # create a point geometry
     point.AddPoint(centroid.GetX(), centroid.GetY()) # set the coordinates of this point
@@ -108,13 +96,8 @@ for x in tqdm(range(1, layer_wijken.GetFeatureCount()+1)):  #for each feature in
     point_feature.SetField('fraction', fraction)
     
     density_layer.CreateFeature(point_feature)
-            
-#d. Compute the density and fraction and assign these with the name of the current district to the output
-#layer    
 
 ## Question: What is the density of the district with feature id 54 (Museumkwartier)?
-
-
 c_db = ogr.GetDriverByName('GPKG').Open("centroids.gpkg", update=0)
 density = c_db.GetLayerByName('density')
 density.GetFeature(54).GetField("density")

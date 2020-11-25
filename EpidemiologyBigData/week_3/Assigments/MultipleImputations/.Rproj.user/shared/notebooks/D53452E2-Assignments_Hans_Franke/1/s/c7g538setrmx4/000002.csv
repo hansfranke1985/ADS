@@ -1,0 +1,4 @@
+"0","data.mice <- model.frame(formula(paste(""~ 0 + "", imp.predictors, ""+"", imp.outcome)), data = miss.data.uni, na.action = 'na.pass')"
+"0","data.mice$cvd <- as.factor(data.mice$cvd)"
+"0","colnames(data.mice)[5] <- ""logContact"""
+"0","head(data.mice)"

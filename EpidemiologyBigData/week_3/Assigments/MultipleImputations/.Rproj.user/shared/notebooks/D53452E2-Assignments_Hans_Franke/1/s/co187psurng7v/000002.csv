@@ -1,0 +1,2 @@
+"0","miss.cvd <- is.na(miss.data.uni$cvd) # Indicators of missing information on cvd."
+"0","aggr(miss.data.uni, numbers = TRUE)"

@@ -1,0 +1,43 @@
+"0","# load Libraries"
+"0","library(""VIM"")"
+"2","package ‘VIM’ was built under R version 4.0.3"
+"2","Loading required package: colorspace
+"
+"2","Loading required package: grid
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"2","VIM is ready to use.
+
+"
+"2","Suggestions and bug-reports can be submitted at: https://github.com/statistikat/VIM/issues
+"
+"2","
+Attaching package: ‘VIM’
+
+"
+"2","The following object is masked from ‘package:datasets’:
+
+    sleep
+
+"
+"0","library(""mnormt"")"
+"2","package ‘mnormt’ was built under R version 4.0.3"
+"0","library(""mice"")"
+"2","package ‘mice’ was built under R version 4.0.3"
+"2","
+Attaching package: ‘mice’
+
+"
+"2","The following object is masked from ‘package:stats’:
+
+    filter
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    cbind, rbind
+
+"

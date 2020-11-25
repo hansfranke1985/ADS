@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1606143683030.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DEF70CB8",
+    "lastKnownWriteTime" : 33214463871221870,
+    "last_content_update" : 1606143683030,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "context" : "package:base:::sum"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_code_browser"
+}

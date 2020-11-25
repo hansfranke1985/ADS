@@ -1,0 +1,2 @@
+"0","results.vacc[""CCA"",] <- c(coef(CCAmodel)[""vacc""], coef(summary(CCAmodel))[""vacc"", ""Std. Error""])"
+"0","results.vacc"

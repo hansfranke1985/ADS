@@ -1,0 +1,2 @@
+"0","results.vacc[""Drop"", ] <- c(coef(dropmodel)[""vacc""], coef(summary(dropmodel))[""vacc"", ""Std. Error""])"
+"0","results.vacc"

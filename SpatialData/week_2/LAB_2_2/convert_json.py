@@ -1,24 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov 20 17:22:14 2020
-
-@author: hansf
-"""
-
 import json
 from osgeo.osr import SpatialReference, CoordinateTransformation
 from osgeo import ogr, gdal
 
 #Assign the CRS to Amsterdam
-
 rdNew = SpatialReference()
 rdNew.ImportFromEPSG(28992)
 
 #Create the dataset and add a layer with:
-#ogr_ds = ogr.GetDriverByName('GPKG').CreateDataSource('schools.gpkg')
-#point_layer = ogr_ds.CreateLayer('locations', srs=rdNew, geom_type=ogr.wkbPoint)
-
-
 school_source = ogr.GetDriverByName('GPKG').Open('schools.gpkg', update=1)
 
 if school_source.GetLayerByName('locations'):
@@ -39,11 +27,9 @@ if school_source.GetLayerByName('districts'):
 districts_layer = school_source.CreateLayer('districts', srs=rdNew, geom_type=ogr.wkbMultiPolygon)
 districts_layer_def = districts_layer.GetLayerDefn()
 
-
 #load data 
 with open('data.json') as json_file:
     school_data = json.load(json_file)
-
 
 #set CRS
 wgs84 = SpatialReference()

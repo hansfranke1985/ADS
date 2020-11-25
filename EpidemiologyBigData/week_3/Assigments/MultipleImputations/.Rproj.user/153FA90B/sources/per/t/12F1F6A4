@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1606143293511.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "12F1F6A4",
+    "lastKnownWriteTime" : 27866512328294511,
+    "last_content_update" : 1606143293511,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D85EFCC6",
+        "caption" : "miss.data.uni",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=miss.data.uni&cache_key=D85EFCC6",
+        "displayedObservations" : 40000,
+        "environment" : "",
+        "object" : "miss.data.uni",
+        "preview" : 0,
+        "totalObservations" : 40000,
+        "variables" : 8
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

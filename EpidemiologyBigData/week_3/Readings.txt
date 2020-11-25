@@ -1,0 +1,10 @@
+For this week the following sections are required reading;
+
+2.3 Why and when MI works (only 2.3.1 - 2.3.3)
+2.6 Imputation is not prediction
+2.7 When not to use MI 
+2.8 How many imputations
+3.1 How to generate multiple imputations
+3.4 Predictive Mean Matching (skip 3.4.2)
+4.5 Fully conditional specification
+5.1 Workflow

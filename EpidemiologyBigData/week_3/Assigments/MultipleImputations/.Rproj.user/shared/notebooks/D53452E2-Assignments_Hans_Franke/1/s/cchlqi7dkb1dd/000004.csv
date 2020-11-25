@@ -1,0 +1,4 @@
+"0","#load dataset"
+"0","load(""miss.data.uni.RData"") # if the data is in your working directory"
+"0","#set seed to compare results:"
+"0","set.seed(111111)"

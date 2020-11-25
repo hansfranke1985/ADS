@@ -1,0 +1,3 @@
+"0","results.vacc[""Regression 1"", ] <- c(coef(regression1model)[""vacc""], "
+"0","                                    coef(summary(regression1model))[""vacc"", ""Std. Error""])"
+"0","results.vacc"
