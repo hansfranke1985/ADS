@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 # load Libraries
+library(tidyverse)
 library("VIM")
 library("mnormt")
 library("mice")
@@ -19,6 +20,10 @@ library("mice")
 ```{r}
 packageVersion("mice")
 ```
+```{r}
+
+```
+
 
 ```{r}
 #load dataset
@@ -174,5 +179,42 @@ head(data.mice)
 ```{r}
 library(tidyverse)
 miss.data.uni %>% group_by(vacc, hosp) %>% summarise(n = n())
+````
+
+```{r}
+#Odds Ratio = (odds of the event in the exposed group) / (odds of the event in the non-exposed group)
+
+#If the data is set up in a 2 x 2 table as shown in the figure then the odds ratio is (a/b) / (c/d) = ad/bc. The following is an example to demonstrate calculating the odds ratio (OR).
+#
+# Odds in exposed group = (vacc with hosp) / (vacc without hosp)
+# Odds in not exposed group = (non-vacc with hosp) / (non-vacc without hosp) 
+
+# Odds ratio = (odds in exposed group) / (odds in not exposed group)
+
+vacc_hosp = 184
+vacc_nohosp = 29432
+novacc_hosp = 70
+novacc_nohosp = 10314
+
+odd_exp = vacc_hosp / vacc_nohosp
+print(odd_exp)
+
+odd_nonexp = novacc_hosp / novacc_nohosp
+print(odd_nonexp)
+
+print(odd_exp / odd_nonexp)
+
 ```
+```{r}
+matrix <- rbind(c(vacc_hosp, vacc_nohosp), c(novacc_hosp, novacc_nohosp))
+matrix
+```
+
+
+```{r}
+library("questionr");
+odds.ratio(CCAmodel, confidence=0.95 )
+```
+
+
 
