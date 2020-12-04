@@ -1,0 +1,57 @@
+---
+title: "Practice_1_2"
+author: "Hans Franke"
+date: "December 3, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r cars}
+library(foreign)
+library(nlme)
+library(psych)
+library(ggplot2)
+```
+
+# Exercise 5 (Preparation for lecture 2)
+
+In lecture 2 we will spend time examining different ways of analyzing the Reisby dataset. This is a longitudinal dataset on 66 patients with endogenous or exogenous depression. Patients are measured every week starting at baseline; from week 1 on, they were all treated with imipramine. The outcome is the score on the Hamilton Depression Rating Scale (HDRS), a score based on a questionnaire administered by a health care professional. The score ranges - theoretically - from 0 (no depressive symptoms) to 52, where scores higher than 20 indicate moderate to very severe depression. The questions of interest are how the HDRS score changes over time for the patients, and whether the patterns of HDRS over time differ for patients with endogenous and exogenous depression. The data is available in both a “wide” and a “long” format: reisbywide.Rdata and reisbylong.Rdata.
+
+```{r}
+load(file = "C:/Users/hansf/Documents/GitHub/ADS/EpidemiologyBigData/week_4/Part_1/reisbywide.Rdata")
+load(file = "C:/Users/hansf/Documents/GitHub/ADS/EpidemiologyBigData/week_4/Part_1/reisbylong.Rdata.")
+```
+```{r}
+head(reisby.long)
+```
+```{r}
+head(reisby.wide)
+```
+
+## We heard this morning that longitudinal data is also multi-level data. How many levels do we have here? What does each level represent?
+2 levels: measurements (level 1) within patients (level 2).
+
+Others answers in next lecture.
+
+## Use descriptive statistics (means, SDs, graphs) to get a feel for the data, concentrating on the patterns (individual and/or group) of HDRS over time (note that there are two versions of the dataset given, one “wide” and one “long”. For some graphs and descriptive statistics, one version may be easier to use than the other.
+```{r}
+tapply(reisby.long$hdrs, reisby.long$week, mean, rm.na = TRUE)
+```
+
+
+## What do you notice about the mean HDRS score over time? And the variation?
+
+##Time was measured at 6 discrete moments. How would you want to incorporate time in the fixed part of the model: as discrete or ##continuous? Explain your answer.
+
+##If you were to include a random intercept in the model, for which level would you include an intercept?
+
+##Do you think it is necessary to include time in the random part of the model? Why or why not?
+
+
+
+

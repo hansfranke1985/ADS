@@ -1,0 +1,16 @@
+"0","library(foreign)"
+"2","package ‘foreign’ was built under R version 4.0.3"
+"0","library(nlme)"
+"2","package ‘nlme’ was built under R version 4.0.3"
+"0","library(psych)"
+"2","package ‘psych’ was built under R version 4.0.3"
+"0","library(ggplot2)"
+"2","
+Attaching package: ‘ggplot2’
+
+"
+"2","The following objects are masked from ‘package:psych’:
+
+    %+%, alpha
+
+"

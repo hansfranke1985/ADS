@@ -1,0 +1,12 @@
+"0","# Fit a linear mixed model with random intercept to predict exam scores using the LRT scores."
+"0","sch.lme.1 <- lme(fixed=normexam~standlrt, random=~1 | school, data=london, method=""ML"")"
+"0","summary(sch.lme.1)"
+"1","Linear mixed-effects model fit by "
+"1","maximum likelihood
+"
+"1"," Data:"
+"1"," "
+"1","london"
+"1"," "
+"1","
+"

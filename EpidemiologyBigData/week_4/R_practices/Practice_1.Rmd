@@ -1,0 +1,55 @@
+---
+title: "Practice_1"
+author: "Hans Franke"
+date: "December 3, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(foreign)
+library(nlme)
+library(psych)
+library(ggplot2)
+```
+```{r}
+load(file = "C:/Users/hansf/Documents/GitHub/ADS/EpidemiologyBigData/week_4/Part_1/school.Rdata")
+head(london)
+```
+
+```{r}
+# Run a linear regression on standlrt, per school
+persch <- lmList(normexam~standlrt| school, data=london)
+persch
+```
+
+```{r}
+# Fit a linear mixed model with random intercept to predict exam scores using the LRT scores.
+sch.lme.1 <- lme(fixed=normexam~standlrt, random=~1 | school, data=london, method="ML")
+summary(sch.lme.1)
+```
+
+
+```{r}
+#new data set 
+load(file = "C:/Users/hansf/Documents/GitHub/ADS/EpidemiologyBigData/week_4/Part_1/dbplast.Rdata")
+trial <- dbplast
+p1 <- ggplot(data = trial, aes(x = treat, y = dbp, group=center))
+p1 + geom_point() + facet_wrap(~center)
+```
+
+
+```{r}
+
+load(file = "C:/Users/hansf/Documents/GitHub/ADS/EpidemiologyBigData/week_4/Part_1/crossover.Rdata")
+cross <- crossover
+tapply(cross$Y,cross$DRUG,mean)
+```
+
+```{r}
+cross
+```
+

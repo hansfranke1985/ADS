@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1606984585807.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2809501294",
+    "id" : "43375367",
+    "lastKnownWriteTime" : 1606992423,
+    "last_content_update" : 1606992423764,
+    "path" : "~/GitHub/ADS/EpidemiologyBigData/week_4/R_practices/Practice_1_2.Rmd",
+    "project_path" : "Practice_1_2.Rmd",
+    "properties" : {
+        "cursorPosition" : "35,138",
+        "last_setup_crc32" : "1494E484bb338d19",
+        "scrollLine" : "34",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
