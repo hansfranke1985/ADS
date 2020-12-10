@@ -108,18 +108,75 @@ contMap = pineare2Map > (4 * 100 * 100)
 aguila(contMap)
 
 
+#1.4 Neighbourhood operations
+unsatMap = topoMap - phreaticMap
+aguila(topoMap, unsatMap)
 
 
+unsat150Map  = windowaverage(unsatMap,150)
+unsat250Map  = windowaverage(unsatMap,250)
 
 
+soidi150Map = windowdiversity(soilsMap,150)
+soidi500Map = windowdiversity(soilsMap,500)
+
+aguila(soidi150Map)
+aguila(soidi500Map)
+
+#abosolute distance
+welldistMap = spread(wellsMap,0,1)
+aguila(wellsMap, welldistMap)
+
+wellprotMap = welldistMap < 200
+aguila(wellprotMap)
+
+#relative distance
+welltimeMap = spread(wellsMap,0,3)
+aguila(welltimeMap)
 
 
+#1.5 Neighbourhood operations: Dem and catchment
+slopeMap = slope(topoMap)
+aguila(slopeMap)
+       
+aguila(topoMap)
+
+slopedegMap = atan(slopeMap)
+slope2Map = slope(slopeMap)
+aspectMap = aspect(topoMap)
+aguila(slope2Map)
+aguila(aspectMap)
+
+#drain direction area
+ldd0Map = lddcreate(topoMap,0,0,0,0)
+aguila(ldd0Map)
+
+pit0Map = pit(ldd0Map)
+aguila(pit0Map)
+
+pathzeroMap = path(ldd0Map,pointsMap) 
+aguila(ldd0Map, pointsMap, pit0Map, pathzeroMap) 
 
 
+topomodiMap = lddcreatedem(topoMap,1e31,1e31,1e31,1e31)
+
+coredeptMap = topomodiMap - topoMap 
+aguila(coredeptMap)
+
+ldd2Map = lddcreate(topoMap,2,1e31,1e31,1e31)
+pit2Map = pit(ldd2Map)
+
+lddMap = lddcreate(topoMap,10,1e31,1e31,1e31)
+pathMap = path(lddMap, pointsMap)
 
 
+outpoMap = pit(lddMap )
+#catchment
+catchmsMap = catchment(lddMap,outpoMap)
+aguila(catchmsMap)
 
-
+dischMap = accuflux(lddMap,rainstorMap)
+aguila(dischMap)
 
 
 
