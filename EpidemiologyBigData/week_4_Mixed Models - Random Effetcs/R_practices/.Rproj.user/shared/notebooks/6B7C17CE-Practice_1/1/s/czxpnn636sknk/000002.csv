@@ -1,5 +1,0 @@
-"0","#new data set "
-"0","load(file = ""C:/Users/hansf/Documents/GitHub/ADS/EpidemiologyBigData/week_4/Part_1/dbplast.Rdata"")"
-"0","trial <- dbplast"
-"0","p1 <- ggplot(data = trial, aes(x = treat, y = dbp, group=center))"
-"0","p1 + geom_point() + facet_wrap(~center)"
